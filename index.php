@@ -1,4 +1,4 @@
-<?php require("langSelect.php"); ?>
+<?php require("php-config/langSelect.php"); ?>
 
 <!DOCTYPE html>
 <html>
@@ -50,16 +50,25 @@
                         <fieldset>
                             <legend><?php echo $lang['HOME_CONTACT']; ?></legend>
 
+                            <div class="row" id="externalLinks">
+                                <p class="col-sm-6">
+                                    <a class="btn btn-default btn-block" href="https://github.com/fhuszti" title="<?php echo $lang['HOME_CONTACT_GITHUB']; ?>"><?php echo $lang['HOME_CONTACT_GITHUB']; ?></a>
+                                </p>
+                                <p class="col-sm-6">
+                                    <a class="btn btn-default btn-block" href="https://www.linkedin.com/in/francoishuszti" title="<?php echo $lang['HOME_CONTACT_LINKEDIN']; ?>"><?php echo $lang['HOME_CONTACT_LINKEDIN']; ?></a>
+                                </p>
+                            </div>
+
                             <p><?php echo $lang['HOME_FORM_INFOS']; ?></p>
 
                             <div class="form-group col-sm-6">
                                 <label for="name"><?php echo $lang['HOME_FORM_NAME']; ?></label>
-                                <input type="text" placeholder="<?php echo $lang['HOME_FORM_NAME_PLACEHOLDER']; ?>" name="name" id="name" required aria-required="true" class="form-control input-lg" />
+                                <input type="text" placeholder="<?php echo $lang['HOME_FORM_NAME_PLACEHOLDER']; ?>" name="name" id="name" maxlength="50" required aria-required="true" class="form-control input-lg" />
                                 <span class="help-block"><?php echo $lang['HOME_FORM_NAME_HELPER']; ?></span>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="email"><?php echo $lang['HOME_FORM_EMAIL']; ?></label>
-                                <input type="email" placeholder="<?php echo $lang['HOME_FORM_EMAIL_PLACEHOLDER']; ?>" name="email" id="email" required aria-required="true" class="form-control input-lg" />
+                                <input type="email" placeholder="<?php echo $lang['HOME_FORM_EMAIL_PLACEHOLDER']; ?>" name="email" id="email" maxlength="50" required aria-required="true" class="form-control input-lg" />
                                 <span class="help-block"><?php echo $lang['HOME_FORM_EMAIL_HELPER']; ?></span>
                             </div>
                         	<div class="form-group col-xs-12">
@@ -68,6 +77,7 @@
                                 <span class="help-block"><?php echo $lang['HOME_FORM_MESSAGE_HELPER']; ?></span>
 
                                 <button type="submit" class="btn btn-primary btn-block" disabled><?php echo $lang['HOME_FORM_SUBMIT']; ?></button>
+                                <span class="help-block"><?php echo $lang['HOME_FORM_SUBMIT_HELPER']; ?></span>
                         	</div>
                         </fieldset>
                     </form>
@@ -80,5 +90,7 @@
 
         <!-- Loading BootStrap JavaScript -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

@@ -3,10 +3,16 @@ body {
     font-family: Arial, Helvetica, Verdana, Times, "Times New Roman", sans-serif;
 }
 
+/*
+* ---------------
+*  INTERNAL LINKS
+* ---------------
+*/
 .hiddenOverflow {
     padding: 0;
     overflow: hidden;
 }
+
 .ctaPart {
     height: calc(100vh - 80px);
     background-color: rgba(0, 0, 0, 0.3);
@@ -29,6 +35,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #ctaPart1 {
   background-image: url("../img/myAvatar.png");
   background-size: contain;
@@ -50,6 +57,7 @@ body {
 
   border-left: 1px solid black;
 }
+
 .ctaPart:hover {
   background-blend-mode: normal;
   background-color: rgba(0, 0, 0, 0);
@@ -58,13 +66,38 @@ body {
 .ctaPart:hover .ctaPartTitle {
     background-color: rgba(0, 0, 0, 0.3);
 }
+/* ------------- */
 
+
+
+
+/*
+* ------------
+* CONTACT PART
+* ------------
+*/
 form.well, legend {
     border-color: rgb(0, 72, 0);
 }
+
+#externalLinks {
+    text-align: center;
+}
+#externalLinks .btn-default {
+  color: rgb(0, 72, 0);
+  border-color: rgb(0, 72, 0);
+  margin-bottom: 20px;
+}
+#externalLinks .btn-default:hover {
+  color: #eee;
+  border-color: #eee;
+  background-color: rgb(0, 72, 0);
+}
+
 form textarea {
     resize: vertical;
 }
+
 form button {
     margin-top: 30px;
 }
@@ -76,6 +109,7 @@ form button {
     background-color: rgb(5, 85, 19);
     border-color: rgb(0, 72, 0);
 }
+/* ---------- */
 
 
 
