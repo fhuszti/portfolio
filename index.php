@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="devicons/css/devicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/header.css">
 
@@ -41,6 +42,29 @@
                     <div id="ctaPart3" class="col-xs-12 ctaPart">
                         <h2 class="ctaPartTitle"><?php echo $lang['HOME_PROJECTS']; ?></h2>
                     </div>
+                </div>
+            </section>
+
+            <section class="row" id="deviconsRow">
+                <h3><?php echo $lang['HOME_SKILLS']; ?></h3>
+
+                <div class="col-xs-4 col-sm-2">
+                    <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" title="HTML5"><span class="devicons devicons-html5"></span></a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" title="CSS3"><span class="devicons devicons-css3"></span></a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="https://getbootstrap.com/" title="BootStrap"><span class="devicons devicons-bootstrap"></span></a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="https://www.javascript.com/" title="JavaScript"><span class="devicons devicons-javascript"></span></a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="https://jquery.com/" title="jQuery"><span class="devicons devicons-jquery"></span></a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="https://secure.php.net/" title="PHP"><span class="devicons devicons-php"></span></a>
                 </div>
             </section>
 

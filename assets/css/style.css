@@ -73,6 +73,28 @@ body {
 
 /*
 * ------------
+* ICONS PART
+* ------------
+*/
+#deviconsRow {
+  padding: 0 30px 20px 30px;
+}
+#deviconsRow h3 {
+    border-bottom: 1px solid rgb(0, 72, 0);
+}
+#deviconsRow div {
+    text-align: center;
+    padding: 0;
+}
+#deviconsRow div a:focus, #deviconsRow div a:hover {
+    text-decoration: none;
+}
+/* ----------- */
+
+
+
+/*
+* ------------
 * CONTACT PART
 * ------------
 */

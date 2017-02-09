@@ -34,6 +34,8 @@ $lang['HOME_CV_INTERACTIVE'] = "<i lang='la' class='expression'>Curriculum Vitae
 $lang['HOME_PROJECTS_LINK_TITLE'] = 'Accéder à ma liste de projets';
 $lang['HOME_PROJECTS'] = "Projets";
 
+$lang['HOME_SKILLS'] = 'Compétences :';
+
 $lang['HOME_CONTACT'] = 'Contactez moi :';
 $lang['HOME_CONTACT_GITHUB'] = 'Retrouvez moi sur GitHub';
 $lang['HOME_CONTACT_LINKEDIN'] = 'Retrouvez moi sur LinkedIn';

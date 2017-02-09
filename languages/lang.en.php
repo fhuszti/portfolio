@@ -34,6 +34,8 @@ $lang['HOME_CV_INTERACTIVE'] = "Resume - Interactive version";
 $lang['HOME_PROJECTS_LINK_TITLE'] = 'Go to the list of my projects';
 $lang['HOME_PROJECTS'] = "Homework";
 
+$lang['HOME_SKILLS'] = 'Skills :';
+
 $lang['HOME_CONTACT'] = 'Contact :';
 $lang['HOME_CONTACT_GITHUB'] = 'Find me on GitHub';
 $lang['HOME_CONTACT_LINKEDIN'] = 'Find me on LinkedIn';
