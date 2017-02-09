@@ -7,9 +7,6 @@ Language: English
 
 $lang = array();
 
-$lang['PAGE_TITLE'] = 'web developer';
-$lang['PAGE_TITLE_LINK_TITLE'] = 'Home';
-
 // NAVBAR
 $lang['MENU_PRINT_IMG_ALT'] = "Print the document";
 $lang['MENU_PRINT_DESC'] = "Print";
@@ -23,35 +20,19 @@ $lang['MENU_CV_INTERACTIVE'] = 'Interactive resume';
 $lang['MENU_PROJECTS_LINK_TITLE'] = "Link to all the projects I've done";
 $lang['MENU_PROJECTS'] = 'Homework';
 
-$lang['MENU_ICON_ALT'] = "Icon for the menu";
-
-//'COMING SOON' img for all pages
-$lang['LINK_COMING_SOON'] = 'assets/img/en/comingsoon.png';
-
 //HOMEPAGE
-$lang['HOME_META_DESC'] = 'Portfolio of François Huszti, web developer. My resume and my projects are all to be found here.';
-$lang['HOME_META_TITLE'] = 'François Huszti, web developer - Portfolio';
-$lang['HOME_TITLE'] = 'Home';
+$lang['HOME_META_DESC'] = 'Portfolio of François Huszti, fullstack dev. My resume and my projects are all to be found here.';
+$lang['HOME_META_TITLE'] = 'François Huszti, fullstack dev - Portfolio';
 
-$lang['HOME_CV_SIMPLE_IMG'] = 'assets/img/en/simpleResume.png';
-$lang['HOME_CV_SIMPLE_IMG_HOVER'] = 'assets/img/en/resume_hover.png';
 $lang['HOME_CV_SIMPLE_LINK_TITLE'] = 'Access the simple version of my resume';
 $lang['HOME_CV_SIMPLE'] = "Resume - Simple version";
-$lang['HOME_CV_SIMPLE_DESC'] = 'Simple version of my resume, with colors.';
 $lang['HOME_CV_SIMPLE_PRINTABLE'] = 'To get to the black & white, printable version, <strong onclick="frames[\'frame\'].print()"><em>click  here</em></strong>.';
 
-$lang['HOME_CV_INTERACTIVE_IMG'] = 'assets/img/en/resume_interactive.png';
-$lang['HOME_CV_INTERACTIVE_IMG_HOVER'] = 'assets/img/en/resume_interactive_hover.png';
 $lang['HOME_CV_INTERACTIVE_LINK_TITLE'] = 'Access the interactive version of my resume';
 $lang['HOME_CV_INTERACTIVE'] = "Resume - Interactive version";
-$lang['HOME_CV_INTERACTIVE_DESC'] = 'Interactive version of my resume.';
-$lang['HOME_CV_INTERACTIVE_DESC_2'] = "Made using Phaser, also works on mobiles.";
 
-$lang['HOME_PROJECTS_IMG'] = 'assets/img/en/projects.png';
-$lang['HOME_PROJECTS_IMG_HOVER'] = 'assets/img/en/projects_hover.png';
 $lang['HOME_PROJECTS_LINK_TITLE'] = 'Go to the list of my projects';
 $lang['HOME_PROJECTS'] = "Homework";
-$lang['HOME_PROJECTS_DESC'] = 'Take a look at all the projects I did toward my degree.';
 
 $lang['HOME_CONTACT'] = 'Contact :';
 $lang['HOME_CONTACT_GITHUB'] = 'Find me on GitHub';

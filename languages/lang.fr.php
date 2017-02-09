@@ -7,9 +7,6 @@ Language: Français
 
 $lang = array();
 
-$lang['PAGE_TITLE'] = 'développeur web';
-$lang['PAGE_TITLE_LINK_TITLE'] = 'Accueil';
-
 // NAVBAR
 $lang['MENU_PRINT_IMG_ALT'] = "Imprimer le document";
 $lang['MENU_PRINT_DESC'] = "Imprimer";
@@ -23,35 +20,19 @@ $lang['MENU_CV_INTERACTIVE'] = 'C.V. interactif';
 $lang['MENU_PROJECTS_LINK_TITLE'] = "Lien vers la liste de mes projets";
 $lang['MENU_PROJECTS'] = 'Projets';
 
-$lang['MENU_ICON_ALT'] = "Icône du menu";
-
-//'COMING SOON' img for all pages
-$lang['LINK_COMING_SOON'] = 'assets/img/fr/avenir.png';
-
 //HOMEPAGE
-$lang['HOME_META_DESC'] = 'Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici.';
-$lang['HOME_META_TITLE'] = 'François Huszti, développeur web - Portfolio';
-$lang['HOME_TITLE'] = 'Accueil';
+$lang['HOME_META_DESC'] = 'Site portfolio de François Huszti, fullstack dev. Les différentes versions de mon C.V. et mes projets sont tous ici.';
+$lang['HOME_META_TITLE'] = 'François Huszti, fullstack dev - Portfolio';
 
-$lang['HOME_CV_SIMPLE_IMG'] = 'assets/img/fr/simpleResume.png';
-$lang['HOME_CV_SIMPLE_IMG_HOVER'] = 'assets/img/fr/cv_hover.png';
 $lang['HOME_CV_SIMPLE_LINK_TITLE'] = 'Accéder à la version classique de mon C.V';
 $lang['HOME_CV_SIMPLE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version classique";
-$lang['HOME_CV_SIMPLE_DESC'] = 'Version classique de mon C.V., en couleur.';
 $lang['HOME_CV_SIMPLE_PRINTABLE'] = 'Pour la version imprimable, en noir et blanc, <strong onclick="frames[\'frame\'].print()"><em>cliquez ici</em></strong>.';
 
-$lang['HOME_CV_INTERACTIVE_IMG'] = 'assets/img/fr/cv_interactif.png';
-$lang['HOME_CV_INTERACTIVE_IMG_HOVER'] = 'assets/img/fr/cv_interactif_hover.png';
 $lang['HOME_CV_INTERACTIVE_LINK_TITLE'] = 'Aller sur la page de mon CV interactif';
 $lang['HOME_CV_INTERACTIVE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version interactive";
-$lang['HOME_CV_INTERACTIVE_DESC'] = 'Version interactive de mon C.V.';
-$lang['HOME_CV_INTERACTIVE_DESC_2'] = "Développé avec <i lang='en' class='brand'>Phaser</i>, fonctionne aussi sur mobiles.";
 
-$lang['HOME_PROJECTS_IMG'] = 'assets/img/fr/projets.png';
-$lang['HOME_PROJECTS_IMG_HOVER'] = 'assets/img/fr/projets_hover.png';
 $lang['HOME_PROJECTS_LINK_TITLE'] = 'Accéder à ma liste de projets';
 $lang['HOME_PROJECTS'] = "Projets";
-$lang['HOME_PROJECTS_DESC'] = 'Jetez un oeil aux projets que j\'ai réalisé dans le cadre de mes études.';
 
 $lang['HOME_CONTACT'] = 'Contactez moi :';
 $lang['HOME_CONTACT_GITHUB'] = 'Retrouvez moi sur GitHub';
