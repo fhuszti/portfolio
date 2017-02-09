@@ -41,7 +41,7 @@ $(function() {
             messageHelp.fadeIn();
         });
         inputObjects.message.on('blur', function() {
-            messageHelp.fadeOut(); //we hide, not fade, to prevent ugly behaviour
+            messageHelp.fadeOut();
         });
     }
 
