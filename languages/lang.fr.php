@@ -60,7 +60,7 @@ $lang['HOME_FORM_INFOS'] = "Mon adresse : <strong><i class='email'>contact@fhusz
 Vous pouvez utiliser ce formulaire pour m'envoyer un mail directement.";
 $lang['HOME_FORM_NAME'] = 'Votre nom :';
 $lang['HOME_FORM_NAME_PLACEHOLDER'] = 'Prénom Nom';
-$lang['HOME_FORM_NAME_HELPER'] = "Ce champ ne peut être vide et ne doit comporter que des lettres, traits d'union, espaces et/ou apostrophes.";
+$lang['HOME_FORM_NAME_HELPER'] = "Ce champ ne peut être vide, et son contenu doit respecter le format d'un nom valable.";
 $lang['HOME_FORM_EMAIL'] = 'Votre adresse mail :';
 $lang['HOME_FORM_EMAIL_PLACEHOLDER'] = 'exemple@email.com';
 $lang['HOME_FORM_EMAIL_HELPER'] = "Ce champ ne peut être vide, et son contenu doit respecter le format d'une adresse email valable.";

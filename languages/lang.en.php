@@ -60,7 +60,7 @@ $lang['HOME_FORM_INFOS'] = "My email : <strong><i class='email'>contact@fhuszti.
 You can also send me a mail automatically through the form below.";
 $lang['HOME_FORM_NAME'] = 'Your name :';
 $lang['HOME_FORM_NAME_PLACEHOLDER'] = 'John Doe';
-$lang['HOME_FORM_NAME_HELPER'] = "This field can't be left empty, and can only consist of letters, hyphens, spaces and/or apostrophes.";
+$lang['HOME_FORM_NAME_HELPER'] = "This field can't be left empty. Its content has to have a valid name format.";
 $lang['HOME_FORM_EMAIL'] = 'Your email :';
 $lang['HOME_FORM_EMAIL_PLACEHOLDER'] = 'example@email.com';
 $lang['HOME_FORM_EMAIL_HELPER'] = "This field can't be left empty. Its content has to have a valid email format.";

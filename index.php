@@ -63,21 +63,26 @@
 
                             <div class="form-group col-sm-6">
                                 <label for="name"><?php echo $lang['HOME_FORM_NAME']; ?></label>
-                                <input type="text" placeholder="<?php echo $lang['HOME_FORM_NAME_PLACEHOLDER']; ?>" name="name" id="name" maxlength="50" required aria-required="true" class="form-control input-lg" />
-                                <span class="help-block"><?php echo $lang['HOME_FORM_NAME_HELPER']; ?></span>
+                                <input type="text" placeholder="<?php echo $lang['HOME_FORM_NAME_PLACEHOLDER']; ?>" name="name" id="name" maxlength="50" autocomplete="off" required aria-required="true" class="form-control input-lg" />
+                                <p class="centerHelp">
+                                    <span class="help-block" id="nameHelp"><?php echo $lang['HOME_FORM_NAME_HELPER']; ?></span>
+                                </p>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="email"><?php echo $lang['HOME_FORM_EMAIL']; ?></label>
-                                <input type="email" placeholder="<?php echo $lang['HOME_FORM_EMAIL_PLACEHOLDER']; ?>" name="email" id="email" maxlength="50" required aria-required="true" class="form-control input-lg" />
-                                <span class="help-block"><?php echo $lang['HOME_FORM_EMAIL_HELPER']; ?></span>
+                                <input type="email" placeholder="<?php echo $lang['HOME_FORM_EMAIL_PLACEHOLDER']; ?>" name="email" id="email" maxlength="50" autocomplete="off" required aria-required="true" class="form-control input-lg" />
+                                <p class="centerHelp">
+                                    <span class="help-block" id="emailHelp"><?php echo $lang['HOME_FORM_EMAIL_HELPER']; ?></span>
+                                </p>
                             </div>
                         	<div class="form-group col-xs-12">
                                 <label for="message"><?php echo $lang['HOME_FORM_MESSAGE']; ?></label>
-                                <textarea placeholder="<?php echo $lang['HOME_FORM_MESSAGE_PLACEHOLDER']; ?>" name="message" id="message" required aria-required="true" class="form-control input-lg"></textarea>
-                                <span class="help-block"><?php echo $lang['HOME_FORM_MESSAGE_HELPER']; ?></span>
+                                <textarea placeholder="<?php echo $lang['HOME_FORM_MESSAGE_PLACEHOLDER']; ?>" name="message" id="message" autocomplete="off" required aria-required="true" class="form-control input-lg"></textarea>
+                                <p class="centerHelp">
+                                    <span class="help-block" id="messageHelp"><?php echo $lang['HOME_FORM_MESSAGE_HELPER']; ?></span>
+                                </p>
 
-                                <button type="submit" class="btn btn-primary btn-block" disabled><?php echo $lang['HOME_FORM_SUBMIT']; ?></button>
-                                <span class="help-block"><?php echo $lang['HOME_FORM_SUBMIT_HELPER']; ?></span>
+                                <button type="submit" class="btn btn-primary btn-block" id="submitButton"><?php echo $lang['HOME_FORM_SUBMIT']; ?></button>
                         	</div>
                         </fieldset>
                     </form>
