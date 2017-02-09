@@ -46,7 +46,8 @@
 
             <section class="row">
                 <div class="col-xs-12">
-                    <form method="post" action="formHandler.php" role="form" class="well">
+                    <!-- no action attr as the form is managed via AJAX -->
+                    <form method="post" id="contactForm" role="form" class="well">
                         <fieldset>
                             <legend><?php echo $lang['HOME_CONTACT']; ?></legend>
 
@@ -57,6 +58,13 @@
                                 <p class="col-sm-6">
                                     <a class="btn btn-default btn-block" href="https://www.linkedin.com/in/francoishuszti" title="<?php echo $lang['HOME_CONTACT_LINKEDIN']; ?>"><?php echo $lang['HOME_CONTACT_LINKEDIN']; ?></a>
                                 </p>
+                            </div>
+
+                            <div class="alert alert-danger col-xs-12" id="formError">
+                                <p><?php echo $lang['HOME_FORM_ERROR']; ?></p>
+                            </div>
+                            <div class="alert alert-danger col-xs-12" id="sendingError">
+                                <p><?php echo $lang['HOME_FORM_SENDING_ERROR']; ?></p>
                             </div>
 
                             <p><?php echo $lang['HOME_FORM_INFOS']; ?></p>
@@ -81,9 +89,13 @@
                                 <p class="centerHelp">
                                     <span class="help-block" id="messageHelp"><?php echo $lang['HOME_FORM_MESSAGE_HELPER']; ?></span>
                                 </p>
-
-                                <button type="submit" class="btn btn-primary btn-block" id="submitButton"><?php echo $lang['HOME_FORM_SUBMIT']; ?></button>
                         	</div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitButton"><?php echo $lang['HOME_FORM_SUBMIT']; ?></button>
+
+                            <div class="alert alert-success col-xs-12" id="formThanks">
+                                <p><?php echo $lang['HOME_FORM_THANKS']; ?></p>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
@@ -96,6 +108,6 @@
         <!-- Loading BootStrap JavaScript -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
 
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/formHandler.js"></script>
     </body>
 </html>

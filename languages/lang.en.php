@@ -56,6 +56,8 @@ $lang['HOME_PROJECTS_DESC'] = 'Take a look at all the projects I did toward my d
 $lang['HOME_CONTACT'] = 'Contact :';
 $lang['HOME_CONTACT_GITHUB'] = 'Find me on GitHub';
 $lang['HOME_CONTACT_LINKEDIN'] = 'Find me on LinkedIn';
+$lang['HOME_FORM_ERROR'] = "Not all fields have been correctly filled.";
+$lang['HOME_FORM_SENDING_ERROR'] = "There was an error sending your message. Please try again later.";
 $lang['HOME_FORM_INFOS'] = "My email : <strong><i class='email'>contact@fhuszti.com</i></strong><br />
 You can also send me a mail automatically through the form below.";
 $lang['HOME_FORM_NAME'] = 'Your name :';
@@ -68,7 +70,6 @@ $lang['HOME_FORM_MESSAGE'] = 'Your message :';
 $lang['HOME_FORM_MESSAGE_PLACEHOLDER'] = 'Enter your message here';
 $lang['HOME_FORM_MESSAGE_HELPER'] = "This field can't be left empty.";
 $lang['HOME_FORM_SUBMIT'] = 'Send';
-$lang['HOME_FORM_SUBMIT_HELPER'] = "The button will be available once every field has been correctly filled.";
 $lang['HOME_FORM_THANKS'] = 'Your message was successfully sent to my email address. Thank you !';
 
 //PROJECTS HOMEPAGE
