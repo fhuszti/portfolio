@@ -1,91 +1,84 @@
 $(function() {
     //Manage everything form related
     function formManagement() {
-        var nameField = $('#name'),
-            emailField = $('#email'),
-            messageField = $('#message'),
-            submitButton = $('#submitButton');
-
-        //We attach events to inputs so help-blocks show when needed
-        helpBlockEvents(nameField, emailField, messageField);
-
-        //We initiate booleans checking each input's status
-        //Button available once they're all true
-        var inputsStatus = {'name': false,
-                            'email': false,
-                            'message': false
+        //For easy access to each input field
+        var inputObjects = {'name': $('#name'),
+                            'email': $('#email'),
+                            'message': $('#message')
                             };
 
+        //We attach events to inputs so help-blocks show when needed
+        helpBlockEvents(inputObjects);
+
         //and we attach events to each inputs livechecking their status
-        validateInputs(nameField, emailField, messageField, inputsStatus);
+        liveCheckInputs(inputObjects);
+
+        //now we manage the form on submission
+        formSubmit(inputObjects);
     }
 
     //Tell help-blocks to show/hide when their input gets the focus
-    function helpBlockEvents(nameField, emailField, messageField) {
+    function helpBlockEvents(inputObjects) {
         var nameHelp = $('#nameHelp'),
             emailHelp = $('#emailHelp'),
             messageHelp = $('#messageHelp');
 
-        nameField.on('focus', function() {
+        inputObjects.name.on('focus', function() {
             nameHelp.fadeIn();
         });
-        nameField.on('blur', function() {
+        inputObjects.name.on('blur', function() {
             nameHelp.fadeOut();
         });
 
-        emailField.on('focus', function() {
+        inputObjects.email.on('focus', function() {
             emailHelp.fadeIn();
         });
-        emailField.on('blur', function() {
+        inputObjects.email.on('blur', function() {
             emailHelp.fadeOut();
         });
 
-        messageField.on('focus', function() {
+        inputObjects.message.on('focus', function() {
             messageHelp.fadeIn();
         });
-        messageField.on('blur', function() {
-            messageHelp.hide();
+        inputObjects.message.on('blur', function() {
+            messageHelp.fadeOut(); //we hide, not fade, to prevent ugly behaviour
         });
     }
 
-    function validateInputs(nameField, emailField, messageField, inputsStatus) {
-        nameField.on('keyup', function() {
+    //attach a live checking event to every input
+    function liveCheckInputs(inputObjects) {
+        inputObjects.name.on('keyup', function() {
             //if the current value of the field is ok
-            if (validateName(nameField.val())) {
-                inputsStatus.name = true;
-                colorBorders(nameField, true);
+            if (validateName(inputObjects.name.val())) {
+                colorBorders(inputObjects.name, true);
             }
             else {
-                inputsStatus.name = false;
-                colorBorders(nameField, false);
+                colorBorders(inputObjects.name, false);
             }
         });
 
-        emailField.on('keyup', function() {
+        inputObjects.email.on('keyup', function() {
             //if the current value of the field is ok
-            if (validateEmail(emailField.val())) {
-                inputsStatus.email = true;
-                colorBorders(emailField, true);
+            if (validateEmail(inputObjects.email.val())) {
+                colorBorders(inputObjects.email, true);
             }
             else {
-                inputsStatus.email = false;
-                colorBorders(emailField, false);
+                colorBorders(inputObjects.email, false);
             }
         });
 
-        messageField.on('keyup', function() {
+        inputObjects.message.on('keyup', function() {
             //if the current value of the field is ok
-            if (validateMessage(messageField.val())) {
-                inputsStatus.message = true;
-                colorBorders(messageField, true);
+            if (validateMessage(inputObjects.message.val())) {
+                colorBorders(inputObjects.message, true);
             }
             else {
-                inputsStatus.message = false;
-                colorBorders(messageField, false);
+                colorBorders(inputObjects.message, false);
             }
         });
     }
 
+    //color the given input border differently depending on the validity of its value
     function colorBorders(field, valid) {
         if(valid) {
             field.parent().removeClass('has-error').addClass('has-success');
@@ -114,6 +107,55 @@ $(function() {
         var re = /^(.|\s)+$/i;
 
         return re.test(message);
+    }
+
+    //check if the form is ready for submission and does so if everything is ok
+    function formSubmit(inputObjects) {
+        var form = $('#contactForm');
+
+        form.on('submit', function(e) {
+            e.preventDefault();
+
+            //we define a "ready"-variable that'll be set to false if an input has an error
+            var formReady = true,
+                prop;
+
+            //we check if any input still has an error
+            //if yes, we update the "ready"-variable to reflect it
+            for (prop in inputObjects) {
+                if(inputObjects[prop].parent().hasClass('has-error')) {
+                    formReady = false;
+                }
+            }
+
+            //if everything is fine, we're good to go
+            if (formReady) {
+                //we fetch the data using FormData and send it as it is
+                var formData = new FormData(e.target);
+                //processData needs to be set to false to prevent jQuery from trying to convert it to string
+                //contentType needs to be set to false so jQuery doesn't add a Content-type header (otherwise boundary string will be missing)
+                $.ajax({
+                    type: 'POST',
+                    url: 'php-config/formHandler.php',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function() {
+                        $('.form-group').fadeOut();
+                        $('#submitButton').fadeOut();
+                        $('#formThanks').fadeIn();
+                    },
+                    error: function() {
+                        $('#sendingError').fadeIn().delay(4000).fadeOut();
+                    }
+                });
+            }
+            //else we display an error message for a few seconds
+            else {
+                var formError = $('#formError');
+                formError.fadeIn().delay(4000).fadeOut();
+            }
+        });
     }
 
 
