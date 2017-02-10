@@ -49,31 +49,31 @@
                 <h3><?php echo $lang['HOME_SKILLS']; ?></h3>
 
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" title="HTML5"><img src="assets/img/html5.png" alt="" /></a>
+                    <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" title="HTML5"><img src="assets/img/html5.png" alt="HTML5" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" title="CSS3"><img src="assets/img/css3.png" alt="" /></a>
+                    <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" title="CSS3"><img src="assets/img/css3.png" alt="CSS3" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://getbootstrap.com/" title="BootStrap"><img src="assets/img/javascript.png" alt="" /></a>
+                    <a href="https://www.javascript.com/" title="JavaScript"><img src="assets/img/javascript.png" alt="JavaScript" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://www.javascript.com/" title="JavaScript"><img src="assets/img/jquery.png" alt="" /></a>
+                    <a href="https://jquery.com/" title="jQuery"><img src="assets/img/jquery.png" alt="jQuery" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://jquery.com/" title="jQuery"><img src="assets/img/php.png" alt="" /></a>
+                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/php.png" alt="PHP" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/mysql.png" alt="" /></a>
+                    <a href="https://www.mysql.com/" title="MySQL"><img src="assets/img/mysql.png" alt="MySQL" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/wordpress.png" alt="" /></a>
+                    <a href="https://wordpress.org/" title="WordPress"><img src="assets/img/wordpress.png" alt="WordPress" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/bootstrap.png" alt="" /></a>
+                    <a href="https://getbootstrap.com/" title="BootStrap"><img src="assets/img/bootstrap.png" alt="BootStrap" /></a>
                 </div>
                 <div class="col-xs-4 col-sm-3 col-md-2">
-                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/phaser.png" alt="" /></a>
+                    <a href="https://phaser.io/" title="Phaser"><img src="assets/img/phaser.png" alt="Phaser" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-6">
                     <p><?php echo $lang['HOME_SKILLS_LEARNING']; ?></p>
