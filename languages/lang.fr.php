@@ -8,53 +8,58 @@ Language: Français
 $lang = array();
 
 // NAVBAR
-$lang['MENU_PRINT_IMG_ALT'] = "Imprimer le document";
 $lang['MENU_PRINT_DESC'] = "Imprimer";
+$lang['MENU_PRINT_IMG_ALT'] = "Imprimer le document";
 
-$lang['MENU_HOME_LINK_TITLE'] = "Retour vers la page d'accueil";
 $lang['MENU_HOME'] = 'Accueil';
-$lang['MENU_CV_SIMPLE_LINK_TITLE'] = "Mon C.V. dans son format habituel";
+$lang['MENU_HOME_LINK_TITLE'] = "Retour vers la page d'accueil";
 $lang['MENU_CV_SIMPLE'] = 'C.V. simple';
-$lang['MENU_CV_INTERACTIVE_LINK_TITLE'] = "Mon C.V. dans sont format interactif";
+$lang['MENU_CV_SIMPLE_LINK_TITLE'] = "Mon C.V. dans son format habituel";
 $lang['MENU_CV_INTERACTIVE'] = 'C.V. interactif';
-$lang['MENU_PROJECTS_LINK_TITLE'] = "Lien vers la liste de mes projets";
-$lang['MENU_PROJECTS'] = 'Projets';
+$lang['MENU_CV_INTERACTIVE_LINK_TITLE'] = "Mon C.V. dans sont format interactif";
+$lang['MENU_HOMEWORK'] = 'Projets';
+$lang['MENU_HOMEWORK_LINK_TITLE'] = "Lien vers la liste de mes projets";
 
-//HOMEPAGE
-$lang['HOME_META_DESC'] = 'Site portfolio de François Huszti, fullstack dev. Les différentes versions de mon C.V. et mes projets sont tous ici.';
-$lang['HOME_META_TITLE'] = 'François Huszti, fullstack dev - Portfolio';
+//CONTENT
+$lang['META_DESC'] = 'Site portfolio de François Huszti, fullstack dev. Les différentes versions de mon C.V. et mes projets sont tous ici.';
+$lang['META_TITLE'] = 'François Huszti, fullstack dev - Portfolio';
 
-$lang['HOME_CV_SIMPLE_LINK_TITLE'] = 'Accéder à la version classique de mon C.V';
-$lang['HOME_CV_SIMPLE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version classique";
-$lang['HOME_CV_SIMPLE_PRINTABLE'] = 'Pour la version imprimable, en noir et blanc, <strong onclick="frames[\'frame\'].print()"><em>cliquez ici</em></strong>.';
+$lang['CV_SIMPLE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version classique";
+$lang['CV_SIMPLE_LINK_TITLE'] = 'Accéder à la version classique de mon C.V';
+$lang['CV_SIMPLE_PRINTABLE'] = 'Pour la version imprimable, en noir et blanc, <strong onclick="frames[\'frame\'].print()"><em>cliquez ici</em></strong>.';
 
-$lang['HOME_CV_INTERACTIVE_LINK_TITLE'] = 'Aller sur la page de mon CV interactif';
-$lang['HOME_CV_INTERACTIVE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version interactive";
+$lang['CV_INTERACTIVE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version interactive";
+$lang['CV_INTERACTIVE_LINK_TITLE'] = 'Aller sur la page de mon CV interactif';
 
-$lang['HOME_PROJECTS_LINK_TITLE'] = 'Accéder à ma liste de projets';
-$lang['HOME_PROJECTS'] = "Projets";
+$lang['HOMEWORK'] = "Projets";
+$lang['HOMEWORK_LINK_TITLE'] = 'Accéder à ma liste de projets';
 
-$lang['HOME_SKILLS'] = 'Compétences :';
-$lang['HOME_SKILLS_LEARNING'] = '&#8230; et bien d\'autres à venir !';
+$lang['SKILLS'] = 'Compétences :';
+$lang['SKILLS_LEARNING'] = '&#8230; et bien d\'autres à venir !';
 
-$lang['HOME_CONTACT'] = 'Contactez moi :';
-$lang['HOME_CONTACT_GITHUB'] = 'Retrouvez moi sur GitHub';
-$lang['HOME_CONTACT_LINKEDIN'] = 'Retrouvez moi sur LinkedIn';
-$lang['HOME_FORM_ERROR'] = "Tous les champs n'ont pas été correctement remplis.";
-$lang['HOME_FORM_SENDING_ERROR'] = "Une erreur a eu lieu lors de l'envoi. Veuillez réessayer plus tard.";
-$lang['HOME_FORM_INFOS'] = "Mon adresse : <strong><i class='email'>contact@fhuszti.com</i></strong><br />
+$lang['CONTACT'] = 'Contactez moi :';
+$lang['CONTACT_GITHUB'] = 'Retrouvez moi sur GitHub';
+$lang['CONTACT_LINKEDIN'] = 'Retrouvez moi sur LinkedIn';
+$lang['FORM_ERROR'] = "Tous les champs n'ont pas été correctement remplis.";
+$lang['FORM_SENDING_ERROR'] = "Une erreur a eu lieu lors de l'envoi. Veuillez réessayer plus tard.";
+$lang['FORM_INFOS'] = "Mon adresse : <strong><i class='email'>contact@fhuszti.com</i></strong><br />
 Vous pouvez utiliser ce formulaire pour m'envoyer un mail directement.";
-$lang['HOME_FORM_NAME'] = 'Votre nom :';
-$lang['HOME_FORM_NAME_PLACEHOLDER'] = 'Prénom Nom';
-$lang['HOME_FORM_NAME_HELPER'] = "Ce champ ne peut être vide, et son contenu doit respecter le format d'un nom valable.";
-$lang['HOME_FORM_EMAIL'] = 'Votre adresse mail :';
-$lang['HOME_FORM_EMAIL_PLACEHOLDER'] = 'exemple@email.com';
-$lang['HOME_FORM_EMAIL_HELPER'] = "Ce champ ne peut être vide, et son contenu doit respecter le format d'une adresse email valable.";
-$lang['HOME_FORM_MESSAGE'] = 'Votre message :';
-$lang['HOME_FORM_MESSAGE_PLACEHOLDER'] = 'Tapez votre message ici';
-$lang['HOME_FORM_MESSAGE_HELPER'] = "Ce champ ne peut être laissé vide.";
-$lang['HOME_FORM_SUBMIT'] = 'Envoyer';
-$lang['HOME_FORM_THANKS'] = 'Votre message a bien été transmis à ma boîte mail. Merci !';
+$lang['FORM_NAME'] = 'Votre nom :';
+$lang['FORM_NAME_PLACEHOLDER'] = 'Prénom Nom';
+$lang['FORM_NAME_HELPER'] = "Ce champ ne peut être vide, et son contenu doit respecter le format d'un nom valable.";
+$lang['FORM_EMAIL'] = 'Votre adresse mail :';
+$lang['FORM_EMAIL_PLACEHOLDER'] = 'exemple@email.com';
+$lang['FORM_EMAIL_HELPER'] = "Ce champ ne peut être vide, et son contenu doit respecter le format d'une adresse email valable.";
+$lang['FORM_MESSAGE'] = 'Votre message :';
+$lang['FORM_MESSAGE_PLACEHOLDER'] = 'Tapez votre message ici';
+$lang['FORM_MESSAGE_HELPER'] = "Ce champ ne peut être laissé vide.";
+$lang['FORM_SUBMIT'] = 'Envoyer';
+$lang['FORM_THANKS'] = 'Votre message a bien été transmis à ma boîte mail. Merci !';
+
+
+
+
+
 
 //PROJECTS HOMEPAGE
 $lang['PROJECTSHOME_META_DESC'] = 'La liste de tous les projets réalisés dans le cadre de mes études.';
@@ -88,11 +93,6 @@ $lang['SUBHOME_HOMELINK_IMG_HOVER'] = 'assets/img/fr/accueil_hover.png';
 $lang['SUBHOME_HOMELINK_LINK_TITLE'] = "Retourner à la page d'accueil";
 $lang['SUBHOME_HOMELINK'] = "Retour à la page d'accueil";
 $lang['SUBHOME_HOMELINK_DESC'] = "Suivez ce lien pour revenir à la page d'accueil et la liste de mes projets.";
-
-//CV HOMEPAGE
-$lang['CVHOME_META_DESC'] = 'Retrouvez mon C.V. dans ses différentes versions : interactif, classique en couleurs et imprimable en noir et blanc.';
-$lang['CVHOME_META_TITLE'] = 'C.V. - François Huszti, développeur web';
-$lang['CVHOME_TITLE'] = "<i lang='la' class='expression'>Curriculum Vitae</i>";
 
 //CV INTERACTIVE
 $lang['CVINTERACTIVE_META_DESC'] = 'Mon C.V. dans son format interactif. Jouez un ninja perdu dans un endroit inconnu !';

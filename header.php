@@ -22,7 +22,7 @@
                     <li id='homeLinkLang' class="active"><a href="" title="<?php echo $lang['MENU_HOME_LINK_TITLE']; ?>"><?php echo $lang['MENU_HOME']; ?></a></li>
                     <li><a href="#" title="<?php echo $lang['MENU_CV_SIMPLE_LINK_TITLE']; ?>"><?php echo $lang['MENU_CV_SIMPLE']; ?></a></li>
                     <li><a href="#" title="<?php echo $lang['MENU_CV_INTERACTIVE_LINK_TITLE']; ?>"><?php echo $lang['MENU_CV_INTERACTIVE']; ?></a></li>
-                    <li><a href="#" title="<?php echo $lang['MENU_PROJECTS_LINK_TITLE']; ?>"><?php echo $lang['MENU_PROJECTS']; ?></a></li>
+                    <li><a href="#" title="<?php echo $lang['MENU_HOMEWORK_LINK_TITLE']; ?>"><?php echo $lang['MENU_HOMEWORK']; ?></a></li>
                 </ul>
             </nav>
         </div>

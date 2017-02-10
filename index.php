@@ -3,15 +3,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><?php echo $lang['HOME_META_TITLE']; ?></title>
+        <title><?php echo $lang['META_TITLE']; ?></title>
 
-        <meta name="Description" content="<?php echo $lang['HOME_META_DESC']; ?>" />
+        <meta name="Description" content="<?php echo $lang['META_DESC']; ?>" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="devicons/css/devicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/header.css">
 
@@ -30,23 +29,23 @@
             <section class="row">
                 <div class="col-sm-6 col-md-4 hiddenOverflow">
                     <div id="ctaPart1" class="col-xs-12 ctaPart">
-                        <h2 class="ctaPartTitle"><?php echo $lang['HOME_CV_SIMPLE']; ?></h2>
+                        <h2 class="ctaPartTitle"><?php echo $lang['CV_SIMPLE']; ?></h2>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 hiddenOverflow">
                     <div id="ctaPart2" class="col-xs-12 ctaPart">
-                        <h2 class="ctaPartTitle"><?php echo $lang['HOME_CV_INTERACTIVE']; ?></h2>
+                        <h2 class="ctaPartTitle"><?php echo $lang['CV_INTERACTIVE']; ?></h2>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 hiddenOverflow">
                     <div id="ctaPart3" class="col-xs-12 ctaPart">
-                        <h2 class="ctaPartTitle"><?php echo $lang['HOME_PROJECTS']; ?></h2>
+                        <h2 class="ctaPartTitle"><?php echo $lang['HOMEWORK']; ?></h2>
                     </div>
                 </div>
             </section>
 
             <section class="row" id="skillsRow">
-                <h3><?php echo $lang['HOME_SKILLS']; ?></h3>
+                <h3><?php echo $lang['SKILLS']; ?></h3>
 
                 <div class="col-xs-4 col-sm-3 col-md-2">
                     <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" title="HTML5"><img src="assets/img/html5.png" alt="HTML5" /></a>
@@ -76,7 +75,7 @@
                     <a href="https://phaser.io/" title="Phaser"><img src="assets/img/phaser.png" alt="Phaser" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-6">
-                    <p><?php echo $lang['HOME_SKILLS_LEARNING']; ?></p>
+                    <p><?php echo $lang['SKILLS_LEARNING']; ?></p>
                 </div>
             </section>
 
@@ -85,52 +84,52 @@
                     <!-- no action attr as the form is managed via AJAX -->
                     <form method="post" id="contactForm" role="form" class="well">
                         <fieldset>
-                            <legend><?php echo $lang['HOME_CONTACT']; ?></legend>
+                            <legend><?php echo $lang['CONTACT']; ?></legend>
 
                             <div class="row" id="externalLinks">
                                 <p class="col-sm-6">
-                                    <a class="btn btn-default btn-block" href="https://github.com/fhuszti" title="<?php echo $lang['HOME_CONTACT_GITHUB']; ?>"><?php echo $lang['HOME_CONTACT_GITHUB']; ?></a>
+                                    <a class="btn btn-default btn-block" href="https://github.com/fhuszti" title="<?php echo $lang['CONTACT_GITHUB']; ?>"><?php echo $lang['CONTACT_GITHUB']; ?></a>
                                 </p>
                                 <p class="col-sm-6">
-                                    <a class="btn btn-default btn-block" href="https://www.linkedin.com/in/francoishuszti" title="<?php echo $lang['HOME_CONTACT_LINKEDIN']; ?>"><?php echo $lang['HOME_CONTACT_LINKEDIN']; ?></a>
+                                    <a class="btn btn-default btn-block" href="https://www.linkedin.com/in/francoishuszti" title="<?php echo $lang['CONTACT_LINKEDIN']; ?>"><?php echo $lang['CONTACT_LINKEDIN']; ?></a>
                                 </p>
                             </div>
 
                             <div class="alert alert-danger col-xs-12" id="formError">
-                                <p><?php echo $lang['HOME_FORM_ERROR']; ?></p>
+                                <p><?php echo $lang['FORM_ERROR']; ?></p>
                             </div>
                             <div class="alert alert-danger col-xs-12" id="sendingError">
-                                <p><?php echo $lang['HOME_FORM_SENDING_ERROR']; ?></p>
+                                <p><?php echo $lang['FORM_SENDING_ERROR']; ?></p>
                             </div>
 
-                            <p><?php echo $lang['HOME_FORM_INFOS']; ?></p>
+                            <p><?php echo $lang['FORM_INFOS']; ?></p>
 
                             <div class="form-group col-sm-6">
-                                <label for="name"><?php echo $lang['HOME_FORM_NAME']; ?></label>
-                                <input type="text" placeholder="<?php echo $lang['HOME_FORM_NAME_PLACEHOLDER']; ?>" name="name" id="name" maxlength="50" autocomplete="off" required aria-required="true" class="form-control input-lg" />
+                                <label for="name"><?php echo $lang['FORM_NAME']; ?></label>
+                                <input type="text" placeholder="<?php echo $lang['FORM_NAME_PLACEHOLDER']; ?>" name="name" id="name" maxlength="50" autocomplete="off" required aria-required="true" class="form-control input-lg" />
                                 <p class="centerHelp">
-                                    <span class="help-block" id="nameHelp"><?php echo $lang['HOME_FORM_NAME_HELPER']; ?></span>
+                                    <span class="help-block" id="nameHelp"><?php echo $lang['FORM_NAME_HELPER']; ?></span>
                                 </p>
                             </div>
                             <div class="form-group col-sm-6">
-                                <label for="email"><?php echo $lang['HOME_FORM_EMAIL']; ?></label>
-                                <input type="email" placeholder="<?php echo $lang['HOME_FORM_EMAIL_PLACEHOLDER']; ?>" name="email" id="email" maxlength="50" autocomplete="off" required aria-required="true" class="form-control input-lg" />
+                                <label for="email"><?php echo $lang['FORM_EMAIL']; ?></label>
+                                <input type="email" placeholder="<?php echo $lang['FORM_EMAIL_PLACEHOLDER']; ?>" name="email" id="email" maxlength="50" autocomplete="off" required aria-required="true" class="form-control input-lg" />
                                 <p class="centerHelp">
-                                    <span class="help-block" id="emailHelp"><?php echo $lang['HOME_FORM_EMAIL_HELPER']; ?></span>
+                                    <span class="help-block" id="emailHelp"><?php echo $lang['FORM_EMAIL_HELPER']; ?></span>
                                 </p>
                             </div>
                         	<div class="form-group col-xs-12">
-                                <label for="message"><?php echo $lang['HOME_FORM_MESSAGE']; ?></label>
-                                <textarea placeholder="<?php echo $lang['HOME_FORM_MESSAGE_PLACEHOLDER']; ?>" name="message" id="message" autocomplete="off" required aria-required="true" class="form-control input-lg"></textarea>
+                                <label for="message"><?php echo $lang['FORM_MESSAGE']; ?></label>
+                                <textarea placeholder="<?php echo $lang['FORM_MESSAGE_PLACEHOLDER']; ?>" name="message" id="message" autocomplete="off" required aria-required="true" class="form-control input-lg"></textarea>
                                 <p class="centerHelp">
-                                    <span class="help-block" id="messageHelp"><?php echo $lang['HOME_FORM_MESSAGE_HELPER']; ?></span>
+                                    <span class="help-block" id="messageHelp"><?php echo $lang['FORM_MESSAGE_HELPER']; ?></span>
                                 </p>
                         	</div>
 
-                            <button type="submit" class="btn btn-primary btn-block" id="submitButton"><?php echo $lang['HOME_FORM_SUBMIT']; ?></button>
+                            <button type="submit" class="btn btn-primary btn-block" id="submitButton"><?php echo $lang['FORM_SUBMIT']; ?></button>
 
                             <div class="alert alert-success col-xs-12" id="formThanks">
-                                <p><?php echo $lang['HOME_FORM_THANKS']; ?></p>
+                                <p><?php echo $lang['FORM_THANKS']; ?></p>
                             </div>
                         </fieldset>
                     </form>
