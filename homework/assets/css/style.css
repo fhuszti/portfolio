@@ -1,0 +1,41 @@
+.jumbotron {
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.jumbotron a {
+    color: rgb(0, 72, 0);
+}
+
+.nav-pills li:not([class="disabled"]) a {
+    color: rgb(0, 72, 0);
+    font-weight: bold;
+}
+.nav>li>a {
+    border: 1px solid #fff;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: inherit;
+    border: 1px solid rgb(0, 72, 0);
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #eee;
+    background-color: rgb(0, 72, 0);
+}
+
+.tab-pane h4 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 72, 0);
+}
+.tab-pane h4 a {
+    color: rgb(0, 72, 0);
+}
+.tab-pane h4 a:hover {
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+}
+.tab-pane h2, .tab-pane h4 {
+    text-align: center;
+}

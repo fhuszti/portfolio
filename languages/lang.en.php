@@ -63,10 +63,6 @@ $lang['FORM_THANKS'] = 'Your message was successfully sent to my email address. 
 
 
 //PROJECTS HOMEPAGE
-$lang['PROJECTSHOME_META_DESC'] = 'Here are all the projects I did on my way to my degree.';
-$lang['PROJECTSHOME_META_TITLE'] = 'Homework - François Huszti, web developer';
-$lang['PROJECTSHOME_TITLE'] = 'Homework';
-
 $lang['PROJECTSHOME_PROJECT_1_IMG'] = 'assets/img/en/project1.png';
 $lang['PROJECTSHOME_PROJECT_1_IMG_HOVER'] = 'assets/img/en/project1_hover.png';
 $lang['PROJECTSHOME_PROJECT_1_LINK_TITLE'] = 'Access my project n°1';
@@ -87,13 +83,6 @@ $lang['PROJECTSHOME_PROJECT_3_IMG_HOVER'] = 'assets/img/en/project3_hover.png';
 $lang['PROJECTSHOME_PROJECT_3_LINK_TITLE'] = 'Access my project n°3';
 $lang['PROJECTSHOME_PROJECT_3'] = "Project n°3 : Create a mobile app for a client (COMING SOON)";
 $lang['PROJECTSHOME_PROJECT_3_DESC'] = 'Coming soon.';
-
-//COMMON TO BOTH SECONDARY HOME PAGES
-$lang['SUBHOME_HOMELINK_IMG'] = 'assets/img/en/home.png';
-$lang['SUBHOME_HOMELINK_IMG_HOVER'] = 'assets/img/en/home_hover.png';
-$lang['SUBHOME_HOMELINK_LINK_TITLE'] = "Go back to the homepage";
-$lang['SUBHOME_HOMELINK'] = "Back to the homepage";
-$lang['SUBHOME_HOMELINK_DESC'] = "Follow this link to go back to the homepage, and to the list of all my projects.";
 
 //CV INTERACTIVE
 $lang['CVINTERACTIVE_META_DESC'] = 'My resume in its interactive version. Play as a ninja, lost in an unknown land !';

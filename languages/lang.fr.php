@@ -62,10 +62,6 @@ $lang['FORM_THANKS'] = 'Votre message a bien été transmis à ma boîte mail. M
 
 
 //PROJECTS HOMEPAGE
-$lang['PROJECTSHOME_META_DESC'] = 'La liste de tous les projets réalisés dans le cadre de mes études.';
-$lang['PROJECTSHOME_META_TITLE'] = 'Projets - François Huszti, développeur web';
-$lang['PROJECTSHOME_TITLE'] = 'Projets';
-
 $lang['PROJECTSHOME_PROJECT_1_IMG'] = 'assets/img/fr/projet1.png';
 $lang['PROJECTSHOME_PROJECT_1_IMG_HOVER'] = 'assets/img/fr/projet1_hover.png';
 $lang['PROJECTSHOME_PROJECT_1_LINK_TITLE'] = 'Accéder à mon projet n°1';
