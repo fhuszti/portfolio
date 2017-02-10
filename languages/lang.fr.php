@@ -35,6 +35,7 @@ $lang['HOME_PROJECTS_LINK_TITLE'] = 'Accéder à ma liste de projets';
 $lang['HOME_PROJECTS'] = "Projets";
 
 $lang['HOME_SKILLS'] = 'Compétences :';
+$lang['HOME_SKILLS_LEARNING'] = '&#8230; et bien d\'autres à venir !';
 
 $lang['HOME_CONTACT'] = 'Contactez moi :';
 $lang['HOME_CONTACT_GITHUB'] = 'Retrouvez moi sur GitHub';

@@ -76,18 +76,29 @@ body {
 * ICONS PART
 * ------------
 */
-#deviconsRow {
+#skillsRow {
   padding: 0 30px 20px 30px;
 }
-#deviconsRow h3 {
+#skillsRow h3 {
     border-bottom: 1px solid rgb(0, 72, 0);
 }
-#deviconsRow div {
+#skillsRow div {
     text-align: center;
     padding: 0;
+    margin: auto;
 }
-#deviconsRow div a:focus, #deviconsRow div a:hover {
+#skillsRow div a:focus, #skillsRow div a:hover {
     text-decoration: none;
+}
+#skillsRow img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 10px 20px 10px 0;
+}
+#skillsRow p {
+    font-size: 40px;
+    margin: 31.5px 0;
+    color: rgb(100, 100, 100);
 }
 /* ----------- */
 
@@ -177,5 +188,16 @@ form button {
     }
     #ctaPart3 {
     	border-top: none;
+    }
+
+    #skillsRow img {
+    	max-height: 80px;
+    	max-width: 80px;
+    	margin: 10px;
+    }
+    #skillsRow p {
+        font-size: 30px;
+        margin: 29px 0;
+        color: rgb(100, 100, 100);
     }
 }

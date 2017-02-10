@@ -45,26 +45,38 @@
                 </div>
             </section>
 
-            <section class="row" id="deviconsRow">
+            <section class="row" id="skillsRow">
                 <h3><?php echo $lang['HOME_SKILLS']; ?></h3>
 
-                <div class="col-xs-4 col-sm-2">
-                    <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" title="HTML5"><span class="devicons devicons-html5"></span></a>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" title="HTML5"><img src="assets/img/html5.png" alt="" /></a>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" title="CSS3"><span class="devicons devicons-css3"></span></a>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" title="CSS3"><img src="assets/img/css3.png" alt="" /></a>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="https://getbootstrap.com/" title="BootStrap"><span class="devicons devicons-bootstrap"></span></a>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://getbootstrap.com/" title="BootStrap"><img src="assets/img/javascript.png" alt="" /></a>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="https://www.javascript.com/" title="JavaScript"><span class="devicons devicons-javascript"></span></a>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://www.javascript.com/" title="JavaScript"><img src="assets/img/jquery.png" alt="" /></a>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="https://jquery.com/" title="jQuery"><span class="devicons devicons-jquery"></span></a>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://jquery.com/" title="jQuery"><img src="assets/img/php.png" alt="" /></a>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="https://secure.php.net/" title="PHP"><span class="devicons devicons-php"></span></a>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/mysql.png" alt="" /></a>
+                </div>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/wordpress.png" alt="" /></a>
+                </div>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/bootstrap.png" alt="" /></a>
+                </div>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://secure.php.net/" title="PHP"><img src="assets/img/phaser.png" alt="" /></a>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-6">
+                    <p><?php echo $lang['HOME_SKILLS_LEARNING']; ?></p>
                 </div>
             </section>
 
