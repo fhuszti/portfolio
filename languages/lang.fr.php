@@ -61,34 +61,7 @@ $lang['FORM_THANKS'] = 'Votre message a bien été transmis à ma boîte mail. M
 
 
 
-//PROJECTS HOMEPAGE
-$lang['PROJECTSHOME_PROJECT_1_IMG'] = 'assets/img/fr/projet1.png';
-$lang['PROJECTSHOME_PROJECT_1_IMG_HOVER'] = 'assets/img/fr/projet1_hover.png';
-$lang['PROJECTSHOME_PROJECT_1_LINK_TITLE'] = 'Accéder à mon projet n°1';
-$lang['PROJECTSHOME_PROJECT_1'] = "Projet n°1 : Site d'une ville";
-$lang['PROJECTSHOME_PROJECT_1_DESC'] = 'Compétences présentées :';
-$lang['PROJECTSHOME_PROJECT_1_LI_1'] = "<strong>Création d'un site Wordpress professionnel</strong> (Majeure)";
-$lang['PROJECTSHOME_PROJECT_1_LI_2'] = "<em>JavaScript procédural</em> (Mineure)";
-$lang['PROJECTSHOME_PROJECT_1_LI_3'] = "<em>jQuery</em> (Mineure)";
 
-$lang['PROJECTSHOME_PROJECT_2_IMG'] = 'assets/img/fr/projet2.png';
-$lang['PROJECTSHOME_PROJECT_2_IMG_HOVER'] = 'assets/img/fr/projet2_hover.png';
-$lang['PROJECTSHOME_PROJECT_2_LINK_TITLE'] = 'Accéder à mon projet n°2';
-$lang['PROJECTSHOME_PROJECT_2'] = "Projet n°2 : Développez un back-end pour un client (&#192; VENIR)";
-$lang['PROJECTSHOME_PROJECT_2_DESC'] = '&#192; venir.';
-
-$lang['PROJECTSHOME_PROJECT_3_IMG'] = 'assets/img/fr/projet3.png';
-$lang['PROJECTSHOME_PROJECT_3_IMG_HOVER'] = 'assets/img/fr/projet3_hover.png';
-$lang['PROJECTSHOME_PROJECT_3_LINK_TITLE'] = 'Accéder à mon projet n°3';
-$lang['PROJECTSHOME_PROJECT_3'] = "Projet n°3 : Développez une application mobile pour un client (&#192; VENIR)";
-$lang['PROJECTSHOME_PROJECT_3_DESC'] = '&#192; venir.';
-
-//COMMON TO BOTH SECONDARY HOME PAGES
-$lang['SUBHOME_HOMELINK_IMG'] = 'assets/img/fr/accueil.png';
-$lang['SUBHOME_HOMELINK_IMG_HOVER'] = 'assets/img/fr/accueil_hover.png';
-$lang['SUBHOME_HOMELINK_LINK_TITLE'] = "Retourner à la page d'accueil";
-$lang['SUBHOME_HOMELINK'] = "Retour à la page d'accueil";
-$lang['SUBHOME_HOMELINK_DESC'] = "Suivez ce lien pour revenir à la page d'accueil et la liste de mes projets.";
 
 //CV INTERACTIVE
 $lang['CVINTERACTIVE_META_DESC'] = 'Mon C.V. dans son format interactif. Jouez un ninja perdu dans un endroit inconnu !';
@@ -118,59 +91,6 @@ $lang['CVINTERACTIVE_MORE_DESC_LINK1_TEXT'] = "ici";
 $lang['CVINTERACTIVE_MORE_DESC_BETWEEN'] = "Les cascades sont l'&oelig;uvre de <em><i class='name'>Castor Studios</i></em> (disponibles";
 $lang['CVINTERACTIVE_MORE_DESC_LINK2_TITLE'] = "Page de présentation/vente des sprites utilisés";
 $lang['CVINTERACTIVE_MORE_DESC_LINK2_TEXT'] = "ici";
-
-//CV SIMPLE
-$lang['CVSIMPLE_META_DESC'] = 'Mon C.V., dans un format classique, en couleurs.';
-$lang['CVSIMPLE_META_TITLE'] = 'C.V. - François Huszti, développeur web';
-
-$lang['CVSIMPLE_TITLE_IMG_ALT'] = "Une photo de moi";
-$lang['CVSIMPLE_TITLE_LINK_TITLE'] = "Retour à l'accueil du site";
-$lang['CVSIMPLE_TITLE_SUB'] = "D&Eacute;VELOPPEUR WEB";
-
-$lang['CVSIMPLE_SUMMARY_TITLE'] = "Synthèse personnelle";
-$lang['CVSIMPLE_SUMMARY_DESC'] = "&Eacute;nergique et motivé, je suis aussi d'un naturel curieux. Ma faculté à apprendre rapidement me permet de passer outre la plupart des obstacles que je rencontre, en comprenant le problème dans sa globalité. Je compense mon manque d'expérience professionnelle par les aptitudes que j'ai acquises en travaillant dans des domaines très différents de la restauration : travail en équipe, rapidité et rigueur, capacité à travailler sous forte pression, polyvalence. Mon année passée à l'étranger fait aussi foi en ma capacité à m'adapter à un nouvel environnement et à me gérer de façon autonome.<br />
-Je recherche actuellement une alternance, un CDD ou un CDI dans une entreprise au sein de laquelle je pourrais apporter mes qualités humaines et mes compétences techniques, tout en gagnant de l'expérience.";
-
-$lang['CVSIMPLE_ACADEMICS_TITLE'] = "Cursus Scolaire";
-$lang['CVSIMPLE_ACADEMICS_PRESENT'] = "présent";
-$lang['CVSIMPLE_ACADEMICS_OC_LINK_TITLE'] = "Premier site d'e-éducation d'Europe !";
-$lang['CVSIMPLE_ACADEMICS_OC_TITLE'] = "<i lang='en' class='brand'>OpenClassrooms</i>, formation par internet";
-$lang['CVSIMPLE_ACADEMICS_OC_DESC'] = "Formation chef de projet multimédia - Développement";
-$lang['CVSIMPLE_ACADEMICS_UNI_TITLE'] = "Université <i class='name'>François Rabelais</i>, Tours, France";
-$lang['CVSIMPLE_ACADEMICS_UNI_DESC'] = "Licence 1 de Mathématiques";
-$lang['CVSIMPLE_ACADEMICS_PREPA_TITLE'] = "Lycée <i class='name'>Dessaignes</i>, Blois, France";
-$lang['CVSIMPLE_ACADEMICS_PREPA_DESC'] = "Classe Préparatoire MPSI";
-$lang['CVSIMPLE_ACADEMICS_BAC_TITLE'] = "Lycée <i class='name'>Léonard de Vinci</i>, Amboise, France";
-$lang['CVSIMPLE_ACADEMICS_BAC_DESC'] = "Baccalauréat Scientifique, spécialité Mathématiques, mention Bien";
-
-$lang['CVSIMPLE_EXPERIENCE_TITLE'] = "Expériences professionnelles";
-$lang['CVSIMPLE_EXPERIENCE_MCDO_TITLE'] = "<i lang='en' class='brand'>McDonald's</i>, Tours, France";
-$lang['CVSIMPLE_EXPERIENCE_MCDO_DESC'] = "&Eacute;quipier polyvalent";
-$lang['CVSIMPLE_EXPERIENCE_BB_LINK_TITLE'] = "Site officiel du restaurant 'Le Boudin Blanc'";
-$lang['CVSIMPLE_EXPERIENCE_BB_TITLE'] = "\"<i class='restaurant'>Le Boudin Blanc</i>\", Mayfair, Londres, Angleterre";
-$lang['CVSIMPLE_EXPERIENCE_BB_DESC'] = "Serveur <em>puis</em> Demi-chef de Rang";
-
-$lang['CVSIMPLE_TLDR_TITLE'] = "EN BREF";
-$lang['CVSIMPLE_TLDR_KNOWLEDGE_TITLE'] = "CONNAISSANCES";
-$lang['CVSIMPLE_TLDR_KNOWLEDGE_PHASER'] = "<i lang='en' class='brand'>Phaser</i>";
-$lang['CVSIMPLE_TLDR_KNOWLEDGE_RDESIGN'] = "<i lang='en' class='expression'>Responsive Design</i>";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_TITLE'] = "COMP&Eacute;TENCES CL&Eacute;S";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_1'] = "Apport d'idées innovantes et de solutions";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_2'] = "Créativité";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_3'] = "Au fait des nouvelles technologies et de celles de demain";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_4'] = "Capacité à rapidement intégrer de nouvelles techniques de développement";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_5'] = "Rigueur";
-$lang['CVSIMPLE_TLDR_QUALITIES_TITLE'] = "QUALIT&Eacute;S PERSONNELLES";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_1'] = "Perfectionnisme";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_2'] = "Envie constante de progresser";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_3'] = "Ouverture d'esprit";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_4'] = "Appréciation et prise en compte de toute critique constructive";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_5'] = "Forte conscience professionnelle";
-$lang['CVSIMPLE_TLDR_DETAILS_TITLE'] = "D&Eacute;TAILS NOTABLES";
-$lang['CVSIMPLE_TLDR_DETAILS_LI_1'] = "Titulaire du Permis B";
-$lang['CVSIMPLE_TLDR_DETAILS_LI_2'] = "Niveau avancé en anglais";
-$lang['CVSIMPLE_TLDR_HOBBIES_TITLE'] = "LOISIRS ET INT&Eacute;R&Ecirc;TS";
-$lang['CVSIMPLE_TLDR_HOBBIES_DESC'] = "J'apprécie autant l'informatique que les sorties entre amis. La musique en général est aussi importante pour moi, et je joue de la guitare et du piano à titre amateur. Je suis un grand fan de football (YNWA), que j'ai pratiqué plusieurs années durant lorsque j'étais plus jeune, avant de commencer le badminton, que j'ai pratiqué 6 ans.";
 
 //ERROR PAGES
 $lang['ERROR_ICON_ALT'] = "Une icône pour signifier la présence d'une erreur";

@@ -62,27 +62,7 @@ $lang['FORM_THANKS'] = 'Your message was successfully sent to my email address. 
 
 
 
-//PROJECTS HOMEPAGE
-$lang['PROJECTSHOME_PROJECT_1_IMG'] = 'assets/img/en/project1.png';
-$lang['PROJECTSHOME_PROJECT_1_IMG_HOVER'] = 'assets/img/en/project1_hover.png';
-$lang['PROJECTSHOME_PROJECT_1_LINK_TITLE'] = 'Access my project n°1';
-$lang['PROJECTSHOME_PROJECT_1'] = "Project n°1 : Website of a city <small>(french)</small>";
-$lang['PROJECTSHOME_PROJECT_1_DESC'] = 'Skills :';
-$lang['PROJECTSHOME_PROJECT_1_LI_1'] = "<strong>Creating a professional website using Wordpress</strong> (Major)";
-$lang['PROJECTSHOME_PROJECT_1_LI_2'] = "<em>JavaScript - procedural approach</em> (Minor)";
-$lang['PROJECTSHOME_PROJECT_1_LI_3'] = "<em>jQuery</em> (Minor)";
 
-$lang['PROJECTSHOME_PROJECT_2_IMG'] = 'assets/img/en/project2.png';
-$lang['PROJECTSHOME_PROJECT_2_IMG_HOVER'] = 'assets/img/en/project2_hover.png';
-$lang['PROJECTSHOME_PROJECT_2_LINK_TITLE'] = 'Access my project n°2';
-$lang['PROJECTSHOME_PROJECT_2'] = "Project n°2 : Create a backend for a client (COMING SOON)";
-$lang['PROJECTSHOME_PROJECT_2_DESC'] = 'Coming soon.';
-
-$lang['PROJECTSHOME_PROJECT_3_IMG'] = 'assets/img/en/project3.png';
-$lang['PROJECTSHOME_PROJECT_3_IMG_HOVER'] = 'assets/img/en/project3_hover.png';
-$lang['PROJECTSHOME_PROJECT_3_LINK_TITLE'] = 'Access my project n°3';
-$lang['PROJECTSHOME_PROJECT_3'] = "Project n°3 : Create a mobile app for a client (COMING SOON)";
-$lang['PROJECTSHOME_PROJECT_3_DESC'] = 'Coming soon.';
 
 //CV INTERACTIVE
 $lang['CVINTERACTIVE_META_DESC'] = 'My resume in its interactive version. Play as a ninja, lost in an unknown land !';
@@ -112,59 +92,6 @@ $lang['CVINTERACTIVE_MORE_DESC_LINK1_TEXT'] = "here";
 $lang['CVINTERACTIVE_MORE_DESC_BETWEEN'] = "The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available";
 $lang['CVINTERACTIVE_MORE_DESC_LINK2_TITLE'] = "Presentation page for the sprites I used in this project";
 $lang['CVINTERACTIVE_MORE_DESC_LINK2_TEXT'] = "here";
-
-//CV SIMPLE
-$lang['CVSIMPLE_META_DESC'] = 'The simple version of my resume.';
-$lang['CVSIMPLE_META_TITLE'] = 'Resume - François Huszti, web developer';
-
-$lang['CVSIMPLE_TITLE_IMG_ALT'] = "A photo of me";
-$lang['CVSIMPLE_TITLE_LINK_TITLE'] = "Go back to the homepage";
-$lang['CVSIMPLE_TITLE_SUB'] = "WEB DEVELOPER";
-
-$lang['CVSIMPLE_SUMMARY_TITLE'] = "Summary";
-$lang['CVSIMPLE_SUMMARY_DESC'] = "Energetic and motivated, I am also curious by nature. My ability to learn quickly allows me to go past most of the obstacles I encounter, by having a complete understanding of the issue. I compensate my lack of experience with the skills I have acquired by working in very different areas of the food and service industry: teamwork, speed and rigor, ability to work under pressure, versatility. My year spent abroad is also proof of my ability to adapt to a new environment and to manage myself independently. <br />
-I am currently seeking a fixed-term or a permanent contract in a company to which I could bring my human qualities and my technical skills while earning some valuable experience.";
-
-$lang['CVSIMPLE_ACADEMICS_TITLE'] = "Academics";
-$lang['CVSIMPLE_ACADEMICS_PRESENT'] = "present";
-$lang['CVSIMPLE_ACADEMICS_OC_LINK_TITLE'] = "Biggest e-learning platform in Europe !";
-$lang['CVSIMPLE_ACADEMICS_OC_TITLE'] = "<i class='brand'>OpenClassrooms</i>, e-learning";
-$lang['CVSIMPLE_ACADEMICS_OC_DESC'] = "Project manager - Development";
-$lang['CVSIMPLE_ACADEMICS_UNI_TITLE'] = "<i lang='fr' class='name'>Université François Rabelais</i>, Tours, France";
-$lang['CVSIMPLE_ACADEMICS_UNI_DESC'] = "<i lang='fr' class='expression'>Licence 1</i> in Mathematics";
-$lang['CVSIMPLE_ACADEMICS_PREPA_TITLE'] = "<i lang='fr' class='name'>Lycée Dessaignes</i>, Blois, France";
-$lang['CVSIMPLE_ACADEMICS_PREPA_DESC'] = "Preparatory Class - MPSI (Maths/Physics)";
-$lang['CVSIMPLE_ACADEMICS_BAC_TITLE'] = "<i lang='fr' class='name'>Lycée Léonard de Vinci</i>, Amboise, France";
-$lang['CVSIMPLE_ACADEMICS_BAC_DESC'] = "<i lang='fr' class='diploma'>Baccalauréat Scientifique</i>, Mathematics spe., with honors";
-
-$lang['CVSIMPLE_EXPERIENCE_TITLE'] = "Experience";
-$lang['CVSIMPLE_EXPERIENCE_MCDO_TITLE'] = "<i class='brand'>McDonald's</i>, Tours, France";
-$lang['CVSIMPLE_EXPERIENCE_MCDO_DESC'] = "Versatile crew";
-$lang['CVSIMPLE_EXPERIENCE_BB_LINK_TITLE'] = 'Official website of the restaurant';
-$lang['CVSIMPLE_EXPERIENCE_BB_TITLE'] = "\"<i lang='fr' class='restaurant'>Le Boudin Blanc</i>\", Mayfair, London, England";
-$lang['CVSIMPLE_EXPERIENCE_BB_DESC'] = "Waiter <em>then</em> half-Head Waiter";
-
-$lang['CVSIMPLE_TLDR_TITLE'] = "QUICK LOOK";
-$lang['CVSIMPLE_TLDR_KNOWLEDGE_TITLE'] = "KNOWLEDGE";
-$lang['CVSIMPLE_TLDR_KNOWLEDGE_PHASER'] = "<i class='brand'>Phaser</i>";
-$lang['CVSIMPLE_TLDR_KNOWLEDGE_RDESIGN'] = "Responsive Design";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_TITLE'] = "KEY SKILLS";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_1'] = "Ability to contribute with innovative ideas and solutions";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_2'] = "Creativity";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_3'] = "Frequent technology watch";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_4'] = "Ability to quickly assimilate new development techniques";
-$lang['CVSIMPLE_TLDR_KEYSKILLS_LI_5'] = "Rigor";
-$lang['CVSIMPLE_TLDR_QUALITIES_TITLE'] = "PERSONAL SKILLS";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_1'] = "Perfectionist";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_2'] = "Constantly willing to progress";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_3'] = "Open-minded";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_4'] = "Appreciation and recognition of constructive criticism";
-$lang['CVSIMPLE_TLDR_QUALITIES_LI_5'] = "Dedicated, hard worker";
-$lang['CVSIMPLE_TLDR_DETAILS_TITLE'] = "IMPORTANT DETAILS";
-$lang['CVSIMPLE_TLDR_DETAILS_LI_1'] = "Driver's license";
-$lang['CVSIMPLE_TLDR_DETAILS_LI_2'] = "Native French speaker / Fluent in English";
-$lang['CVSIMPLE_TLDR_HOBBIES_TITLE'] = "HOBBIES AND INTERESTS";
-$lang['CVSIMPLE_TLDR_HOBBIES_DESC'] = "I like working in front of my computer as much as going out with friends. Music is also important to me, I play the guitar and the piano as an amateur. I'm a big fan of football (YNWA), which I played for a few years when I was a kid before playing badminton for 6 years.";
 
 //ERROR PAGES
 $lang['ERROR_ICON_ALT'] = "An icon to show an error occured";
