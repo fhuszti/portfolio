@@ -26,7 +26,6 @@ $lang['META_TITLE'] = 'Resume - François Huszti, fullstack dev';
 
 $lang['TITLE_IMG_ALT'] = "A photo of me";
 $lang['TITLE_LINK_TITLE'] = "Go back to the homepage";
-$lang['TITLE_SUB'] = "WEB DEVELOPER";
 
 $lang['SUMMARY_TITLE'] = "Summary";
 $lang['SUMMARY_DESC'] = "Energetic and motivated, I am also curious by nature. My ability to learn quickly allows me to go past most of the obstacles I encounter, by having a complete understanding of the issue. I compensate my lack of experience with the skills I have acquired by working in very different areas of the food and service industry: teamwork, speed and rigor, ability to work under pressure, versatility. My year spent abroad is also proof of my ability to adapt to a new environment and to manage myself independently. <br />

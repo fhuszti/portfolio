@@ -26,7 +26,6 @@ $lang['META_TITLE'] = 'C.V. - François Huszti, fullstack dev';
 
 $lang['TITLE_IMG_ALT'] = "Une photo de moi";
 $lang['TITLE_LINK_TITLE'] = "Retour à l'accueil du site";
-$lang['TITLE_SUB'] = "D&Eacute;VELOPPEUR WEB";
 
 $lang['SUMMARY_TITLE'] = "Synthèse personnelle";
 $lang['SUMMARY_DESC'] = "&Eacute;nergique et motivé, je suis aussi d'un naturel curieux. Ma faculté à apprendre rapidement me permet de passer outre la plupart des obstacles que je rencontre, en comprenant le problème dans sa globalité. Je compense mon manque d'expérience professionnelle par les aptitudes que j'ai acquises en travaillant dans des domaines très différents de la restauration : travail en équipe, rapidité et rigueur, capacité à travailler sous forte pression, polyvalence. Mon année passée à l'étranger fait aussi foi en ma capacité à m'adapter à un nouvel environnement et à me gérer de façon autonome.<br />

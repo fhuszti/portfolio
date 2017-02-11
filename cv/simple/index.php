@@ -30,37 +30,130 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8">
                     <header class="row">
-
+                        <div class="col-xs-12" id="title">
+                            <img src="assets/img/photo_cv_mini.jpg" alt="<?php echo $lang['TITLE_IMG_ALT']; ?>" class="pull-left" />
+                            <h1><a href="#" title="<?php echo $lang['TITLE_LINK_TITLE']; ?>" class="pull-right">FRAN&Ccedil;OIS HUSZTI</a></h1><br /><br />
+                            <h3 class="pull-right">FULLSTACK DEV</h3>
+                            <h3>contact@fhuszti.com</h3>
+                        </div>
                     </header>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['SUMMARY_TITLE']; ?></h3>
 
+                            <p>
+                                <?php echo $lang['SUMMARY_DESC']; ?>
+                            </p>
+                        </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['ACADEMICS_TITLE']; ?></h3>
 
+                            <p>
+                                2016-<?php echo $lang['ACADEMICS_PRESENT']; ?> <a href="https://openclassrooms.com/" title="<?php echo $lang['ACADEMICS_OC_LINK_TITLE']; ?>" class="pull-right"><?php echo $lang['ACADEMICS_OC_TITLE']; ?></a><br />
+                                <?php echo $lang['ACADEMICS_OC_DESC']; ?>
+                            </p>
+                            <p>
+                                2014-2015 <span class="pull-right"><?php echo $lang['ACADEMICS_UNI_TITLE']; ?></span><br />
+                                <?php echo $lang['ACADEMICS_UNI_DESC']; ?>
+                            </p>
+                            <p>
+                                2012-2013 <span class="pull-right"><?php echo $lang['ACADEMICS_PREPA_TITLE']; ?></span><br />
+                                <?php echo $lang['ACADEMICS_PREPA_DESC']; ?>
+                            </p>
+                            <p>
+                                2012 <span class="pull-right"><?php echo $lang['ACADEMICS_BAC_TITLE']; ?></span><br />
+                                <?php echo $lang['ACADEMICS_BAC_DESC']; ?>
+                            </p>
+                        </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['EXPERIENCE_TITLE']; ?></h3>
 
+                            <p>
+                                2015-2017 <span class="pull-right"><?php echo $lang['EXPERIENCE_MCDO_TITLE']; ?></span><br />
+                                <?php echo $lang['EXPERIENCE_MCDO_DESC']; ?>
+                            </p>
+                            <p>
+                                2013-2014 <a href="http://www.boudinblanc.co.uk/" title="<?php echo $lang['EXPERIENCE_BB_LINK_TITLE']; ?>" class="pull-right"><?php echo $lang['EXPERIENCE_BB_TITLE']; ?></a><br />
+                                <?php echo $lang['EXPERIENCE_BB_DESC']; ?>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <section class="col-xs-12 col-sm-4" id="quickLook">
                     <header class="row">
-
+                        <div class="col-xs-12">
+                            <h1><?php echo $lang['TLDR_TITLE']; ?></h1>
+                        </div>
                     </header>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['TLDR_KNOWLEDGE_TITLE']; ?></h3>
 
+                            <ul class="col-xs-6">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <ul class="col-xs-6">
+                                <li>WordPress</li>
+                                <li>BootStrap</li>
+                                <li>jQuery</li>
+                                <li><?php echo $lang['TLDR_KNOWLEDGE_PHASER']; ?></li>
+                                <li><?php echo $lang['TLDR_KNOWLEDGE_RDESIGN']; ?></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['TLDR_KEYSKILLS_TITLE']; ?></h3>
 
+                            <ul>
+                                <li><?php echo $lang['TLDR_KEYSKILLS_LI_1']; ?></li>
+                                <li><?php echo $lang['TLDR_KEYSKILLS_LI_2']; ?></li>
+                                <li><?php echo $lang['TLDR_KEYSKILLS_LI_3']; ?></li>
+                                <li><?php echo $lang['TLDR_KEYSKILLS_LI_4']; ?></li>
+                                <li><?php echo $lang['TLDR_KEYSKILLS_LI_5']; ?></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['TLDR_QUALITIES_TITLE']; ?></h3>
 
+                            <ul>
+                                <li><?php echo $lang['TLDR_QUALITIES_LI_1']; ?></li>
+                                <li><?php echo $lang['TLDR_QUALITIES_LI_2']; ?></li>
+                                <li><?php echo $lang['TLDR_QUALITIES_LI_3']; ?></li>
+                                <li><?php echo $lang['TLDR_QUALITIES_LI_4']; ?></li>
+                                <li><?php echo $lang['TLDR_QUALITIES_LI_5']; ?></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['TLDR_DETAILS_TITLE']; ?></h3>
 
+                            <ul>
+                                <li><?php echo $lang['TLDR_DETAILS_LI_1']; ?></li>
+                                <li><?php echo $lang['TLDR_DETAILS_LI_2']; ?></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h3><?php echo $lang['TLDR_HOBBIES_TITLE']; ?></h3>
 
+                            <p>
+                                <?php echo $lang['TLDR_HOBBIES_DESC']; ?>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
