@@ -63,32 +63,6 @@ $lang['FORM_THANKS'] = 'Votre message a bien été transmis à ma boîte mail. M
 
 
 
-//CV INTERACTIVE
-$lang['CVINTERACTIVE_INTRO'] = "Vous êtes un ninja en mission, à la recherche d'informations sur... moi.<br />
-Jusqu'ici, tout va bien.";
-
-$lang['CVINTERACTIVE_HANDLED_TURN_IMG_ALT'] = "Un téléphone allant de portrait à paysage";
-$lang['CVINTERACTIVE_HANDLED_TURN'] = "Je vous conseille de passer votre téléphone du mode portrait au mode paysage pour un plus grand confort d'utilisation.";
-
-$lang['CVINTERACTIVE_GAMETITLE_DESC_DESKTOP'] = "Cliquez ici pour lancer le C.V. interactif";
-$lang['CVINTERACTIVE_GAMETITLE_DESC_HANDLED'] = "Appuyez ici pour lancer le C.V. interactif";
-
-$lang['CVINTERACTIVE_CONTROLS_TITLE'] = 'Commandes';
-$lang['CVINTERACTIVE_CONTROLS_LRARROW'] = "Utilisez les flèches de gauche et de droite pour vous déplacer";
-$lang['CVINTERACTIVE_CONTROLS_UARROW'] = "Utilisez la flèche du haut pour sauter";
-$lang['CVINTERACTIVE_CONTROLS_HANDLED'] = "Appuyez à gauche de votre écran pour aller à gauche, et à droite pour aller à droite<br />
-Appuyez dans la partie haute de l'écran pour sauter dans la direction de votre appui";
-$lang['CVINTERACTIVE_CONTROLS_LASTCONTROLSPARAGRAPH'] = "Suivez les panneaux !";
-
-$lang['CVINTERACTIVE_MORE_TITLE'] = "Plus d'infos";
-$lang['CVINTERACTIVE_MORE_DESC_BEFORE'] = "Le but de ce projet était simplement de découvrir et m'amuser avec un framework tel que Phaser, du point de vue du développeur plus que de celui du designer.<br />
-La plupart des jolis sprites utilisés ont été dessinés par <em><i class='name'>Simirk</i></em> (disponibles";
-$lang['CVINTERACTIVE_MORE_DESC_LINK1_TITLE'] = "Page de présentation/vente des sprites utilisés";
-$lang['CVINTERACTIVE_MORE_DESC_LINK1_TEXT'] = "ici";
-$lang['CVINTERACTIVE_MORE_DESC_BETWEEN'] = "Les cascades sont l'&oelig;uvre de <em><i class='name'>Castor Studios</i></em> (disponibles";
-$lang['CVINTERACTIVE_MORE_DESC_LINK2_TITLE'] = "Page de présentation/vente des sprites utilisés";
-$lang['CVINTERACTIVE_MORE_DESC_LINK2_TEXT'] = "ici";
-
 //ERROR PAGES
 $lang['ERROR_ICON_ALT'] = "Une icône pour signifier la présence d'une erreur";
 $lang['ERROR_SEND_LAST'] = "N'hésitez pas à cliquer sur le bouton ci-dessous pour m'envoyer automatiquement le détail de l'erreur, que je puisse la corriger au plus vite.";

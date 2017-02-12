@@ -64,32 +64,6 @@ $lang['FORM_THANKS'] = 'Your message was successfully sent to my email address. 
 
 
 
-//CV INTERACTIVE
-$lang['CVINTERACTIVE_INTRO'] = "You are a ninja on a mission to find informations about... me.<br />
-Please don't ask questions.";
-
-$lang['CVINTERACTIVE_HANDLED_TURN_IMG_ALT'] = "A phone going from portrait to landscape mode";
-$lang['CVINTERACTIVE_HANDLED_TURN'] = "I recommend you use your phone in landscape mode, to avoid distortion of the graphics.";
-
-$lang['CVINTERACTIVE_GAMETITLE_DESC_DESKTOP'] = "Click here to start the Interactive Resume";
-$lang['CVINTERACTIVE_GAMETITLE_DESC_HANDLED'] = "Tap here to start the Interactive Resume";
-
-$lang['CVINTERACTIVE_CONTROLS_TITLE'] = 'Controls';
-$lang['CVINTERACTIVE_CONTROLS_LRARROW'] = "Use the left- and right- arrow keys to move";
-$lang['CVINTERACTIVE_CONTROLS_UARROW'] = "Use the up- arrow key to jump";
-$lang['CVINTERACTIVE_CONTROLS_HANDLED'] = "Tap the left of your screen to go left, right to go right<br />
-Tap the upper part of your screen to jump";
-$lang['CVINTERACTIVE_CONTROLS_LASTCONTROLSPARAGRAPH'] = "Follow the signs !";
-
-$lang['CVINTERACTIVE_MORE_TITLE'] = "More";
-$lang['CVINTERACTIVE_MORE_DESC_BEFORE'] = "The main purpose of this project was simply to discover and have fun with a framework such as Phaser, while looking at it more from a developer perspective than that of a designer.<br />
-Most of the beautiful sprites I used are the work of <em><i class='name'>Simirk</i></em> (available";
-$lang['CVINTERACTIVE_MORE_DESC_LINK1_TITLE'] = "Presentation page for the sprites I used in this project";
-$lang['CVINTERACTIVE_MORE_DESC_LINK1_TEXT'] = "here";
-$lang['CVINTERACTIVE_MORE_DESC_BETWEEN'] = "The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available";
-$lang['CVINTERACTIVE_MORE_DESC_LINK2_TITLE'] = "Presentation page for the sprites I used in this project";
-$lang['CVINTERACTIVE_MORE_DESC_LINK2_TEXT'] = "here";
-
 //ERROR PAGES
 $lang['ERROR_ICON_ALT'] = "An icon to show an error occured";
 $lang['ERROR_SEND_LAST'] = "Feel free to automatically send me the error log by clicking on the button below, so I can see what I can do about it.";

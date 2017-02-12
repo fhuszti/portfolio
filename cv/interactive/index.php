@@ -52,11 +52,11 @@
         <!-- Webfont loader, so we can safely use it later in the app -->
         <script>
         	(function(d) {
-      	    var wf = d.createElement('script'), s = d.scripts[0];
+          	    var wf = d.createElement('script'), s = d.scripts[0];
 
-      	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-      	    s.parentNode.insertBefore(wf, s);
-    	})(document);
+          	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+          	    s.parentNode.insertBefore(wf, s);
+        	})(document);
         </script>
     </head>
 
@@ -64,7 +64,77 @@
         <?php require("../../header.php"); ?>
 
         <div id="wrapper" class="container" role="main">
+            <div class="row">
+                <h3><?php echo $lang['INTRO']; ?></h3>
+            </div>
 
+            <div class="row visible-xs-block visible-sm-block" id="handleTurn">
+                <img src="assets/img/turnPhone.png" alt="<?php echo $lang['HANDLED_TURN_IMG_ALT']; ?>" />
+                <p>
+                    <?php echo $lang['HANDLED_TURN']; ?>
+                </p>
+            </div>
+
+            <hr />
+
+            <div class="row" id="title">
+                <h1><i class="name">François HUSZTI</i></h1>
+
+                <h2><?php echo $lang['GAMETITLE_DESC_DESKTOP']; ?></h2>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <aside class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3><?php echo $lang['CONTROLS_TITLE']; ?></h3>
+                        </div>
+                        <div class="list-group">
+                            <p class="list-group-item hidden-xs hidden-sm right-align">
+                                <button type="button" class="btn btn-default pull-left">
+                                    <span class="glyphicon glyphicon-arrow-left"></span>
+                                </button>
+                                <button type="button" class="btn btn-default pull-left">
+                                    <span class="glyphicon glyphicon-arrow-right"></span>
+                                </button>
+                                <?php echo $lang['CONTROLS_LRARROW']; ?>
+                            </p>
+                            <p class="list-group-item hidden-xs hidden-sm right-align">
+                                <button type="button" class="btn btn-default pull-left">
+                                    <span class="glyphicon glyphicon-arrow-up"></span>
+                                </button>
+                                <?php echo $lang['CONTROLS_UARROW']; ?>
+                            </p>
+                            <p class="list-group-item visible-xs-block visible-sm-block">
+                                <?php echo $lang['CONTROLS_HANDLED1']; ?>
+                            </p>
+                            <p class="list-group-item visible-xs-block visible-sm-block">
+                                <?php echo $lang['CONTROLS_HANDLED2']; ?>
+                            </p>
+                            <p class="list-group-item right-align">
+                                <?php echo $lang['CONTROLS_LASTCONTROLSPARAGRAPH']; ?>
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <aside class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3><?php echo $lang['MORE_TITLE']; ?></h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <?php echo $lang['MORE_DESC_BEFORE']; ?> <a href="" title="<?php echo $lang['MORE_DESC_LINK1_TITLE']; ?>"><?php echo $lang['MORE_DESC_LINK1_TEXT']; ?></a>).
+                            </p>
+                            <p>
+                                <?php echo $lang['MORE_DESC_BETWEEN']; ?> <a href="" title="<?php echo $lang['MORE_DESC_LINK2_TITLE']; ?>"><?php echo $lang['MORE_DESC_LINK2_TEXT']; ?></a>).
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </div>
 
         <!-- Loading jQuery -->
