@@ -16,7 +16,7 @@ var generalFunctions = {
     /*
     For multilingual support
     */
-    lang: actualLang,
+    lang: window.actualLang,
 
 
 

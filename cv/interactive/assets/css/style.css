@@ -23,6 +23,7 @@ h1 i {
 #title {
     margin-top: 40px;
     margin-bottom: 70px;
+    cursor: pointer;
 }
 #title h1, #title h2 {
     font-weight: bold;
