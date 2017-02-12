@@ -62,6 +62,8 @@
     <body role="document">
         <?php require("../../header.php"); ?>
 
+        <div id="canvasContent"></div>
+
         <div id="wrapper" class="container" role="main">
             <div class="row">
                 <h3><?php echo $lang['INTRO']; ?></h3>

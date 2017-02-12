@@ -41,6 +41,14 @@ $(function() {
         		}
             };
 
+            //configuring the div that'll contain the game so it fits perfectly
+            var canvasContent = $('#canvasContent');
+            canvasContent.css('position', 'absolute');
+            canvasContent.css('margin', '0');
+            canvasContent.css('width', '100%');
+            canvasContent.css('top', '31px');
+            canvasContent.css('bottom', '0');
+
             //actual start
             WebFont.load(wfconfig);
         });
