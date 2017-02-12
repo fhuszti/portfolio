@@ -1,2 +1,6 @@
 .DS_Store
 assets/img/myAvatar.svg
+cv/interactive/assets/atlas/json/*.tps
+cv/interactive/assets/atlas/png-fat/
+cv/interactive/assets/img-fat/
+cv/interactive/assets/img-min/

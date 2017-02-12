@@ -1,0 +1,268 @@
+{"frames": [
+
+{
+	"filename": "waterfallLight0",
+	"frame": {"x":1,"y":1,"w":78,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":3,"w":78,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight1",
+	"frame": {"x":1,"y":512,"w":78,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":3,"w":78,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight2",
+	"frame": {"x":81,"y":1,"w":78,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":3,"w":78,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight3",
+	"frame": {"x":81,"y":512,"w":78,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":3,"w":78,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight4",
+	"frame": {"x":951,"y":1,"w":77,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":4,"w":77,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight5",
+	"frame": {"x":714,"y":512,"w":78,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":4,"w":78,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight6",
+	"frame": {"x":1188,"y":1,"w":78,"h":501},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":4,"w":78,"h":501},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight7",
+	"frame": {"x":1031,"y":510,"w":77,"h":507},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":5,"w":77,"h":507},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight8",
+	"frame": {"x":714,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight9",
+	"frame": {"x":952,"y":511,"w":77,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":4,"w":77,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight10",
+	"frame": {"x":161,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight11",
+	"frame": {"x":793,"y":1,"w":77,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":4,"w":77,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight12",
+	"frame": {"x":1109,"y":1,"w":77,"h":506},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":5,"w":77,"h":506},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight13",
+	"frame": {"x":1030,"y":1,"w":77,"h":507},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":5,"w":77,"h":507},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight14",
+	"frame": {"x":161,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight15",
+	"frame": {"x":794,"y":511,"w":77,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":4,"w":77,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight16",
+	"frame": {"x":240,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight17",
+	"frame": {"x":872,"y":1,"w":77,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":4,"w":77,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight18",
+	"frame": {"x":240,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight19",
+	"frame": {"x":319,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight20",
+	"frame": {"x":873,"y":511,"w":77,"h":508},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":4,"w":77,"h":508},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight21",
+	"frame": {"x":319,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight22",
+	"frame": {"x":398,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight23",
+	"frame": {"x":398,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight24",
+	"frame": {"x":477,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight25",
+	"frame": {"x":477,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight26",
+	"frame": {"x":556,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight27",
+	"frame": {"x":556,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight28",
+	"frame": {"x":635,"y":1,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight29",
+	"frame": {"x":1189,"y":504,"w":77,"h":488},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":488},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight30",
+	"frame": {"x":1110,"y":509,"w":77,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":502},
+	"sourceSize": {"w":128,"h":512}
+},
+{
+	"filename": "waterfallLight31",
+	"frame": {"x":635,"y":512,"w":77,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":3,"w":77,"h":509},
+	"sourceSize": {"w":128,"h":512}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "waterfallLight",
+	"format": "RGBA8888",
+	"size": {"w":1267,"h":1022},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d3cdceb3bb86eb19c048ef94fffafe15:fb21f9bf4e9d64689062acb2203f5a6c:778cb2c5eab1de6e3293fe94ab192ca7$"
+}
+}

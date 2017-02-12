@@ -1,0 +1,268 @@
+{"frames": [
+
+{
+	"filename": "waterfallHeavy0",
+	"frame": {"x":293,"y":505,"w":131,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":53,"y":9,"w":131,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy1",
+	"frame": {"x":431,"y":1,"w":131,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":10,"w":131,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy2",
+	"frame": {"x":943,"y":1,"w":109,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":77,"y":9,"w":109,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy3",
+	"frame": {"x":534,"y":1009,"w":111,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":9,"w":111,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy4",
+	"frame": {"x":538,"y":1514,"w":111,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":9,"w":111,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy5",
+	"frame": {"x":895,"y":1011,"w":113,"h":501},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":75,"y":11,"w":113,"h":501},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy6",
+	"frame": {"x":651,"y":1514,"w":114,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":9,"w":114,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy7",
+	"frame": {"x":883,"y":1514,"w":113,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":9,"w":113,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy8",
+	"frame": {"x":927,"y":506,"w":115,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":75,"y":9,"w":115,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy9",
+	"frame": {"x":421,"y":1515,"w":115,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":75,"y":9,"w":115,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy10",
+	"frame": {"x":647,"y":1010,"w":115,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":10,"w":115,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy11",
+	"frame": {"x":418,"y":1010,"w":114,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":9,"w":114,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy12",
+	"frame": {"x":767,"y":1501,"w":114,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":10,"w":114,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy13",
+	"frame": {"x":809,"y":506,"w":116,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":9,"w":116,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy14",
+	"frame": {"x":687,"y":506,"w":120,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":10,"w":120,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy15",
+	"frame": {"x":819,"y":1,"w":122,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":9,"w":122,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy16",
+	"frame": {"x":693,"y":1,"w":124,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":9,"w":124,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy17",
+	"frame": {"x":564,"y":1,"w":127,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":10,"w":127,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy18",
+	"frame": {"x":287,"y":1010,"w":129,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":9,"w":129,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy19",
+	"frame": {"x":297,"y":1,"w":132,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":10,"w":132,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy20",
+	"frame": {"x":285,"y":1515,"w":134,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":9,"w":134,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy21",
+	"frame": {"x":148,"y":1010,"w":137,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":9,"w":137,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy22",
+	"frame": {"x":144,"y":1515,"w":139,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":9,"w":139,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy23",
+	"frame": {"x":1,"y":1515,"w":141,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":9,"w":141,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy24",
+	"frame": {"x":151,"y":1,"w":144,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":10,"w":144,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy25",
+	"frame": {"x":1,"y":505,"w":146,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":58,"y":9,"w":146,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy26",
+	"frame": {"x":1,"y":1,"w":148,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":10,"w":148,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy27",
+	"frame": {"x":1,"y":1010,"w":145,"h":503},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":9,"w":145,"h":503},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy28",
+	"frame": {"x":149,"y":505,"w":142,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":10,"w":142,"h":502},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy29",
+	"frame": {"x":557,"y":505,"w":128,"h":501},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":11,"w":128,"h":501},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy30",
+	"frame": {"x":764,"y":1011,"w":129,"h":488},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":53,"y":9,"w":129,"h":488},
+	"sourceSize": {"w":256,"h":512}
+},
+{
+	"filename": "waterfallHeavy31",
+	"frame": {"x":426,"y":505,"w":129,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":10,"w":129,"h":502},
+	"sourceSize": {"w":256,"h":512}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "waterfallHeavy",
+	"format": "RGBA8888",
+	"size": {"w":1053,"h":2019},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3383b49be9fc466d5a2e0e407591c5fb:45b7187745de2d11c19d5e8e058217de:30045f8fb89d1cfd0bc89a8142cf054c$"
+}
+}

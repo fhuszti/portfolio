@@ -64,9 +64,6 @@ $lang['FORM_THANKS'] = 'Votre message a bien été transmis à ma boîte mail. M
 
 
 //CV INTERACTIVE
-$lang['CVINTERACTIVE_META_DESC'] = 'Mon C.V. dans son format interactif. Jouez un ninja perdu dans un endroit inconnu !';
-$lang['CVINTERACTIVE_META_TITLE'] = 'C.V. interactif - François Huszti, développeur web';
-
 $lang['CVINTERACTIVE_INTRO'] = "Vous êtes un ninja en mission, à la recherche d'informations sur... moi.<br />
 Jusqu'ici, tout va bien.";
 

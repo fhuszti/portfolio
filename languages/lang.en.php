@@ -65,9 +65,6 @@ $lang['FORM_THANKS'] = 'Your message was successfully sent to my email address. 
 
 
 //CV INTERACTIVE
-$lang['CVINTERACTIVE_META_DESC'] = 'My resume in its interactive version. Play as a ninja, lost in an unknown land !';
-$lang['CVINTERACTIVE_META_TITLE'] = 'Interactive resume - François Huszti, web developer';
-
 $lang['CVINTERACTIVE_INTRO'] = "You are a ninja on a mission to find informations about... me.<br />
 Please don't ask questions.";
 
