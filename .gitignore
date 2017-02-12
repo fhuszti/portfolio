@@ -1,4 +1,5 @@
 .DS_Store
+php-config/getUrl.php
 assets/img/myAvatar.svg
 cv/interactive/assets/atlas/json/*.tps
 cv/interactive/assets/atlas/png-fat/

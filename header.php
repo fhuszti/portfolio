@@ -1,7 +1,7 @@
 <header class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div id="logo" class="navbar-header">
-            <a href="index.php" title="<?php echo $lang['MENU_HOME_LINK_TITLE']; ?>" class="navbar-brand">
+            <a href="<?php echo $origin_url; ?>" title="<?php echo $lang['MENU_HOME_LINK_TITLE']; ?>" class="navbar-brand">
                 <img src="assets/img/logo.png" alt="François Huszti, fullstack dev" />
             </a>
 
@@ -19,10 +19,18 @@
             <nav role="navigation">
                 <!-- actual menu list -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li id='homeLinkLang' class="active"><a href="" title="<?php echo $lang['MENU_HOME_LINK_TITLE']; ?>"><?php echo $lang['MENU_HOME']; ?></a></li>
-                    <li><a href="#" title="<?php echo $lang['MENU_CV_SIMPLE_LINK_TITLE']; ?>"><?php echo $lang['MENU_CV_SIMPLE']; ?></a></li>
-                    <li><a href="#" title="<?php echo $lang['MENU_CV_INTERACTIVE_LINK_TITLE']; ?>"><?php echo $lang['MENU_CV_INTERACTIVE']; ?></a></li>
-                    <li><a href="#" title="<?php echo $lang['MENU_HOMEWORK_LINK_TITLE']; ?>"><?php echo $lang['MENU_HOMEWORK']; ?></a></li>
+                    <li id='homeLinkLang'>
+                        <a href="<?php echo $origin_url; ?>" title="<?php echo $lang['MENU_HOME_LINK_TITLE']; ?>"><?php echo $lang['MENU_HOME']; ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $origin_url . "/cv/simple/"; ?>" title="<?php echo $lang['MENU_CV_SIMPLE_LINK_TITLE']; ?>"><?php echo $lang['MENU_CV_SIMPLE']; ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $origin_url . "/cv/interactive/"; ?>" title="<?php echo $lang['MENU_CV_INTERACTIVE_LINK_TITLE']; ?>"><?php echo $lang['MENU_CV_INTERACTIVE']; ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $origin_url . "/homework/"; ?>" title="<?php echo $lang['MENU_HOMEWORK_LINK_TITLE']; ?>"><?php echo $lang['MENU_HOMEWORK']; ?></a>
+                    </li>
                 </ul>
             </nav>
         </div>

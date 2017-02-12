@@ -1,4 +1,4 @@
-<?php require("../php-config/langSelect.php"); ?>
+<?php require("../php-config/config-includes.php"); ?>
 
 <!DOCTYPE html>
 <html>
@@ -29,19 +29,25 @@
         <div id="wrapper" class="container-fluid" role="main">
             <section class="row">
                 <div class="col-sm-6 col-md-4 hiddenOverflow">
-                    <div id="ctaPart1" class="col-xs-12 ctaPart">
-                        <h2 class="ctaPartTitle"><?php echo $lang['CV_SIMPLE']; ?></h2>
-                    </div>
+                    <a href="<?php echo $origin_url . "/cv/simple/"; ?>">
+                        <div id="ctaPart1" class="col-xs-12 ctaPart">
+                            <h2 class="ctaPartTitle"><?php echo $lang['CV_SIMPLE']; ?></h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-6 col-md-4 hiddenOverflow">
-                    <div id="ctaPart2" class="col-xs-12 ctaPart">
-                        <h2 class="ctaPartTitle"><?php echo $lang['CV_INTERACTIVE']; ?></h2>
-                    </div>
+                    <a href="<?php echo $origin_url . "/cv/interactive/"; ?>">
+                        <div id="ctaPart2" class="col-xs-12 ctaPart">
+                            <h2 class="ctaPartTitle"><?php echo $lang['CV_INTERACTIVE']; ?></h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-4 hiddenOverflow">
-                    <div id="ctaPart3" class="col-xs-12 ctaPart">
-                        <h2 class="ctaPartTitle"><?php echo $lang['HOME']; ?></h2>
-                    </div>
+                    <a href="<?php echo $origin_url; ?>">
+                        <div id="ctaPart3" class="col-xs-12 ctaPart">
+                            <h2 class="ctaPartTitle"><?php echo $lang['HOME']; ?></h2>
+                        </div>
+                    </a>
                 </div>
             </section>
         </div>

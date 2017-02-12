@@ -1,4 +1,4 @@
-<?php require("../../php-config/langSelect.php"); ?>
+<?php require("../../php-config/config-includes.php"); ?>
 
 <!DOCTYPE html>
 <html>
