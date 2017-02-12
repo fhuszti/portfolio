@@ -26,7 +26,6 @@ $lang['HOME_META_TITLE'] = 'C.V. - François Huszti, fullstack dev';
 
 $lang['CV_SIMPLE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version classique";
 $lang['CV_SIMPLE_LINK_TITLE'] = 'Accéder à la version classique de mon C.V';
-$lang['CV_SIMPLE_PRINTABLE'] = 'Pour la version imprimable, en noir et blanc, <strong onclick="frames[\'frame\'].print()"><em>cliquez ici</em></strong>.';
 
 $lang['CV_INTERACTIVE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version interactive";
 $lang['CV_INTERACTIVE_LINK_TITLE'] = 'Aller sur la page de mon CV interactif';

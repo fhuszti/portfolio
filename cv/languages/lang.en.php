@@ -26,7 +26,6 @@ $lang['META_TITLE'] = 'Resume - François Huszti, fullstack dev';
 
 $lang['CV_SIMPLE'] = "Resume - Simple version";
 $lang['CV_SIMPLE_LINK_TITLE'] = 'Access the simple version of my resume';
-$lang['CV_SIMPLE_PRINTABLE'] = 'To get to the black & white, printable version, <strong onclick="frames[\'frame\'].print()"><em>click  here</em></strong>.';
 
 $lang['CV_INTERACTIVE'] = "Resume - Interactive version";
 $lang['CV_INTERACTIVE_LINK_TITLE'] = 'Access the interactive version of my resume';

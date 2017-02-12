@@ -29,21 +29,21 @@
         <div id="wrapper" class="container-fluid" role="main">
             <section class="row">
                 <div class="col-sm-6 col-md-4 hiddenOverflow">
-                    <a href="<?php echo $origin_url . "/cv/simple/"; ?>">
+                    <a href="<?php echo $origin_url . "/cv/simple/"; ?>" title="<?php echo $lang['CV_SIMPLE_LINK_TITLE']; ?>">
                         <div id="ctaPart1" class="col-xs-12 ctaPart">
                             <h2 class="ctaPartTitle"><?php echo $lang['CV_SIMPLE']; ?></h2>
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 hiddenOverflow">
-                    <a href="<?php echo $origin_url . "/cv/interactive/"; ?>">
+                    <a href="<?php echo $origin_url . "/cv/interactive/"; ?>" title="<?php echo $lang['CV_INTERACTIVE_LINK_TITLE']; ?>">
                         <div id="ctaPart2" class="col-xs-12 ctaPart">
                             <h2 class="ctaPartTitle"><?php echo $lang['CV_INTERACTIVE']; ?></h2>
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4 hiddenOverflow">
-                    <a href="<?php echo $origin_url; ?>">
+                    <a href="<?php echo $origin_url; ?>" title="<?php echo $lang['HOME_LINK_TITLE']; ?>">
                         <div id="ctaPart3" class="col-xs-12 ctaPart">
                             <h2 class="ctaPartTitle"><?php echo $lang['HOME']; ?></h2>
                         </div>
