@@ -38,20 +38,12 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script type="text/javascript" src="assets/js/game/phaser.min.js"></script>
-        <script type="text/javascript" src="assets/js/game/Boot.js"></script>
-        <script type="text/javascript" src="assets/js/game/Preload.js"></script>
-        <script type="text/javascript" src="assets/js/game/Languages.js"></script>
-        <script type="text/javascript" src="assets/js/game/Frameworks.js"></script>
-        <script type="text/javascript" src="assets/js/game/Others.js"></script>
-        <script type="text/javascript" src="assets/js/game/Formation.js"></script>
-        <script type="text/javascript" src="assets/js/game/Contact.js"></script>
-        <script type="text/javascript" src="assets/js/game/Experience.js"></script>
 
-        <!-- Webfont loader, so we can safely use it later in the app -->
+        <!-- Webfont loader, so we can use it later in the app -->
         <script>
         	(function(d) {
-          	    var wf = d.createElement('script'), s = d.scripts[0];
+          	    var wf = d.createElement('script'),
+                    s = d.scripts[0];
 
           	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
           	    s.parentNode.insertBefore(wf, s);
@@ -81,7 +73,8 @@
             <div class="row" id="title">
                 <h1><i class="name">François HUSZTI</i></h1>
 
-                <h2><?php echo $lang['GAMETITLE_DESC_DESKTOP']; ?></h2>
+                <h2 class="hidden-xs hidden-sm"><?php echo $lang['GAMETITLE_DESC_DESKTOP']; ?></h2>
+                <h2 class="hidden-md hidden-lg"><?php echo $lang['GAMETITLE_DESC_HANDLED']; ?></h2>
             </div>
 
             <hr />
@@ -144,10 +137,21 @@
         <!-- Loading BootStrap JavaScript -->
         <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
-        <script src='assets/js/homepage.js'></script>
-
-        <script type="text/javascript" src="assets/js/game/Game.js"></script>
+        <!-- Game files -->
+        <script type="text/javascript" src="assets/js/game/phaser.min.js"></script>
         <script type="text/javascript" src="assets/js/game/general.js"></script>
         <script type="text/javascript" src="assets/js/game/skillsGeneral.js"></script>
+        <script type="text/javascript" src="assets/js/game/Boot.js"></script>
+        <script type="text/javascript" src="assets/js/game/Preload.js"></script>
+        <script type="text/javascript" src="assets/js/game/Game.js"></script>
+        <script type="text/javascript" src="assets/js/game/Languages.js"></script>
+        <script type="text/javascript" src="assets/js/game/Frameworks.js"></script>
+        <script type="text/javascript" src="assets/js/game/Others.js"></script>
+        <script type="text/javascript" src="assets/js/game/Formation.js"></script>
+        <script type="text/javascript" src="assets/js/game/Contact.js"></script>
+        <script type="text/javascript" src="assets/js/game/Experience.js"></script>
+
+        <!-- Misc -->
+        <script src='assets/js/homepage.js'></script>
     </body>
 </html>
