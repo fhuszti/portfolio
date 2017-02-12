@@ -38,16 +38,15 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script type="text/javascript" src="assets/js/ajax.js"></script>
-        <script type="text/javascript" src="assets/js/phaser.min.js"></script>
-        <script type="text/javascript" src="assets/js/Boot.js"></script>
-        <script type="text/javascript" src="assets/js/Preload.js"></script>
-        <script type="text/javascript" src="assets/js/Languages.js"></script>
-        <script type="text/javascript" src="assets/js/Frameworks.js"></script>
-        <script type="text/javascript" src="assets/js/Others.js"></script>
-        <script type="text/javascript" src="assets/js/Formation.js"></script>
-        <script type="text/javascript" src="assets/js/Contact.js"></script>
-        <script type="text/javascript" src="assets/js/Experience.js"></script>
+        <script type="text/javascript" src="assets/js/game/phaser.min.js"></script>
+        <script type="text/javascript" src="assets/js/game/Boot.js"></script>
+        <script type="text/javascript" src="assets/js/game/Preload.js"></script>
+        <script type="text/javascript" src="assets/js/game/Languages.js"></script>
+        <script type="text/javascript" src="assets/js/game/Frameworks.js"></script>
+        <script type="text/javascript" src="assets/js/game/Others.js"></script>
+        <script type="text/javascript" src="assets/js/game/Formation.js"></script>
+        <script type="text/javascript" src="assets/js/game/Contact.js"></script>
+        <script type="text/javascript" src="assets/js/game/Experience.js"></script>
 
         <!-- Webfont loader, so we can safely use it later in the app -->
         <script>
@@ -68,7 +67,7 @@
                 <h3><?php echo $lang['INTRO']; ?></h3>
             </div>
 
-            <div class="row visible-xs-block visible-sm-block" id="handleTurn">
+            <div class="row hidden-md hidden-lg" id="handleTurn">
                 <img src="assets/img/turnPhone.png" alt="<?php echo $lang['HANDLED_TURN_IMG_ALT']; ?>" />
                 <p>
                     <?php echo $lang['HANDLED_TURN']; ?>
@@ -143,9 +142,10 @@
         <!-- Loading BootStrap JavaScript -->
         <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
-        <script type="text/javascript" src="assets/js/Game.js"></script>
         <script src='assets/js/homepage.js'></script>
-        <script type="text/javascript" src="assets/js/general.js"></script>
-        <script type="text/javascript" src="assets/js/skillsGeneral.js"></script>
+
+        <script type="text/javascript" src="assets/js/game/Game.js"></script>
+        <script type="text/javascript" src="assets/js/game/general.js"></script>
+        <script type="text/javascript" src="assets/js/game/skillsGeneral.js"></script>
     </body>
 </html>
