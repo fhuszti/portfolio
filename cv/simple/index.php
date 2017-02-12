@@ -26,59 +26,66 @@
     <body role="document">
         <?php require("../../header.php"); ?>
 
-        <div id="wrapper" class="container-fluid" role="main">
+        <div id="wrapper" class="container" role="main">
             <div class="row">
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-12 col-sm-8" id="mainContent">
                     <header class="row">
                         <div class="col-xs-12" id="title">
-                            <img src="assets/img/photo_cv_mini.jpg" alt="<?php echo $lang['TITLE_IMG_ALT']; ?>" class="pull-left" />
-                            <h1><a href="#" title="<?php echo $lang['TITLE_LINK_TITLE']; ?>" class="pull-right">FRAN&Ccedil;OIS HUSZTI</a></h1><br /><br />
+                            <img src="assets/img/photo_cv_mini.jpg" alt="<?php echo $lang['TITLE_IMG_ALT']; ?>" class="hidden-xs" />
+                            <h1><a href="#" title="<?php echo $lang['TITLE_LINK_TITLE']; ?>" class="pull-right"><i class="name">FRAN&Ccedil;OIS HUSZTI</i></a></h1>
+                            <br /><br />
                             <h3 class="pull-right">FULLSTACK DEV</h3>
-                            <h3>contact@fhuszti.com</h3>
+                            <h3><i class="email">contact@fhuszti.com</i></h3>
                         </div>
                     </header>
                     <div class="row">
                         <div class="col-xs-12">
                             <h3><?php echo $lang['SUMMARY_TITLE']; ?></h3>
 
-                            <p>
+                            <p class="justified-content">
                                 <?php echo $lang['SUMMARY_DESC']; ?>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12" id="academics">
                             <h3><?php echo $lang['ACADEMICS_TITLE']; ?></h3>
+                            <hr class="visible-xs-block">
 
                             <p>
-                                2016-<?php echo $lang['ACADEMICS_PRESENT']; ?> <a href="https://openclassrooms.com/" title="<?php echo $lang['ACADEMICS_OC_LINK_TITLE']; ?>" class="pull-right"><?php echo $lang['ACADEMICS_OC_TITLE']; ?></a><br />
-                                <?php echo $lang['ACADEMICS_OC_DESC']; ?>
+                                2016-<?php echo $lang['ACADEMICS_PRESENT']; ?> <a href="https://openclassrooms.com/" title="<?php echo $lang['ACADEMICS_OC_LINK_TITLE']; ?>" class="pull-right"><?php echo $lang['ACADEMICS_OC_TITLE']; ?></a>
+                                <span class="normalWeight"><?php echo $lang['ACADEMICS_OC_DESC']; ?></span>
                             </p>
+                            <hr class="visible-xs-block">
                             <p>
-                                2014-2015 <span class="pull-right"><?php echo $lang['ACADEMICS_UNI_TITLE']; ?></span><br />
-                                <?php echo $lang['ACADEMICS_UNI_DESC']; ?>
+                                2014-2015 <span class="pull-right"><?php echo $lang['ACADEMICS_UNI_TITLE']; ?></span>
+                                <span class="normalWeight"><?php echo $lang['ACADEMICS_UNI_DESC']; ?></span>
                             </p>
+                            <hr class="visible-xs-block">
                             <p>
-                                2012-2013 <span class="pull-right"><?php echo $lang['ACADEMICS_PREPA_TITLE']; ?></span><br />
-                                <?php echo $lang['ACADEMICS_PREPA_DESC']; ?>
+                                2012-2013 <span class="pull-right"><?php echo $lang['ACADEMICS_PREPA_TITLE']; ?></span>
+                                <span class="normalWeight"><?php echo $lang['ACADEMICS_PREPA_DESC']; ?></span>
                             </p>
+                            <hr class="visible-xs-block">
                             <p>
-                                2012 <span class="pull-right"><?php echo $lang['ACADEMICS_BAC_TITLE']; ?></span><br />
-                                <?php echo $lang['ACADEMICS_BAC_DESC']; ?>
+                                2012 <span class="pull-right"><?php echo $lang['ACADEMICS_BAC_TITLE']; ?></span>
+                                <span class="normalWeight"><?php echo $lang['ACADEMICS_BAC_DESC']; ?></span>
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12">
+                    <div class="row last-row">
+                        <div class="col-xs-12" id="experience">
                             <h3><?php echo $lang['EXPERIENCE_TITLE']; ?></h3>
+                            <hr class="visible-xs-block">
 
                             <p>
-                                2015-2017 <span class="pull-right"><?php echo $lang['EXPERIENCE_MCDO_TITLE']; ?></span><br />
-                                <?php echo $lang['EXPERIENCE_MCDO_DESC']; ?>
+                                2015-2017 <span class="pull-right"><?php echo $lang['EXPERIENCE_MCDO_TITLE']; ?></span>
+                                <span class="normalWeight"><?php echo $lang['EXPERIENCE_MCDO_DESC']; ?></span>
                             </p>
+                            <hr class="visible-xs-block">
                             <p>
-                                2013-2014 <a href="http://www.boudinblanc.co.uk/" title="<?php echo $lang['EXPERIENCE_BB_LINK_TITLE']; ?>" class="pull-right"><?php echo $lang['EXPERIENCE_BB_TITLE']; ?></a><br />
-                                <?php echo $lang['EXPERIENCE_BB_DESC']; ?>
+                                2013-2014 <a href="http://www.boudinblanc.co.uk/" title="<?php echo $lang['EXPERIENCE_BB_LINK_TITLE']; ?>" class="pull-right"><?php echo $lang['EXPERIENCE_BB_TITLE']; ?></a>
+                                <span class="normalWeight"><?php echo $lang['EXPERIENCE_BB_DESC']; ?></span>
                             </p>
                         </div>
                     </div>
@@ -150,7 +157,7 @@
                         <div class="col-xs-12">
                             <h3><?php echo $lang['TLDR_HOBBIES_TITLE']; ?></h3>
 
-                            <p>
+                            <p class="justified-content">
                                 <?php echo $lang['TLDR_HOBBIES_DESC']; ?>
                             </p>
                         </div>

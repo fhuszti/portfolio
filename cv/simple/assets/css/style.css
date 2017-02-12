@@ -1,8 +1,148 @@
+/*
+CUSTOM FONT
+*/
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('../fonts/GoodDog-webfont.eot');
+    src: url('../fonts/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GoodDog-webfont.woff') format('woff'),
+         url('../fonts/GoodDog-webfont.ttf') format('truetype'),
+         url('../fonts/GoodDog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*
+GENERAL SETTINGS
+*/
+#mainContent {
+    padding: 20px;
+}
+#mainContent [class="col-xs-12"] {
+    padding: 0;
+}
+#mainContent [class*="row"] {
+    margin-right: 20px;
+    padding: 10px 0;
+}
+#mainContent [class="row"]:not([class="last-row"]) {
+    border-bottom: 20px solid #eee;
+}
+.justified-content {
+    text-align: justify;
+}
+h1 i {
+    font-style: inherit;
+}
+
+
+
+
+/*
+TITLE/HEADER SECTION
+*/
 #title img {
     width: 54px;
     height: 70px;
+    -webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	position: absolute;
+	left: 0;
+	top: 0;
+    z-index: 1000;
+}
+#title img:hover {
+	width: 108px;
+	height: 140px;
+}
+#title h1, #title h3 {
+    margin: 0;
+}
+#title h1 {
+	font-size: 3em;
+    font-family: 'gooddogregular', Arial, Helvetica, Verdana, Times, "Times New Roman", sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#title h1 a {
+    color: rgb(0, 72, 0);
+}
+#title h1 a:focus, #title h1 a:hover {
+
+}
+#title h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#title h3 [class="email"] {
+    margin-left: 70px;
 }
 
+
+
+
+/*
+MAIN CONTENT SECTION
+*/
+#mainContent div[class*='row'] h3 {
+    color: rgb(0, 72, 0);
+    font-weight: bold;
+}
+#academics p, #experience p {
+    font-weight: bold;
+}
+#academics .normalWeight, #experience .normalWeight {
+    font-weight: normal;
+    display: block;
+}
+#academics a, #experience a {
+    color: rgb(0, 72, 0);
+}
+
+
+
+
+/*
+QUICK LOOK SECTION
+*/
 #quickLook {
     background-color: #eee;
+    padding: 20px;
+}
+#quickLook h1 {
+    color: rgb(0, 72, 0);
+}
+#quickLook h1, #quickLook h3 {
+    font-weight: bold;
+}
+
+
+
+
+/* This is to fix some funky behaviour starting at that particular width */
+@media (max-width: 419px) {
+    #title h3 [class="email"] {
+        float: right;
+        margin-top: 5px;
+    }
+
+    #academics p [class="pull-right"], #experience p [class="pull-right"] {
+        float: none !important;
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    #mainContent [class*="row"] {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #title h3 [class="email"] {
+        margin-left: 0;
+    }
 }
