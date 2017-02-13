@@ -1,4 +1,7 @@
 .DS_Store
+favicon.ico
+test/
+family/
 php-config/getUrl.php
 assets/img/myAvatar.svg
 cv/interactive/assets/atlas/json/*.tps
