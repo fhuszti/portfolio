@@ -24,6 +24,7 @@
     </head>
 
     <body role="document">
+        <?php include_once("../php-config/analyticstracking.php") ?>
         <?php require("../header.php"); ?>
 
         <div id="wrapper" class="container-fluid" role="main">
