@@ -2,6 +2,7 @@
 favicon.ico
 test/
 family/
+tours/
 php-config/getUrl.php
 assets/img/myAvatar.svg
 cv/interactive/assets/atlas/json/*.tps
