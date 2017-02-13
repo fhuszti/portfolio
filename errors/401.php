@@ -10,10 +10,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="../assets/css/header.css">
+        <link href="<?php echo $origin_url . '/bootstrap/css/bootstrap.min.css'; ?>" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo $origin_url . '/assets/css/style.css'; ?>">
+        <link rel="stylesheet" href="<?php echo $origin_url . '/errors/assets/css/style.css'; ?>">
+        <link rel="stylesheet" href="<?php echo $origin_url . '/assets/css/header.css'; ?>">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,15 +47,15 @@
                 </p>
             </div>
 
-            <img src='assets/img/travolta.gif' alt='Travolta' id="travolta" />
+            <img src="<?php echo $origin_url . '/errors/assets/img/travolta.gif'; ?>" alt='Travolta' id="travolta" />
         </div>
 
         <!-- Loading jQuery -->
-        <script src="../assets/js/jquery-3.1.1.min.js"></script>
+        <script src="<?php echo $origin_url . '/assets/js/jquery-3.1.1.min.js'; ?>"></script>
 
         <!-- Loading BootStrap JavaScript -->
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo $origin_url . '/bootstrap/js/bootstrap.min.js'; ?>"></script>
 
-        <script src="assets/js/errorPages.js"></script>
+        <script src="<?php echo $origin_url . '/errors/assets/js/errorPages.js'; ?>"></script>
     </body>
 </html>
