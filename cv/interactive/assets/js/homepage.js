@@ -59,7 +59,7 @@ $(function() {
     Get the current used language
     */
     function currentLang() {
-        if ($('#homeLinkLang').text() === 'Accueil')
+        if ($('#homeLinkLang a').text() === 'Accueil')
             return 'fr';
         else
             return 'en';

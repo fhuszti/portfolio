@@ -14,15 +14,6 @@ var generalFunctions = {
 
 
     /*
-    For multilingual support
-    */
-    lang: window.actualLang,
-
-
-
-
-
-    /*
     x = x-coordinate of text
     y = y-coordinate of text
     translationKey = which line to use in the languages files
@@ -104,7 +95,7 @@ var generalFunctions = {
             };
 
         //We get a different text file depending on the current user language
-        if (this.lang === 'fr') {
+        if (window.actualLang === 'fr') {
             if (translationKey in HomeGame.game.cache.getJSON('frJSON'))
                 textToRender = HomeGame.game.cache.getJSON('frJSON')[translationKey];
             else
