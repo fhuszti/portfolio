@@ -8,9 +8,6 @@ Language: English
 $lang = array();
 
 // NAVBAR
-$lang['MENU_PRINT_IMG_ALT'] = "Print the document";
-$lang['MENU_PRINT_DESC'] = "Print";
-
 $lang['MENU_HOME_LINK_TITLE'] = "Go back to the homepage";
 $lang['MENU_HOME'] = 'Home';
 $lang['MENU_CV_SIMPLE_LINK_TITLE'] = "My resume in its simple version";

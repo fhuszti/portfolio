@@ -8,9 +8,6 @@ Language: Français
 $lang = array();
 
 // NAVBAR
-$lang['MENU_PRINT_IMG_ALT'] = "Imprimer le document";
-$lang['MENU_PRINT_DESC'] = "Imprimer";
-
 $lang['MENU_HOME_LINK_TITLE'] = "Retour vers la page d'accueil";
 $lang['MENU_HOME'] = 'Accueil';
 $lang['MENU_CV_SIMPLE_LINK_TITLE'] = "Mon C.V. dans son format habituel";
@@ -22,7 +19,7 @@ $lang['MENU_HOMEWORK'] = 'Projets';
 
 //CONTENT
 $lang['META_DESC'] = 'Retrouvez mon C.V. dans ses différentes versions : interactif, classique en couleurs et imprimable en noir et blanc.';
-$lang['HOME_META_TITLE'] = 'C.V. - François Huszti, fullstack dev';
+$lang['META_TITLE'] = 'C.V. - François Huszti, fullstack dev';
 
 $lang['CV_SIMPLE'] = "<i lang='la' class='expression'>Curriculum Vitae</i> - Version classique";
 $lang['CV_SIMPLE_LINK_TITLE'] = 'Accéder à la version classique de mon C.V';

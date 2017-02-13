@@ -5,10 +5,20 @@
     <head>
         <title><?php echo $lang['META_TITLE']; ?></title>
 
-        <meta name="Description" content="<?php echo $lang['META_DESC']; ?>" />
+        <meta name="description" content="<?php echo $lang['META_DESC']; ?>" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- thumbnail picture to share on social medias -->
+        <meta property="og:title" content="<?php echo $lang['META_TITLE']; ?>" />
+        <meta property="og:description" content="<?php echo $lang['META_DESC']; ?>" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.fhuszti.com/" />
+        <meta property="og:image" content="http://assets.fhuszti.com/big-logo.png" />
+        <link rel="image_src" href="http://assets.fhuszti.com/big-logo.png" />
+
+        <link rel="shortcut icon" href="http://assets.fhuszti.com/favicon.ico" type="image/x-icon" />
 
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
