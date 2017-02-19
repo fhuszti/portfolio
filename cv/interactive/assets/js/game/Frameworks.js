@@ -23,9 +23,9 @@ HomeGame.Frameworks.prototype = {
         skillsFunctions.coinsGroup(this);
 
         skillsFunctions.generateCoin(this, 'gold', 250);
+        skillsFunctions.generateCoin(this, 'silver', 352);
         skillsFunctions.generateCoin(this, 'silver', 300);
         skillsFunctions.generateCoin(this, 'bronze', 402);
-        skillsFunctions.generateCoin(this, 'bronze', 352);
 
         //Create the bottom of the chests (in front of the coins)
         skillsFunctions.createBottomChests(this);
