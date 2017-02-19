@@ -191,7 +191,7 @@ HomeGame.Formation.prototype = {
     //Check if the given text should be displayed or hidden
     checkHeight: function(text) {
     	//If player is on bottom platform
-    	if(this.player.y > 364) {
+    	if(this.player.y > 367) {
     	    //If it's the bottom right corner text and it's not already active, we write it
     	    if (!text.alive && text.x >= 340 && text.y > 364) {
     	    	text.alive = true;
@@ -204,7 +204,7 @@ HomeGame.Formation.prototype = {
     	    }
     	}
     	//If player is on first platform
-    	if (this.player.y <= 364 && this.player.y > 268) {
+    	if (this.player.y <= 367 && this.player.y > 271) {
     	    //If it's the top right corner text and it's not already active, we write it
     	    if (!text.alive && text.x >= 340 && text.y <= 364) {
     	    	text.alive = true;
@@ -217,7 +217,7 @@ HomeGame.Formation.prototype = {
     	    }
     	}
     	//If player is on second platform
-    	if (this.player.y <= 268 && this.player.y > 172) {
+    	if (this.player.y <= 271 && this.player.y > 175) {
     	    //If it's the bottom left corner text and it's not already active, we write it
     	    if (!text.alive && text.x < 340 && text.y > 364) {
     	    	text.alive = true;
@@ -230,7 +230,7 @@ HomeGame.Formation.prototype = {
     	    }
     	}
     	//If player is on third platform or higher
-    	if (!text.alive && this.player.y <= 172) {
+    	if (!text.alive && this.player.y <= 175) {
     	    //Every message should be active
     	    text.alive = true;
     	    this.game.add.tween(text).to( { alpha: 1 }, 1000, "Linear", true);
@@ -300,23 +300,23 @@ HomeGame.Formation.prototype = {
         this.plant9left.angle = 60;
         this.leftHorizLiane1 = this.add.sprite(this.game.width*0.5 - 120, this.game.height*0.5 + 261, 'textureAtlas', 'plant15');
         this.leftHorizLiane1.angle = 90;
-	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 - 145, 'textureAtlas', 'plant15').scale.x = -1;
-	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 - 80, 'textureAtlas', 'plant16').scale.x = -1;
-	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 - 30, 'textureAtlas', 'plant15').scale.x = -1;
-	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 + 30, 'textureAtlas', 'plant16').scale.x = -1;
-	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 - 145, 'textureAtlas', 'plant16')
-	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 - 10, 'textureAtlas', 'plant16');
-	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 + 60, 'textureAtlas', 'plant15');
-	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 + 130, 'textureAtlas', 'plant16');
-	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 + 190, 'textureAtlas', 'plant16');
+    	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 - 145, 'textureAtlas', 'plant15').scale.x = -1;
+    	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 - 80, 'textureAtlas', 'plant16').scale.x = -1;
+    	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 - 30, 'textureAtlas', 'plant15').scale.x = -1;
+    	this.add.sprite(this.game.width*0.5 - 70, this.game.height*0.5 + 30, 'textureAtlas', 'plant16').scale.x = -1;
+    	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 - 145, 'textureAtlas', 'plant16');
+    	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 - 10, 'textureAtlas', 'plant16');
+    	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 + 60, 'textureAtlas', 'plant15');
+    	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 + 130, 'textureAtlas', 'plant16');
+    	this.add.sprite(this.game.width*0.5 - 125, this.game.height*0.5 + 190, 'textureAtlas', 'plant16');
 
         this.leftHorizLiane2 = this.add.sprite(10, this.game.height*0.5 + 261, 'textureAtlas', 'plant15');
         this.leftHorizLiane2.scale.y = -1;
         this.leftHorizLiane2.angle = 90;
         this.add.sprite(12, 10, 'textureAtlas', 'plant16').scale.x = -1;
         this.add.sprite(12, 80, 'textureAtlas', 'plant15').scale.x = -1;
-	this.add.sprite(12, this.game.height*0.5 - 60, 'textureAtlas', 'plant16').scale.x = -1;
-	this.add.sprite(12, this.game.height*0.5 + 100, 'textureAtlas', 'plant16').scale.x = -1;
-	this.add.sprite(12, this.game.height*0.5 + 190, 'textureAtlas', 'plant15').scale.x = -1;
+    	this.add.sprite(12, this.game.height*0.5 - 60, 'textureAtlas', 'plant16').scale.x = -1;
+    	this.add.sprite(12, this.game.height*0.5 + 100, 'textureAtlas', 'plant16').scale.x = -1;
+    	this.add.sprite(12, this.game.height*0.5 + 190, 'textureAtlas', 'plant15').scale.x = -1;
     }
 };
