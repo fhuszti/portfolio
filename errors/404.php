@@ -57,7 +57,7 @@
                 </p>
             </div>
 
-            <img src="<?php echo $origin_url . '/errors/assets/img/travolta.gif'; ?>" alt='Travolta' id="travolta" />
+            <img src="http://assets.fhuszti.com/errors/travolta.gif" alt='Travolta' id="travolta" />
         </div>
 
         <!-- Loading jQuery -->

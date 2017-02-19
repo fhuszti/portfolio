@@ -59,7 +59,7 @@ body {
 }
 
 #ctaPart1 {
-  background-image: url("../img/myAvatar.png");
+  background-image: url("http://assets.fhuszti.com/homepage/myAvatar.png");
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -67,12 +67,12 @@ body {
   border-right: 1px solid black;
 }
 #ctaPart2 {
-  background-image: url("../img/ninja.png");
+  background-image: url("http://assets.fhuszti.com/homepage/ninja.png");
   background-position: center 40%;
   background-repeat: no-repeat;
 }
 #ctaPart3 {
-  background-image: url("../img/responsive.png");
+  background-image: url("http://assets.fhuszti.com/homepage/responsive.png");
   background-size: 85% auto;
   background-position: center center;
   background-repeat: no-repeat;

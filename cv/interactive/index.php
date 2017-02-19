@@ -17,8 +17,8 @@
         <meta property="og:description" content="<?php echo $lang['META_DESC']; ?>" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://www.fhuszti.com/cv/interactive/" />
-        <meta property="og:image" content="http://assets.fhuszti.com/thumbnailInteractiveResume.png" />
-        <link rel="image_src" href="http://assets.fhuszti.com/thumbnailInteractiveResume.png" />
+        <meta property="og:image" content="http://assets.fhuszti.com/cv/interactive/thumbnailInteractiveResume.png" />
+        <link rel="image_src" href="http://assets.fhuszti.com/cv/interactive/thumbnailInteractiveResume.png" />
 
         <link rel="shortcut icon" href="http://assets.fhuszti.com/favicon.ico" type="image/x-icon" />
 
@@ -66,7 +66,7 @@
             </div>
 
             <div class="row hidden-md hidden-lg" id="handleTurn">
-                <img src="assets/img/turnPhone.png" alt="<?php echo $lang['HANDLED_TURN_IMG_ALT']; ?>" />
+                <img src="http://assets.fhuszti.com/cv/interactive/turnPhone.png" alt="<?php echo $lang['HANDLED_TURN_IMG_ALT']; ?>" />
                 <p>
                     <?php echo $lang['HANDLED_TURN']; ?>
                 </p>

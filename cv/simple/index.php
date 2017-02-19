@@ -42,7 +42,7 @@
                 <div class="col-xs-12 col-sm-8" id="mainContent">
                     <header class="row">
                         <div class="col-xs-12" id="title">
-                            <img src="assets/img/photo_cv_mini.jpg" alt="<?php echo $lang['TITLE_IMG_ALT']; ?>" class="hidden-xs" />
+                            <img src="http://assets.fhuszti.com/cv/simple/photo_cv.jpg" alt="<?php echo $lang['TITLE_IMG_ALT']; ?>" class="hidden-xs" />
                             <h1>
                                 <a href="<?php echo $origin_url; ?>" title="<?php echo $lang['TITLE_LINK_TITLE']; ?>" class="pull-right">
                                     <i class="name">FRAN&Ccedil;OIS HUSZTI</i>

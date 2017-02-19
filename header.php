@@ -2,7 +2,8 @@
     <div class="container-fluid">
         <div id="logo" class="navbar-header">
             <a href="<?php echo $origin_url; ?>" title="<?php echo $lang['MENU_HOME_LINK_TITLE']; ?>" class="navbar-brand">
-                <img src="assets/img/logo.png" alt="François Huszti, fullstack dev" />
+                <?php $logoSrc = (strpos($uri, 'cv/interactive') === false) ? "http://assets.fhuszti.com/logo.png" : "http://assets.fhuszti.com/small-logo.png"; ?>
+                <img src="<?php echo $logoSrc; ?>" alt="François Huszti, fullstack dev" />
             </a>
 
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsableNavbar">
