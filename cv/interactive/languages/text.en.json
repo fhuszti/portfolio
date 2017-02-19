@@ -33,6 +33,7 @@
   "contactLooking": "I am currently seeking a fixed-term \nor a permanent contract as a web developer.",
   "contactOffer": "If you have any question or comment, \nfeel free to join me by using either \nthe following email address, \nor the automatic form :",
   "contactFormButtonValue": "Use the form",
+  "contactGitHubButtonValue": "View my GitHub",
   "contactLinkedinButtonValue": "View my LinkedIn",
   "contactCopySuccess": "Email address successfully copied \nto the clipboard",
   "contactCopyFail": "Failed to copy the email address to the clipboard",

@@ -30,6 +30,7 @@ HomeGame.Contact.prototype = {
 		//Create all needed buttons
 		this.generateEmailButton();
 		this.generateFormButton();
+		this.generateGithubButton();
 		this.generateLinkedinButton();
 
 		//create player
@@ -161,21 +162,39 @@ HomeGame.Contact.prototype = {
 		fakeSprite.events.onInputDown.add(this.linkToForm, this);
 	},
 
-	//Create the button containing the link to the form
+	//Create the button containing the link to my GitHub
+	generateGithubButton: function() {
+		//we create a group
+		var githubButton = this.game.add.group();
+		githubButton.inputEnableChildren = true;
+
+		//we generate the button design
+		generalFunctions.generateButton(355, 510, 185, 35, 0.3, githubButton);
+
+		//then we add the text
+		var textValue = generalFunctions.displayText(447, 530, 'contactGitHubButtonValue', 'mediumContent2', 'center');
+		githubButton.add(textValue);
+
+		//we create a fake sprite on top of the whole button and attach the click event to it
+		var fakeSprite = generalFunctions.generateFakeSprite(355, 510, 185, 35, githubButton);
+		fakeSprite.events.onInputDown.add(this.linkToGithub, this);
+	},
+
+	//Create the button containing the link to my LinkedIn
 	generateLinkedinButton: function() {
 		//we create a group
 		var linkedinButton = this.game.add.group();
 		linkedinButton.inputEnableChildren = true;
 
 		//we generate the button design
-		generalFunctions.generateButton(465, 510, 185, 35, 0.3, linkedinButton);
+		generalFunctions.generateButton(575, 510, 185, 35, 0.3, linkedinButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(560, 530, 'contactLinkedinButtonValue', 'mediumContent2', 'center');
+		var textValue = generalFunctions.displayText(670, 530, 'contactLinkedinButtonValue', 'mediumContent2', 'center');
 		linkedinButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
-		var fakeSprite = generalFunctions.generateFakeSprite(465, 510, 185, 35, linkedinButton);
+		var fakeSprite = generalFunctions.generateFakeSprite(575, 510, 185, 35, linkedinButton);
 		fakeSprite.events.onInputDown.add(this.linkToLinkedin, this);
 	},
 
@@ -255,6 +274,12 @@ HomeGame.Contact.prototype = {
 	//link to the contact form on the main website
 	linkToForm: function() {
 		window.location.href = "../../index.php#contactForm"; 
+	},
+
+	//link to my LinkedIn profile
+	linkToGithub: function() {
+		//either in french or english depending on the current stored lang for this session
+		window.location.href = 'https://github.com/fhuszti'; 
 	},
 
 	//link to my LinkedIn profile
