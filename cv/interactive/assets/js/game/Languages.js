@@ -11,22 +11,22 @@ HomeGame.Languages.prototype = {
         skillsFunctions.behindMap(this);
 
         //Adding the table
-        skillsFunctions.generateTable(['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Python']);
+        skillsFunctions.generateTable(['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']);
 
         //Initial map setup
         generalFunctions.mapSetup(this, 'skillsMap');
 
         //Create the top of the chests (behind the coins)
-        skillsFunctions.createTopChests(this, [0, 0, 0]);
+        skillsFunctions.createTopChests(this, [1, 0, 0]);
 
         //Create the coins
         skillsFunctions.coinsGroup(this);
 
+        skillsFunctions.generateCoin(this, 'gold', 352);
         skillsFunctions.generateCoin(this, 'gold', 300);
         skillsFunctions.generateCoin(this, 'gold', 250);
+        skillsFunctions.generateCoin(this, 'silver', 450);
         skillsFunctions.generateCoin(this, 'silver', 402);
-        skillsFunctions.generateCoin(this, 'silver', 352);
-        skillsFunctions.generateCoin(this, 'bronze', 450);
 
         //Create the bottom of the chests (in front of the coins)
         skillsFunctions.createBottomChests(this);

@@ -11,20 +11,21 @@ HomeGame.Frameworks.prototype = {
         skillsFunctions.behindMap(this);
 
         //Adding the table
-        skillsFunctions.generateTable(['Phaser', 'Bootstrap', 'Symfony']);
+        skillsFunctions.generateTable(['BootStrap', 'Phaser', 'Silex', 'Symfony']);
 
         //Initial map setup
         generalFunctions.mapSetup(this, 'skillsMap');
 
         //Create the top of the chests (behind the coins)
-        skillsFunctions.createTopChests(this, [0, 0, 1]);
+        skillsFunctions.createTopChests(this, [0, 0, 0]);
 
         //Create the coins
         skillsFunctions.coinsGroup(this);
 
-        skillsFunctions.generateCoin(this, 'silver', 252);
-        skillsFunctions.generateCoin(this, 'bronze', 350);
-        skillsFunctions.generateCoin(this, 'bronze', 300);
+        skillsFunctions.generateCoin(this, 'gold', 250);
+        skillsFunctions.generateCoin(this, 'silver', 300);
+        skillsFunctions.generateCoin(this, 'bronze', 402);
+        skillsFunctions.generateCoin(this, 'bronze', 352);
 
         //Create the bottom of the chests (in front of the coins)
         skillsFunctions.createBottomChests(this);
