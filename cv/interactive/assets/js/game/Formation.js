@@ -157,28 +157,28 @@ HomeGame.Formation.prototype = {
     //Display all texts on creation, then call checkHeight to delete those that shouldn't appear yet
     displayFormationTexts: function() {
     	//We stock all texts in a table for later manipulation on them
-    	this.formationTexts['BacDate'] = generalFunctions.displayText(345, this.game.height*0.5 + 92, 'formationBacDate', 'formation');
-        this.formationTexts['BacPlace1'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 + 150, 'formationBacPlace1', 'formation', 'right');
-        this.formationTexts['BacPlace2'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 + 170, 'formationBacPlace2', 'formation', 'right');
-        this.formationTexts['BacDesc1'] = generalFunctions.displayText(345, this.game.height*0.5 + 215, 'formationBacDesc1', 'formation');
-        this.formationTexts['BacDesc2'] = generalFunctions.displayText(345, this.game.height*0.5 + 235, 'formationBacDesc2', 'formation');
+    	this.formationTexts['BacDate'] = generalFunctions.displayText(345, this.game.height*0.5 + 92, 'formationBacDate', 'mediumContent2');
+        this.formationTexts['BacPlace1'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 + 150, 'formationBacPlace1', 'mediumContent2', 'right');
+        this.formationTexts['BacPlace2'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 + 170, 'formationBacPlace2', 'mediumContent2', 'right');
+        this.formationTexts['BacDesc1'] = generalFunctions.displayText(345, this.game.height*0.5 + 215, 'formationBacDesc1', 'mediumContent2');
+        this.formationTexts['BacDesc2'] = generalFunctions.displayText(345, this.game.height*0.5 + 235, 'formationBacDesc2', 'mediumContent2');
 
-        this.formationTexts['PrepaDate'] = generalFunctions.displayText(345, this.game.height*0.5 - 128, 'formationPrepaDate', 'formation');
-        this.formationTexts['PrepaPlace1'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 - 70, 'formationPrepaPlace1', 'formation', 'right');
-        this.formationTexts['PrepaPlace2'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 - 50, 'formationPrepaPlace2', 'formation', 'right');
-        this.formationTexts['PrepaDesc1'] = generalFunctions.displayText(345, this.game.height*0.5 - 5, 'formationPrepaDesc1', 'formation');
-        this.formationTexts['PrepaDesc2'] = generalFunctions.displayText(345, this.game.height*0.5 + 15, 'formationPrepaDesc2', 'formation');
+        this.formationTexts['PrepaDate'] = generalFunctions.displayText(345, this.game.height*0.5 - 128, 'formationPrepaDate', 'mediumContent2');
+        this.formationTexts['PrepaPlace1'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 - 70, 'formationPrepaPlace1', 'mediumContent2', 'right');
+        this.formationTexts['PrepaPlace2'] = generalFunctions.displayText(this.game.width*0.5 + 180, this.game.height*0.5 - 50, 'formationPrepaPlace2', 'mediumContent2', 'right');
+        this.formationTexts['PrepaDesc1'] = generalFunctions.displayText(345, this.game.height*0.5 - 5, 'formationPrepaDesc1', 'mediumContent2');
+        this.formationTexts['PrepaDesc2'] = generalFunctions.displayText(345, this.game.height*0.5 + 15, 'formationPrepaDesc2', 'mediumContent2');
 
-        this.formationTexts['FacDate'] = generalFunctions.displayText(25, this.game.height*0.5 + 92, 'formationFacDate', 'formation');
-        this.formationTexts['FacPlace1'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 + 150, 'formationFacPlace1', 'formation', 'right');
-        this.formationTexts['FacPlace2'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 + 170, 'formationFacPlace2', 'formation', 'right');
-        this.formationTexts['FacDesc'] = generalFunctions.displayText(25, this.game.height*0.5 + 215, 'formationFacDesc', 'formation');
+        this.formationTexts['FacDate'] = generalFunctions.displayText(25, this.game.height*0.5 + 92, 'formationFacDate', 'mediumContent2');
+        this.formationTexts['FacPlace1'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 + 150, 'formationFacPlace1', 'mediumContent2', 'right');
+        this.formationTexts['FacPlace2'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 + 170, 'formationFacPlace2', 'mediumContent2', 'right');
+        this.formationTexts['FacDesc'] = generalFunctions.displayText(25, this.game.height*0.5 + 215, 'formationFacDesc', 'mediumContent2');
 
-        this.formationTexts['OCDate'] = generalFunctions.displayText(25, this.game.height*0.5 - 128, 'formationOCDate', 'formation');
-        this.formationTexts['OCPlace1'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 - 70, 'formationOCPlace1', 'formation', 'right');
-        this.formationTexts['OCPlace2'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 - 50, 'formationOCPlace2', 'formation', 'right');
-        this.formationTexts['OCDesc1'] = generalFunctions.displayText(25, this.game.height*0.5 - 5, 'formationOCDesc1', 'formation');
-        this.formationTexts['OCDesc2'] = generalFunctions.displayText(25, this.game.height*0.5 + 15, 'formationOCDesc2', 'formation');
+        this.formationTexts['OCDate'] = generalFunctions.displayText(25, this.game.height*0.5 - 128, 'formationOCDate', 'mediumContent2');
+        this.formationTexts['OCPlace1'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 - 70, 'formationOCPlace1', 'mediumContent2', 'right');
+        this.formationTexts['OCPlace2'] = generalFunctions.displayText(this.game.width*0.5 - 140, this.game.height*0.5 - 50, 'formationOCPlace2', 'mediumContent2', 'right');
+        this.formationTexts['OCDesc1'] = generalFunctions.displayText(25, this.game.height*0.5 - 5, 'formationOCDesc1', 'mediumContent2');
+        this.formationTexts['OCDesc2'] = generalFunctions.displayText(25, this.game.height*0.5 + 15, 'formationOCDesc2', 'mediumContent2');
 
         //Now we call checkHeight to make the higher texts disappear
         for (var text in this.formationTexts) {

@@ -66,7 +66,7 @@ HomeGame.Preload.prototype = {
 	},
 
 	create: function() {
-		this.state.start('Game');
+		this.state.start('Languages');
 	},
 
 	//create the loading animation

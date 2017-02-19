@@ -121,8 +121,8 @@ HomeGame.Contact.prototype = {
 	generateMainContent: function() {
 		generalFunctions.displayText(this.game.width *0.5 + 150, 50, 'contact', 'title', 'center');
 
-		generalFunctions.displayText(this.game.width *0.5 + 160, 150, 'contactLooking', 'contactContent', 'center');
-		generalFunctions.displayText(this.game.width *0.5 + 160, 300, 'contactOffer', 'contactContent', 'center');
+		generalFunctions.displayText(this.game.width *0.5 + 160, 160, 'contactLooking', 'mediumContent1', 'center');
+		generalFunctions.displayText(this.game.width *0.5 + 160, 300, 'contactOffer', 'mediumContent1', 'center');
 	},
 
     //Create the button containing the email address
@@ -135,7 +135,7 @@ HomeGame.Contact.prototype = {
 		generalFunctions.generateButton(355, 415, 185, 35, 0.3, emailButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(447, 435, 'email', 'contactButtons', 'center');
+		var textValue = generalFunctions.displayText(447, 435, 'email', 'mediumContent2', 'center');
 		emailButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
@@ -153,7 +153,7 @@ HomeGame.Contact.prototype = {
 		generalFunctions.generateButton(575, 415, 185, 35, 0.3, formButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(670, 435, 'contactFormButtonValue', 'contactButtons', 'center');
+		var textValue = generalFunctions.displayText(670, 435, 'contactFormButtonValue', 'mediumContent2', 'center');
 		formButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
@@ -171,7 +171,7 @@ HomeGame.Contact.prototype = {
 		generalFunctions.generateButton(465, 510, 185, 35, 0.3, linkedinButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(560, 530, 'contactLinkedinButtonValue', 'contactButtons', 'center');
+		var textValue = generalFunctions.displayText(560, 530, 'contactLinkedinButtonValue', 'mediumContent2', 'center');
 		linkedinButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
@@ -230,14 +230,14 @@ HomeGame.Contact.prototype = {
 
 		try {
 			if (document.execCommand('copy')) {
-				this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopySuccess', 'copyConfirm', 'center');
+				this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopySuccess', 'smallContent', 'center');
 				this.game.time.events.add(2000, this.fadeText, this);
 			} else {
-				this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'copyConfirm', 'center', false);
+				this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'smallContent', 'center', false);
 				this.game.time.events.add(2000, this.fadeText, this);
 			}
 		} catch (err) {
-			this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'copyConfirm', 'center', false);
+			this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'smallContent', 'center', false);
 			this.game.time.events.add(2000, this.fadeText, this);
 		}
 

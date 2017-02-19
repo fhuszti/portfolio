@@ -25,73 +25,46 @@ var generalFunctions = {
         var textToRender = null,
             styleToRender = null,
             title = {
-                font: "25px 'Berkshire Swash'",
+                font: "25px 'Cabin Sketch'",
                 fill: "rgb(240, 240, 240)",
                 align: "center",
                 stroke: "black",
                 strokeThickness: 4
             },
             guidance = {
-                font: "20px 'Berkshire Swash'",
-                fill: "rgb(240, 240, 240)",
-                align: "center",
-                stroke: "black",
-                strokeThickness: 2
-            },
-            skills = {
-                font: "30px 'VT323'",
-                fill: "rgb(240, 240, 240)",
-                align: "center",
-                stroke: "black",
-                strokeThickness: 2
-            },
-            formation = {
-                font: "16px 'Cabin Sketch'",
-                fill: "white",
-                stroke: "black",
-                strokeThickness: 2
-            },
-            contactContent = {
-                font: "20px 'Cagliostro'",
-                fill: "rgb(240, 240, 240)",
-                align: "center",
-                stroke: "black",
-                strokeThickness: 2
-            },
-            contactButtons = {
-                font: "19px 'Cagliostro'",
-                fill: "rgb(240, 240, 240)",
-                align: "center",
-                stroke: "black",
-                strokeThickness: 2
-            },
-            copyConfirm = {
-                font: "15px 'VT323'",
-                fill: "rgb(240, 240, 240)",
-                align: "center",
-                stroke: "black",
-                strokeThickness: 4
-            },
-            experienceSkills = {
-                font: "20px 'Cagliostro'",
-                fill: "rgb(240, 240, 240)",
-                align: "center",
-                stroke: "black",
-                strokeThickness: 2
-            },
-            experienceTitle = {
-                font: "20px 'Cabin Sketch'",
+                font: "18px 'Cabin Sketch'",
                 fill: "rgb(240, 240, 240)",
                 align: "center",
                 stroke: "black",
                 strokeThickness: 3
             },
-            experienceContent = {
-                font: "16px 'Cabin Sketch'",
-                fill: "rgb(240, 240, 240)",
+            bigContent = {
+                font: "23px 'Cagliostro'",
+                fill: "white",
                 align: "center",
                 stroke: "black",
-                strokeThickness: 2.5
+                strokeThickness: 3
+            },
+            mediumContent1 = {
+                font: "20px 'Cagliostro'",
+                fill: "white",
+                align: "center",
+                stroke: "black",
+                strokeThickness: 3
+            },
+            mediumContent2 = {
+                font: "18px 'Cagliostro'",
+                fill: "white",
+                align: "center",
+                stroke: "black",
+                strokeThickness: 3
+            },
+            smallContent = {
+                font: "15px 'Cagliostro'",
+                fill: "white",
+                align: "center",
+                stroke: "black",
+                strokeThickness: 4
             };
 
         //We get a different text file depending on the current user language
@@ -114,30 +87,18 @@ var generalFunctions = {
             case 'guidance':
                 styleToRender = guidance;
                 break;
-            case 'skills':
-                styleToRender = skills;
+            case 'bigContent':
+                styleToRender = bigContent;
                 break;
-            case 'formation':
-                styleToRender = formation;
+            case 'mediumContent1':
+                styleToRender = mediumContent1;
                 break;
-            case 'contactContent':
-                styleToRender = contactContent;
+            case 'mediumContent2':
+                styleToRender = mediumContent2;
                 break;
-            case 'contactButtons':
-                styleToRender = contactButtons;
+            case 'smallContent':
+                styleToRender = smallContent;
                 break;
-            case 'copyConfirm':
-            	styleToRender = copyConfirm;
-            	break;
-            case 'experienceSkills':
-            	styleToRender = experienceSkills;
-            	break;
-            case 'experienceTitle':
-            	styleToRender = experienceTitle;
-            	break;
-            case 'experienceContent':
-            	styleToRender = experienceContent;
-            	break;
             default:
                 styleToRender = '';
         }
@@ -218,7 +179,7 @@ var generalFunctions = {
     */
     displayLine: function(x, y, layout = 'horizontal') {
         var line = HomeGame.game.make.text(x, y, '------------------------------------------------------------------------', {
-            font: "20px 'VT323'",
+            font: "23px 'Cagliostro'",
             fill: "rgb(240, 240, 240)",
             stroke: "black",
             strokeThickness: 1
@@ -229,7 +190,7 @@ var generalFunctions = {
             line.scale.setTo(0.5, 1);
         }
 
-        line.setShadow(3, 3, 'rgba(10, 10, 10, 0.5)', 1);
+        line.setShadow(2, 2, 'rgba(10, 10, 10, 0.5)', 1);
 
         HomeGame.game.add.existing(line);
     },
@@ -240,13 +201,13 @@ var generalFunctions = {
     displayTableTitles: function(titles = []) {
         var titleHeight = 228;
 
-        this.displayText(330, 200, 'skillsNewbie', 'skills', 'center');
-        this.displayText(490, 200, 'skillsIntermediate', 'skills', 'center');
-        this.displayText(640, 200, 'skillsAdvanced', 'skills', 'center');
+        this.displayText(330, 200, 'skillsNewbie', 'bigContent', 'center');
+        this.displayText(490, 200, 'skillsIntermediate', 'bigContent', 'center');
+        this.displayText(640, 200, 'skillsAdvanced', 'bigContent', 'center');
 
         if (titles.length > 0) {
             titles.forEach(function(title) {
-                generalFunctions.displayText(230, titleHeight, title, 'skills', 'right');
+                generalFunctions.displayText(230, titleHeight, title, 'bigContent', 'right');
                 titleHeight += 50;
             });
         }

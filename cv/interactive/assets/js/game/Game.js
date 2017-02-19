@@ -110,10 +110,10 @@ HomeGame.Game.prototype = {
         formationSign.scale.setTo(0.5);
 
         //Adding the text next to the signs
-        generalFunctions.displayText(110, 60, 'skills', 'guidance');
-        generalFunctions.displayText(this.game.width - 180, 40, 'experience', 'guidance', 'right');
-        generalFunctions.displayText(this.game.width - 100, this.game.height - 140, 'contact', 'guidance', 'right');
-        generalFunctions.displayText(30, this.game.height - 170, 'formation', 'guidance');
+        generalFunctions.displayText(80, 60, 'skills', 'guidance');
+        generalFunctions.displayText(this.game.width - 150, 25, 'experience', 'guidance', 'right');
+        generalFunctions.displayText(this.game.width - 70, this.game.height - 140, 'contact', 'guidance', 'right');
+        generalFunctions.displayText(20, this.game.height - 160, 'formation', 'guidance');
     },
 
     //create things other than platforms (rocks/branchs/trees/flowers...)

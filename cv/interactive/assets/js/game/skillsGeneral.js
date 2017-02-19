@@ -16,11 +16,11 @@ var skillsFunctions = {
 
     //Create the main table
     generateTable: function(items) {
-    	generalFunctions.displayLine(100, 210);
-        generalFunctions.displayLine(100, 260);
-        generalFunctions.displayLine(100, 310);
-        generalFunctions.displayLine(100, 360);
-        generalFunctions.displayLine(100, 410);
+    	generalFunctions.displayLine(100, 205);
+        generalFunctions.displayLine(100, 255);
+        generalFunctions.displayLine(100, 305);
+        generalFunctions.displayLine(100, 355);
+        generalFunctions.displayLine(100, 405);
 
         generalFunctions.displayLine(240, 480, 'vertical');
 
@@ -231,8 +231,8 @@ var skillsFunctions = {
     generateSigns: function(state, title, left, right) {
     	generalFunctions.displayText(state.game.width*0.5, 30, title, 'title', 'center');
 
-        generalFunctions.displayText(50, 50, left, 'guidance');
-        generalFunctions.displayText(state.game.width - 50, 50, right, 'guidance', 'right');
+        generalFunctions.displayText(30, 50, left, 'guidance');
+        generalFunctions.displayText(state.game.width - 30, 50, right, 'guidance', 'right');
 
         //Create all guidance signs
         var doubleSign = state.game.add.sprite(state.game.width*0.5, 80, 'textureAtlas', 'sign3');

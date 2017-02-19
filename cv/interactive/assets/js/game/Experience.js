@@ -106,7 +106,7 @@ HomeGame.Experience.prototype = {
 		homeSign.scale.setTo(0.5);
 		homeSign.anchor.setTo(0.5);
 
-		generalFunctions.displayText(this.game.width - 40, this.game.height - 135, 'home', 'guidance', 'right');
+		generalFunctions.displayText(this.game.width - 70, this.game.height - 95, 'home', 'guidance', 'right');
 	},
 
 	//create the dark background for content
@@ -171,19 +171,19 @@ HomeGame.Experience.prototype = {
 		this.firstBackgroundImg = this.generateBackgroundImage(this.game.width*0.5 - 92, 130, 'boudinblanc');
 		this.firstBackgroundGroup.addChild(this.firstBackgroundImg);
 
-		this.firstBackgroundText = generalFunctions.displayText(this.game.width*0.5 + 23, 180, 'experienceFirstLinkLocation', 'experienceTitle', 'center');
+		this.firstBackgroundText = generalFunctions.displayText(this.game.width*0.5 + 23, 180, 'experienceFirstLinkLocation', 'mediumContent1', 'center');
 		this.firstBackgroundGroup.addChild(this.firstBackgroundText);
 
 		this.firstBackgroundGroup.alpha = 0;
 
 		//then we add the text
-		var titleValue = generalFunctions.displayText(this.game.width*0.5 + 23, 160, 'experienceFirstLinkTitle', 'experienceTitle', 'center');
+		var titleValue = generalFunctions.displayText(this.game.width*0.5 + 23, 160, 'experienceFirstLinkTitle', 'mediumContent1', 'center');
 		boudinBlancButton.add(titleValue);
 
-		var durationValue = generalFunctions.displayText(this.game.width*0.5 + 23, 190, 'experienceFirstLinkDuration', 'experienceContent', 'center');
+		var durationValue = generalFunctions.displayText(this.game.width*0.5 + 23, 190, 'experienceFirstLinkDuration', 'smallContent', 'center');
 		boudinBlancButton.add(durationValue);
 
-		var jobValue = generalFunctions.displayText(this.game.width*0.5 + 23, 210, 'experienceFirstLinkJob', 'experienceContent', 'center');
+		var jobValue = generalFunctions.displayText(this.game.width*0.5 + 23, 210, 'experienceFirstLinkJob', 'smallContent', 'center');
 		boudinBlancButton.add(jobValue);
 
 		this.contentGroup.addChild(titleValue);
@@ -221,19 +221,19 @@ HomeGame.Experience.prototype = {
 		this.secondBackgroundImg = this.generateBackgroundImage(this.game.width*0.5 - 92, this.game.height*0.5 - 30, 'mcdonalds');
 		this.secondBackgroundGroup.addChild(this.secondBackgroundImg);
 
-		this.secondBackgroundText = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5 + 20, 'experienceSecondLinkLocation', 'experienceTitle', 'center');
+		this.secondBackgroundText = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5 + 20, 'experienceSecondLinkLocation', 'mediumContent1', 'center');
 		this.secondBackgroundGroup.addChild(this.secondBackgroundText);
 
 		this.secondBackgroundGroup.alpha = 0;
 
 		//then we add the text
-		var titleValue = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5, 'experienceSecondLinkTitle', 'experienceTitle', 'center');
+		var titleValue = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5, 'experienceSecondLinkTitle', 'mediumContent1', 'center');
 		mcdonaldsButton.add(titleValue);
 
-		var durationValue = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5 + 30, 'experienceSecondLinkDuration', 'experienceContent', 'center');
+		var durationValue = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5 + 30, 'experienceSecondLinkDuration', 'smallContent', 'center');
 		mcdonaldsButton.add(durationValue);
 
-		var jobValue = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5 + 50, 'experienceSecondLinkJob', 'experienceContent', 'center');
+		var jobValue = generalFunctions.displayText(this.game.width*0.5 + 23, this.game.height*0.5 + 50, 'experienceSecondLinkJob', 'smallContent', 'center');
 		mcdonaldsButton.add(jobValue);
 
 		this.contentGroup.addChild(titleValue);
@@ -247,22 +247,22 @@ HomeGame.Experience.prototype = {
 
 	//create the side panel of the main content
 	generateContentSidePanel: function() {
-		var skillsTitle = generalFunctions.displayText(this.game.width - 150, 130, 'experienceSkillsTitle', 'experienceTitle', 'center');
+		var skillsTitle = generalFunctions.displayText(this.game.width - 150, 130, 'experienceSkillsTitle', 'mediumContent2', 'center');
 		this.contentGroup.addChild(skillsTitle);
 
-		var skillsFirst = generalFunctions.displayText(this.game.width - 150, 230, 'experienceSkillsFirst', 'experienceSkills', 'center');
+		var skillsFirst = generalFunctions.displayText(this.game.width - 150, 230, 'experienceSkillsFirst', 'mediumContent1', 'center');
 		this.contentGroup.addChild(skillsFirst);
 
-		var skillsSecond = generalFunctions.displayText(this.game.width - 245, 265, 'experienceSkillsSecond', 'experienceSkills', 'left');
+		var skillsSecond = generalFunctions.displayText(this.game.width - 245, 265, 'experienceSkillsSecond', 'mediumContent1', 'left');
 		this.contentGroup.addChild(skillsSecond);
 
-		var skillsThird = generalFunctions.displayText(this.game.width - 60, 265, 'experienceSkillsThird', 'experienceSkills', 'right');
+		var skillsThird = generalFunctions.displayText(this.game.width - 60, 265, 'experienceSkillsThird', 'mediumContent1', 'right');
 		this.contentGroup.addChild(skillsThird);
 
-		var skillsFourth = generalFunctions.displayText(this.game.width - 150, 335, 'experienceSkillsFourth', 'experienceSkills', 'center');
+		var skillsFourth = generalFunctions.displayText(this.game.width - 150, 335, 'experienceSkillsFourth', 'mediumContent1', 'center');
 		this.contentGroup.addChild(skillsFourth);
 
-		var skillsFifth = generalFunctions.displayText(this.game.width - 150, 385, 'experienceSkillsFifth', 'experienceSkills', 'center');
+		var skillsFifth = generalFunctions.displayText(this.game.width - 150, 385, 'experienceSkillsFifth', 'mediumContent1', 'center');
 		this.contentGroup.addChild(skillsFifth);
 	},
 

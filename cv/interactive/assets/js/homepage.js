@@ -37,7 +37,7 @@ $(function() {
                 },
 
         		google: {
-            	     families: ['Berkshire Swash', 'VT323', 'Cabin Sketch', 'Cagliostro']
+            	     families: ['Cabin Sketch', 'Cagliostro']
         		}
             };
 

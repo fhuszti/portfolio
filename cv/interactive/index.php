@@ -29,8 +29,6 @@
         <link rel="stylesheet" href="assets/css/small-header.css">
 
         <!-- fonts-->
-        <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
 
