@@ -4,7 +4,12 @@ test/
 family/
 tours/
 php-config/getUrl.php
-assets/img/big-logo.png
+assets/img/
+errors/assets/img/
+homework/assets/img/
+cv/assets/img/
+cv/simple/assets/img/
+cv/interactive/assets/img/
 cv/interactive/assets/atlas/json/*.tps
 cv/interactive/assets/atlas/png-fat/
 cv/interactive/assets/img-fat/
