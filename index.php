@@ -91,8 +91,14 @@
                 <div class="col-xs-4 col-sm-3 col-md-2">
                     <a href="https://phaser.io/" title="Phaser"><img src="http://assets.fhuszti.com/homepage/phaser.png" alt="Phaser" /></a>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-6">
-                    <p><?php echo $lang['SKILLS_LEARNING']; ?></p>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="http://twig.sensiolabs.org/" title="Twig"><img src="http://assets.fhuszti.com/homepage/twig.png" alt="Twig" /></a>
+                </div>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="http://silex.sensiolabs.org/" title="Silex"><img src="http://assets.fhuszti.com/homepage/silex.png" alt="Silex" /></a>
+                </div>
+                <div class="col-xs-4 col-sm-3 col-md-2">
+                    <a href="https://symfony.com/" title="Symfony"><img src="http://assets.fhuszti.com/homepage/symfony.png" alt="Symfony" /></a>
                 </div>
             </section>
 
