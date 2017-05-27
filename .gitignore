@@ -1,8 +1,11 @@
 .DS_Store
+.ftpquota
 favicon.ico
 test/
 family/
 tours/
+louvre/
+microcms/
 php-config/getUrl.php
 assets/img/
 errors/assets/img/

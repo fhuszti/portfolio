@@ -1,0 +1,9 @@
+INTERACTIVE CV
+- fonts
+- feedback
+
+FAMILY
+- Re-do it all (MongoDB ? Node.js ?)
+
+GENERAL SECURITY
+- prevent direct access to files other than useful php pages (index.php...)

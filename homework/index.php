@@ -109,7 +109,7 @@
                     <div class="col-xs-12 tab-pane fade" id="project2">
                         <div class="row">
                             <h2><?php echo $lang['PROJECT2_TITLE']; ?></h2>
-                            <h4><a href="#" title="<?php echo $lang['PROJECT_LINK_TITLE']; ?>"><?php echo $lang['PROJECT_LINK']; ?></a> <span class="label label-info"><?php echo $lang['PROJECT_LINK_LABEL_PROGRESS']; ?></span></h4>
+                            <h4><a href="#" title="<?php echo $lang['PROJECT_LINK_TITLE']; ?>"><?php echo $lang['SOON']; ?></a> <span class="label label-info"><?php echo $lang['PROJECT_LINK_LABEL_PROGRESS']; ?></span></h4>
                             <hr />
                         </div>
                         <div class="row">
