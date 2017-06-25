@@ -1,32 +1,30 @@
-<section class="col-xs-12 col-sm-4" id="quickLook">
+<section class="col-xs-12 col-md-4" id="quickLook">
     <header class="row">
         <div class="col-xs-12">
             <h1>{{ 'core.resume.quick_look'|trans }}</h1>
         </div>
     </header>
-    <div class="row">
-        <div class="col-xs-12">
-            <h3>{{ 'core.resume.knowledge.title'|trans }}</h3>
+    <div class="row col-xs-12">
+        <h3>{{ 'core.resume.knowledge.title'|trans }}</h3>
 
-            <ul class="col-xs-6">
-                {% for i in 0..4 %}
-                    <li>
-                        <i class='brand'>
-                            {{ ('core.resume.knowledge.left_list.' ~ i)|trans }}
-                        </i>
-                    </li>
-                {% endfor %}
-            </ul>
-            <ul class="col-xs-6">
-                {% for i in 0..4 %}
-                    <li>
-                        <i class='{% if loop.last %}expression{% else %}brand{% endif %}'>
-                            {{ ('core.resume.knowledge.right_list.' ~ i)|trans }}
-                        </i>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
+        <ul class="col-xs-6">
+            {% for i in 0..4 %}
+                <li>
+                    <i class='brand'>
+                        {{ ('core.resume.knowledge.left_list.' ~ i)|trans }}
+                    </i>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul class="col-xs-6">
+            {% for i in 0..4 %}
+                <li>
+                    <i class='{% if loop.last %}expression{% else %}brand{% endif %}'>
+                        {{ ('core.resume.knowledge.right_list.' ~ i)|trans }}
+                    </i>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
     <div class="row">
         <div class="col-xs-12">

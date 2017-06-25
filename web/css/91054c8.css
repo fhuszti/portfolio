@@ -128,6 +128,13 @@ QUICK LOOK SECTION
 
 
 
+@media (max-width: 991px) {
+    #mainContent [class*="row"] {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
 /* This is to fix some funky behaviour starting at that particular width */
 @media (max-width: 919px) {
     #title img {
