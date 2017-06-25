@@ -35,7 +35,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    {% stylesheets filter='cssrewrite'
+    {% stylesheets filter='cssrewrite, ?scssphp'
         'bundles/app/css/interactive.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
     {% endstylesheets %}
@@ -154,7 +154,7 @@
 
 {% block javascripts %}
     {{ parent() }}
-    {% javascripts
+    {% javascripts filter='?jsqueeze'
         'bundles/app/js/phaser.min.js'
         'bundles/app/js/game/general.js'
         'bundles/app/js/game/skillsGeneral.js'
