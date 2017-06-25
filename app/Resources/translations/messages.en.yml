@@ -4,6 +4,7 @@ core:
         meta:
             title:       François Huszti, web dev - Portfolio
             description: Portfolio of François Huszti, web dev. My resume and my projects are all to be found here.
+        insight_alt: "SensioLabs Insight: Platinum medal"
     errors:
         e400:
             title: "400: Bad Request"

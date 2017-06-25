@@ -4,6 +4,7 @@ core:
         meta:
             title:       François Huszti, développeur web - Portfolio
             description: Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici.
+        insight_alt: "SensioLabs Insight: Médaille de platine"
     errors:
         e400:
             title: Erreur 400 (Mauvaise requête)
