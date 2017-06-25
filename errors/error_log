@@ -1,2 +1,0 @@
-[13-Feb-2017 16:00:01 America/Chicago] PHP Warning:  require(/php-config/config-includes.php): failed to open stream: No such file or directory in /home4/durden/public_html/errors/404.php on line 1
-[13-Feb-2017 16:00:01 America/Chicago] PHP Fatal error:  require(): Failed opening required '/php-config/config-includes.php' (include_path='.:/opt/php56/lib/php') in /home4/durden/public_html/errors/404.php on line 1
