@@ -1,0 +1,13 @@
+{% extends "layout_errors.html.twig" %}
+
+{% block title %}
+    {{ 'core.errors.e500.title'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block error_title %}
+	{{ 'core.errors.e500.title'|trans }}
+{% endblock %}
+
+{% block content %}
+    {{ 'core.errors.e500.content'|trans }}
+{% endblock %}

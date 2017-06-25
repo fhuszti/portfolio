@@ -1,0 +1,70 @@
+<footer class="navbar navbar-default" id="footer">
+  	<div class="col-xs-12 col-sm-4">
+  		<h4>{{ 'core.header.projects.title'|trans }}</h4>
+
+  		<ul>
+  			<li>
+  				<a href="http://tours.fhuszti.com" title="&ldquo;{{ 'core.footer.projects.tours.link_title'|trans }}&rdquo;" class="navbar-link">
+	      			<em>
+                &ldquo;{{ 'core.footer.projects.tours.title'|trans }}&rdquo;
+              </em>
+	      		</a>
+	      		<br />
+	      		WordPress
+  			</li>
+  			<li>
+  				<a href="http://microcms.fhuszti.com" title="&ldquo;{{ 'core.footer.projects.microcms.link_title'|trans }}&rdquo;" class="navbar-link">
+	      			<em>
+                &ldquo;{{ 'core.footer.projects.microcms.title'|trans }}&rdquo;
+              </em>
+	      		</a>
+	      		<br />
+	      		<a href="https://github.com/fhuszti/micro-cms" title="{{ 'core.footer.projects.microcms.github.link_title'|trans }}" class="navbar-link">
+	      			{{ 'core.footer.projects.microcms.github.title'|trans }}
+	      		</a>
+  			</li>
+  			<li>
+  				<a href="http://louvre.fhuszti.com/{{ app.request.locale }}" title="&ldquo;{{ 'core.footer.projects.louvre.link_title'|trans }}&rdquo;" class="navbar-link">
+	      			<em>
+                &ldquo;{{ 'core.footer.projects.louvre.title'|trans }}&rdquo;
+              </em>
+	      		</a>
+	      		<br />
+	      		<a href="https://github.com/fhuszti/ticketing-service-louvre" title="{{ 'core.footer.projects.louvre.github.link_title'|trans }}" class="navbar-link">
+	      			{{ 'core.footer.projects.louvre.github.title'|trans }}
+	      		</a>
+  			</li>
+
+  		</ul>
+  	</div>
+  	<div class="col-xs-12 col-sm-4">
+  		<h4>François Huszti</h4>
+
+  		<p>
+  			<em>contact@fhuszti.com</em>
+  			<br />
+      		<a href="{{ 'core.footer.contact.github.link'|trans }}" title="{{ 'core.footer.contact.github.title'|trans }}" class="navbar-link">
+	      		GitHub
+	      	</a> | 
+	      	<a href="{{ 'core.footer.contact.linkedin.link'|trans }}" title="{{ 'core.footer.contact.linkedin.title'|trans }}" class="navbar-link">
+	      		LinkedIn
+	      	</a>
+  		</p>
+  	</div>
+  	<div class="col-xs-12 col-sm-4">
+  		<h4>{{ 'core.footer.resume.title'|trans|striptags('<i>')|raw }}</h4>
+
+  		<ul>
+      		<li>
+      		<a href="{{ path('core_resume') }}" title="{{ 'core.footer.resume.simple.link_title'|trans }}" class="navbar-link">
+	      			{{ 'core.footer.resume.simple.title'|trans }}
+	      		</a>
+      		</li>
+      		<li>
+      			<a href="{{ path('core_interactive') }}" title="{{ 'core.footer.resume.interactive.link_title'|trans }}" class="navbar-link">
+	      			{{ 'core.footer.resume.interactive.title'|trans }}
+	      		</a>
+      		</li>
+  		</ul>
+  	</div>
+</footer>

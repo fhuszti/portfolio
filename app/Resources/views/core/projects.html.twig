@@ -1,0 +1,73 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+  	{{ 'core.header.projects.title'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block meta %}
+	<meta name="description" content="{{ 'core.site.meta.description'|trans }}" />
+
+	<!-- thumbnail picture to share on social medias -->
+    <meta property="og:title" content="{{ 'core.site.meta.title'|trans }}" />
+    <meta property="og:description" content="{{ 'core.site.meta.description'|trans }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.fhuszti.com/{{ app.request.locale }}/projects/" />
+    <meta property="og:image" content="http://assets.fhuszti.com/big-logo.png" />
+    <link rel="image_src" href="http://assets.fhuszti.com/big-logo.png" />
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite'
+        'bundles/app/css/projects.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
+    {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+	<div class="jumbotron">
+        <p class="container-fluid">
+            {{ 'core.projects.intro'|trans|striptags('<a><i>')|raw }}
+        </p>
+    </div>
+
+    <!-- Tabs display -->
+    <div class="row">
+	    <ul class="nav nav-pills nav-justified">
+	        <li>
+	        	<a href="#project1" data-toggle="tab">
+	        		{{ 'core.projects.tab'|trans }} n°1
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="#project2" data-toggle="tab">
+	        		{{ 'core.projects.tab'|trans }} n°2
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="#project3" data-toggle="tab">
+	        		{{ 'core.projects.tab'|trans }} n°3
+	        	</a>
+	        </li>
+	        <li class="disabled">
+	        	<a>
+	        		{{ 'core.projects.soon'|trans }}&hellip;
+	        	</a>
+	        </li>
+	    </ul>
+	</div>
+
+	<section class="row tab-content">
+	    <div class="col-xs-12 tab-pane fade active in">
+	        <h2 id="centeredTitle">
+	        	{{ 'core.projects.faketab'|trans }}
+	        </h2>
+	    </div>
+
+	    {% include 'core/blocks/projects/project_1_tab.html.twig' %}
+
+	    {% include 'core/blocks/projects/project_2_tab.html.twig' %}
+
+	    {% include 'core/blocks/projects/project_3_tab.html.twig' %}
+	</section>
+{% endblock %}

@@ -1,0 +1,73 @@
+<div class="col-xs-12 tab-pane fade" id="project1">
+    <div class="row">
+        <h2>
+        	&ldquo;{{ 'core.footer.projects.tours.title'|trans }}&rdquo;
+        </h2>
+
+        <h4>
+        	<a href="http://tours.fhuszti.com" title="{{ 'core.projects.available.link_title'|trans }}">
+        		{{ 'core.projects.available.title'|trans }}
+        	</a> 
+        	<span class="label label-success">
+        		{{ 'core.projects.available.completed'|trans }}
+        	</span>
+        </h4>
+        <hr />
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                    	{{ 'core.projects.panel.skills_validated'|trans }}
+                    </h3>
+                </div>
+
+                <div class="list-group">
+                    {% for i in 0..3 %}
+                    	<p class="list-group-item">
+                    		{{ ('core.projects.panel.first.skills.' ~ i)|trans }}
+                    	</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                    	{{ 'core.projects.panel.technicals_validated'|trans }}
+                    </h3>
+                </div>
+
+                <div class="list-group">
+                    {% for i in 0..2 %}
+                    	<p class="list-group-item">
+                    		{{ ('core.projects.panel.first.technicals.' ~ i)|trans }}
+                    	</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+        	<div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                    	{{ 'core.projects.panel.deliverables'|trans }}
+                    </h3>
+                </div>
+
+                <div class="list-group">
+                    {% for i in 0..1 %}
+                    	<p class="list-group-item">
+                    		{{ ('core.projects.panel.first.deliverables.' ~ i)|trans }}
+                    	</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

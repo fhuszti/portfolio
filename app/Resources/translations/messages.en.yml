@@ -1,0 +1,250 @@
+core:
+    site:
+        title:     François Huszti, web dev
+        meta:
+            title:       François Huszti, web dev - Portfolio
+            description: Portfolio of François Huszti, web dev. My resume and my projects are all to be found here.
+    errors:
+        e400:
+            title: "400: Bad Request"
+            content: Either your browser couldn't properly access the server, or your request was corrupted before reaching it. Please try again.
+        e401:
+            title: "401: Unauthorized"
+            content: You have to be logged-in to see this page.
+        e403:
+            title: "403: Forbidden"
+            content: Access to this page is restricted.
+        e404:
+            title: "404: Not Found"
+            content: We couldn't find the page you're looking for. Check that the URL you asked for is correct.
+        e500:
+            title: "500: Internal Server Error"
+            content: The web server encountered an internal error. Please try again.
+        generic:
+            title: Error
+            content: An error has appeared while loading the page. Please try again.
+    header:
+        logo:
+            alt:   François Huszti, web dev
+        homepage:
+            link_title:  Back to the homepage
+            title:       Home
+        resume:
+            link_title:  My resume in its simple version
+            title:       Resume
+        interactive:
+            link_title:  My resume in its interactive version
+            title:       Interactive resume
+        projects:
+            link_title:  Link to all the projects I've done toward my degree
+            title:       Projects
+    home:
+        skills:    Skills
+        contact:
+            title: Contact
+            infos: |
+                My email address : <strong><i class="email">contact@fhuszti.com</i></strong>
+                You can also send me a mail automatically through the form below.
+            form_error:    Not all fields have been correctly filled.
+            sending_error: There was an error sending your message. Please try again later.
+            submit: Send
+            loading: Now waiting for the carrier pigeon
+            thanks: Your message was successfully sent to my mailbox. Thank you !
+        mail:
+            subject: New message (via fhuszti.com)
+            body:
+                title: New message sent from the contact form
+    resume:
+        job_title: WEB DEV
+        summary:
+            title: Summary
+            content: |
+                Energetic and motivated, I am also curious by nature. My ability to learn quickly allows me to go past most of the obstacles I encounter, by having a complete understanding of the issue.
+                I discovered code when I was 15 with HTML, CSS and the C language, which I've since forgotten because of a lack of practice. As time went on, I began looking into PHP, MySQL and JavaScript, and I soon started reading about a broader range of topics going from Project Management to learning the use of Linux's terminal.
+                All the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!">Multimedia Project Manager - Development</a>), together with my Interactive Resume, are a token of the skills I earned, for the most part, by myself.
+                I am currently seeking either a fixed-term or a permanent contract in a company to which I could bring my technical skills as well as my qualities while continuously earning some valuable experience.
+        academics:
+            title: Academics
+            present: present
+            oc:
+                link_title: Biggest e-learning platform in Europe!
+                title: <i class='brand'>OpenClassrooms</i>, e-learning
+                description: Multimedia Project Manager - Development
+            uni:
+                title: <i lang='fr' class='name'>Université François Rabelais</i>, Tours, France
+                description: <i lang='fr' class='expression'>Licence 1</i> in Mathematics
+            prepa:
+                title: <i lang='fr' class='name'>Lycée Dessaignes</i>, Blois, France
+                description: Preparatory Class - MPSI (Maths/Physics)
+            bac:
+                title: <i lang='fr' class='name'>Lycée Léonard de Vinci</i>, Amboise, France
+                description: <i lang='fr' class='diploma'>Baccalauréat Scientifique</i>, Mathematics spe., with honors
+        experience:
+            title: Experience
+            tours:
+                date: August 2016
+            interactive:
+                date: December 2016
+                description: 
+                    - Phaser.js
+                    - Minigame Creation
+            microcms:
+                date: February 2017
+            louvre:
+                date: May 2017
+        quick_look: QUICK LOOK
+        knowledge:
+            title: KNOWLEDGE
+            left_list:
+                - HTML5
+                - CSS3
+                - JavaScript
+                - PHP
+                - MySQL
+            right_list:
+                - WordPress
+                - BootStrap
+                - jQuery
+                - Phaser.js
+                - Responsive Design
+        key_skills:
+            title: KEY SKILLS
+            list:
+                - Ability to contribute with innovative ideas and solutions
+                - Creativity
+                - Frequent technology watch
+                - Ability to quickly assimilate new development techniques
+                - Rigor
+        qualities:
+            title: PERSONAL SKILLS
+            list:
+                - Perfectionist
+                - Constantly willing to progress
+                - Open-minded
+                - Appreciation and recognition of constructive criticism
+                - Dedicated, hard worker
+        details:
+            title: IMPORTANT DETAILS
+            list:
+                - Driver's license
+                - Native French speaker / Fluent in English
+        hobbies:
+            title: HOBBIES AND INTERESTS
+            content: I like working in front of my computer as much as going out with friends. Music is also important to me, I play the guitar and the piano as an amateur. I'm a big fan of football (YNWA), which I played for a few years when I was a kid before playing badminton for 6 years.
+    interactive:
+        meta:
+            title: Interactive Resume - François Huszti, web dev
+            description: My resume in its interactive version. Play as a ninja, lost in an unknown land!
+        intro: |
+            You are a ninja on a mission to find informations about... me.
+            Please don't ask questions.
+        handheld:
+            warning: |
+                This application was designed with computers in mind.
+                It works fine on smartphones and tablets but it isn't optimized for those, and the touch controls can feel a bit clunky at first.
+            turn:
+                alt: A phone going from portrait to landscape mode
+                message: I recommend you use your phone in landscape mode to avoid too much distortion of the graphics.
+        title:
+            desktop: Click here to start the Interactive Resume
+            handheld: Tap here to start the Interactive Resume
+        controls:
+            title: Controls
+            lateral_arrows: Use the left- and right- arrow keys to move
+            up_arrow: Use the up- arrow key to jump
+            handheld:
+                - Tap and hold on the left of your screen to go left, and on the right to go right
+                - Tap and hold the upper part of your screen to jump
+            last: Follow the signs!
+        more:
+            title: More
+            content:
+                - The main purpose of this project was simply to discover and have fun with a framework such as Phaser.js, while looking at it more from a developer perspective than that of a designer.
+                - Most of the beautiful sprites I used are the work of <em><i class='name'>Simirk</i></em> (available <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Presentation page for the sprites I used in this project">here</a>).
+                - The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Presentation page for the sprites I used in this project">here</a>).
+    projects:
+        intro: Here are all the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!">Multimedia Project Manager - Development</a>) with <a href="https://openclassrooms.com/" title="Biggest e-learning platform in Europe !"><i class="brand">OpenClassrooms.com</i></a>.
+        tab: Project
+        soon: Coming soon
+        faketab: Select a project to see more details about it.
+        available:
+            link_title: Come take a look!
+            title: Available here
+            completed: Completed
+            progress: In progress
+        panel:
+            skills_to_validate: Skills to validate
+            skills_validated: Skills validated
+            technicals_to_validate: Technical skills to demonstrate
+            technicals_validated: Technical skills demonstrated
+            deliverables: Deliverables
+            first:
+                skills:
+                    - Create a website from its conception to its delivery
+                    - Setup a distribution policy
+                    - Present a graphic charter
+                    - Define and present a site map as well as the appropriate technical solutions depending on the browser
+                technicals:
+                    - WordPress
+                    - JavaScript (procedural)
+                    - CSS3
+                deliverables:
+                    - Full source code for the project (HTML/CSS and others necessary files, zipped)
+                    - 10 pages long document, explaining how to use the site to the client (PDF)
+            second:
+                skills:
+                    - Create a website from its conception to its delivery
+                    - Support each proposal with valid arguments
+                technicals:
+                    - Silex (PHP, MVC)
+                    - Doctrine
+                    - jQuery
+                    - BootStrap
+                deliverables:
+                    - HTML, CSS, PHP and JavaScript code
+                    - MySQL database export file
+            third:
+                skills:
+                    - Learn how to use the Symfony framework
+                    - Create and manage all steps of a project
+                    - Create a website from its conception to its delivery
+                technicals:
+                    - Symfony 3
+                    - Twig
+                    - Stripe (online payments)
+                deliverables:
+                    - Specifications document for the client, including the project outline (PDF)
+                    - Full source code, created with Symfony and versioned with Git
+                    - A few (4-5) unit and functional tests that can be executed
+    footer:
+        projects:
+            tours:
+                link_title: "Create a website and put it online"
+                title:      "Create a website and put it online"
+            microcms:
+                link_title: "Create a blog for a professional writer"
+                title:      "Create a blog for a professional writer"
+                github:
+                    link_title: Take a look at the code on my GitHub
+                    title:      See on GitHub
+            louvre:
+                link_title: "Create a back-end for a client"
+                title:      "Create a back-end for a client"
+                github:
+                    link_title: Take a look at the code on my GitHub
+                    title:      See on GitHub
+        contact:   
+            github:
+                link:  https://github.com/fhuszti
+                title: Find me on GitHub
+            linkedin:
+                link:  https://www.linkedin.com/in/francoishuszti/
+                title: Find me on LinkedIn
+        resume:
+            title: Resume
+            simple:
+                link_title: Go to the simple version of my resume
+                title:      Simple version
+            interactive:
+                link_title: Go to the interactive version of my resume
+                title:      Interactive version

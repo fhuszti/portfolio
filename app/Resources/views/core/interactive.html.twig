@@ -1,0 +1,174 @@
+{% extends "layout_mini.html.twig" %}
+
+{% block title %}
+  	{{ 'core.header.interactive.title'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block meta %}
+	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<meta name="description" content="{{ 'core.interactive.meta.description'|trans }}" />
+	
+	<!-- thumbnail picture to share on social medias -->
+    <meta property="og:title" content="{{ 'core.interactive.meta.title'|trans }}" />
+    <meta property="og:description" content="{{ 'core.interactive.meta.description'|trans }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.fhuszti.com/{{ app.request.locale }}/interactive/" />
+    <meta property="og:image" content="http://assets.fhuszti.com/cv/interactive/thumbnailInteractiveResume.png" />
+    <link rel="image_src" href="http://assets.fhuszti.com/cv/interactive/thumbnailInteractiveResume.png" />
+
+    <!-- fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch|Cagliostro' rel='stylesheet' type='text/css'>
+
+    <!-- Webfont loader, so we can use it later in the app -->
+    <script>
+    	(function(d) {
+      	    var wf = d.createElement('script'),
+                s = d.scripts[0];
+
+      	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+      	    s.parentNode.insertBefore(wf, s);
+    	})(document);
+    </script>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite'
+        'bundles/app/css/interactive.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
+    {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+	<div id="canvasContent"></div>
+
+    <div id="wrapper" class="container" role="main">
+        <div class="row">
+            <h3>
+            	{{ 'core.interactive.intro'|trans|nl2br }}
+            </h3>
+        </div>
+
+        <div class="row hidden-md hidden-lg">
+        	<hr />
+
+        	<div class="alert alert-danger">
+        		{{ 'core.interactive.handheld.warning'|trans|nl2br }}
+        	</div>
+
+        	<div class="alert alert-warning" id="handleTurn">
+	            {% image 'http://assets.fhuszti.com/cv/interactive/turnPhone.png' %}
+	                <img src="{{ asset_url }}" alt="{{ 'core.interactive.handheld.turn.alt'|trans }}" />
+	            {% endimage %}
+	            <p>
+	                {{ 'core.interactive.handheld.turn.message'|trans }}
+	            </p>
+	        </div>
+        </div>
+
+        <hr />
+
+        <div class="row" id="title">
+            <h1><i class="name">François HUSZTI</i></h1>
+
+            <h2 class="hidden-xs hidden-sm">
+            	{{ 'core.interactive.title.desktop'|trans }}
+            </h2>
+            <h2 class="hidden-md hidden-lg">
+            	{{ 'core.interactive.title.handheld'|trans }}
+            </h2>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <aside class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3>
+                        	{{ 'core.interactive.controls.title'|trans }}
+                        </h3>
+                    </div>
+                    <div class="list-group">
+                        <div class="hidden-xs hidden-sm">
+	                        <p class="list-group-item right-align">
+	                            <button type="button" class="btn btn-default pull-left">
+	                                <span class="glyphicon glyphicon-arrow-left"></span>
+	                            </button>
+	                            <button type="button" class="btn btn-default pull-left">
+	                                <span class="glyphicon glyphicon-arrow-right"></span>
+	                            </button>
+	                            
+	                            {{ 'core.interactive.controls.lateral_arrows'|trans }}
+	                        </p>
+
+	                        <p class="list-group-item right-align">
+	                            <button type="button" class="btn btn-default pull-left">
+	                                <span class="glyphicon glyphicon-arrow-up"></span>
+	                            </button>
+	                            
+	                            {{ 'core.interactive.controls.up_arrow'|trans }}
+	                        </p>
+                        </div>
+
+                        <div class="visible-xs-block visible-sm-block">
+	                        {% for i in 0..1 %}
+	                        	<p class="list-group-item">
+	                        		{{ ('core.interactive.controls.handheld.' ~ i)|trans }}
+	                        	</p>
+	                        {% endfor %}
+                        </div>
+
+                        <p class="list-group-item right-align">
+                            {{ 'core.interactive.controls.last'|trans }}
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <aside class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3>
+                        	{{ 'core.interactive.more.title'|trans }}
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        {% for i in 0..2 %}
+                        	<p>
+                        		{{ ('core.interactive.more.content.' ~ i)|trans|striptags('<a><i><em>')|raw|nl2br }}
+                        	</p>
+                        {% endfor %}
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <script>
+	    var assetsBaseDir = "{{ asset('bundles/app/') }}",
+	    	userLang = (document.getElementsByTagName("html")[0].getAttribute('lang') === 'fr') ? 'fr' : 'en';
+	</script>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts
+        'bundles/app/js/phaser.min.js'
+        'bundles/app/js/game/general.js'
+        'bundles/app/js/game/skillsGeneral.js'
+        'bundles/app/js/game/Boot.js'
+        'bundles/app/js/game/Preload.js'
+        'bundles/app/js/game/Game.js'
+        'bundles/app/js/game/Languages.js'
+        'bundles/app/js/game/Frameworks.js'
+        'bundles/app/js/game/Others.js'
+        'bundles/app/js/game/Formation.js'
+        'bundles/app/js/game/Contact.js'
+        'bundles/app/js/game/Experience.js'
+        'bundles/app/js/interactive.js'
+        'bundles/app/js/game/load.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

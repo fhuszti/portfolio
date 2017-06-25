@@ -1,0 +1,33 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+  	{{ 'core.header.resume.title'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block meta %}
+	<meta name="description" content="{{ 'core.site.meta.description'|trans }}" />
+
+	<!-- thumbnail picture to share on social medias -->
+    <meta property="og:title" content="{{ 'core.site.meta.title'|trans }}" />
+    <meta property="og:description" content="{{ 'core.site.meta.description'|trans }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.fhuszti.com/{{ app.request.locale }}/cv/" />
+    <meta property="og:image" content="http://assets.fhuszti.com/big-logo.png" />
+    <link rel="image_src" href="http://assets.fhuszti.com/big-logo.png" />
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite'
+        'bundles/app/css/resume.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
+    {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+	<div class="row" id="resumeContainer">
+        {% include 'core/blocks/resume/main_content.html.twig' %}
+
+        {% include 'core/blocks/resume/quick_look.html.twig' %}
+    </div>
+{% endblock %}

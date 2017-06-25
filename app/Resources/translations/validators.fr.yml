@@ -1,0 +1,17 @@
+email:
+    name:
+        label:       Votre nom
+        placeholder: Prénom Nom
+        min:         Votre nom doit contenir au moins {{ limit }} caractères.
+        max:         Votre nom ne peut contenir plus de {{ limit }} caractères.
+        empty:       Votre nom doit être renseigné.
+    email:
+        label:       Votre adresse mail
+        placeholder: exemple@email.fr
+        message:     Le format de votre adresse mail n'est pas valide.
+        empty:       Votre adresse mail doit être renseignée.
+    content:
+        label:       Votre message
+        placeholder: Tapez votre message ici
+        message:     Votre message doit contenir au moins {{ limit }} caractères.
+        empty:       Votre email doit contenir un message.

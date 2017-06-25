@@ -1,0 +1,82 @@
+<section class="row">
+    <div class="col-xs-12">
+        {{ form_start(emailForm, {'attr': {
+        	'id': 'contactForm',
+        	'class': 'well',
+        	'role': 'form',
+      		'data-action': path('core_mailer'),
+        	'novalidate': 'novalidate'
+        }}) }}
+            <fieldset>
+                <legend>{{ 'core.home.contact.title'|trans }}</legend>
+
+                <div class="row" id="externalLinks">
+                    <p class="col-sm-6">
+                        <a class="btn btn-default btn-block" href="{{ 'core.footer.contact.github.link'|trans }}" title="{{ 'core.footer.contact.github.title'|trans }}">
+                        	{{ 'core.footer.contact.github.title'|trans }}
+                        </a>
+                    </p>
+                    <p class="col-sm-6">
+                        <a class="btn btn-default btn-block" href="{{ 'core.footer.contact.linkedin.link'|trans }}" title="{{ 'core.footer.contact.linkedin.title'|trans }}">
+                        	{{ 'core.footer.contact.linkedin.title'|trans }}
+                        </a>
+                    </p>
+                </div>
+
+	            {% if form_errors(emailForm.name) %}
+                    {{ form_errors(emailForm.name) }}
+                {% endif %}
+                {% if form_errors(emailForm.email) %}
+                    {{ form_errors(emailForm.email) }}
+                {% endif %}
+                {% if form_errors(emailForm.content) %}
+                    {{ form_errors(emailForm.content) }}
+                {% endif %}
+	            {% if form_errors(emailForm) %}
+	                {{ form_errors(emailForm) }}
+                {% endif %}
+
+                <div class="alert alert-danger col-xs-12" id="formError">
+                    {{ 'core.home.contact.form_error'|trans }}
+                </div>
+                <div class="alert alert-danger col-xs-12" id="sendingError">
+                    {{ 'core.home.contact.sending_error'|trans }}
+                </div>
+
+	            <p>
+	            	{{ 'core.home.contact.infos'|trans|striptags('<strong><i>')|raw|nl2br }}
+	            </p>
+
+                <div class="col-xs-12 col-sm-6 form-group">
+                    {{ form_label(emailForm.name) }}
+
+                    {{ form_widget(emailForm.name) }}
+                </div>
+
+                <div class="col-xs-12 col-sm-6 form-group">
+                    {{ form_label(emailForm.email) }}
+
+                    {{ form_widget(emailForm.email) }}
+                </div>
+
+                <div class="col-xs-12 form-group">
+                    {{ form_label(emailForm.content) }}
+
+                    {{ form_widget(emailForm.content) }}
+                </div>
+
+	            <div class="row">
+	                {{ form_rest(emailForm) }}
+            	</div>
+
+            	<button type="submit" class="btn btn-primary btn-block" id="submitButton" data-loading-text="<span class='glyphicon glyphicon-repeat'></span> {{ 'core.home.contact.loading'|trans }}&hellip;">
+            		{{ 'core.home.contact.submit'|trans }}
+            	</button>
+
+            	<div class="alert alert-success col-xs-12" id="formThanks">
+                    {{ 'core.home.contact.thanks'|trans }}
+                </div>
+            </fieldset>
+        {{ form_end(emailForm) }}
+    </div>
+</section>

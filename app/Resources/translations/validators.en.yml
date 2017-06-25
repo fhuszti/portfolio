@@ -1,0 +1,17 @@
+email:
+    name:
+        label:       Your name
+        placeholder: John Doe
+        min:         Your name must be at least {{ limit }} characters long.
+        max:         Your name cannot be longer than {{ limit }} characters.
+        empty:       You have to enter your name.
+    email:
+        label:       Your email address
+        placeholder: example@email.com
+        message:     Your email address format is not valid.
+        empty:       You have to enter your email address.
+    content:
+        label:       Your message
+        placeholder: Enter your message here
+        message:     Your message must be at least {{ limit }} character long.
+        empty:       Your email has to include a message.

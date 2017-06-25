@@ -1,0 +1,26 @@
+{% extends "layout_errors.html.twig" %}
+
+{% block title %}
+    {{ 'core.errors.e404.title'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block error_title %}
+	{{ 'core.errors.e404.title'|trans }}
+{% endblock %}
+
+{% block content %}
+    {{ 'core.errors.e404.content'|trans }}
+
+    {% image 'http://assets.fhuszti.com/errors/travolta.gif' %}
+		<img id="travolta" src="{{ asset_url }}" alt="Travolta" />
+	{% endimage %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    
+    {% javascripts
+        'bundles/app/js/travolta.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

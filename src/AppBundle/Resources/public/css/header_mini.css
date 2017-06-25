@@ -1,0 +1,39 @@
+/*
+The goal here is to reduce the overall size of the header to 30px (31px with the border)
+*/
+
+.navbar {
+    min-height: 30px;
+}
+
+
+.navbar-brand {
+    height: 30px;
+}
+#logo img {
+    height: 20px;
+}
+
+
+.navbar-toggle {
+    padding: 4px 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 2px;
+}
+
+
+.navbar-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
