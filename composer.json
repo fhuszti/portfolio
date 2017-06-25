@@ -1,5 +1,6 @@
 {
     "name": "durden/symfony",
+    "description": "Personal portfolio with an interactive resume",
     "license": "proprietary",
     "type": "project",
     "autoload": {
