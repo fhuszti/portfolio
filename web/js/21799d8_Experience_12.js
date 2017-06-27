@@ -729,13 +729,13 @@ HomeGame.Experience.prototype = {
 		//then we get the actual link
 		switch (group) {
 			case this.firstHoverGroup:
-				window.open('http://louvre.fhuszti.com/'+userLang);
+				window.open('http://louvre.fhuszti.tech/'+userLang);
 				break;
 			case this.thirdHoverGroup:
-				window.open('http://microcms.fhuszti.com/');
+				window.open('http://microcms.fhuszti.tech/');
 				break;
 			case this.fourthHoverGroup:
-				window.open('http://tours.fhuszti.com/');
+				window.open('http://tours.fhuszti.tech/');
 				break;
 			case this.fifthButtonGroup:
 				window.open('http://www.fhuszti.com/projects/'+userLang);
