@@ -154,7 +154,7 @@
 
 {% block javascripts %}
     {{ parent() }}
-    {% javascripts filter='?jsqueeze'
+    {% javascripts
         'bundles/app/js/phaser.min.js'
         'bundles/app/js/game/general.js'
         'bundles/app/js/game/skillsGeneral.js'
