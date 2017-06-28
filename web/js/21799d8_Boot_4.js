@@ -7,7 +7,7 @@ HomeGame.Boot.prototype = {
 
   preload: function() {
     //the texture atlas
-	this.load.atlasJSONArray('textureAtlas', assetsBaseDir+'atlas/png/textureAtlasTest.png', assetsBaseDir+'atlas/json/textureAtlasTest.json');
+	this.load.atlasJSONArray('textureAtlas', assetsBaseDir+'atlas/png/textureAtlas.png', assetsBaseDir+'atlas/json/textureAtlas.json');
   },
 
   create: function() {

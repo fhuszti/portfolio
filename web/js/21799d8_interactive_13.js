@@ -33,13 +33,7 @@ $(function() {
                 active: function() {
                     $('#wrapper').hide();
 
-                    $.getScript("start")
-                      .fail(function( jqxhr, settings, exception ) {
-                          console.log(jqxhr);
-                          console.log(settings);
-                          console.log(exception);
-                      })
-                    ;
+                    $.getScript("start");
                 },
 
         		google: {
