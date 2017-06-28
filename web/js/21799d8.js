@@ -2086,7 +2086,7 @@ HomeGame.Contact.prototype = {
 
 	//link to the contact form on the main website
 	linkToForm: function() {
-		window.open('http://www.fhuszti.com/'+window.actualLang+'#contactForm'); 
+		window.open('http://www.fhuszti.com/'+userLang+'#contactForm'); 
 	},
 
 	//link to my LinkedIn profile
@@ -2928,7 +2928,7 @@ HomeGame.Experience.prototype = {
 				window.open('http://tours.fhuszti.tech/');
 				break;
 			case this.fifthButtonGroup:
-				window.open('http://www.fhuszti.com/projects/'+userLang);
+				window.open('http://www.fhuszti.com/'+userLang+'/projects/');
 				break;
 		}
 	},

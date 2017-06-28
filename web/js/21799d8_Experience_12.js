@@ -738,7 +738,7 @@ HomeGame.Experience.prototype = {
 				window.open('http://tours.fhuszti.tech/');
 				break;
 			case this.fifthButtonGroup:
-				window.open('http://www.fhuszti.com/projects/'+userLang);
+				window.open('http://www.fhuszti.com/'+userLang+'/projects/');
 				break;
 		}
 	},
