@@ -65,6 +65,8 @@ class CoreController extends Controller
     /**
      * @Route("/cv", name="core_resume")
      * @Route("cv", name="core_resume")
+     * @Route("/cv/", name="core_resume")
+     * @Route("cv/", name="core_resume")
      * @Method("GET")
      */
     public function resumeAction()
@@ -80,6 +82,7 @@ class CoreController extends Controller
 
     /**
      * @Route("/cv/interactive", name="core_interactive")
+     * @Route("/cv/interactive/", name="core_interactive")
      * @Method("GET")
      */
     public function interactiveAction()
@@ -134,6 +137,7 @@ class CoreController extends Controller
 
     /**
      * @Route("/projects", name="core_projects")
+     * @Route("/projects/", name="core_projects")
      * @Method("GET")
      */
     public function projectsAction()
