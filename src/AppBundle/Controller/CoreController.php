@@ -91,7 +91,7 @@ class CoreController extends Controller
     }
 
     /**
-     * @Route("/cv/start", name="core_start")
+     * @Route("/cv/interactive/start", name="core_start")
      * @Method("GET")
      */
     public function startGameAction()
@@ -104,7 +104,7 @@ class CoreController extends Controller
     }
 
     /**
-     * @Route("/cv/lang_fr", name="core_interactive_fr")
+     * @Route("/cv/interactive/lang_fr", name="core_interactive_fr")
      * @Method("GET")
      */
     public function langFrAction()
@@ -117,7 +117,7 @@ class CoreController extends Controller
     }
 
     /**
-     * @Route("/cv/lang_en", name="core_interactive_en")
+     * @Route("/cv/interactive/lang_en", name="core_interactive_en")
      * @Method("GET")
      */
     public function langEnAction()
