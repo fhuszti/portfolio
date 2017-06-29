@@ -836,7 +836,7 @@ HomeGame.Experience.prototype = {
 			yes = generalFunctions.displayText(this.game.width * 0.5 + 100, this.game.height * 0.5 + 60, "experienceModalYes", 'title', 'center');
 
 		//on click on "Yes"
-		yes.events.onInputDown.add(this.redirectToGameHome, this);
+		yes.events.onInputDown.add(this.redirectToGameHub, this);
 		yes.inputEnabled = true;
 		yes.input.useHandCursor = true;
 
@@ -854,9 +854,9 @@ HomeGame.Experience.prototype = {
 		this.game.add.tween(this.modal).to( { alpha: 1 }, 600, "Linear", true);
 	},
 
-	//redirect player to Game state
-	redirectToGameHome: function() {
-		this.game.state.start('Game');
+	//redirect player to Hub state
+	redirectToGameHub: function() {
+		this.game.state.start('Hub');
 	},
 
 	//manage the first time background and light go back to normal

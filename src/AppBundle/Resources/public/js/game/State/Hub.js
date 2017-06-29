@@ -1,8 +1,8 @@
 var HomeGame = HomeGame || {};
 
-HomeGame.Game = function() {};
+HomeGame.Hub = function() {};
 
-HomeGame.Game.prototype = {
+HomeGame.Hub.prototype = {
 
     create: function() {
     	generalFunctions.addBackground(this);

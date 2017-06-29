@@ -1,8 +1,8 @@
 var HomeGame = HomeGame || {};
 
-HomeGame.Others = function() {};
+HomeGame.Languages = function() {};
 
-HomeGame.Others.prototype = {
+HomeGame.Languages.prototype = {
     create: function() {
         generalFunctions.addBackground(this);
 
@@ -11,22 +11,22 @@ HomeGame.Others.prototype = {
         skillsFunctions.behindMap(this);
 
         //Adding the table
-        skillsFunctions.generateTable(['Twig', 'Doctrine', 'Wordpress', 'jQuery', 'Linux']);
+        skillsFunctions.generateTable(['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']);
 
         //Initial map setup
         generalFunctions.mapSetup(this, 'skillsMap');
 
         //Create the top of the chests (behind the coins)
-        skillsFunctions.createTopChests(this, [0, 0, 0]);
+        skillsFunctions.createTopChests(this, [1, 0, 0]);
 
         //Create the coins
         skillsFunctions.coinsGroup(this);
 
+        skillsFunctions.generateCoin(this, 'gold', 352);
+        skillsFunctions.generateCoin(this, 'gold', 300);
         skillsFunctions.generateCoin(this, 'gold', 250);
+        skillsFunctions.generateCoin(this, 'silver', 450);
         skillsFunctions.generateCoin(this, 'silver', 402);
-        skillsFunctions.generateCoin(this, 'silver', 352);
-        skillsFunctions.generateCoin(this, 'silver', 300);
-        skillsFunctions.generateCoin(this, 'bronze', 452);
 
         //Create the bottom of the chests (in front of the coins)
         skillsFunctions.createBottomChests(this);
@@ -37,7 +37,7 @@ HomeGame.Others.prototype = {
         skillsFunctions.frontChestsBehindPlayer(this);
 
         //Adding the adequate title and signs
-        skillsFunctions.generateSigns(this, 'others', 'home', 'frameworks');
+        skillsFunctions.generateSigns(this, 'languages', 'frameworks', 'home');
 
         //create player at different places depending where the visitor was before
         skillsFunctions.createPlayer(this);
@@ -61,7 +61,7 @@ HomeGame.Others.prototype = {
         //Set some objects immovable so we can use them as platforms
         skillsFunctions.setImmovableObjects(this);
 
-        generalFunctions.previousState = 'others';
+        generalFunctions.previousState = 'languages';
     },
 
     update: function() {
@@ -90,10 +90,10 @@ HomeGame.Others.prototype = {
 
         //Going to another map
         if (this.player.x < 20 && this.player.y < 150) {
-      	    this.game.state.start('Game');
+      	    this.game.state.start('Frameworks');
     	}
         if (this.player.x > this.game.width - 20 && this.player.y < 150) {
-      	    this.game.state.start('Frameworks');
+      	    this.game.state.start('Hub');
     	}
     }
 };

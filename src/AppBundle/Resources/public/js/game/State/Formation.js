@@ -69,7 +69,7 @@ HomeGame.Formation.prototype = {
 
         //Changing map by walking to a specific spot on the current map
         if (this.player.x > this.game.width - 20 && this.player.y < 100) {
-      	    this.game.state.start('Game');
+      	    this.game.state.start('Hub');
     	}
     },
 

@@ -75,7 +75,7 @@ HomeGame.Contact.prototype = {
 		}
 
 		if (this.player.x < 20) {
-			this.game.state.start('Game');
+			this.game.state.start('Hub');
 		}
 	},
 
