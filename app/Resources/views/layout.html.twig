@@ -37,6 +37,10 @@
 	</head>
 
 	<body role="document">
+		{% javascripts filter='?jsqueeze'
+	  		'bundles/app/js/analytics.js' %}
+	  		<script async type="text/javascript" src="{{ asset_url }}"></script>
+	  	{% endjavascripts %}
 	  	{{ include('header.html.twig') }}
 
 	  	<div id="wrapper" class="container-fluid" role="main">
