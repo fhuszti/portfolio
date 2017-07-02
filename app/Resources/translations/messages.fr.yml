@@ -44,7 +44,7 @@ core:
         contact:
             title: Contactez moi
             infos: |
-                Mon adresse mail : <strong><i class="email">contact@fhuszti.com</i></strong>
+                Mon adresse mail : <strong><i class="email">contact@fhuszti.tech</i></strong>
                 Vous pouvez utiliser ce formulaire pour m'envoyer un mail directement.
             form_error:    Tous les champs n'ont pas été correctement remplis.
             sending_error: Une erreur a eu lieu lors de l'envoi. Veuillez réessayer plus tard.

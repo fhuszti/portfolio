@@ -8,9 +8,6 @@
     {% endstylesheets %}
 {% endblock %}
 
-{% block lang %}
-{% endblock %}
-
 {% block body %}
     <header class="row">
         <span class="glyphicon glyphicon-ban-circle"></span>
@@ -19,8 +16,10 @@
 
     <hr />
 
-    {% block content %}
-    {% endblock %}
+    <p>
+        {% block content %}
+        {% endblock %}
+    </p>
 
     <div class="row">
         <a href="{{ path('core_home', { '_locale': 'en' }) }}" title="{% trans into "en" %}core.header.homepage.link_title{% endtrans %}" class="btn btn-default">

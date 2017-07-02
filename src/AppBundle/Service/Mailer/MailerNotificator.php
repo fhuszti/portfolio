@@ -49,7 +49,7 @@ class MailerNotificator {
 		$body = $this->renderTemplate($entity, $imgUrl);
 		
 		$mail->setSubject($subject)
-			 ->setFrom('contact@fhuszti.com')
+			 ->setFrom('contact@fhuszti.tech')
 			 ->setTo('f.huszti@gmail.com')
 			 ->setBody(
 				 $body,

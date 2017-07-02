@@ -44,7 +44,7 @@ core:
         contact:
             title: Contact
             infos: |
-                My email address : <strong><i class="email">contact@fhuszti.com</i></strong>
+                My email address : <strong><i class="email">contact@fhuszti.tech</i></strong>
                 You can also send me a mail automatically through the form below.
             form_error:    Not all fields have been correctly filled.
             sending_error: There was an error sending your message. Please try again later.
