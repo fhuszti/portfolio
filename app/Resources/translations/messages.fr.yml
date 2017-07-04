@@ -1,8 +1,9 @@
 core:
     site:
         title:     François Huszti, développeur web
+        job: développeur web
         meta:
-            title:       François Huszti, développeur web - Portfolio
+            title:       Portfolio - François Huszti, développeur web
             description: Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici.
         insight_alt: "SensioLabs Insight: Médaille de platine"
     errors:
@@ -40,6 +41,7 @@ core:
             link_title:  Vers la liste de mes projets
             title:       Projets
     home:
+        title: Portfolio en ligne
         skills:    Compétences
         contact:
             title: Contactez moi

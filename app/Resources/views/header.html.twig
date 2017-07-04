@@ -1,24 +1,20 @@
 <header class="navbar navbar-default navbar-fixed-top" id="header">
   	<div class="container">
   		<div class="navbar-header" id="logo">
-        	<a href="{{ path('core_home') }}" title="{{ 'core.header.homepage.link_title'|trans }}" class="navbar-brand">
-            	{% if layout_mini %}
-                    {% image 'http://assets.fhuszti.tech/small-logo.png' %}
-                        <img src="{{ asset_url }}" alt="{{ 'core.header.logo.alt'|trans }}" />
-                    {% endimage %}
-                {% else %}
-                    {% image 'http://assets.fhuszti.tech/logo.png' %}
-    					<img src="{{ asset_url }}" alt="{{ 'core.header.logo.alt'|trans }}" />
-    				{% endimage %}
-                {% endif %}
-			</a>
+            <a href="{{ path('core_home') }}" title="{{ 'core.header.homepage.link_title'|trans }}" class="navbar-brand">
+                <h1>François Huszti</h1>
 
-        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-        	</button>
-    	</div>
+                {% if not layout_mini %}
+                    <h3>{{ 'core.site.job'|trans }}</h3>
+                {% endif %}
+            </a>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
     	<div class="collapse navbar-collapse">
         	{% if status_code is not defined %}

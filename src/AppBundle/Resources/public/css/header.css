@@ -1,8 +1,20 @@
 #header .navbar-brand {
     padding: 5px 15px;
 }
-#logo img {
-    height: 40px;
+#logo a {
+	color: rgb(0, 72, 0);
+	font-family: 'gooddogregular', Arial, Helvetica, Verdana, Times, "Times New Roman", sans-serif;
+}
+#logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#logo h3 {
+	text-align: right;
+	margin: 0;
+	margin-top: -6px;
+	font-size: 1em;
 }
 
 #lang-menu a {

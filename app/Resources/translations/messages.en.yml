@@ -1,8 +1,9 @@
 core:
     site:
         title:     François Huszti, web dev
+        job: web dev
         meta:
-            title:       François Huszti, web dev - Portfolio
+            title:       Portfolio - François Huszti, web dev
             description: Portfolio of François Huszti, web dev. My resume and my projects are all to be found here.
         insight_alt: "SensioLabs Insight: Platinum medal"
     errors:
@@ -40,6 +41,7 @@ core:
             link_title:  Link to all the projects I've done toward my degree
             title:       Projects
     home:
+        title: Online portfolio
         skills:    Skills
         contact:
             title: Contact
