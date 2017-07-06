@@ -66,7 +66,7 @@ HomeGame.Preload.prototype = {
 	},
 
 	create: function() {
-		this.state.start('Hub');
+		this.state.start('Contact');
 	},
 
 	//create the loading animation
