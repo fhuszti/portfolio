@@ -1,7 +1,7 @@
 var ExperienceManager = {
 
 	generateExperience: function(currentState) {
-		generalFunctions.addBackground(currentState);
+		gameMethods.addBackground(currentState);
 
 		//we setup state variables
 		ExperienceConfigManager.setupVariables(currentState);
@@ -11,7 +11,7 @@ var ExperienceManager = {
 		ExperienceVisualsManager.behindMap(currentState);
 
 		//Initial map setup
-		generalFunctions.mapSetup(currentState, 'experienceMap');
+		gameMethods.mapSetup(currentState, 'experienceMap');
 
 		//Adding the guidance sign and its text
 		ExperienceVisualsManager.generateSigns(currentState);
@@ -53,9 +53,9 @@ var ExperienceManager = {
 		currentState.diamond.body.immovable = true;
 
 		//fine tune some player parameters now that the player has a physical body
-		generalFunctions.playerSetup(currentState);
+		gameMethods.playerSetup(currentState);
 
-		generalFunctions.previousState = 'experience';
+		gameVariables.previousState = 'experience';
 	},
 
 
@@ -72,7 +72,7 @@ var ExperienceManager = {
 		//Player movements management
 		//not active if the player is paused (cinematic)
 		if ( currentState.player.body.maxVelocity.x !== 0 ) {
-			generalFunctions.playerMov(currentState);
+			gameMethods.playerMov(currentState);
 		}
 
 		//if the player is on the ground and the diamond doesn't 'exist' yet
@@ -109,8 +109,8 @@ var ExperienceManager = {
 
 		//Changing map by walking to a specific spot on the current map
 		if ( currentState.player.x > currentState.game.width - 75 && currentState.player.y > 600 ) {
-			generalFunctions.leavingExperienceX = currentState.player.x;
-			generalFunctions.leavingExperienceScaleX = currentState.player.scale.x;
+			gameVariables.leavingExperienceX = currentState.player.x;
+			gameVariables.leavingExperienceScaleX = currentState.player.scale.x;
 			currentState.game.state.start('Contact');
 		}
 	}

@@ -1,14 +1,14 @@
 var ContactManager = {
 
 	generateContact: function(state) {
-		generalFunctions.addBackground(state);
+		gameMethods.addBackground(state);
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//BEHIND the map
 		ContactVisualsManager.behindMap(state);
 
 		//Initial map setup
-		generalFunctions.mapSetup(state, 'contactMap');
+		gameMethods.mapSetup(state, 'contactMap');
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//BEHIND the player
@@ -40,10 +40,10 @@ var ContactManager = {
 		state.game.physics.arcade.enable([state.player]);
 
 		//fine tune some player parameters now that the player has a physical body
-		generalFunctions.playerSetup(state);
+		gameMethods.playerSetup(state);
 		ContactPlayerManager.playerSetup(state);
 
-		generalFunctions.previousState = 'contact';
+		gameVariables.previousState = 'contact';
 	},
 
 
@@ -65,7 +65,7 @@ var ContactManager = {
 			state.player.body.gravity.y = 900;
 			state.player.body.bounce.setTo(0, 0);
 
-			generalFunctions.playerMov(state);
+			gameMethods.playerMov(state);
 		}
 		//If player is in zero gravity zone
 		if (state.player.x >= 305) {

@@ -45,12 +45,12 @@ var ExperienceContentManager = {
 		state.firstButtonGroup.inputEnableChildren = true;
 		
 		//we generate the background button
-		generalFunctions.generateButton(state.widthStart + 10, state.heightStart + 10, 215, 200, 0.3, state.firstButtonGroup);
+		gameMethods.generateButton(state.widthStart + 10, state.heightStart + 10, 215, 200, 0.3, state.firstButtonGroup);
 
 		//then we add the text, in its own group
 		state.firstButtonTextGroup = state.game.add.group();
-		var titleValue1 = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 99, 'experienceFirstLinkTitle1', 'mediumContent1', 'center'),
-			titleValue2 = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 122, 'experienceFirstLinkTitle2', 'mediumContent1', 'center');
+		var titleValue1 = gameMethods.displayText(state.widthStart + 117, state.heightStart + 99, 'experienceFirstLinkTitle1', 'mediumContent1', 'center'),
+			titleValue2 = gameMethods.displayText(state.widthStart + 117, state.heightStart + 122, 'experienceFirstLinkTitle2', 'mediumContent1', 'center');
 		state.firstButtonTextGroup.add(titleValue1);
 		state.firstButtonTextGroup.add(titleValue2);
 
@@ -64,11 +64,11 @@ var ExperienceContentManager = {
 		//we generate the button design that'll show when hovering
 		this.generateBackgroundImage(state, state.widthStart + 10, state.heightStart + 10, 215, 200, 'btn_louvre', state.firstHoverGroup);
 
-		var hoverDate = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 80, 'experienceFirstLinkDate', 'mediumContent1', 'center');
+		var hoverDate = gameMethods.displayText(state.widthStart + 117, state.heightStart + 80, 'experienceFirstLinkDate', 'mediumContent1', 'center');
 		state.firstHoverGroup.add(hoverDate);
 
-		var skillsValue1 = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 150, 'experienceFirstLinkSkills1', 'smallContent', 'center'),
-			skillsValue2 = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 170, 'experienceFirstLinkSkills2', 'smallContent', 'center');
+		var skillsValue1 = gameMethods.displayText(state.widthStart + 117, state.heightStart + 150, 'experienceFirstLinkSkills1', 'smallContent', 'center'),
+			skillsValue2 = gameMethods.displayText(state.widthStart + 117, state.heightStart + 170, 'experienceFirstLinkSkills2', 'smallContent', 'center');
 		state.firstHoverGroup.add(skillsValue1);
 		state.firstHoverGroup.add(skillsValue2);
 
@@ -87,8 +87,8 @@ var ExperienceContentManager = {
 
 		//then we add the text, in its own group
 		state.secondButtonTextGroup = state.game.add.group();
-		var titleValue = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 241, 'experienceSecondLinkTitle', 'mediumContent1', 'center'),
-			youHere = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 270, 'experienceSecondLinkYouHere', 'smallContent', 'center');
+		var titleValue = gameMethods.displayText(state.widthStart + 117, state.heightStart + 241, 'experienceSecondLinkTitle', 'mediumContent1', 'center'),
+			youHere = gameMethods.displayText(state.widthStart + 117, state.heightStart + 270, 'experienceSecondLinkYouHere', 'smallContent', 'center');
 		state.secondButtonTextGroup.add(titleValue);
 		state.secondButtonTextGroup.add(youHere);
 
@@ -99,10 +99,10 @@ var ExperienceContentManager = {
 		state.secondHoverGroup = state.game.add.group();
 		state.secondHoverGroup.inputEnableChildren = true;
 
-		var hoverDate = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 241, 'experienceSecondLinkDate', 'mediumContent1', 'center');
+		var hoverDate = gameMethods.displayText(state.widthStart + 117, state.heightStart + 241, 'experienceSecondLinkDate', 'mediumContent1', 'center');
 		state.secondHoverGroup.add(hoverDate);
 
-		var skillsValue = generalFunctions.displayText(state.widthStart + 117, state.heightStart + 270, 'experienceSecondLinkSkills', 'smallContent', 'center');
+		var skillsValue = gameMethods.displayText(state.widthStart + 117, state.heightStart + 270, 'experienceSecondLinkSkills', 'smallContent', 'center');
 		state.secondHoverGroup.add(skillsValue);
 
 		state.secondHoverGroup.alpha = 0;
@@ -116,12 +116,12 @@ var ExperienceContentManager = {
 		state.thirdButtonGroup.inputEnableChildren = true;
 		
 		//we generate the background img
-		generalFunctions.generateButton(state.widthStart + 235, state.heightStart + 10, 215, 95, 0.3, state.thirdButtonGroup);
+		gameMethods.generateButton(state.widthStart + 235, state.heightStart + 10, 215, 95, 0.3, state.thirdButtonGroup);
 		
 		//then we add the text, in its own group
 		state.thirdButtonTextGroup = state.game.add.group();
-		var titleValue1 = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 49, 'experienceThirdLinkTitle1', 'mediumContent1', 'center'),
-			titleValue2 = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 72, 'experienceThirdLinkTitle2', 'mediumContent1', 'center');
+		var titleValue1 = gameMethods.displayText(state.widthStart + 342, state.heightStart + 49, 'experienceThirdLinkTitle1', 'mediumContent1', 'center'),
+			titleValue2 = gameMethods.displayText(state.widthStart + 342, state.heightStart + 72, 'experienceThirdLinkTitle2', 'mediumContent1', 'center');
 		state.thirdButtonTextGroup.add(titleValue1);
 		state.thirdButtonTextGroup.add(titleValue2);
 
@@ -135,10 +135,10 @@ var ExperienceContentManager = {
 		//we generate the button design that'll show when hovering
 		this.generateBackgroundImage(state, state.widthStart + 235, state.heightStart + 10, 215, 95, 'btn_microcms', state.thirdHoverGroup);
 
-		var hoverDate = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 46, 'experienceThirdLinkDate', 'mediumContent1', 'center');
+		var hoverDate = gameMethods.displayText(state.widthStart + 342, state.heightStart + 46, 'experienceThirdLinkDate', 'mediumContent1', 'center');
 		state.thirdHoverGroup.add(hoverDate);
 
-		var skillsValue = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 75, 'experienceThirdLinkSkills', 'smallContent', 'center');
+		var skillsValue = gameMethods.displayText(state.widthStart + 342, state.heightStart + 75, 'experienceThirdLinkSkills', 'smallContent', 'center');
 		state.thirdHoverGroup.add(skillsValue);
 
 		state.thirdHoverGroup.alpha = 0;
@@ -152,12 +152,12 @@ var ExperienceContentManager = {
 		state.fourthButtonGroup.inputEnableChildren = true;
 		
 		//we generate the background img
-		generalFunctions.generateButton(state.widthStart + 235, state.heightStart + 115, 215, 95, 0.3, state.fourthButtonGroup);
+		gameMethods.generateButton(state.widthStart + 235, state.heightStart + 115, 215, 95, 0.3, state.fourthButtonGroup);
 
 		//then we add the text, in its own group
 		state.fourthButtonTextGroup = state.game.add.group();
-		var titleValue1 = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 152, 'experienceFourthLinkTitle1', 'mediumContent1', 'center'),
-			titleValue2 = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 175, 'experienceFourthLinkTitle2', 'mediumContent1', 'center');
+		var titleValue1 = gameMethods.displayText(state.widthStart + 342, state.heightStart + 152, 'experienceFourthLinkTitle1', 'mediumContent1', 'center'),
+			titleValue2 = gameMethods.displayText(state.widthStart + 342, state.heightStart + 175, 'experienceFourthLinkTitle2', 'mediumContent1', 'center');
 		state.fourthButtonTextGroup.add(titleValue1);
 		state.fourthButtonTextGroup.add(titleValue2);
 
@@ -171,10 +171,10 @@ var ExperienceContentManager = {
 		//we generate the button design that'll show when hovering
 		this.generateBackgroundImage(state, state.widthStart + 235, state.heightStart + 115, 215, 95, 'btn_tours', state.fourthHoverGroup);
 
-		var hoverDate = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 149, 'experienceFourthLinkDate', 'mediumContent1', 'center');
+		var hoverDate = gameMethods.displayText(state.widthStart + 342, state.heightStart + 149, 'experienceFourthLinkDate', 'mediumContent1', 'center');
 		state.fourthHoverGroup.add(hoverDate);
 
-		var skillsValue = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 178, 'experienceFourthLinkSkills', 'smallContent', 'center');
+		var skillsValue = gameMethods.displayText(state.widthStart + 342, state.heightStart + 178, 'experienceFourthLinkSkills', 'smallContent', 'center');
 		state.fourthHoverGroup.add(skillsValue);
 
 		state.fourthHoverGroup.alpha = 0;
@@ -188,10 +188,10 @@ var ExperienceContentManager = {
 		state.fifthButtonGroup.inputEnableChildren = true;
 
 		//we generate the button design
-		generalFunctions.generateButton(state.widthStart + 235, state.heightStart + 220, 215, 65, 0.3, state.fifthButtonGroup);
+		gameMethods.generateButton(state.widthStart + 235, state.heightStart + 220, 215, 65, 0.3, state.fifthButtonGroup);
 
 		//then we add the text, in its own group
-		var titleValue = generalFunctions.displayText(state.widthStart + 342, state.heightStart + 255, 'experienceFifthLinkTitle', 'mediumContent1', 'center');
+		var titleValue = gameMethods.displayText(state.widthStart + 342, state.heightStart + 255, 'experienceFifthLinkTitle', 'mediumContent1', 'center');
 		state.fifthButtonGroup.add(titleValue);
 
 		state.fifthButtonGroup.alpha = 0;
@@ -200,7 +200,7 @@ var ExperienceContentManager = {
 	//create the content
 	generateContent: function(state) {
 		//Adding the title of the state at the right place
-		generalFunctions.displayText(state.game.width *0.5 + 130, 40, 'experience', 'title', 'center');
+		gameMethods.displayText(state.game.width *0.5 + 130, 40, 'experience', 'title', 'center');
 
 		//and all the links
 		this.generateFirstLink(state);
@@ -218,7 +218,7 @@ var ExperienceContentManager = {
 
 	//generate the experience bar section
 	generateExperienceBarSection: function(state) {
-		state.levelUpText = generalFunctions.displayText(state.widthStart + 230, state.heightStart + 310, 'experienceExperienceBarTitle', 'smallContent', 'center');
+		state.levelUpText = gameMethods.displayText(state.widthStart + 230, state.heightStart + 310, 'experienceExperienceBarTitle', 'smallContent', 'center');
 		state.levelUpText.alpha = 0;
 
 		//the dark rectangle behind the experience bar
@@ -239,7 +239,7 @@ var ExperienceContentManager = {
 		state.experienceBar.crop(state.cropExperienceBar);
 
 		//the percentage text
-		state.percentageText = generalFunctions.displayText(state.widthStart + 15, state.heightStart + 319, '0%', 'smallContent', 'left', false);
+		state.percentageText = gameMethods.displayText(state.widthStart + 15, state.heightStart + 319, '0%', 'smallContent', 'left', false);
 		state.percentageText.alpha = 0.5;
 
 		//and we add them all to the group

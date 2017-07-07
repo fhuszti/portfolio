@@ -17,10 +17,10 @@ var ContactContentManager = {
 
 	//Plop the main text content of the page
 	generateMainContent: function(state) {
-		generalFunctions.displayText(state.game.width *0.5 + 150, 50, 'contact', 'title', 'center');
+		gameMethods.displayText(state.game.width *0.5 + 150, 50, 'contact', 'title', 'center');
 
-		generalFunctions.displayText(state.game.width *0.5 + 160, 160, 'contactLooking', 'mediumContent1', 'center');
-		generalFunctions.displayText(state.game.width *0.5 + 160, 300, 'contactOffer', 'mediumContent1', 'center');
+		gameMethods.displayText(state.game.width *0.5 + 160, 160, 'contactLooking', 'mediumContent1', 'center');
+		gameMethods.displayText(state.game.width *0.5 + 160, 300, 'contactOffer', 'mediumContent1', 'center');
 	},
 
 
@@ -87,14 +87,14 @@ var ContactContentManager = {
 		//in here, 'this' represents 'HomeGame.Contact'
 		try {
 			if (document.execCommand('copy')) {
-				this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopySuccess', 'smallContent', 'center');
+				this.copyText = gameMethods.displayText(this.game.width *0.5 + 50, 480, 'contactCopySuccess', 'smallContent', 'center');
 				this.game.time.events.add(2000, ContactContentManager.fadeText, this, this);
 			} else {
-				this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'smallContent', 'center', false);
+				this.copyText = gameMethods.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'smallContent', 'center', false);
 				this.game.time.events.add(2000, ContactContentManager.fadeText, this, this);
 			}
 		} catch (err) {
-			this.copyText = generalFunctions.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'smallContent', 'center', false);
+			this.copyText = gameMethods.displayText(this.game.width *0.5 + 50, 480, 'contactCopyFail', 'smallContent', 'center', false);
 			this.game.time.events.add(2000, ContactContentManager.fadeText, this, this);
 		}
 
@@ -108,14 +108,14 @@ var ContactContentManager = {
 		emailButton.inputEnableChildren = true;
 
 		//we generate the button design
-		generalFunctions.generateButton(355, 415, 185, 35, 0.3, emailButton);
+		gameMethods.generateButton(355, 415, 185, 35, 0.3, emailButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(447, 435, 'email', 'mediumContent2', 'center');
+		var textValue = gameMethods.displayText(447, 435, 'email', 'mediumContent2', 'center');
 		emailButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
-		var fakeSprite = generalFunctions.generateFakeSprite(355, 415, 185, 35, emailButton);
+		var fakeSprite = gameMethods.generateFakeSprite(355, 415, 185, 35, emailButton);
 		fakeSprite.events.onInputDown.add(this.copyTextToClipboard, state, 0, state);
 	},
 
@@ -137,14 +137,14 @@ var ContactContentManager = {
 		formButton.inputEnableChildren = true;
 
 		//we generate the button design
-		generalFunctions.generateButton(575, 415, 185, 35, 0.3, formButton);
+		gameMethods.generateButton(575, 415, 185, 35, 0.3, formButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(670, 435, 'contactFormButtonValue', 'mediumContent2', 'center');
+		var textValue = gameMethods.displayText(670, 435, 'contactFormButtonValue', 'mediumContent2', 'center');
 		formButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
-		var fakeSprite = generalFunctions.generateFakeSprite(575, 415, 185, 35, formButton);
+		var fakeSprite = gameMethods.generateFakeSprite(575, 415, 185, 35, formButton);
 		fakeSprite.events.onInputDown.add(this.linkToForm, state);
 	},
 
@@ -167,14 +167,14 @@ var ContactContentManager = {
 		githubButton.inputEnableChildren = true;
 
 		//we generate the button design
-		generalFunctions.generateButton(355, 510, 185, 35, 0.3, githubButton);
+		gameMethods.generateButton(355, 510, 185, 35, 0.3, githubButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(447, 530, 'contactGitHubButtonValue', 'mediumContent2', 'center');
+		var textValue = gameMethods.displayText(447, 530, 'contactGitHubButtonValue', 'mediumContent2', 'center');
 		githubButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
-		var fakeSprite = generalFunctions.generateFakeSprite(355, 510, 185, 35, githubButton);
+		var fakeSprite = gameMethods.generateFakeSprite(355, 510, 185, 35, githubButton);
 		fakeSprite.events.onInputDown.add(this.linkToGithub, state);
 	},
 
@@ -197,14 +197,14 @@ var ContactContentManager = {
 		linkedinButton.inputEnableChildren = true;
 
 		//we generate the button design
-		generalFunctions.generateButton(575, 510, 185, 35, 0.3, linkedinButton);
+		gameMethods.generateButton(575, 510, 185, 35, 0.3, linkedinButton);
 
 		//then we add the text
-		var textValue = generalFunctions.displayText(670, 530, 'contactLinkedinButtonValue', 'mediumContent2', 'center');
+		var textValue = gameMethods.displayText(670, 530, 'contactLinkedinButtonValue', 'mediumContent2', 'center');
 		linkedinButton.add(textValue);
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
-		var fakeSprite = generalFunctions.generateFakeSprite(575, 510, 185, 35, linkedinButton);
+		var fakeSprite = gameMethods.generateFakeSprite(575, 510, 185, 35, linkedinButton);
 		fakeSprite.events.onInputDown.add(this.linkToLinkedin, state);
 	}
 };

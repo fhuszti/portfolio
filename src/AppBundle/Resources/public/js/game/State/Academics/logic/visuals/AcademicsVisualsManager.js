@@ -33,7 +33,7 @@ var AcademicsVisualsManager = {
         homeSign.scale.setTo(0.5);
         homeSign.anchor.setTo(0.5);
         
-        generalFunctions.displayText(state.game.width - 80, 30, 'home', 'guidance', 'right');
+        gameMethods.displayText(state.game.width - 80, 30, 'home', 'guidance', 'right');
     },
 
 

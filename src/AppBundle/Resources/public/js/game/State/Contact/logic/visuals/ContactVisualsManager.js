@@ -38,7 +38,7 @@ var ContactVisualsManager = {
 		homeSign.scale.setTo(0.5);
 
 		//Adding the text next to the sign
-		generalFunctions.displayText(80, state.game.height *0.5 - 30, 'home', 'guidance');
+		gameMethods.displayText(80, state.game.height *0.5 - 30, 'home', 'guidance');
 	},
 
 

@@ -1,4 +1,4 @@
-var skillsFunctions = {
+var skillsMethods = {
 
     /*
     CREATE
@@ -14,17 +14,35 @@ var skillsFunctions = {
         state.add.sprite(240, 20, 'textureAtlas', 'rock1').scale.setTo(0.7);
     },
 
+    /*
+    Display all text in the table
+    */
+    displayTableTitles: function(titles = []) {
+        var titleHeight = 228;
+
+        gameMethods.displayText(330, 200, 'skillsNewbie', 'bigContent', 'center');
+        gameMethods.displayText(490, 200, 'skillsIntermediate', 'bigContent', 'center');
+        gameMethods.displayText(640, 200, 'skillsAdvanced', 'bigContent', 'center');
+
+        if (titles.length > 0) {
+            titles.forEach(function(title) {
+                gameMethods.displayText(230, titleHeight, title, 'bigContent', 'right');
+                titleHeight += 50;
+            });
+        }
+    },
+
     //Create the main table
     generateTable: function(items) {
-    	generalFunctions.displayLine(100, 205);
-        generalFunctions.displayLine(100, 255);
-        generalFunctions.displayLine(100, 305);
-        generalFunctions.displayLine(100, 355);
-        generalFunctions.displayLine(100, 405);
+    	gameMethods.displayLine(100, 205);
+        gameMethods.displayLine(100, 255);
+        gameMethods.displayLine(100, 305);
+        gameMethods.displayLine(100, 355);
+        gameMethods.displayLine(100, 405);
 
-        generalFunctions.displayLine(240, 480, 'vertical');
+        gameMethods.displayLine(240, 480, 'vertical');
 
-        generalFunctions.displayTableTitles(items);
+        this.displayTableTitles(items);
     },
 
     //Create the top of the chests (behind the coins)
@@ -229,10 +247,10 @@ var skillsFunctions = {
 
     //Create all signs and guidance texts, as well as the title of the page
     generateSigns: function(state, title, left, right) {
-    	generalFunctions.displayText(state.game.width*0.5, 30, title, 'title', 'center');
+    	gameMethods.displayText(state.game.width*0.5, 30, title, 'title', 'center');
 
-        generalFunctions.displayText(30, 50, left, 'guidance');
-        generalFunctions.displayText(state.game.width - 30, 50, right, 'guidance', 'right');
+        gameMethods.displayText(30, 50, left, 'guidance');
+        gameMethods.displayText(state.game.width - 30, 50, right, 'guidance', 'right');
 
         //Create all guidance signs
         var doubleSign = state.game.add.sprite(state.game.width*0.5, 80, 'textureAtlas', 'sign3');
@@ -243,7 +261,7 @@ var skillsFunctions = {
 
     //Generate the player, clone and key
     createPlayer: function(state) {
-    	if((state.key === 'Languages' && generalFunctions.previousState === 'frameworks') || (state.key === 'Frameworks' && generalFunctions.previousState === 'others')) {
+    	if((state.key === 'Languages' && gameVariables.previousState === 'frameworks') || (state.key === 'Frameworks' && gameVariables.previousState === 'others')) {
     	    state.player = state.game.add.sprite(50, 100, 'textureAtlas', 'ninja1');
             state.clone = state.game.add.sprite(50, state.game.height - 60, 'textureAtlas', 'ninjaWhite1');
 
@@ -314,7 +332,7 @@ var skillsFunctions = {
 
     //Clone and key movements manager
     cloneMov: function(state) {
-        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === generalFunctions.RIGHT) {
+        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.RIGHT) {
             //  Move to the right
             state.clone.body.velocity.x = 125;
 
@@ -333,7 +351,7 @@ var skillsFunctions = {
                 state.keyItem.angle = 90;
 
             state.clone.animations.play('run');
-        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === generalFunctions.LEFT) {
+        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.LEFT) {
             //  Move to the left
             state.clone.body.velocity.x = -125;
 

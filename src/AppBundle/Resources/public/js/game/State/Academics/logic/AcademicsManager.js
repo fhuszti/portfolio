@@ -1,14 +1,14 @@
 var AcademicsManager = {
 
 	generateAcademics: function(state) {
-		generalFunctions.addBackground(state);
+		gameMethods.addBackground(state);
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the map
         AcademicsVisualsManager.behindMap(state);
 
         //Initial map setup
-        generalFunctions.mapSetup(state, 'academicsMap');
+        gameMethods.mapSetup(state, 'academicsMap');
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the wooden panels
@@ -44,9 +44,9 @@ var AcademicsManager = {
         state.game.physics.arcade.enable(state.player);
 
         //fine tune some player parameters now that the player has a physical body
-    	generalFunctions.playerSetup(state);
+    	gameMethods.playerSetup(state);
 
-        generalFunctions.previousState = 'academics';
+        gameVariables.previousState = 'academics';
 	},
 
 
@@ -61,7 +61,7 @@ var AcademicsManager = {
         state.game.physics.arcade.collide(state.player, state.branch8);
 
         //Player movements management
-        generalFunctions.playerMov(state);
+        gameMethods.playerMov(state);
 
         //We check to add/remove the text or not
         for (var text in state.academicsTexts) {

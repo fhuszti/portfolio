@@ -34,7 +34,7 @@ var ExperienceVisualsManager = {
 		contactSign.anchor.setTo(0.5);
 		contactSign.angle = 90;
 
-		generalFunctions.displayText(state.game.width - 50, state.game.height - 110, 'contact', 'guidance', 'right');
+		gameMethods.displayText(state.game.width - 50, state.game.height - 110, 'contact', 'guidance', 'right');
 	},
 
 

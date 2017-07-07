@@ -4,8 +4,8 @@ var ContactPlayerManager = {
     createPlayer: function(state) {
     	var widthPop = null, heightPop = null;
 
-    	if (generalFunctions.previousState === 'experience') {
-    		widthPop = generalFunctions.leavingExperienceX;
+    	if (gameVariables.previousState === 'experience') {
+    		widthPop = gameVariables.leavingExperienceX;
     		heightPop = 0;
     	}
 		else {
@@ -15,8 +15,8 @@ var ContactPlayerManager = {
 
 		state.player = state.game.add.sprite(widthPop, heightPop, 'textureAtlas', 'ninja1');
     	
-		if (generalFunctions.previousState === 'experience')
-    		state.player.scale.x = generalFunctions.leavingExperienceScaleX;
+		if (gameVariables.previousState === 'experience')
+    		state.player.scale.x = gameVariables.leavingExperienceScaleX;
     },
 
 
@@ -47,11 +47,11 @@ var ContactPlayerManager = {
 
     //Manage all movements inside the no gravity zone
     zeroGravityMov: function(state) {
-        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === generalFunctions.RIGHT) {
+        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.RIGHT) {
             //  Move to the right
             state.player.body.velocity.x = 125;
             state.player.animations.play('run');
-        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === generalFunctions.LEFT) {
+        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.LEFT) {
             //  Move to the left
             state.player.body.velocity.x = -125;
             state.player.animations.play('run');
@@ -62,11 +62,11 @@ var ContactPlayerManager = {
         }
 
         //Up&Down management
-        if (state.cursors.up.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.y / (state.game.height *0.5)) === generalFunctions.UP) {
+        if (state.cursors.up.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.y / (state.game.height *0.5)) === gameMethods.UP) {
             //  Move to the top
             state.player.body.velocity.y = -125;
             state.player.animations.play('run');
-        } else if (state.cursors.down.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === generalFunctions.DOWN) {
+        } else if (state.cursors.down.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.DOWN) {
             //  Move to the bottom
             state.player.body.velocity.y = 125;
             state.player.animations.play('run');

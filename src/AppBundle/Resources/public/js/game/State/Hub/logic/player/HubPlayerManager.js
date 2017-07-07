@@ -5,7 +5,7 @@ var HubPlayerManager = {
         var widthPop = null, heightPop = null;
 
         //nothing special when coming from Experience, thus going to default
-        switch(generalFunctions.previousState) {
+        switch(gameVariables.previousState) {
             case 'languages':
             	widthPop = 50;
             	heightPop = 100;
@@ -14,7 +14,7 @@ var HubPlayerManager = {
            	    widthPop = state.game.width - 30;
            	    heightPop = 430;
            	    break;
-            case 'formation':
+            case 'academics':
            	    widthPop = 50;
            	    heightPop = state.game.height - 100;
            	    break;

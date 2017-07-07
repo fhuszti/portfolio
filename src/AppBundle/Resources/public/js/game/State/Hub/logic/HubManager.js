@@ -1,21 +1,21 @@
 var HubManager = {
 
     generateHub: function(state) {
-    	generalFunctions.addBackground(state);
+    	gameMethods.addBackground(state);
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the map
         HubVisualsManager.behindMap(state);
 
         //Initial map setup
-        generalFunctions.mapSetup(state, 'homeMap');
+        gameMethods.mapSetup(state, 'homeMap');
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the player
         HubVisualsManager.behindSignsBehindPlayer(state);
 
         //adding a title to the homepage
-        generalFunctions.displayText(state.game.width*0.5, 100, 'home', 'title', 'center');
+        gameMethods.displayText(state.game.width*0.5, 100, 'home', 'title', 'center');
 
         //Create all guidance signs
         HubVisualsManager.generateSigns(state);
@@ -37,7 +37,7 @@ var HubManager = {
         state.branch8.body.immovable = true;
 
         //fine tune some player parameters now that the player has a physical body
-    	generalFunctions.playerSetup(state);
+    	gameMethods.playerSetup(state);
     },
 
 
@@ -52,7 +52,7 @@ var HubManager = {
         state.game.physics.arcade.collide(state.player, state.branch8);
 
         //Player movements management
-        generalFunctions.playerMov(state);
+        gameMethods.playerMov(state);
 
         if (state.player.x < 20 && state.player.y < 150) {
             state.game.state.start('Languages');

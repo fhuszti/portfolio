@@ -179,7 +179,7 @@ var ExperienceUpdateContentManager = {
 		//get the actual percentage
 		var currentPercentage = Math.floor(currentState.experienceBar.width * 100 / currentState.experienceBar.originalWidth).toString()+'%';
 		//and pop it again
-		currentState.percentageText = generalFunctions.displayText(currentState.widthStart + 15, currentState.heightStart + 319, currentPercentage, 'smallContent', 'left', false);
+		currentState.percentageText = gameMethods.displayText(currentState.widthStart + 15, currentState.heightStart + 319, currentPercentage, 'smallContent', 'left', false);
 		currentState.percentageText.alpha = 0.5;
 	},
 
@@ -207,15 +207,15 @@ var ExperienceUpdateContentManager = {
 		currentState.modal.add(currentState.modalOverlay);
 
 		//we double the background to artifically get alpha up
-		generalFunctions.generateButton(currentState.game.width * 0.5 - 200, currentState.game.height * 0.5 - 100, 400, 200, 0.5, currentState.modal);
-		generalFunctions.generateButton(currentState.game.width * 0.5 - 200, currentState.game.height * 0.5 - 100, 400, 200, 0.7, currentState.modal);
+		gameMethods.generateButton(currentState.game.width * 0.5 - 200, currentState.game.height * 0.5 - 100, 400, 200, 0.5, currentState.modal);
+		gameMethods.generateButton(currentState.game.width * 0.5 - 200, currentState.game.height * 0.5 - 100, 400, 200, 0.7, currentState.modal);
 
 		//we generate all the text
-		var title1 = generalFunctions.displayText(currentState.game.width * 0.5, currentState.game.height * 0.5 - 60, "experienceModalTitle1", 'title', 'center'),
-			title2 = generalFunctions.displayText(currentState.game.width * 0.5, currentState.game.height * 0.5 - 35, "experienceModalTitle2", 'title', 'center'),
-			title3 = generalFunctions.displayText(currentState.game.width * 0.5, currentState.game.height * 0.5 - 10, "experienceModalTitle3", 'title', 'center'),
-			no = generalFunctions.displayText(currentState.game.width * 0.5 - 100, currentState.game.height * 0.5 + 60, "experienceModalNo", 'title', 'center'),
-			yes = generalFunctions.displayText(currentState.game.width * 0.5 + 100, currentState.game.height * 0.5 + 60, "experienceModalYes", 'title', 'center');
+		var title1 = gameMethods.displayText(currentState.game.width * 0.5, currentState.game.height * 0.5 - 60, "experienceModalTitle1", 'title', 'center'),
+			title2 = gameMethods.displayText(currentState.game.width * 0.5, currentState.game.height * 0.5 - 35, "experienceModalTitle2", 'title', 'center'),
+			title3 = gameMethods.displayText(currentState.game.width * 0.5, currentState.game.height * 0.5 - 10, "experienceModalTitle3", 'title', 'center'),
+			no = gameMethods.displayText(currentState.game.width * 0.5 - 100, currentState.game.height * 0.5 + 60, "experienceModalNo", 'title', 'center'),
+			yes = gameMethods.displayText(currentState.game.width * 0.5 + 100, currentState.game.height * 0.5 + 60, "experienceModalYes", 'title', 'center');
 
 		//on click on "Yes"
 		yes.events.onInputDown.add(this.redirectToGameHub, currentState);

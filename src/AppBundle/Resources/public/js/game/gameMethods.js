@@ -1,20 +1,5 @@
-var generalFunctions = {
-    /*
-    Variables
-    */
-    previousState: null,
-    leavingExperienceX: null,
-    leavingExperienceScaleX: null,
-    //For touch controls
-    LEFT: 0,
-    RIGHT: 1,
-    UP: 0,
-    DOWN: 1,
-
-
-
-
-
+var gameMethods = {
+    
     /*
     x = x-coordinate of text
     y = y-coordinate of text
@@ -203,24 +188,6 @@ var generalFunctions = {
         HomeGame.game.add.existing(line);
     },
 
-    /*
-    Display all text in the table
-    */
-    displayTableTitles: function(titles = []) {
-        var titleHeight = 228;
-
-        this.displayText(330, 200, 'skillsNewbie', 'bigContent', 'center');
-        this.displayText(490, 200, 'skillsIntermediate', 'bigContent', 'center');
-        this.displayText(640, 200, 'skillsAdvanced', 'bigContent', 'center');
-
-        if (titles.length > 0) {
-            titles.forEach(function(title) {
-                generalFunctions.displayText(230, titleHeight, title, 'bigContent', 'right');
-                titleHeight += 50;
-            });
-        }
-    },
-
 
 
 
@@ -239,13 +206,13 @@ var generalFunctions = {
             state.clone.body.velocity.x = 0;
 
         //Player movements management
-        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === this.RIGHT) {
+        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameVariables.RIGHT) {
             //  Move to the right
             state.player.body.velocity.x = 125;
             if (state.player.scale.x < 0)
                 state.player.scale.x *= -1;
             state.player.animations.play('run');
-        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === this.LEFT) {
+        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameVariables.LEFT) {
             //  Move to the left
             state.player.body.velocity.x = -125;
             if (state.player.scale.x > 0)
@@ -258,7 +225,7 @@ var generalFunctions = {
         }
 
         //Jump management
-        if (state.cursors.up.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.y / (state.game.height *0.5)) === this.UP) {
+        if (state.cursors.up.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.y / (state.game.height *0.5)) === gameVariables.UP) {
             this.playerJump(state);
         }
     },

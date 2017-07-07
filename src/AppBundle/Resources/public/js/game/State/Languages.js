@@ -4,48 +4,48 @@ HomeGame.Languages = function() {};
 
 HomeGame.Languages.prototype = {
     create: function() {
-        generalFunctions.addBackground(this);
+        gameMethods.addBackground(this);
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the map
-        skillsFunctions.behindMap(this);
+        skillsMethods.behindMap(this);
 
         //Adding the table
-        skillsFunctions.generateTable(['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']);
+        skillsMethods.generateTable(['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']);
 
         //Initial map setup
-        generalFunctions.mapSetup(this, 'skillsMap');
+        gameMethods.mapSetup(this, 'skillsMap');
 
         //Create the top of the chests (behind the coins)
-        skillsFunctions.createTopChests(this, [1, 0, 0]);
+        skillsMethods.createTopChests(this, [1, 0, 0]);
 
         //Create the coins
-        skillsFunctions.coinsGroup(this);
+        skillsMethods.coinsGroup(this);
 
-        skillsFunctions.generateCoin(this, 'gold', 352);
-        skillsFunctions.generateCoin(this, 'gold', 300);
-        skillsFunctions.generateCoin(this, 'gold', 250);
-        skillsFunctions.generateCoin(this, 'silver', 450);
-        skillsFunctions.generateCoin(this, 'silver', 402);
+        skillsMethods.generateCoin(this, 'gold', 352);
+        skillsMethods.generateCoin(this, 'gold', 300);
+        skillsMethods.generateCoin(this, 'gold', 250);
+        skillsMethods.generateCoin(this, 'silver', 450);
+        skillsMethods.generateCoin(this, 'silver', 402);
 
         //Create the bottom of the chests (in front of the coins)
-        skillsFunctions.createBottomChests(this);
+        skillsMethods.createBottomChests(this);
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the player
         //IN FRONT OF the chests
-        skillsFunctions.frontChestsBehindPlayer(this);
+        skillsMethods.frontChestsBehindPlayer(this);
 
         //Adding the adequate title and signs
-        skillsFunctions.generateSigns(this, 'languages', 'frameworks', 'home');
+        skillsMethods.generateSigns(this, 'languages', 'frameworks', 'home');
 
         //create player at different places depending where the visitor was before
-        skillsFunctions.createPlayer(this);
+        skillsMethods.createPlayer(this);
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //IN FRONT OF the chests
         //IN FRONT OF the player
-        skillsFunctions.frontChestsFrontPlayer(this);
+        skillsMethods.frontChestsFrontPlayer(this);
 
         //setting physics for the player and things other than platforms
         this.game.physics.arcade.enable(this.player);
@@ -55,13 +55,13 @@ HomeGame.Languages.prototype = {
         this.game.physics.arcade.enable(this.branch8);
 
         //fine tune some player parameters now that everything has a physical body
-        generalFunctions.playerSetup(this);
-        skillsFunctions.cloneSetup(this);
+        gameMethods.playerSetup(this);
+        skillsMethods.cloneSetup(this);
 
         //Set some objects immovable so we can use them as platforms
-        skillsFunctions.setImmovableObjects(this);
+        skillsMethods.setImmovableObjects(this);
 
-        generalFunctions.previousState = 'languages';
+        gameVariables.previousState = 'languages';
     },
 
     update: function() {
@@ -76,17 +76,17 @@ HomeGame.Languages.prototype = {
         this.game.physics.arcade.collide(this.keyItem, this.branch8);
 
         //Player movements management
-        generalFunctions.playerMov(this);
-        skillsFunctions.cloneMov(this);
+        gameMethods.playerMov(this);
+        skillsMethods.cloneMov(this);
 
         //Checking for the coins
-	skillsFunctions.manageCoins(this, this.clone.x);
+	    skillsMethods.manageCoins(this, this.clone.x);
 
         //Stopping the coins at the right time
-        skillsFunctions.stopCoins(this);
+        skillsMethods.stopCoins(this);
 
         //Checking for the chests
-	skillsFunctions.checkChests(this);
+	    skillsMethods.checkChests(this);
 
         //Going to another map
         if (this.player.x < 20 && this.player.y < 150) {

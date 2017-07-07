@@ -156,10 +156,11 @@
     {{ parent() }}
     {% javascripts
         'bundles/app/js/phaser.min.js'
-        'bundles/app/js/game/general.js'
+        'bundles/app/js/game/gameMethods.js'
+        'bundles/app/js/game/gameVariables.js'
+        'bundles/app/js/game/State/Skills/skillsMethods.js'
         'bundles/app/js/game/State/*/logic/*/*'
         'bundles/app/js/game/State/*/logic/*Manager.js'
-        'bundles/app/js/game/skillsGeneral.js'
         'bundles/app/js/game/State/Boot.js'
         'bundles/app/js/game/State/Preload.js'
         'bundles/app/js/game/State/Hub/Hub.js'

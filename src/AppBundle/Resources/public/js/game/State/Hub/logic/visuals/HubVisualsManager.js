@@ -56,10 +56,10 @@ var HubVisualsManager = {
         formationSign.scale.setTo(0.5);
 
         //Adding the text next to the signs
-        generalFunctions.displayText(80, 60, 'skills', 'guidance');
-        generalFunctions.displayText(state.game.width - 150, 25, 'experience', 'guidance', 'right');
-        generalFunctions.displayText(state.game.width - 70, state.game.height - 140, 'contact', 'guidance', 'right');
-        generalFunctions.displayText(20, state.game.height - 160, 'academics', 'guidance');
+        gameMethods.displayText(80, 60, 'skills', 'guidance');
+        gameMethods.displayText(state.game.width - 150, 25, 'experience', 'guidance', 'right');
+        gameMethods.displayText(state.game.width - 70, state.game.height - 140, 'contact', 'guidance', 'right');
+        gameMethods.displayText(20, state.game.height - 160, 'academics', 'guidance');
     },
 
 
