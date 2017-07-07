@@ -38,5 +38,33 @@ var HubManager = {
 
         //fine tune some player parameters now that the player has a physical body
     	generalFunctions.playerSetup(state);
+    },
+
+
+
+
+
+
+
+    updateHub: function(state) {
+        //collisions
+        state.game.physics.arcade.collide(state.player, state.blockedLayer);
+        state.game.physics.arcade.collide(state.player, state.branch8);
+
+        //Player movements management
+        generalFunctions.playerMov(state);
+
+        if (state.player.x < 20 && state.player.y < 150) {
+            state.game.state.start('Languages');
+        }
+        if (state.player.x < 20 && state.player.y > state.game.height - 150) {
+            state.game.state.start('Academics');
+        }
+        if (state.player.x > state.game.width - 20 && state.player.y < 150) {
+            state.game.state.start('Experience');
+        }
+        if (state.player.x > state.game.width - 20 && state.player.y > state.game.height - 250) {
+            state.game.state.start('Contact');
+        }
     }
 };

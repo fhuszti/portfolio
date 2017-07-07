@@ -8,7 +8,7 @@ HomeGame.Preload.prototype = {
 		//load Tiled maps
 		this.load.tilemap('homeMap', assetsBaseDir+'tilemaps/home.json', null, Phaser.Tilemap.TILED_JSON);
 		this.load.tilemap('skillsMap', assetsBaseDir+'tilemaps/skills.json', null, Phaser.Tilemap.TILED_JSON);
-		this.load.tilemap('formationMap', assetsBaseDir+'tilemaps/formation.json', null, Phaser.Tilemap.TILED_JSON);
+		this.load.tilemap('academicsMap', assetsBaseDir+'tilemaps/academics.json', null, Phaser.Tilemap.TILED_JSON);
 		this.load.tilemap('contactMap', assetsBaseDir+'tilemaps/contact.json', null, Phaser.Tilemap.TILED_JSON);
 		this.load.tilemap('experienceMap', assetsBaseDir+'tilemaps/experience.json', null, Phaser.Tilemap.TILED_JSON);
 
@@ -66,7 +66,7 @@ HomeGame.Preload.prototype = {
 	},
 
 	create: function() {
-		this.state.start('Contact');
+		this.state.start('Experience');
 	},
 
 	//create the loading animation

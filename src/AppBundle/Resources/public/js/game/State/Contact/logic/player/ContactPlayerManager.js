@@ -25,12 +25,17 @@ var ContactPlayerManager = {
 
     
 
+    //manually tells the client that the down key isn't pressed anymore
+    disableCursorDown: function(cursors) {
+        cursors.down.isDown = false;
+    },
+
     //additional setup for the player for this stage
     playerSetup: function(state) {
     	if (state.player.x >= 305) {
 			state.cursors.down.isDown = true;
 
-			setTimeout(state.disableCursorDown.bind(null, state.cursors), 1000);
+			setTimeout(this.disableCursorDown.bind(null, state.cursors), 1000);
 		}
     },
 

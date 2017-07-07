@@ -44,5 +44,41 @@ var ContactManager = {
 		ContactPlayerManager.playerSetup(state);
 
 		generalFunctions.previousState = 'contact';
+	},
+
+
+
+
+
+
+
+	updateContact: function(state) {
+		//collisions
+		state.game.physics.arcade.collide(state.player, state.blockedLayer);
+
+		//Player movements management
+		if (state.player.x < 305) {
+			state.game.add.tween(state.player).to({
+				angle: 0
+			}, 50, "Linear", true);
+
+			state.player.body.gravity.y = 900;
+			state.player.body.bounce.setTo(0, 0);
+
+			generalFunctions.playerMov(state);
+		}
+		//If player is in zero gravity zone
+		if (state.player.x >= 305) {
+			state.player.angle += 2;
+
+			state.player.body.gravity.y = 0;
+			state.player.body.bounce.setTo(0.8, 0.8);
+
+			ContactPlayerManager.zeroGravityMov(state);
+		}
+
+		if (state.player.x < 20) {
+			state.game.state.start('Hub');
+		}
 	}
 };

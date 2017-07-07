@@ -59,7 +59,7 @@ var HubVisualsManager = {
         generalFunctions.displayText(80, 60, 'skills', 'guidance');
         generalFunctions.displayText(state.game.width - 150, 25, 'experience', 'guidance', 'right');
         generalFunctions.displayText(state.game.width - 70, state.game.height - 140, 'contact', 'guidance', 'right');
-        generalFunctions.displayText(20, state.game.height - 160, 'formation', 'guidance');
+        generalFunctions.displayText(20, state.game.height - 160, 'academics', 'guidance');
     },
 
 
