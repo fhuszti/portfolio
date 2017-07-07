@@ -1,11 +1,11 @@
 var ContactContentManager = {
 
 	//create the dark transparent background behind the main content
-	generateContentBg: function(state) {
-		var graphics = state.game.add.graphics(0, 0);
+	generateContentBg: function() {
+		var graphics = gameVariables.currentState.game.add.graphics(0, 0);
 
 		graphics.beginFill('#5E5E5E', 0.3);
-		graphics.drawRect(state.game.width *0.5 - 60, 90, 440, 480);
+		graphics.drawRect(gameVariables.currentState.game.width *0.5 - 60, 90, 440, 480);
 		graphics.endFill();
 	},
 
@@ -16,11 +16,11 @@ var ContactContentManager = {
 
 
 	//Plop the main text content of the page
-	generateMainContent: function(state) {
-		gameMethods.displayText(state.game.width *0.5 + 150, 50, 'contact', 'title', 'center');
+	generateMainContent: function() {
+		gameMethods.displayText(gameVariables.currentState.game.width *0.5 + 150, 50, 'contact', 'title', 'center');
 
-		gameMethods.displayText(state.game.width *0.5 + 160, 160, 'contactLooking', 'mediumContent1', 'center');
-		gameMethods.displayText(state.game.width *0.5 + 160, 300, 'contactOffer', 'mediumContent1', 'center');
+		gameMethods.displayText(gameVariables.currentState.game.width *0.5 + 160, 160, 'contactLooking', 'mediumContent1', 'center');
+		gameMethods.displayText(gameVariables.currentState.game.width *0.5 + 160, 300, 'contactOffer', 'mediumContent1', 'center');
 	},
 
 
@@ -31,14 +31,14 @@ var ContactContentManager = {
 
 	//works with copyTextToClipboard
 	//fades the confirmation text after one second
-	fadeText: function(state) {
-		state.game.add.tween(this.copyText).to( { alpha: 0 }, 1000, Phaser.Easing.Linear.None, true);
+	fadeText: function() {
+		gameVariables.currentState.game.add.tween(this.copyText).to( { alpha: 0 }, 1000, Phaser.Easing.Linear.None, true);
 	},
 	
     //Copy text to clipboard on button click
 	//Can be used in another project, just call it via eventListener in procedural JS
 	//Thanks to Dean Taylor on StackOverflow, probably saved me hours with that
-	copyTextToClipboard: function(state) {
+	copyTextToClipboard: function() {
 		var textArea = document.createElement("textarea");
 
 		//
@@ -102,9 +102,9 @@ var ContactContentManager = {
 	},
 
 	//Create the button containing the email address
-	generateEmailButton: function(state) {
+	generateEmailButton: function() {
 		//we create a group
-		var emailButton = state.game.add.group();
+		var emailButton = gameVariables.currentState.game.add.group();
 		emailButton.inputEnableChildren = true;
 
 		//we generate the button design
@@ -116,7 +116,7 @@ var ContactContentManager = {
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
 		var fakeSprite = gameMethods.generateFakeSprite(355, 415, 185, 35, emailButton);
-		fakeSprite.events.onInputDown.add(this.copyTextToClipboard, state, 0, state);
+		fakeSprite.events.onInputDown.add(this.copyTextToClipboard, gameVariables.currentState, 0, gameVariables.currentState);
 	},
 
 
@@ -131,9 +131,9 @@ var ContactContentManager = {
 	},
 
 	//Create the button containing the link to the form
-	generateFormButton: function(state) {
+	generateFormButton: function() {
 		//we create a group
-		var formButton = state.game.add.group();
+		var formButton = gameVariables.currentState.game.add.group();
 		formButton.inputEnableChildren = true;
 
 		//we generate the button design
@@ -145,7 +145,7 @@ var ContactContentManager = {
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
 		var fakeSprite = gameMethods.generateFakeSprite(575, 415, 185, 35, formButton);
-		fakeSprite.events.onInputDown.add(this.linkToForm, state);
+		fakeSprite.events.onInputDown.add(this.linkToForm, gameVariables.currentState);
 	},
 
 
@@ -161,9 +161,9 @@ var ContactContentManager = {
 	},
 
 	//Create the button containing the link to my GitHub
-	generateGithubButton: function(state) {
+	generateGithubButton: function() {
 		//we create a group
-		var githubButton = state.game.add.group();
+		var githubButton = gameVariables.currentState.game.add.group();
 		githubButton.inputEnableChildren = true;
 
 		//we generate the button design
@@ -175,7 +175,7 @@ var ContactContentManager = {
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
 		var fakeSprite = gameMethods.generateFakeSprite(355, 510, 185, 35, githubButton);
-		fakeSprite.events.onInputDown.add(this.linkToGithub, state);
+		fakeSprite.events.onInputDown.add(this.linkToGithub, gameVariables.currentState);
 	},
 
 
@@ -191,9 +191,9 @@ var ContactContentManager = {
 	},
 
 	//Create the button containing the link to my LinkedIn
-	generateLinkedinButton: function(state) {
+	generateLinkedinButton: function() {
 		//we create a group
-		var linkedinButton = state.game.add.group();
+		var linkedinButton = gameVariables.currentState.game.add.group();
 		linkedinButton.inputEnableChildren = true;
 
 		//we generate the button design
@@ -205,6 +205,6 @@ var ContactContentManager = {
 
 		//we create a fake sprite on top of the whole button and attach the click event to it
 		var fakeSprite = gameMethods.generateFakeSprite(575, 510, 185, 35, linkedinButton);
-		fakeSprite.events.onInputDown.add(this.linkToLinkedin, state);
+		fakeSprite.events.onInputDown.add(this.linkToLinkedin, gameVariables.currentState);
 	}
 };

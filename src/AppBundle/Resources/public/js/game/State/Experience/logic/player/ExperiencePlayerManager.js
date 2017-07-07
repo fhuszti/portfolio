@@ -1,7 +1,7 @@
 var ExperiencePlayerManager = {
 
 	//create player
-	createPlayer: function(state) {
-		state.player = state.game.add.sprite(30, 60, 'textureAtlas', 'ninja1');
+	createPlayer: function() {
+		gameVariables.currentState.player = gameVariables.currentState.game.add.sprite(30, 60, 'textureAtlas', 'ninja1');
 	}
 };

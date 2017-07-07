@@ -8,10 +8,12 @@ HomeGame.Experience.prototype = {
 	heightStart: 0,
 
 	create: function() {
-		ExperienceManager.generateExperience(this);
+		gameVariables.currentState = this;
+
+    	ExperienceManager.generateExperience();
 	},
 
 	update: function() {
-		ExperienceManager.updateExperience(this);
+		ExperienceManager.updateExperience();
 	}
 };

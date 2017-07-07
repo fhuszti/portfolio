@@ -1,59 +1,59 @@
 var ExperienceManager = {
 
-	generateExperience: function(currentState) {
-		gameMethods.addBackground(currentState);
+	generateExperience: function() {
+		gameMethods.addBackground();
 
 		//we setup state variables
-		ExperienceConfigManager.setupVariables(currentState);
+		ExperienceConfigManager.setupVariables();
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//BEHIND the map
-		ExperienceVisualsManager.behindMap(currentState);
+		ExperienceVisualsManager.behindMap();
 
 		//Initial map setup
-		gameMethods.mapSetup(currentState, 'experienceMap');
+		gameMethods.mapSetup('experienceMap');
 
 		//Adding the guidance sign and its text
-		ExperienceVisualsManager.generateSigns(currentState);
+		ExperienceVisualsManager.generateSigns();
 
 		//we define the class variables
-		currentState.widthStart = currentState.game.width * 0.5 - 102;
-		currentState.heightStart = 78;
+		gameVariables.currentState.widthStart = gameVariables.currentState.game.width * 0.5 - 102;
+		gameVariables.currentState.heightStart = 78;
 
 		// Draw a black background rectangle behind the overlay
-		ExperienceContentManager.generateContentBg(currentState);
+		ExperienceContentManager.generateContentBg();
 
 		//then we generate the content on top of it
-		ExperienceContentManager.generateContent(currentState);
+		ExperienceContentManager.generateContent();
 
 		//and the exerience bar going below the content
-		ExperienceContentManager.generateExperienceBarSection(currentState);
+		ExperienceContentManager.generateExperienceBarSection();
 
 		//we generate the diamond
-		ExperienceVisualsManager.generateDiamond(currentState);
+		ExperienceVisualsManager.generateDiamond();
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//IN FRONT OF the dark panel
 		//BEHIND the player
-		ExperienceVisualsManager.frontPanelsBehindPlayer(currentState);
+		ExperienceVisualsManager.frontPanelsBehindPlayer();
 
 		//create player
-		ExperiencePlayerManager.createPlayer(currentState);
+		ExperiencePlayerManager.createPlayer();
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//IN FRONT OF the dark panel
 		//IN FRONT OF the player
-		ExperienceVisualsManager.frontPanelsFrontPlayer(currentState);
+		ExperienceVisualsManager.frontPanelsFrontPlayer();
 
 		//we setup all needed tweens
-		ExperienceConfigManager.setupTweens(currentState);
+		ExperienceConfigManager.setupTweens();
 
 		//setting physics for the player and things other than platforms
-		currentState.game.physics.arcade.enable([currentState.player, currentState.diamond]);
-		currentState.diamond.body.immovable = true;
+		gameVariables.currentState.game.physics.arcade.enable([gameVariables.currentState.player, gameVariables.currentState.diamond]);
+		gameVariables.currentState.diamond.body.immovable = true;
 
 		//fine tune some player parameters now that the player has a physical body
-		gameMethods.playerSetup(currentState);
+		gameMethods.playerSetup();
 
 		gameVariables.previousState = 'experience';
 	},
@@ -64,54 +64,54 @@ var ExperienceManager = {
 
 
 
-	updateExperience: function(currentState) {
+	updateExperience: function() {
 		//collisions
-		currentState.game.physics.arcade.collide(currentState.player, currentState.blockedLayer);
-		currentState.game.physics.arcade.collide(currentState.player, currentState.diamond);
+		gameVariables.currentState.game.physics.arcade.collide(gameVariables.currentState.player, gameVariables.currentState.blockedLayer);
+		gameVariables.currentState.game.physics.arcade.collide(gameVariables.currentState.player, gameVariables.currentState.diamond);
 
 		//Player movements management
 		//not active if the player is paused (cinematic)
-		if ( currentState.player.body.maxVelocity.x !== 0 ) {
-			gameMethods.playerMov(currentState);
+		if ( gameVariables.currentState.player.body.maxVelocity.x !== 0 ) {
+			gameMethods.playerMov();
 		}
 
 		//if the player is on the ground and the diamond doesn't 'exist' yet
-		if ( currentState.player.y >= 556 && !currentState.diamond.alive ) {
-			ExperienceUpdateContentManager.startCinematic(currentState);
+		if ( gameVariables.currentState.player.y >= 556 && !gameVariables.currentState.diamond.alive ) {
+			ExperienceUpdateContentManager.startCinematic();
 		}
 
 		//we don't forget to update the experience bar crop if the cinematic is done
-		if ( currentState.diamond.alive ) {
-			currentState.experienceBar.updateCrop();
+		if ( gameVariables.currentState.diamond.alive ) {
+			gameVariables.currentState.experienceBar.updateCrop();
 			
-			ExperienceUpdateContentManager.updatePercentage(currentState);
+			ExperienceUpdateContentManager.updatePercentage();
 		}
 
 		//if the player is on the diamond
-		if ( currentState.player.x >= 503 && currentState.player.x <= 552 && currentState.player.y === 431 ) {
-			ExperienceUpdateContentManager.homeShortcut(currentState);
+		if ( gameVariables.currentState.player.x >= 503 && gameVariables.currentState.player.x <= 552 && gameVariables.currentState.player.y === 431 ) {
+			ExperienceUpdateContentManager.homeShortcut();
 		}
 		//else we have to check for a bunch of stuff to make sure those tweens don't mess with others
-		else if ( currentState.light.alpha > 0.2 && !currentState.firstTweenLightUp.isRunning && !currentState.firstTweenBlue.isRunning ) {
+		else if ( gameVariables.currentState.light.alpha > 0.2 && !gameVariables.currentState.firstTweenLightUp.isRunning && !gameVariables.currentState.firstTweenBlue.isRunning ) {
 			//if it's still the first cinematic
-			if ( !currentState.started ) {
-				ExperienceUpdateContentManager.firstEffectsDown(currentState);
+			if ( !gameVariables.currentState.started ) {
+				ExperienceUpdateContentManager.firstEffectsDown();
 			}
 			else {
-				ExperienceUpdateContentManager.manageEffectsDown(currentState);
+				ExperienceUpdateContentManager.manageEffectsDown();
 			}
 		}
 
 		//on click anywhere else, we close the modal if its open
-		if (currentState.modalStarted && currentState.game.input.activePointer.isDown) {
-			ExperienceUpdateContentManager.manageModalQuit(currentState);
+		if (gameVariables.currentState.modalStarted && gameVariables.currentState.game.input.activePointer.isDown) {
+			ExperienceUpdateContentManager.manageModalQuit();
 		}
 
 		//Changing map by walking to a specific spot on the current map
-		if ( currentState.player.x > currentState.game.width - 75 && currentState.player.y > 600 ) {
-			gameVariables.leavingExperienceX = currentState.player.x;
-			gameVariables.leavingExperienceScaleX = currentState.player.scale.x;
-			currentState.game.state.start('Contact');
+		if ( gameVariables.currentState.player.x > gameVariables.currentState.game.width - 75 && gameVariables.currentState.player.y > 600 ) {
+			gameVariables.leavingExperienceX = gameVariables.currentState.player.x;
+			gameVariables.leavingExperienceScaleX = gameVariables.currentState.player.scale.x;
+			gameVariables.currentState.game.state.start('Contact');
 		}
 	}
 };

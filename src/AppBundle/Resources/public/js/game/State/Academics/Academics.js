@@ -6,10 +6,12 @@ HomeGame.Academics.prototype = {
     academicsTexts: {},
 
     create: function() {
-        AcademicsManager.generateAcademics(this);
+        gameVariables.currentState = this;
+
+    	AcademicsManager.generateAcademics();
     },
 
     update: function() {
-        AcademicsManager.updateAcademics(this);
+        AcademicsManager.updateAcademics();
     }
 };

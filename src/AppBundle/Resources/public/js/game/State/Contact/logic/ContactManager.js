@@ -1,47 +1,47 @@
 var ContactManager = {
 
-	generateContact: function(state) {
-		gameMethods.addBackground(state);
+	generateContact: function() {
+		gameMethods.addBackground();
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//BEHIND the map
-		ContactVisualsManager.behindMap(state);
+		ContactVisualsManager.behindMap();
 
 		//Initial map setup
-		gameMethods.mapSetup(state, 'contactMap');
+		gameMethods.mapSetup('contactMap');
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//BEHIND the player
-		ContactVisualsManager.behindPlayer(state);
+		ContactVisualsManager.behindPlayer();
 
 		//Create the guidance sign
-		ContactVisualsManager.generateSign(state);
+		ContactVisualsManager.generateSign();
 
 		// Draw a dark background rectangle behind the main text
-		ContactContentManager.generateContentBg(state);
+		ContactContentManager.generateContentBg();
 
 		//create the title and the main text
-		ContactContentManager.generateMainContent(state);
+		ContactContentManager.generateMainContent();
 
 		//Create all needed buttons
-		ContactContentManager.generateEmailButton(state);
-		ContactContentManager.generateFormButton(state);
-		ContactContentManager.generateGithubButton(state);
-		ContactContentManager.generateLinkedinButton(state);
+		ContactContentManager.generateEmailButton();
+		ContactContentManager.generateFormButton();
+		ContactContentManager.generateGithubButton();
+		ContactContentManager.generateLinkedinButton();
 
 		//create player
-		ContactPlayerManager.createPlayer(state);
+		ContactPlayerManager.createPlayer();
 
 		//create things other than platforms (rocks/branchs/trees/flowers...)
 		//IN FRONT OF the player
-		ContactVisualsManager.frontPlayer(state);
+		ContactVisualsManager.frontPlayer();
 
 		//setting physics for the player and things other than platforms
-		state.game.physics.arcade.enable([state.player]);
+		gameVariables.currentState.game.physics.arcade.enable([gameVariables.currentState.player]);
 
 		//fine tune some player parameters now that the player has a physical body
-		gameMethods.playerSetup(state);
-		ContactPlayerManager.playerSetup(state);
+		gameMethods.playerSetup();
+		ContactPlayerManager.playerSetup();
 
 		gameVariables.previousState = 'contact';
 	},
@@ -52,33 +52,33 @@ var ContactManager = {
 
 
 
-	updateContact: function(state) {
+	updateContact: function() {
 		//collisions
-		state.game.physics.arcade.collide(state.player, state.blockedLayer);
+		gameVariables.currentState.game.physics.arcade.collide(gameVariables.currentState.player, gameVariables.currentState.blockedLayer);
 
 		//Player movements management
-		if (state.player.x < 305) {
-			state.game.add.tween(state.player).to({
+		if (gameVariables.currentState.player.x < 305) {
+			gameVariables.currentState.game.add.tween(gameVariables.currentState.player).to({
 				angle: 0
 			}, 50, "Linear", true);
 
-			state.player.body.gravity.y = 900;
-			state.player.body.bounce.setTo(0, 0);
+			gameVariables.currentState.player.body.gravity.y = 900;
+			gameVariables.currentState.player.body.bounce.setTo(0, 0);
 
-			gameMethods.playerMov(state);
+			gameMethods.playerMov();
 		}
 		//If player is in zero gravity zone
-		if (state.player.x >= 305) {
-			state.player.angle += 2;
+		if (gameVariables.currentState.player.x >= 305) {
+			gameVariables.currentState.player.angle += 2;
 
-			state.player.body.gravity.y = 0;
-			state.player.body.bounce.setTo(0.8, 0.8);
+			gameVariables.currentState.player.body.gravity.y = 0;
+			gameVariables.currentState.player.body.bounce.setTo(0.8, 0.8);
 
-			ContactPlayerManager.zeroGravityMov(state);
+			ContactPlayerManager.zeroGravityMov();
 		}
 
-		if (state.player.x < 20) {
-			state.game.state.start('Hub');
+		if (gameVariables.currentState.player.x < 20) {
+			gameVariables.currentState.game.state.start('Hub');
 		}
 	}
 };

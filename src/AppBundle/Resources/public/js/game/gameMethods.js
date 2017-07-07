@@ -198,52 +198,52 @@ var gameMethods = {
     /*
     Player movements management
     */
-    playerMov: function(state) {
+    playerMov: function() {
         //Reset speed to steady every frame exept on no gravity zone
-        if (state.key != 'Contact' || state.player.x < 305)
-            state.player.body.velocity.x = 0;
-        if (state.key == 'Languages' || state.key == 'Frameworks' || state.key == 'Others')
-            state.clone.body.velocity.x = 0;
+        if (gameVariables.currentState.key != 'Contact' || gameVariables.currentState.player.x < 305)
+            gameVariables.currentState.player.body.velocity.x = 0;
+        if (gameVariables.currentState.key == 'Languages' || gameVariables.currentState.key == 'Frameworks' || gameVariables.currentState.key == 'Others')
+            gameVariables.currentState.clone.body.velocity.x = 0;
 
         //Player movements management
-        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameVariables.RIGHT) {
+        if (gameVariables.currentState.cursors.right.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameVariables.RIGHT) {
             //  Move to the right
-            state.player.body.velocity.x = 125;
-            if (state.player.scale.x < 0)
-                state.player.scale.x *= -1;
-            state.player.animations.play('run');
-        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameVariables.LEFT) {
+            gameVariables.currentState.player.body.velocity.x = 125;
+            if (gameVariables.currentState.player.scale.x < 0)
+                gameVariables.currentState.player.scale.x *= -1;
+            gameVariables.currentState.player.animations.play('run');
+        } else if (gameVariables.currentState.cursors.left.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameVariables.LEFT) {
             //  Move to the left
-            state.player.body.velocity.x = -125;
-            if (state.player.scale.x > 0)
-                state.player.scale.x *= -1;
-            state.player.animations.play('run');
+            gameVariables.currentState.player.body.velocity.x = -125;
+            if (gameVariables.currentState.player.scale.x > 0)
+                gameVariables.currentState.player.scale.x *= -1;
+            gameVariables.currentState.player.animations.play('run');
         } else {
             //  Stand still
-            state.player.animations.stop();
-            state.player.frameName = 'ninja1';
+            gameVariables.currentState.player.animations.stop();
+            gameVariables.currentState.player.frameName = 'ninja1';
         }
 
         //Jump management
-        if (state.cursors.up.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.y / (state.game.height *0.5)) === gameVariables.UP) {
-            this.playerJump(state);
+        if (gameVariables.currentState.cursors.up.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.y / (gameVariables.currentState.game.height *0.5)) === gameVariables.UP) {
+            this.playerJump();
         }
     },
 
 
-    playerJump: function(state) {
-        if (state.player.body.blocked.down || state.player.body.touching.down) {
-            state.player.body.velocity.y -= 500;
-            state.player.frameName = 'ninja4';
+    playerJump: function() {
+        if (gameVariables.currentState.player.body.blocked.down || gameVariables.currentState.player.body.touching.down) {
+            gameVariables.currentState.player.body.velocity.y -= 500;
+            gameVariables.currentState.player.frameName = 'ninja4';
         }
 
-        if (state.key == 'Languages' || state.key == 'Frameworks' || state.key == 'Others') {
-            if (state.clone.body.blocked.down || state.clone.body.touching.down) {
-                state.clone.body.velocity.y -= 500;
-                state.clone.frameName = 'ninjaWhite4';
+        if (gameVariables.currentState.key == 'Languages' || gameVariables.currentState.key == 'Frameworks' || gameVariables.currentState.key == 'Others') {
+            if (gameVariables.currentState.clone.body.blocked.down || gameVariables.currentState.clone.body.touching.down) {
+                gameVariables.currentState.clone.body.velocity.y -= 500;
+                gameVariables.currentState.clone.frameName = 'ninjaWhite4';
             }
-            if (state.keyItem.body.blocked.down || state.keyItem.body.touching.down) {
-                state.keyItem.body.velocity.y -= 500;
+            if (gameVariables.currentState.keyItem.body.blocked.down || gameVariables.currentState.keyItem.body.touching.down) {
+                gameVariables.currentState.keyItem.body.velocity.y -= 500;
             }
         }
     },
@@ -256,26 +256,26 @@ var gameMethods = {
     /*
     Initial map setup
     */
-    mapSetup: function(state, map) {
-        state.map = state.game.add.tilemap(map);
+    mapSetup: function(map) {
+        gameVariables.currentState.map = gameVariables.currentState.game.add.tilemap(map);
 
         //the first parameter is the tileset name as specified in Tiled, the second is the key to the asset
-        state.map.addTilesetImage('mainSpritesheet', 'mainTiles');
+        gameVariables.currentState.map.addTilesetImage('mainSpritesheet', 'mainTiles');
 
         //create layers
-        state.backgroundLayer = state.map.createLayer('backgroundLayer');
-        state.blockedLayer = state.map.createLayer('blockedLayer');
+        gameVariables.currentState.backgroundLayer = gameVariables.currentState.map.createLayer('backgroundLayer');
+        gameVariables.currentState.blockedLayer = gameVariables.currentState.map.createLayer('blockedLayer');
 
         //collision on blockedLayer
-        state.map.setCollisionBetween(1, 100000, true, 'blockedLayer');
+        gameVariables.currentState.map.setCollisionBetween(1, 100000, true, 'blockedLayer');
 
         //resizes the game world to match the layer dimensions
-        state.backgroundLayer.resizeWorld();
-        state.blockedLayer.resizeWorld();
+        gameVariables.currentState.backgroundLayer.resizeWorld();
+        gameVariables.currentState.blockedLayer.resizeWorld();
     },
 
-    addBackground: function(state) {
-        state.background = state.add.sprite(0, 0, 'textureAtlas', 'background');
+    addBackground: function() {
+        gameVariables.currentState.background = gameVariables.currentState.add.sprite(0, 0, 'textureAtlas', 'background');
     },
 
 
@@ -285,20 +285,20 @@ var gameMethods = {
     /*
     fine tune some player parameters now that the player has a physical body
     */
-    playerSetup: function(state) {
-        state.player.body.collideWorldBounds = true;
+    playerSetup: function() {
+        gameVariables.currentState.player.body.collideWorldBounds = true;
 
         //to prevent the player from "floating" above the ground, reducing its physical body size to ease collisions
-        state.player.body.setSize(30, 25);
+        gameVariables.currentState.player.body.setSize(30, 25);
 
         //player gravity
-        state.player.body.gravity.y = 900;
+        gameVariables.currentState.player.body.gravity.y = 900;
 
         //Animations
-        state.player.anchor.setTo(0.5, 1);
-        state.player.animations.add('run', Phaser.Animation.generateFrameNames('ninja', 1, 6), 15, true);
+        gameVariables.currentState.player.anchor.setTo(0.5, 1);
+        gameVariables.currentState.player.animations.add('run', Phaser.Animation.generateFrameNames('ninja', 1, 6), 15, true);
 
         //move player with cursor keys
-        state.cursors = state.game.input.keyboard.createCursorKeys();
+        gameVariables.currentState.cursors = gameVariables.currentState.game.input.keyboard.createCursorKeys();
     }
 };

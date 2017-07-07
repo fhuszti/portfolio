@@ -5,10 +5,12 @@ HomeGame.Hub = function() {};
 HomeGame.Hub.prototype = {
 
     create: function() {
-    	HubManager.generateHub(this);
+    	gameVariables.currentState = this;
+
+    	HubManager.generateHub();
     },
 
     update: function() {
-        HubManager.updateHub(this);
+        HubManager.updateHub();
     }
 };

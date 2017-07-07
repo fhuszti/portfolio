@@ -5,10 +5,12 @@ HomeGame.Contact = function() {};
 HomeGame.Contact.prototype = {
 	
 	create: function() {
-		ContactManager.generateContact(this);
+		gameVariables.currentState = this;
+
+    	ContactManager.generateContact();
 	},
 
 	update: function() {
-		ContactManager.updateContact(this);
+		ContactManager.updateContact();
 	}
 };

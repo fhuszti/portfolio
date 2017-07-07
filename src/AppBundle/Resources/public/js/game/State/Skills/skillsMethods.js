@@ -8,10 +8,10 @@ var skillsMethods = {
 
     //create things other than platforms (rocks/branchs/trees/flowers...)
     //BEHIND the map
-    behindMap: function(state) {
-    	state.pine3 = state.add.sprite(state.game.width - 130, state.game.height*0.5, 'textureAtlas', 'pine2');
-        state.pine3.scale.setTo(0.8);
-        state.add.sprite(240, 20, 'textureAtlas', 'rock1').scale.setTo(0.7);
+    behindMap: function() {
+    	gameVariables.currentState.pine3 = gameVariables.currentState.add.sprite(gameVariables.currentState.game.width - 130, gameVariables.currentState.game.height*0.5, 'textureAtlas', 'pine2');
+        gameVariables.currentState.pine3.scale.setTo(0.8);
+        gameVariables.currentState.add.sprite(240, 20, 'textureAtlas', 'rock1').scale.setTo(0.7);
     },
 
     /*
@@ -46,43 +46,43 @@ var skillsMethods = {
     },
 
     //Create the top of the chests (behind the coins)
-    createTopChests: function(state, emptyChests = [0, 0, 0]) {
-    	state.topChests = state.game.add.group();
-        state.leftChest = this.generateChests(state, 'top', 'left', emptyChests[0]);
-        state.centerChest = this.generateChests(state, 'top', 'center', emptyChests[1]);
-        state.rightChest = this.generateChests(state, 'top', 'right', emptyChests[2]);
+    createTopChests: function(emptyChests = [0, 0, 0]) {
+    	gameVariables.currentState.topChests = gameVariables.currentState.game.add.group();
+        gameVariables.currentState.leftChest = this.generateChests('top', 'left', emptyChests[0]);
+        gameVariables.currentState.centerChest = this.generateChests('top', 'center', emptyChests[1]);
+        gameVariables.currentState.rightChest = this.generateChests('top', 'right', emptyChests[2]);
     },
 
     //Create the coins' group
-    coinsGroup: function(state) {
-        state.coins = state.game.add.group();
-        state.goldCoins = state.game.add.group();
-        state.silverCoins = state.game.add.group();
-        state.bronzeCoins = state.game.add.group();
+    coinsGroup: function() {
+        gameVariables.currentState.coins = gameVariables.currentState.game.add.group();
+        gameVariables.currentState.goldCoins = gameVariables.currentState.game.add.group();
+        gameVariables.currentState.silverCoins = gameVariables.currentState.game.add.group();
+        gameVariables.currentState.bronzeCoins = gameVariables.currentState.game.add.group();
 
-        state.coins.add(state.goldCoins);
-        state.coins.add(state.silverCoins);
-        state.coins.add(state.bronzeCoins);
+        gameVariables.currentState.coins.add(gameVariables.currentState.goldCoins);
+        gameVariables.currentState.coins.add(gameVariables.currentState.silverCoins);
+        gameVariables.currentState.coins.add(gameVariables.currentState.bronzeCoins);
 
         //enable physics in them
-        state.goldCoins.enableBody = true;
-        state.goldCoins.physicsBodyType = Phaser.Physics.ARCADE;
-        state.silverCoins.enableBody = true;
-        state.silverCoins.physicsBodyType = Phaser.Physics.ARCADE;
-        state.bronzeCoins.enableBody = true;
-        state.bronzeCoins.physicsBodyType = Phaser.Physics.ARCADE;
+        gameVariables.currentState.goldCoins.enableBody = true;
+        gameVariables.currentState.goldCoins.physicsBodyType = Phaser.Physics.ARCADE;
+        gameVariables.currentState.silverCoins.enableBody = true;
+        gameVariables.currentState.silverCoins.physicsBodyType = Phaser.Physics.ARCADE;
+        gameVariables.currentState.bronzeCoins.enableBody = true;
+        gameVariables.currentState.bronzeCoins.physicsBodyType = Phaser.Physics.ARCADE;
     },
 
     //Generate coins
-    generateCoin: function(state, type, maxHeight) {
+    generateCoin: function(type, maxHeight) {
         //we get the right type of coin for the current page, star coins as default
         var coinType = 'coinStar';
 
-        if (state.key === 'Languages')
+        if (gameVariables.currentState.key === 'Languages')
             coinType = 'coinStar';
-        if (state.key === 'Frameworks')
+        if (gameVariables.currentState.key === 'Frameworks')
             coinType = 'coinHexagon';
-        if (state.key === 'Others')
+        if (gameVariables.currentState.key === 'Others')
             coinType = 'coinDiamond';
 
         //we assign a coinName to the current coin to call its frames when adding animation
@@ -91,17 +91,17 @@ var skillsMethods = {
             coin;
 
         if (type === 'gold')
-            coin = state.goldCoins.create(640, state.game.height - 62, 'textureAtlas');
+            coin = gameVariables.currentState.goldCoins.create(640, gameVariables.currentState.game.height - 62, 'textureAtlas');
         else if (type === 'silver')
-            coin = state.silverCoins.create(490, state.game.height - 62, 'textureAtlas');
+            coin = gameVariables.currentState.silverCoins.create(490, gameVariables.currentState.game.height - 62, 'textureAtlas');
         else if (type === 'bronze')
-            coin = state.bronzeCoins.create(335, state.game.height - 62, 'textureAtlas');
+            coin = gameVariables.currentState.bronzeCoins.create(335, gameVariables.currentState.game.height - 62, 'textureAtlas');
 
         //adding the correct animation to the coin
         coin.animations.add('turn', Phaser.Animation.generateFrameNames(coinName, 1, 6), 10, true);
 
         //fine tuning the coin
-        coin.minHeight = state.game.height - 62;
+        coin.minHeight = gameVariables.currentState.game.height - 62;
         coin.maxHeight = maxHeight;
 
         coin.scale.setTo(0.65);
@@ -115,19 +115,19 @@ var skillsMethods = {
     },
 
     //Create the bottom of the chests (in front of the coins)
-    createBottomChests: function(state) {
-        state.bottomChests = state.game.add.group();
-        this.generateChests(state, 'bottom');
+    createBottomChests: function() {
+        gameVariables.currentState.bottomChests = gameVariables.currentState.game.add.group();
+        this.generateChests('bottom');
     },
 
     //Generate the chests, top only or bottom only
-    generateChests: function(state, part, side, chestEmpty = 0) {
+    generateChests: function(part, side, chestEmpty = 0) {
         if (part === 'top')  {
             //two variables we'll need to decide if the chest has to already be open or not
             var animated;
 
             if (side === 'left') {
-                var chestLeft = state.topChests.create(337, state.game.height - 90, 'textureAtlas');
+                var chestLeft = gameVariables.currentState.topChests.create(337, gameVariables.currentState.game.height - 90, 'textureAtlas');
 
                 //if the chest is empty, we make it appear opened already
                 if(chestEmpty === 0) {
@@ -145,7 +145,7 @@ var skillsMethods = {
                 return chestLeft;
             }
             if (side === 'center') {
-                var chestCenter = state.topChests.create(492, state.game.height - 90, 'textureAtlas');
+                var chestCenter = gameVariables.currentState.topChests.create(492, gameVariables.currentState.game.height - 90, 'textureAtlas');
 
                 //if the chest is empty, we make it appear opened already
                 if(chestEmpty === 0) {
@@ -163,7 +163,7 @@ var skillsMethods = {
                 return chestCenter;
             }
             if (side === 'right') {
-                var chestRight = state.topChests.create(642, state.game.height - 90, 'textureAtlas');
+                var chestRight = gameVariables.currentState.topChests.create(642, gameVariables.currentState.game.height - 90, 'textureAtlas');
 
                 //if the chest is empty, we make it appear opened already
                 if(chestEmpty === 0) {
@@ -182,11 +182,11 @@ var skillsMethods = {
             }
         }
         if (part === 'bottom') {
-            state.bottomChests.create(337, state.game.height - 60, 'textureAtlas', 'chest2');
-            state.bottomChests.create(492, state.game.height - 60, 'textureAtlas', 'chest2');
-            state.bottomChests.create(642, state.game.height - 60, 'textureAtlas', 'chest2');
+            gameVariables.currentState.bottomChests.create(337, gameVariables.currentState.game.height - 60, 'textureAtlas', 'chest2');
+            gameVariables.currentState.bottomChests.create(492, gameVariables.currentState.game.height - 60, 'textureAtlas', 'chest2');
+            gameVariables.currentState.bottomChests.create(642, gameVariables.currentState.game.height - 60, 'textureAtlas', 'chest2');
 
-            state.bottomChests.forEach(function(chest) {
+            gameVariables.currentState.bottomChests.forEach(function(chest) {
                 chest.anchor.setTo(0.5);
                 chest.scale.setTo(0.85);
             });
@@ -209,110 +209,110 @@ var skillsMethods = {
     //create things other than platforms (rocks/branchs/trees/flowers...)
     //BEHIND the player
     //IN FRONT OF the chests
-    frontChestsBehindPlayer: function(state) {
-    	state.rocks = state.game.add.group();
+    frontChestsBehindPlayer: function() {
+    	gameVariables.currentState.rocks = gameVariables.currentState.game.add.group();
         //upper part
-        state.rocks.create(175, 101, 'textureAtlas', 'rock3');
-        state.rocks.create(135, 101, 'textureAtlas', 'rock3');
-        state.rocks.create(195, 100, 'textureAtlas', 'rock3');
-        state.rocks.create(145, 100, 'textureAtlas', 'rock3');
-        state.rocks.create(95, 100, 'textureAtlas', 'rock3');
-        state.rocks.create(235, 100, 'textureAtlas', 'rock3');
-        state.add.sprite(570, 60, 'textureAtlas', 'plant18');
-        state.add.sprite(500, 95, 'textureAtlas', 'plant14');
-        state.add.sprite(600, 95, 'textureAtlas', 'plant13');
-        state.add.sprite(630, 95, 'textureAtlas', 'plant14');
-        state.add.sprite(660, 95, 'textureAtlas', 'plant13');
-        state.signPlant = state.add.sprite(state.game.width*0.5, 95, 'textureAtlas', 'plant4');
-        state.signPlant.anchor.setTo(0.5, 0);
-        state.signPlant.scale.setTo(0.5);
+        gameVariables.currentState.rocks.create(175, 101, 'textureAtlas', 'rock3');
+        gameVariables.currentState.rocks.create(135, 101, 'textureAtlas', 'rock3');
+        gameVariables.currentState.rocks.create(195, 100, 'textureAtlas', 'rock3');
+        gameVariables.currentState.rocks.create(145, 100, 'textureAtlas', 'rock3');
+        gameVariables.currentState.rocks.create(95, 100, 'textureAtlas', 'rock3');
+        gameVariables.currentState.rocks.create(235, 100, 'textureAtlas', 'rock3');
+        gameVariables.currentState.add.sprite(570, 60, 'textureAtlas', 'plant18');
+        gameVariables.currentState.add.sprite(500, 95, 'textureAtlas', 'plant14');
+        gameVariables.currentState.add.sprite(600, 95, 'textureAtlas', 'plant13');
+        gameVariables.currentState.add.sprite(630, 95, 'textureAtlas', 'plant14');
+        gameVariables.currentState.add.sprite(660, 95, 'textureAtlas', 'plant13');
+        gameVariables.currentState.signPlant = gameVariables.currentState.add.sprite(gameVariables.currentState.game.width*0.5, 95, 'textureAtlas', 'plant4');
+        gameVariables.currentState.signPlant.anchor.setTo(0.5, 0);
+        gameVariables.currentState.signPlant.scale.setTo(0.5);
         //lower part
-        state.plant17 = state.add.sprite(45, state.game.height - 90, 'textureAtlas', 'plant17');
-        state.plant17.scale.setTo(0.8);
-        state.add.sprite(245, state.game.height - 55, 'textureAtlas', 'plant8');
-        state.branch8 = state.add.sprite(65, state.game.height - 75, 'textureAtlas', 'branch8');
-        state.flower6 = state.add.sprite(state.game.width - 30, state.game.height - 80, 'textureAtlas', 'flower6');
-        state.flower6.scale.setTo(0.3);
-        state.pine1 = state.add.sprite(10, state.game.height - 215, 'textureAtlas', 'pine1');
-        state.pine1.anchor.setTo(0.5);
-        state.pine2 = state.add.sprite(state.game.width + 10, state.game.height - 215, 'textureAtlas', 'pine1');
-        state.pine2.anchor.setTo(0.5);
-        state.chestPlant1 = state.add.sprite(315, state.game.height - 60, 'textureAtlas', 'plant4');
-        state.chestPlant1.scale.setTo(0.5);
-        state.chestPlant2 = state.add.sprite(473, state.game.height - 67, 'textureAtlas', 'plant3');
-        state.chestPlant2.scale.setTo(0.8);
-        state.chestPlant3 = state.add.sprite(610, state.game.height - 60, 'textureAtlas', 'plant4');
-        state.chestPlant3.scale.setTo(0.5);
+        gameVariables.currentState.plant17 = gameVariables.currentState.add.sprite(45, gameVariables.currentState.game.height - 90, 'textureAtlas', 'plant17');
+        gameVariables.currentState.plant17.scale.setTo(0.8);
+        gameVariables.currentState.add.sprite(245, gameVariables.currentState.game.height - 55, 'textureAtlas', 'plant8');
+        gameVariables.currentState.branch8 = gameVariables.currentState.add.sprite(65, gameVariables.currentState.game.height - 75, 'textureAtlas', 'branch8');
+        gameVariables.currentState.flower6 = gameVariables.currentState.add.sprite(gameVariables.currentState.game.width - 30, gameVariables.currentState.game.height - 80, 'textureAtlas', 'flower6');
+        gameVariables.currentState.flower6.scale.setTo(0.3);
+        gameVariables.currentState.pine1 = gameVariables.currentState.add.sprite(10, gameVariables.currentState.game.height - 215, 'textureAtlas', 'pine1');
+        gameVariables.currentState.pine1.anchor.setTo(0.5);
+        gameVariables.currentState.pine2 = gameVariables.currentState.add.sprite(gameVariables.currentState.game.width + 10, gameVariables.currentState.game.height - 215, 'textureAtlas', 'pine1');
+        gameVariables.currentState.pine2.anchor.setTo(0.5);
+        gameVariables.currentState.chestPlant1 = gameVariables.currentState.add.sprite(315, gameVariables.currentState.game.height - 60, 'textureAtlas', 'plant4');
+        gameVariables.currentState.chestPlant1.scale.setTo(0.5);
+        gameVariables.currentState.chestPlant2 = gameVariables.currentState.add.sprite(473, gameVariables.currentState.game.height - 67, 'textureAtlas', 'plant3');
+        gameVariables.currentState.chestPlant2.scale.setTo(0.8);
+        gameVariables.currentState.chestPlant3 = gameVariables.currentState.add.sprite(610, gameVariables.currentState.game.height - 60, 'textureAtlas', 'plant4');
+        gameVariables.currentState.chestPlant3.scale.setTo(0.5);
     },
 
     //Create all signs and guidance texts, as well as the title of the page
-    generateSigns: function(state, title, left, right) {
-    	gameMethods.displayText(state.game.width*0.5, 30, title, 'title', 'center');
+    generateSigns: function(title, left, right) {
+    	gameMethods.displayText(gameVariables.currentState.game.width*0.5, 30, title, 'title', 'center');
 
         gameMethods.displayText(30, 50, left, 'guidance');
-        gameMethods.displayText(state.game.width - 30, 50, right, 'guidance', 'right');
+        gameMethods.displayText(gameVariables.currentState.game.width - 30, 50, right, 'guidance', 'right');
 
         //Create all guidance signs
-        var doubleSign = state.game.add.sprite(state.game.width*0.5, 80, 'textureAtlas', 'sign3');
+        var doubleSign = gameVariables.currentState.game.add.sprite(gameVariables.currentState.game.width*0.5, 80, 'textureAtlas', 'sign3');
 
         doubleSign.anchor.setTo(0.5);
         doubleSign.scale.setTo(0.5);
     },
 
     //Generate the player, clone and key
-    createPlayer: function(state) {
-    	if((state.key === 'Languages' && gameVariables.previousState === 'frameworks') || (state.key === 'Frameworks' && gameVariables.previousState === 'others')) {
-    	    state.player = state.game.add.sprite(50, 100, 'textureAtlas', 'ninja1');
-            state.clone = state.game.add.sprite(50, state.game.height - 60, 'textureAtlas', 'ninjaWhite1');
+    createPlayer: function() {
+    	if((gameVariables.currentState.key === 'Languages' && gameVariables.previousState === 'frameworks') || (gameVariables.currentState.key === 'Frameworks' && gameVariables.previousState === 'others')) {
+    	    gameVariables.currentState.player = gameVariables.currentState.game.add.sprite(50, 100, 'textureAtlas', 'ninja1');
+            gameVariables.currentState.clone = gameVariables.currentState.game.add.sprite(50, gameVariables.currentState.game.height - 60, 'textureAtlas', 'ninjaWhite1');
 
-            state.keyItem = state.game.add.sprite(73, state.game.height - 57, 'textureAtlas', 'key');
+            gameVariables.currentState.keyItem = gameVariables.currentState.game.add.sprite(73, gameVariables.currentState.game.height - 57, 'textureAtlas', 'key');
 
             //Fitting the key
-            state.keyItem.anchor.setTo(0.5);
-            state.keyItem.scale.setTo(0.8);
-            state.keyItem.angle = 90;
+            gameVariables.currentState.keyItem.anchor.setTo(0.5);
+            gameVariables.currentState.keyItem.scale.setTo(0.8);
+            gameVariables.currentState.keyItem.angle = 90;
     	}
     	else {
-    	    state.player = state.game.add.sprite(state.game.width - 50, 100, 'textureAtlas', 'ninja1');
-            state.clone = state.game.add.sprite(state.game.width - 50, state.game.height - 60, 'textureAtlas', 'ninjaWhite1');
+    	    gameVariables.currentState.player = gameVariables.currentState.game.add.sprite(gameVariables.currentState.game.width - 50, 100, 'textureAtlas', 'ninja1');
+            gameVariables.currentState.clone = gameVariables.currentState.game.add.sprite(gameVariables.currentState.game.width - 50, gameVariables.currentState.game.height - 60, 'textureAtlas', 'ninjaWhite1');
 
-            state.keyItem = state.add.sprite(state.game.width - 73, state.game.height - 57, 'textureAtlas', 'key');
+            gameVariables.currentState.keyItem = gameVariables.currentState.add.sprite(gameVariables.currentState.game.width - 73, gameVariables.currentState.game.height - 57, 'textureAtlas', 'key');
 
             //reverse the sprite so the player starts facing the right way
-            state.player.scale.x = -1;
-            state.clone.scale.x = -1;
+            gameVariables.currentState.player.scale.x = -1;
+            gameVariables.currentState.clone.scale.x = -1;
 
             //Fitting the key
-            state.keyItem.anchor.setTo(0.5);
-            state.keyItem.scale.setTo(0.8);
-            state.keyItem.angle = -90;
-            state.keyItem.scale.x *= -1;
+            gameVariables.currentState.keyItem.anchor.setTo(0.5);
+            gameVariables.currentState.keyItem.scale.setTo(0.8);
+            gameVariables.currentState.keyItem.angle = -90;
+            gameVariables.currentState.keyItem.scale.x *= -1;
     	}
     },
 
     //create things other than platforms (rocks/branchs/trees/flowers...)
     //IN FRONT OF the chests
     //IN FRONT OF the player
-    frontChestsFrontPlayer: function(state) {
+    frontChestsFrontPlayer: function() {
     	//upper
-        state.add.sprite(180, 110, 'textureAtlas', 'plant9').scale.setTo(0.6);
-        state.add.sprite(120, 85, 'textureAtlas', 'plant11').scale.setTo(0.6);
-        state.add.sprite(200, 85, 'textureAtlas', 'plant11').scale.setTo(0.6);
-        state.add.sprite(70, 85, 'textureAtlas', 'plant10').scale.setTo(0.9);
-        state.add.sprite(150, 85, 'textureAtlas', 'plant10').scale.setTo(0.9);
+        gameVariables.currentState.add.sprite(180, 110, 'textureAtlas', 'plant9').scale.setTo(0.6);
+        gameVariables.currentState.add.sprite(120, 85, 'textureAtlas', 'plant11').scale.setTo(0.6);
+        gameVariables.currentState.add.sprite(200, 85, 'textureAtlas', 'plant11').scale.setTo(0.6);
+        gameVariables.currentState.add.sprite(70, 85, 'textureAtlas', 'plant10').scale.setTo(0.9);
+        gameVariables.currentState.add.sprite(150, 85, 'textureAtlas', 'plant10').scale.setTo(0.9);
         //lower
-        state.add.sprite(state.game.width - 150, state.game.height - 70, 'textureAtlas', 'plant6');
-        state.add.sprite(state.game.width*0.5 - 30, state.game.height - 90, 'textureAtlas', 'plant17');
-        state.add.sprite(500, state.game.height - 67, 'textureAtlas', 'plant5');
+        gameVariables.currentState.add.sprite(gameVariables.currentState.game.width - 150, gameVariables.currentState.game.height - 70, 'textureAtlas', 'plant6');
+        gameVariables.currentState.add.sprite(gameVariables.currentState.game.width*0.5 - 30, gameVariables.currentState.game.height - 90, 'textureAtlas', 'plant17');
+        gameVariables.currentState.add.sprite(500, gameVariables.currentState.game.height - 67, 'textureAtlas', 'plant5');
     },
 
     //Set some objects immovable so we can use them as platforms
-    setImmovableObjects: function(state){
-    	state.rocks.forEach(function(rock) {
+    setImmovableObjects: function(){
+    	gameVariables.currentState.rocks.forEach(function(rock) {
             rock.anchor.setTo(0.5);
             rock.body.immovable = true;
         });
-        state.branch8.body.immovable = true;
+        gameVariables.currentState.branch8.body.immovable = true;
     },
 
 
@@ -331,137 +331,137 @@ var skillsMethods = {
 
 
     //Clone and key movements manager
-    cloneMov: function(state) {
-        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.RIGHT) {
+    cloneMov: function() {
+        if (gameVariables.currentState.cursors.right.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameVariables.RIGHT) {
             //  Move to the right
-            state.clone.body.velocity.x = 125;
+            gameVariables.currentState.clone.body.velocity.x = 125;
 
-            state.keyItem.x = state.clone.x + 28;
-            state.keyItem.y = state.clone.y + 5;
+            gameVariables.currentState.keyItem.x = gameVariables.currentState.clone.x + 28;
+            gameVariables.currentState.keyItem.y = gameVariables.currentState.clone.y + 5;
 
-            if (state.clone.scale.x < 0)
-                state.clone.scale.x *= -1;
+            if (gameVariables.currentState.clone.scale.x < 0)
+                gameVariables.currentState.clone.scale.x *= -1;
 
-            if (state.keyItem.x < state.clone.x)
-                state.keyItem.x += 47;
+            if (gameVariables.currentState.keyItem.x < gameVariables.currentState.clone.x)
+                gameVariables.currentState.keyItem.x += 47;
 
-            if (state.keyItem.scale.x < 0)
-                state.keyItem.scale.x *= -1;
-            if (state.keyItem.angle < 0)
-                state.keyItem.angle = 90;
+            if (gameVariables.currentState.keyItem.scale.x < 0)
+                gameVariables.currentState.keyItem.scale.x *= -1;
+            if (gameVariables.currentState.keyItem.angle < 0)
+                gameVariables.currentState.keyItem.angle = 90;
 
-            state.clone.animations.play('run');
-        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.LEFT) {
+            gameVariables.currentState.clone.animations.play('run');
+        } else if (gameVariables.currentState.cursors.left.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameVariables.LEFT) {
             //  Move to the left
-            state.clone.body.velocity.x = -125;
+            gameVariables.currentState.clone.body.velocity.x = -125;
 
-            state.keyItem.x = state.clone.x - 28;
-            state.keyItem.y = state.clone.y + 5;
+            gameVariables.currentState.keyItem.x = gameVariables.currentState.clone.x - 28;
+            gameVariables.currentState.keyItem.y = gameVariables.currentState.clone.y + 5;
 
-            if (state.clone.scale.x > 0)
-                state.clone.scale.x *= -1;
+            if (gameVariables.currentState.clone.scale.x > 0)
+                gameVariables.currentState.clone.scale.x *= -1;
 
-            if (state.keyItem.x > state.clone.x)
-                state.keyItem.x -= 47;
+            if (gameVariables.currentState.keyItem.x > gameVariables.currentState.clone.x)
+                gameVariables.currentState.keyItem.x -= 47;
 
-            if (state.keyItem.scale.x > 0)
-                state.keyItem.scale.x *= -1;
-            if (state.keyItem.angle > 0)
-                state.keyItem.angle = -90;
+            if (gameVariables.currentState.keyItem.scale.x > 0)
+                gameVariables.currentState.keyItem.scale.x *= -1;
+            if (gameVariables.currentState.keyItem.angle > 0)
+                gameVariables.currentState.keyItem.angle = -90;
 
-            state.clone.animations.play('run');
+            gameVariables.currentState.clone.animations.play('run');
         } else {
             //  Stand still
-            state.clone.animations.stop();
-            state.clone.frameName = 'ninjaWhite1';
+            gameVariables.currentState.clone.animations.stop();
+            gameVariables.currentState.clone.frameName = 'ninjaWhite1';
         }
 
         //So neither the clone nor the player keep going forward if the other one is blocked on his path for any reason
-        if (state.player.body.touching.left || state.player.body.touching.right) {
-            state.clone.body.velocity.x = 0;
-            state.keyItem.body.velocity.x = 0;
+        if (gameVariables.currentState.player.body.touching.left || gameVariables.currentState.player.body.touching.right) {
+            gameVariables.currentState.clone.body.velocity.x = 0;
+            gameVariables.currentState.keyItem.body.velocity.x = 0;
         }
-        if (state.clone.body.touching.left || state.clone.body.touching.right) {
-            state.player.body.velocity.x = 0;
-            state.keyItem.body.velocity.x = 0;
+        if (gameVariables.currentState.clone.body.touching.left || gameVariables.currentState.clone.body.touching.right) {
+            gameVariables.currentState.player.body.velocity.x = 0;
+            gameVariables.currentState.keyItem.body.velocity.x = 0;
         }
     },
 
     //fine tune some player parameters now that the clone and the key have a physical body
-    cloneSetup: function(state) {
-    	state.clone.body.collideWorldBounds = true;
+    cloneSetup: function() {
+    	gameVariables.currentState.clone.body.collideWorldBounds = true;
 
         //to prevent the player from "floating" above the ground, reducing its physical body size to ease collisions
-        state.clone.body.setSize(30, 25);
-        state.keyItem.body.setSize(5, 35);
+        gameVariables.currentState.clone.body.setSize(30, 25);
+        gameVariables.currentState.keyItem.body.setSize(5, 35);
 
         //player gravity
-        state.clone.body.gravity.y = 1700;
-        state.keyItem.body.gravity.y = 1700;
+        gameVariables.currentState.clone.body.gravity.y = 1700;
+        gameVariables.currentState.keyItem.body.gravity.y = 1700;
 
         //Animations
-        state.clone.anchor.setTo(0.5);
-        state.clone.animations.add('run', Phaser.Animation.generateFrameNames('ninjaWhite', 1, 6), 15, true);
+        gameVariables.currentState.clone.anchor.setTo(0.5);
+        gameVariables.currentState.clone.animations.add('run', Phaser.Animation.generateFrameNames('ninjaWhite', 1, 6), 15, true);
 
         //move player with cursor keys
-        state.cursors = state.game.input.keyboard.createCursorKeys();
+        gameVariables.currentState.cursors = gameVariables.currentState.game.input.keyboard.createCursorKeys();
     },
 
     //Open or close chests when needed
-    checkChests: function(state) {
+    checkChests: function() {
         var goldUp = false,
             silverUp = false,
             bronzeUp = false;
 
         //Checking the gold coins chest
-        state.goldCoins.forEach(function(coin) {
+        gameVariables.currentState.goldCoins.forEach(function(coin) {
             if (coin.y < coin.minHeight)
                 goldUp = true;
         });
         if (goldUp) {
-            if (state.rightChest.frameName === 'chest0') {
-                state.rightChest.animations.play('open');
-                state.keyItem.angle = 0;
-                setTimeout(this.useKey, 200, state.keyItem);
+            if (gameVariables.currentState.rightChest.frameName === 'chest0') {
+                gameVariables.currentState.rightChest.animations.play('open');
+                gameVariables.currentState.keyItem.angle = 0;
+                setTimeout(this.useKey, 200, gameVariables.currentState.keyItem);
             }
         }
         if (!goldUp) {
-            if (state.rightChest.frameName === 'chest1')
-                state.rightChest.animations.play('close');
+            if (gameVariables.currentState.rightChest.frameName === 'chest1')
+                gameVariables.currentState.rightChest.animations.play('close');
         }
 
         //Checking the silver coins chest
-        state.silverCoins.forEach(function(coin) {
+        gameVariables.currentState.silverCoins.forEach(function(coin) {
             if (coin.y < coin.minHeight)
                 silverUp = true;
         });
         if (silverUp) {
-            if (state.centerChest.frameName === 'chest0') {
-                state.centerChest.animations.play('open');
-                state.keyItem.angle = 0;
-                setTimeout(this.useKey, 200, state.keyItem);
+            if (gameVariables.currentState.centerChest.frameName === 'chest0') {
+                gameVariables.currentState.centerChest.animations.play('open');
+                gameVariables.currentState.keyItem.angle = 0;
+                setTimeout(this.useKey, 200, gameVariables.currentState.keyItem);
             }
         }
         if (!silverUp) {
-            if (state.centerChest.frameName === 'chest1')
-                state.centerChest.animations.play('close');
+            if (gameVariables.currentState.centerChest.frameName === 'chest1')
+                gameVariables.currentState.centerChest.animations.play('close');
         }
 
         //Checking the bronze coins chest
-        state.bronzeCoins.forEach(function(coin) {
+        gameVariables.currentState.bronzeCoins.forEach(function(coin) {
             if (coin.y < coin.minHeight)
                 bronzeUp = true;
         });
         if (bronzeUp) {
-            if (state.leftChest.frameName === 'chest0') {
-                state.leftChest.animations.play('open');
-                state.keyItem.angle = 0;
-                setTimeout(this.useKey, 200, state.keyItem);
+            if (gameVariables.currentState.leftChest.frameName === 'chest0') {
+                gameVariables.currentState.leftChest.animations.play('open');
+                gameVariables.currentState.keyItem.angle = 0;
+                setTimeout(this.useKey, 200, gameVariables.currentState.keyItem);
             }
         }
         if (!bronzeUp) {
-            if (state.leftChest.frameName === 'chest1')
-                state.leftChest.animations.play('close');
+            if (gameVariables.currentState.leftChest.frameName === 'chest1')
+                gameVariables.currentState.leftChest.animations.play('close');
         }
     },
 
@@ -470,12 +470,12 @@ var skillsMethods = {
         key.angle = -90;
     },
 
-    //Checking on the state of the different coins at any given time
+    //Checking on the different coins at any given time
     //+30 modifier on x to take length of the key into account
-    manageCoins: function(state, x) {
+    manageCoins: function(x) {
         //if the player is at the start of the map
         if (x > 640 + 35) {
-            state.coins.forEach(function(coinsGroup) {
+            gameVariables.currentState.coins.forEach(function(coinsGroup) {
                 coinsGroup.forEach(function(coin) {
                     if (coin.y <= coin.maxHeight)
                         coin.y += 1;
@@ -486,21 +486,21 @@ var skillsMethods = {
         }
         //if the player is after "Advanced"
         else if (x <= 640 + 35 && x > 490 + 35) {
-            state.goldCoins.forEach(function(coin) {
+            gameVariables.currentState.goldCoins.forEach(function(coin) {
                 if (coin.y >= coin.minHeight)
                     coin.y -= 1;
                 if (coin.body.velocity.y === 100 || coin.y >= coin.minHeight - 1)
                     coin.body.velocity.y = -100;
             });
 
-            state.silverCoins.forEach(function(coin) {
+            gameVariables.currentState.silverCoins.forEach(function(coin) {
                 if (coin.y <= coin.maxHeight)
                     coin.y += 1;
                 if (coin.y <= coin.maxHeight + 1 || coin.body.velocity.y === -100)
                     coin.body.velocity.y = 100;
             });
 
-            state.bronzeCoins.forEach(function(coin) {
+            gameVariables.currentState.bronzeCoins.forEach(function(coin) {
                 if (coin.y <= coin.maxHeight)
                     coin.y += 1;
                 if (coin.y <= coin.maxHeight + 1 || coin.body.velocity.y === -100)
@@ -509,21 +509,21 @@ var skillsMethods = {
         }
         //if the player is after "Intermediate"
         else if (x <= 490 + 35 && x > 335 + 35) {
-            state.goldCoins.forEach(function(coin) {
+            gameVariables.currentState.goldCoins.forEach(function(coin) {
                 if (coin.y >= coin.minHeight)
                     coin.y -= 1;
                 if (coin.body.velocity.y === 100 || coin.y >= coin.minHeight - 1)
                     coin.body.velocity.y = -100;
             });
 
-            state.silverCoins.forEach(function(coin) {
+            gameVariables.currentState.silverCoins.forEach(function(coin) {
                 if (coin.y >= coin.minHeight)
                     coin.y -= 1;
                 if (coin.body.velocity.y === 100 || coin.y >= coin.minHeight - 1)
                     coin.body.velocity.y = -100;
             });
 
-            state.bronzeCoins.forEach(function(coin) {
+            gameVariables.currentState.bronzeCoins.forEach(function(coin) {
                 if (coin.y <= coin.maxHeight)
                     coin.y += 1;
                 if (coin.y <= coin.maxHeight + 1 || coin.body.velocity.y === -100)
@@ -532,7 +532,7 @@ var skillsMethods = {
         }
         //if the player is at the end of the map
         else {
-            state.coins.forEach(function(coinsGroup) {
+            gameVariables.currentState.coins.forEach(function(coinsGroup) {
                 coinsGroup.forEach(function(coin) {
                     if (coin.y >= coin.minHeight)
                         coin.y -= 1;
@@ -544,8 +544,8 @@ var skillsMethods = {
     },
 
     //Stop coins when needed
-    stopCoins: function(state) {
-        state.coins.forEach(function(coinsGroup) {
+    stopCoins: function() {
+        gameVariables.currentState.coins.forEach(function(coinsGroup) {
             coinsGroup.forEach(function(coin) {
                 if (coin.y <= coin.maxHeight || coin.y >= coin.minHeight)
                     coin.body.velocity.y = 0;

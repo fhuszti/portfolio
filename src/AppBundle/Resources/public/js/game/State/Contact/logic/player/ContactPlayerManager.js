@@ -1,7 +1,7 @@
 var ContactPlayerManager = {
 
 	//create player
-    createPlayer: function(state) {
+    createPlayer: function() {
     	var widthPop = null, heightPop = null;
 
     	if (gameVariables.previousState === 'experience') {
@@ -10,13 +10,13 @@ var ContactPlayerManager = {
     	}
 		else {
 			widthPop = 90;
-    		heightPop = state.game.height * 0.5;
+    		heightPop = gameVariables.currentState.game.height * 0.5;
 		}
 
-		state.player = state.game.add.sprite(widthPop, heightPop, 'textureAtlas', 'ninja1');
+		gameVariables.currentState.player = gameVariables.currentState.game.add.sprite(widthPop, heightPop, 'textureAtlas', 'ninja1');
     	
 		if (gameVariables.previousState === 'experience')
-    		state.player.scale.x = gameVariables.leavingExperienceScaleX;
+    		gameVariables.currentState.player.scale.x = gameVariables.leavingExperienceScaleX;
     },
 
 
@@ -31,11 +31,11 @@ var ContactPlayerManager = {
     },
 
     //additional setup for the player for this stage
-    playerSetup: function(state) {
-    	if (state.player.x >= 305) {
-			state.cursors.down.isDown = true;
+    playerSetup: function() {
+    	if (gameVariables.currentState.player.x >= 305) {
+			gameVariables.currentState.cursors.down.isDown = true;
 
-			setTimeout(this.disableCursorDown.bind(null, state.cursors), 1000);
+			setTimeout(this.disableCursorDown.bind(null, gameVariables.currentState.cursors), 1000);
 		}
     },
 
@@ -46,30 +46,30 @@ var ContactPlayerManager = {
 
 
     //Manage all movements inside the no gravity zone
-    zeroGravityMov: function(state) {
-        if (state.cursors.right.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.RIGHT) {
+    zeroGravityMov: function() {
+        if (gameVariables.currentState.cursors.right.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameMethods.RIGHT) {
             //  Move to the right
-            state.player.body.velocity.x = 125;
-            state.player.animations.play('run');
-        } else if (state.cursors.left.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.LEFT) {
+            gameVariables.currentState.player.body.velocity.x = 125;
+            gameVariables.currentState.player.animations.play('run');
+        } else if (gameVariables.currentState.cursors.left.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameMethods.LEFT) {
             //  Move to the left
-            state.player.body.velocity.x = -125;
-            state.player.animations.play('run');
+            gameVariables.currentState.player.body.velocity.x = -125;
+            gameVariables.currentState.player.animations.play('run');
         } else {
             //  Stand still
-            state.player.animations.stop();
-            state.player.frameName = 'ninja1';
+            gameVariables.currentState.player.animations.stop();
+            gameVariables.currentState.player.frameName = 'ninja1';
         }
 
         //Up&Down management
-        if (state.cursors.up.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.y / (state.game.height *0.5)) === gameMethods.UP) {
+        if (gameVariables.currentState.cursors.up.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.y / (gameVariables.currentState.game.height *0.5)) === gameMethods.UP) {
             //  Move to the top
-            state.player.body.velocity.y = -125;
-            state.player.animations.play('run');
-        } else if (state.cursors.down.isDown || state.game.input.pointer1.isDown && Math.floor(state.game.input.x / (state.game.width *0.5)) === gameMethods.DOWN) {
+            gameVariables.currentState.player.body.velocity.y = -125;
+            gameVariables.currentState.player.animations.play('run');
+        } else if (gameVariables.currentState.cursors.down.isDown || gameVariables.currentState.game.input.pointer1.isDown && Math.floor(gameVariables.currentState.game.input.x / (gameVariables.currentState.game.width *0.5)) === gameMethods.DOWN) {
             //  Move to the bottom
-            state.player.body.velocity.y = 125;
-            state.player.animations.play('run');
+            gameVariables.currentState.player.body.velocity.y = 125;
+            gameVariables.currentState.player.animations.play('run');
         }
     }
 };

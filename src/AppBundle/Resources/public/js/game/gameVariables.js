@@ -1,6 +1,8 @@
 var gameVariables = {
 
 	previousState: null,
+
+	currentState: null,
     
     leavingExperienceX: null,
     
