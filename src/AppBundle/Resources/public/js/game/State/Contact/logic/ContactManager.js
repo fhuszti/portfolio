@@ -74,7 +74,7 @@ var ContactManager = {
 			gameVariables.currentState.player.body.gravity.y = 0;
 			gameVariables.currentState.player.body.bounce.setTo(0.8, 0.8);
 
-			ContactPlayerManager.zeroGravityMov();
+			ContactUpdatePlayerManager.zeroGravityMov();
 		}
 
 		if (gameVariables.currentState.player.x < 20) {

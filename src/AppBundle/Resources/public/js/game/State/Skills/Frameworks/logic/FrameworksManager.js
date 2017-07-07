@@ -5,43 +5,43 @@ var FrameworksManager = {
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the map
-        skillsMethods.behindMap();
+        SkillsVisualsManager.behindMap();
 
         //Adding the table
-        skillsMethods.generateTable(['BootStrap', 'Symfony', 'Phaser.js', 'Silex']);
+        SkillsContentManager.generateTable(['BootStrap', 'Symfony', 'Phaser.js', 'Silex']);
 
         //Initial map setup
         gameMethods.mapSetup('skillsMap');
 
         //Create the top of the chests (behind the coins)
-        skillsMethods.createTopChests([0, 0, 0]);
+        SkillsVisualsManager.createTopChests([0, 0, 0]);
 
         //Create the coins
-        skillsMethods.coinsGroup();
+        SkillsVisualsManager.coinsGroup();
 
-        skillsMethods.generateCoin('gold', 250);
-        skillsMethods.generateCoin('silver', 352);
-        skillsMethods.generateCoin('silver', 300);
-        skillsMethods.generateCoin('bronze', 402);
+        SkillsVisualsManager.generateCoin('gold', 250);
+        SkillsVisualsManager.generateCoin('silver', 352);
+        SkillsVisualsManager.generateCoin('silver', 300);
+        SkillsVisualsManager.generateCoin('bronze', 402);
 
         //Create the bottom of the chests (in front of the coins)
-        skillsMethods.createBottomChests();
+        SkillsVisualsManager.createBottomChests();
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //BEHIND the player
         //IN FRONT OF the chests
-        skillsMethods.frontChestsBehindPlayer();
+        SkillsVisualsManager.frontChestsBehindPlayer();
 
         //Adding the adequate title and signs
-        skillsMethods.generateSigns('frameworks', 'others', 'languages');
+        SkillsVisualsManager.generateSigns('frameworks', 'others', 'languages');
 
         //create player at different places depending where the visitor was before
-        skillsMethods.createPlayer();
+        SkillsPlayerManager.createPlayer();
 
         //create things other than platforms (rocks/branchs/trees/flowers...)
         //IN FRONT OF the chests
         //IN FRONT OF the player
-        skillsMethods.frontChestsFrontPlayer();
+        SkillsVisualsManager.frontChestsFrontPlayer();
 
         //setting physics for the player and things other than platforms
         gameVariables.currentState.game.physics.arcade.enable(gameVariables.currentState.player);
@@ -52,10 +52,10 @@ var FrameworksManager = {
 
         //fine tune some player parameters now that everything has a physical body
         gameMethods.playerSetup();
-        skillsMethods.cloneSetup();
+        SkillsPlayerManager.cloneSetup();
 
         //Set some objects immovable so we can use them as platforms
-        skillsMethods.setImmovableObjects();
+        SkillsConfigManager.setImmovableObjects();
 
         gameVariables.previousState = 'frameworks';
 	},
@@ -79,16 +79,16 @@ var FrameworksManager = {
 
         //Player movements management
         gameMethods.playerMov();
-        skillsMethods.cloneMov();
+        SkillsUpdatePlayerManager.cloneMov();
 
         //Checking for the coins
-	    skillsMethods.manageCoins(gameVariables.currentState.clone.x);
+	    SkillsUpdateContentManager.manageCoins(gameVariables.currentState.clone.x);
 
         //Stopping the coins at the right time
-        skillsMethods.stopCoins();
+        SkillsUpdateContentManager.stopCoins();
 
         //Checking for the chests
-	    skillsMethods.checkChests();
+	    SkillsUpdateContentManager.checkChests();
 
         //Going to another map
         if (gameVariables.currentState.player.x < 20 && gameVariables.currentState.player.y < 150) {
