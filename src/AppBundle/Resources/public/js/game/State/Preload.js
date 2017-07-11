@@ -66,6 +66,9 @@ HomeGame.Preload.prototype = {
 	},
 
 	create: function() {
+		var body = document.getElementsByTagName("body")[0];
+		body.className += " black-bg";
+		
 		this.state.start('Hub');
 	},
 
