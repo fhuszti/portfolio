@@ -89,7 +89,7 @@ core:
             interactive:
                 date: Décembre 2016
                 description: 
-                    - Phaser.js
+                    - Phaser
                     - Création d'un mini-jeu
             microcms:
                 date: Février 2017
@@ -104,12 +104,13 @@ core:
                 - JavaScript
                 - PHP
                 - MySQL
+                - Responsive Design
             right_list:
+                - Symfony
                 - WordPress
                 - BootStrap
                 - jQuery
-                - Phaser.js
-                - Responsive Design
+                - Phaser
         key_skills:
             title: COMPÉTENCES CLÉS
             list:
@@ -162,7 +163,7 @@ core:
         more:
             title: Plus d'infos
             content:
-                - Le but de ce projet était simplement de découvrir et m'amuser avec un framework tel que Phaser.js, du point de vue du développeur plus que de celui du designer.
+                - Le but de ce projet était simplement de découvrir et m'amuser avec un framework tel que Phaser, du point de vue du développeur plus que de celui du designer.
                 - La plupart des jolis sprites utilisés ont été dessinés par <em><i class='name'>Simirk</i></em> (disponibles <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Page de présentation/vente des sprites utilisés">ici</a>).
                 - Les cascades sont l'œuvre de <em><i class='name'>Castor Studios</i></em> (disponibles <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Page de présentation/vente des sprites utilisés">ici</a>).
     projects:
