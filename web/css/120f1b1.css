@@ -1,0 +1,65 @@
+#wrapper {
+    padding: 20px;
+    padding-top: 0;
+}
+h1 i {
+    font-style: inherit;
+}
+
+
+#wrapper div.row>h1, #wrapper div.row>h2, #wrapper div.row>h3, #wrapper .alert-danger, #wrapper .alert-warning {
+    text-align: center;
+}
+
+
+#wrapper #handleTurn {
+    background-color: rgb(245, 245, 166);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+#title {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+#title h1, #title h2 {
+    font-weight: bold;
+    color: rgb(0, 72, 0);
+    font-size: 4em;
+}
+#title h2 {
+    font-size: 3em;
+}
+
+
+#wrapper .panel-heading, #wrapper .right-align {
+    text-align: right;
+}
+#wrapper .panel-heading h3 {
+    margin: 0;
+}
+#wrapper .list-group-item {
+    line-height: 30px;
+}
+#wrapper .list-group-item button {
+    margin: 0 5px;
+}
+#wrapper .panel a {
+    color: rgb(0, 72, 0);
+}
+
+
+
+
+@media (max-width: 991px) {
+    #wrapper .right-align {
+        text-align: left;
+    }
+
+    #title {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}

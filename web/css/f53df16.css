@@ -1,0 +1,212 @@
+/*
+* ---------------
+*  INTERNAL LINKS
+* ---------------
+*/
+.hiddenOverflow {
+    padding: 0;
+    overflow: hidden;
+}
+
+.ctaPart {
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    text-align: center;
+    color: rgb(240, 240, 240);
+    position: relative;
+}
+.ctaPart .ctaPartTitle {
+    margin: 0;
+    padding: 20px 30px;
+    width: 90%;
+    border-radius: 6px;
+
+/* vertical + horizontal center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ctaPart1 {
+  background-image: url("http://assets.fhuszti.tech/homepage/myAvatar.png");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  border-right: 1px solid black;
+}
+#ctaPart2 {
+  background-image: url("http://assets.fhuszti.tech/homepage/ninja.png");
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+#ctaPart3 {
+  background-image: url("http://assets.fhuszti.tech/homepage/responsive.png");
+  background-size: 85% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  border-left: 1px solid black;
+}
+
+.ctaPart:hover {
+  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0);
+  transform: scale(1.01);
+}
+.ctaPart:hover .ctaPartTitle {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* ------------- */
+
+
+
+
+/*
+* ------------
+* ICONS PART
+* ------------
+*/
+#skillsRow {
+  padding: 0 30px 20px 30px;
+}
+#skillsRow h3 {
+    border-bottom: 1px solid rgb(0, 72, 0);
+}
+#skillsRow div {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+}
+#skillsRow div a:focus, #skillsRow div a:hover {
+    text-decoration: none;
+}
+#skillsRow img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 10px 20px 10px 0;
+}
+#skillsRow p {
+    font-size: 40px;
+    margin: 31.5px 0;
+    color: rgb(100, 100, 100);
+}
+/* ----------- */
+
+
+
+/*
+* ------------
+* CONTACT PART
+* ------------
+*/
+form.well, legend {
+    border-color: rgb(0, 72, 0);
+}
+
+#externalLinks {
+    text-align: center;
+}
+#externalLinks .btn-default {
+  color: rgb(0, 72, 0);
+  border-color: rgb(0, 72, 0);
+  margin-bottom: 20px;
+}
+#externalLinks .btn-default:hover {
+  color: #eee;
+  border-color: #eee;
+  background-color: rgb(0, 72, 0);
+}
+
+#formError, #sendingError, #formThanks {
+    display: none;
+}
+
+.centerHelp {
+    text-align: center;
+}
+.help-block {
+    display: none;
+}
+
+form input, form textarea {
+    margin-bottom: 5px;
+}
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+}
+.btn-primary, .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary, .btn-primary.focus, .btn-primary:focus, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover, .btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+    background-color: rgb(0, 72, 0);
+    border-color: rgb(0, 60, 0);
+}
+.btn-primary:hover {
+    background-color: rgb(5, 85, 19);
+    border-color: rgb(0, 72, 0);
+}
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+  background-color: rgb(5, 85, 19);
+  border-color: rgb(0, 72, 0);
+}
+.loading {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* ---------- */
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .ctaPart {
+        height: calc(100vh/2 - 40px);
+    }
+    #ctaPart2 {
+    	background-position: center 60%;
+    }
+    #ctaPart3 {
+    	background-size: contain;
+    	border-right: none;
+    	border-top: 1px solid black;
+    }
+}
+@media (max-width: 768px) {
+    .ctaPart {
+        height: calc(100vh/3.5);
+    }
+    #ctaPart1 {
+    	border-left: none;
+    }
+    #ctaPart2 {
+    	background-position: center center;
+    }
+    #ctaPart3 {
+    	border-top: none;
+    }
+
+    #skillsRow img {
+    	max-height: 80px;
+    	max-width: 80px;
+    	margin: 10px;
+    }
+    #skillsRow p {
+        font-size: 30px;
+        margin: 29px 0;
+        color: rgb(100, 100, 100);
+    }
+}
