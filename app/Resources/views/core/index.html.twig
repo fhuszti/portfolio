@@ -20,7 +20,7 @@
 {% block stylesheets %}
     {{ parent() }}
     {% stylesheets filter='cssrewrite, ?scssphp'
-        'bundles/app/css/homepage.css' %}
+        'css/homepage.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
     {% endstylesheets %}
 {% endblock %}
@@ -37,7 +37,7 @@
     {{ parent() }}
     
     {% javascripts filter='?jsqueeze'
-        'bundles/app/js/formHandler.js' %}
+        'js/formHandler.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}

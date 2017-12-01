@@ -36,7 +36,7 @@
 {% block stylesheets %}
     {{ parent() }}
     {% stylesheets filter='cssrewrite, ?scssphp'
-        'bundles/app/css/interactive.css' %}
+        'css/interactive.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
     {% endstylesheets %}
 {% endblock %}
@@ -147,7 +147,7 @@
     </div>
 
     <script>
-	    var assetsBaseDir = "{{ asset('bundles/app/') }}",
+	    var assetsBaseDir = "{{ asset('interactive/') }}",
 	    	userLang = (document.getElementsByTagName("html")[0].getAttribute('lang') === 'fr') ? 'fr' : 'en';
 	</script>
 {% endblock %}
@@ -156,26 +156,26 @@
     {{ parent() }}
     
     {% javascripts
-        'bundles/app/js/phaser.min.js' %}
+        'interactive/js/phaser.min.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 
     {% javascripts filter='?jsqueeze'
-        'bundles/app/js/game/gameMethods.js'
-        'bundles/app/js/game/gameVariables.js'
-        'bundles/app/js/game/State/*/logic/*/*'
-        'bundles/app/js/game/State/*/logic/*Manager.js'
-        'bundles/app/js/game/State/Skills/*/logic/*Manager.js'
-        'bundles/app/js/game/State/Boot.js'
-        'bundles/app/js/game/State/Preload.js'
-        'bundles/app/js/game/State/Hub/Hub.js'
-        'bundles/app/js/game/State/Academics/Academics.js'
-        'bundles/app/js/game/State/Experience/Experience.js'
-        'bundles/app/js/game/State/Contact/Contact.js'
-        'bundles/app/js/game/State/Skills/Languages/Languages.js'
-        'bundles/app/js/game/State/Skills/Frameworks/Frameworks.js'
-        'bundles/app/js/game/State/Skills/Others/Others.js'
-        'bundles/app/js/interactive.js' %}
+        'interactive/js/game/gameMethods.js'
+        'interactive/js/game/gameVariables.js'
+        'interactive/js/game/State/*/logic/*/*'
+        'interactive/js/game/State/*/logic/*Manager.js'
+        'interactive/js/game/State/Skills/*/logic/*Manager.js'
+        'interactive/js/game/State/Boot.js'
+        'interactive/js/game/State/Preload.js'
+        'interactive/js/game/State/Hub/Hub.js'
+        'interactive/js/game/State/Academics/Academics.js'
+        'interactive/js/game/State/Experience/Experience.js'
+        'interactive/js/game/State/Contact/Contact.js'
+        'interactive/js/game/State/Skills/Languages/Languages.js'
+        'interactive/js/game/State/Skills/Frameworks/Frameworks.js'
+        'interactive/js/game/State/Skills/Others/Others.js'
+        'js/interactive.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}

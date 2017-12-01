@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Fira-Sans-regular/Fira-Sans-regular.eot');
+  src: url('../fonts/Fira-Sans-regular/Fira-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Fira Sans Regular'),
+       local('Fira-Sans-regular'),
+       url('../fonts/Fira-Sans-regular/Fira-Sans-regular.woff2') format('woff2'),
+       url('../fonts/Fira-Sans-regular/Fira-Sans-regular.woff') format('woff'),
+       url('../fonts/Fira-Sans-regular/Fira-Sans-regular.ttf') format('truetype'),
+       url('../fonts/Fira-Sans-regular/Fira-Sans-regular.svg#FiraSans') format('svg');
+}
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('../fonts/GoodDog/GoodDog-webfont.eot');
+    src: url('../fonts/GoodDog/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GoodDog/GoodDog-webfont.woff') format('woff'),
+         url('../fonts/GoodDog/GoodDog-webfont.ttf') format('truetype'),
+         url('../fonts/GoodDog/GoodDog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    padding-top: 50px;
+    font-family: 'Fira Sans', Arial, Helvetica, Verdana, Times, "Times New Roman", sans-serif;
+    font-size: 16px;
+}
