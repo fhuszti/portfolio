@@ -1,7 +1,0 @@
-services:
-    core.mailer:
-        class: AppBundle\Service\Mailer\MailerNotificator
-        arguments:
-            - "@mailer"
-            - "@twig"
-            - "@translator"
