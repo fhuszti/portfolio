@@ -18,11 +18,7 @@
 {% endblock %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    {% stylesheets filter='cssrewrite, ?scssphp'
-        'css/homepage.css' %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
-    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}" />
 {% endblock %}
 
 {% block body %}
@@ -34,10 +30,5 @@
 {% endblock %}
 
 {% block javascripts %}
-    {{ parent() }}
-    
-    {% javascripts filter='?jsqueeze'
-        'js/formHandler.js' %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    <script src="{{ asset('js/formHandler.js') }}"></script>
 {% endblock %}
