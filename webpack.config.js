@@ -48,6 +48,9 @@ Encore
     // use Sass/SCSS files pre-processor
     .enableSassLoader()
 
+    // PostCSS loader
+    .enablePostCssLoader()
+
     // init $/jQuery as a global variable
     .autoProvidejQuery()
 ;
