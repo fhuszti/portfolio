@@ -48,6 +48,9 @@ Encore
     // use Sass/SCSS files pre-processor
     .enableSassLoader()
 
+    // enable React
+    .enableReactPreset()
+
     // PostCSS loader
     .enablePostCssLoader()
 
