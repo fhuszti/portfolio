@@ -3,11 +3,12 @@
 namespace App\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use App\Service\Mailer\MailerNotificator;
 use App\Form\Type\ContactType;
 use App\Entity\Email;
 
@@ -17,7 +18,7 @@ class CoreController extends Controller
      * @Route("/", name="core_home")
      * @Method("GET")
      */
-    public function indexAction()
+    public function index()
     {
         $email = new Email();
 
@@ -32,7 +33,7 @@ class CoreController extends Controller
      * @Route("/", name="core_mailer")
      * @Method("POST")
      */
-    public function mailerAction(Request $request)
+    public function mailer(Request $request, MailerNotificator $mailer)
     {
         //allow use of this action for AJAX only
         if (!$request->isXmlHttpRequest()) {
@@ -46,7 +47,6 @@ class CoreController extends Controller
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
-            $mailer = $this->get('core.mailer');
             $mailer->sendEmail($email);
 
             return new JsonResponse(array(), 200);
@@ -69,7 +69,7 @@ class CoreController extends Controller
      * @Route("cv/", name="core_resume")
      * @Method("GET")
      */
-    public function resumeAction()
+    public function resume()
     {
         return $this->render('core/resume.html.twig');
     }
@@ -85,7 +85,7 @@ class CoreController extends Controller
      * @Route("/cv/interactive/", name="core_interactive")
      * @Method("GET")
      */
-    public function interactiveAction()
+    public function interactive()
     {
         return $this->render('core/interactive.html.twig');
     }
@@ -94,7 +94,7 @@ class CoreController extends Controller
      * @Route("/cv/interactive/start", name="core_start")
      * @Method("GET")
      */
-    public function startGameAction()
+    public function startGame()
     {
         $response = new Response($this->renderView('core/interactive_external/interactive.js.twig'));
         
@@ -107,7 +107,7 @@ class CoreController extends Controller
      * @Route("/cv/interactive/lang_fr", name="core_interactive_fr")
      * @Method("GET")
      */
-    public function langFrAction()
+    public function langFr()
     {
         $response = new Response($this->renderView('core/interactive_external/text.fr.json.twig'));
         
@@ -120,7 +120,7 @@ class CoreController extends Controller
      * @Route("/cv/interactive/lang_en", name="core_interactive_en")
      * @Method("GET")
      */
-    public function langEnAction()
+    public function langEn()
     {
         $response = new Response($this->renderView('core/interactive_external/text.en.json.twig'));
         
@@ -140,7 +140,7 @@ class CoreController extends Controller
      * @Route("/projects/", name="core_projects")
      * @Method("GET")
      */
-    public function projectsAction()
+    public function projects()
     {
         return $this->render('core/projects.html.twig');
     }

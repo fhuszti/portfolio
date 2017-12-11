@@ -83,7 +83,6 @@ $(function() {
 
             //we set the button to its loading state
             button.button('loading');
-            $('#submitButton>span:first-child').addClass('loading');
 
             //we check if any input still has an error
             //if yes, we update the "ready"-variable to reflect it
@@ -135,9 +134,9 @@ $(function() {
     //Manage everything form related
     function formManagement() {
         //For easy access to each input field
-        var inputObjects = {'name': $('#appbundle_email_name'),
-                            'email': $('#appbundle_email_email'),
-                            'message': $('#appbundle_email_content')
+        var inputObjects = {'name': $('#app_email_name'),
+                            'email': $('#app_email_email'),
+                            'message': $('#app_email_content')
                             };
 
         //We attach events to each inputs livechecking their status
@@ -149,8 +148,6 @@ $(function() {
 
 
 
-
-    
 
 
     //Start it all on DOM load

@@ -17,11 +17,7 @@
 {% endblock %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    {% stylesheets filter='cssrewrite, ?scssphp'
-        'css/projects.css' %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
-    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/projects.css') }}" />
 {% endblock %}
 
 {% block body %}

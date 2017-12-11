@@ -34,11 +34,7 @@
 {% endblock %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    {% stylesheets filter='cssrewrite, ?scssphp'
-        'css/interactive.css' %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
-    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/interactive.css') }}" />
 {% endblock %}
 
 {% block body %}
@@ -59,10 +55,9 @@
         	</div>
 
         	<div class="alert alert-warning" id="handleTurn">
-	            {% image 'http://assets.fhuszti.tech/cv/interactive/turnPhone.png' %}
-	                <img src="{{ asset_url }}" alt="{{ 'core.interactive.handheld.turn.alt'|trans }}" />
-	            {% endimage %}
-	            <p>
+	            <img src="http://assets.fhuszti.tech/cv/interactive/turnPhone.png" alt="{{ 'core.interactive.handheld.turn.alt'|trans }}" />
+	            
+                <p>
 	                {{ 'core.interactive.handheld.turn.message'|trans }}
 	            </p>
 	        </div>
@@ -147,35 +142,55 @@
     </div>
 
     <script>
-	    var assetsBaseDir = "{{ asset('interactive/') }}",
+	    var assetsBaseDir = "{{ asset('../assets/interactive/') }}",
 	    	userLang = (document.getElementsByTagName("html")[0].getAttribute('lang') === 'fr') ? 'fr' : 'en';
 	</script>
 {% endblock %}
 
 {% block javascripts %}
-    {{ parent() }}
-    
-    {% javascripts
-        'interactive/js/phaser.min.js' %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    <script src="{{ asset('../assets/interactive/js/phaser.min.js') }}"></script>
 
-    {% javascripts filter='?jsqueeze'
-        'interactive/js/game/gameMethods.js'
-        'interactive/js/game/gameVariables.js'
-        'interactive/js/game/State/*/logic/*/*'
-        'interactive/js/game/State/*/logic/*Manager.js'
-        'interactive/js/game/State/Skills/*/logic/*Manager.js'
-        'interactive/js/game/State/Boot.js'
-        'interactive/js/game/State/Preload.js'
-        'interactive/js/game/State/Hub/Hub.js'
-        'interactive/js/game/State/Academics/Academics.js'
-        'interactive/js/game/State/Experience/Experience.js'
-        'interactive/js/game/State/Contact/Contact.js'
-        'interactive/js/game/State/Skills/Languages/Languages.js'
-        'interactive/js/game/State/Skills/Frameworks/Frameworks.js'
-        'interactive/js/game/State/Skills/Others/Others.js'
-        'js/interactive.js' %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    <!--
+        Yeah, I know, this is horrendous. I just don't have the time to make Phaser work with WebPack right now and I'm waiting for Phaser v3 (should be coming out mid-January 2018) to re-do the whole thing anyway.
+    -->
+    <script src="{{ asset('../assets/interactive/js/game/gameMethods.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/gameVariables.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Boot.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Preload.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Hub/logic/player/HubPlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Hub/logic/visuals/HubVisualsManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Hub/logic/HubManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Hub/Hub.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Academics/logic/content/AcademicsContentManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Academics/logic/player/AcademicsPlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Academics/logic/visuals/AcademicsVisualsManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Academics/logic/AcademicsManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Academics/Academics.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Contact/logic/content/ContactContentManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Contact/logic/player/ContactPlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Contact/logic/player/ContactUpdatePlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Contact/logic/visuals/ContactVisualsManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Contact/logic/ContactManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Contact/Contact.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/logic/config/ExperienceConfigManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/logic/content/ExperienceContentManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/logic/content/ExperienceUpdateContentManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/logic/player/ExperiencePlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/logic/visuals/ExperienceVisualsManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/logic/ExperienceManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Experience/Experience.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/logic/config/SkillsConfigManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/logic/content/SkillsContentManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/logic/content/SkillsUpdateContentManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/logic/player/SkillsPlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/logic/player/SkillsUpdatePlayerManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/logic/visuals/SkillsVisualsManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/Frameworks/logic/FrameworksManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/Frameworks/Frameworks.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/Languages/logic/LanguagesManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/Languages/Languages.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/Others/logic/OthersManager.js') }}"></script>
+    <script src="{{ asset('../assets/interactive/js/game/State/Skills/Others/Others.js') }}"></script>
+
+    <script src="{{ asset('build/js/interactive.js') }}"></script>
 {% endblock %}
