@@ -64,7 +64,7 @@ core:
             content: |
                 Energetic and motivated, I am also curious by nature. My ability to learn quickly allows me to go past most of the obstacles I encounter, by having a complete understanding of the issue.
                 I discovered code when I was 15 with HTML, CSS and the C language, which I've since forgotten because of a lack of practice. As time went on, I began looking into PHP, MySQL and JavaScript, and I soon started reading about a broader range of topics going from Project Management to learning the use of Linux's terminal.
-                All the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!">Multimedia Project Manager - Development</a>), together with my Interactive Resume, are a token of the skills I earned, for the most part, by myself.
+                All the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!" target="_blank" rel="noopener noreferrer">Multimedia Project Manager - Development</a>), together with my Interactive Resume, are a token of the skills I earned, for the most part, by myself.
                 I am currently seeking either a fixed-term or a permanent contract in a company to which I could bring my technical skills as well as my qualities while continuously earning some valuable experience.
         academics:
             title: Academics
@@ -164,10 +164,10 @@ core:
             title: More
             content:
                 - The main purpose of this project was simply to discover and have fun with a framework such as Phaser, while looking at it more from a developer perspective than that of a designer.
-                - Most of the beautiful sprites I used are the work of <em><i class='name'>Simirk</i></em> (available <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Presentation page for the sprites I used in this project">here</a>).
-                - The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Presentation page for the sprites I used in this project">here</a>).
+                - Most of the beautiful sprites I used are the work of <em><i class='name'>Simirk</i></em> (available <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
+                - The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
     projects:
-        intro: Here are all the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!">Multimedia Project Manager - Development</a>) with <a href="https://openclassrooms.com/" title="Biggest e-learning platform in Europe !"><i class="brand">OpenClassrooms.com</i></a>.
+        intro: Here are all the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!" target="_blank" rel="noopener noreferrer">Multimedia Project Manager - Development</a>) with <a href="https://openclassrooms.com/" title="Biggest e-learning platform in Europe !" target="_blank" rel="noopener noreferrer"><i class="brand">OpenClassrooms.com</i></a>.
         tab: Project
         soon: Coming soon
         faketab: Select a project to see more details about it.
