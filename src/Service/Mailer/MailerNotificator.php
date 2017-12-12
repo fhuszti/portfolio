@@ -31,7 +31,7 @@ class MailerNotificator {
 	//render an html template
 	public function renderTemplate($entity, $imgUrl) {
 		return $this->twig->render(
-			'email/confirmation.html.twig',
+			'email/contact.html.twig',
 			array(
 				'entity' => $entity,
 				'imgUrl' => $imgUrl

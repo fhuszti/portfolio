@@ -1,7 +1,8 @@
 {% extends "layout.html.twig" %}
+{% form_theme emailForm 'form/form_errors.html.twig' %}
 
 {% block title %}
-  	{{ 'core.header.resume.title'|trans }} - {{ parent() }}
+  	{{ 'core.home.title'|trans }} - {{ parent() }}
 {% endblock %}
 
 {% block meta %}
@@ -11,19 +12,23 @@
     <meta property="og:title" content="{{ 'core.site.meta.title'|trans }}" />
     <meta property="og:description" content="{{ 'core.site.meta.description'|trans }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.fhuszti.com/{{ app.request.locale }}/cv/" />
+    <meta property="og:url" content="http://www.fhuszti.com/{{ app.request.locale }}/" />
     <meta property="og:image" content="http://assets.fhuszti.tech/big-logo-{{ app.request.locale }}.png" />
     <link rel="image_src" href="http://assets.fhuszti.tech/big-logo-{{ app.request.locale }}.png" />
 {% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('build/css/resume.css') }}" />
+    <link rel="stylesheet" href="{{ asset('build/css/home.css') }}" />
 {% endblock %}
 
 {% block body %}
-	<div class="row" id="resumeContainer">
-        {% include 'core/blocks/resume/main_content.html.twig' %}
+	{% include 'core/home/blocks/_fullscreen_links.html.twig' %}
 
-        {% include 'core/blocks/resume/quick_look.html.twig' %}
-    </div>
+    {% include 'core/home/blocks/_skills.html.twig' %}
+
+    {% include 'core/home/blocks/_contact_form.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/js/formHandler.js') }}"></script>
 {% endblock %}

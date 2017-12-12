@@ -24,7 +24,7 @@ class CoreController extends Controller
 
         $form = $this->createForm(ContactType::class, $email);
 
-        return $this->render('core/index.html.twig', array(
+        return $this->render('core/home/index.html.twig', array(
             'emailForm' => $form->createView()
         ));
     }
@@ -71,7 +71,7 @@ class CoreController extends Controller
      */
     public function resume()
     {
-        return $this->render('core/resume.html.twig');
+        return $this->render('core/resume/resume.html.twig');
     }
 
 
@@ -87,7 +87,7 @@ class CoreController extends Controller
      */
     public function interactive()
     {
-        return $this->render('core/interactive.html.twig');
+        return $this->render('core/interactive/interactive.html.twig');
     }
 
     /**
@@ -96,7 +96,7 @@ class CoreController extends Controller
      */
     public function startGame()
     {
-        $response = new Response($this->renderView('core/interactive_external/interactive.js.twig'));
+        $response = new Response($this->renderView('core/interactive/interactive.js.twig'));
         
         $response->headers->set('Content-Type','text/javascript');
         
@@ -109,7 +109,7 @@ class CoreController extends Controller
      */
     public function langFr()
     {
-        $response = new Response($this->renderView('core/interactive_external/text.fr.json.twig'));
+        $response = new Response($this->renderView('core/interactive/translations/text.fr.json.twig'));
         
         $response->headers->set('Content-Type','application/json');
         
@@ -122,7 +122,7 @@ class CoreController extends Controller
      */
     public function langEn()
     {
-        $response = new Response($this->renderView('core/interactive_external/text.en.json.twig'));
+        $response = new Response($this->renderView('core/interactive/translations/text.en.json.twig'));
         
         $response->headers->set('Content-Type','application/json');
         
@@ -142,6 +142,6 @@ class CoreController extends Controller
      */
     public function projects()
     {
-        return $this->render('core/projects.html.twig');
+        return $this->render('core/projects/projects.html.twig');
     }
 }
