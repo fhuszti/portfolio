@@ -219,6 +219,7 @@ form button {
 
     #contactRow {
       padding: 0 5px;
+      margin: 0 -15px;
     }
     #contactForm {
       padding: 14px 10px 19px;
