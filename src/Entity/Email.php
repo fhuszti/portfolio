@@ -33,6 +33,21 @@ class Email
      * )
      */
     private $email;
+    /**
+     * @var string
+     *
+     * @Assert\NotBlank(
+     *     message = "email.subject.empty"
+     * )
+     * @Assert\Type("string")
+     * @Assert\Length(
+     *      min = 2,
+     *      minMessage = "email.subject.min",
+     *      max = 255,
+     *      maxMessage = "email.subject.max"
+     * )
+     */
+    private $subject;
 
     /**
      * @var string
@@ -95,6 +110,31 @@ class Email
     public function getEmail()
     {
         return $this->email;
+    }
+
+
+    /**
+     * Set subject
+     *
+     * @param string $subject
+     *
+     * @return Email
+     */
+    public function setSubject($subject)
+    {
+        $this->subject = $subject;
+
+        return $this;
+    }
+
+    /**
+     * Get subject
+     *
+     * @return string
+     */
+    public function getSubject()
+    {
+        return $this->subject;
     }
 
     /**

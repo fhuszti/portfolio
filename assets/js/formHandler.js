@@ -52,6 +52,16 @@ $(function() {
             }
         });
 
+        inputObjects.subject.on('keyup', function() {
+            //if the current value of the field is ok
+            if (validateName(inputObjects.subject.val())) {
+                colorBorders(inputObjects.subject, true);
+            }
+            else {
+                colorBorders(inputObjects.subject, false);
+            }
+        });
+
         inputObjects.message.on('keyup', function() {
             //if the current value of the field is ok
             if (validateMessage(inputObjects.message.val())) {
@@ -136,6 +146,7 @@ $(function() {
         //For easy access to each input field
         var inputObjects = {'name': $('#app_email_name'),
                             'email': $('#app_email_email'),
+                            'subject': $('#app_email_subject'),
                             'message': $('#app_email_content')
                             };
 

@@ -44,6 +44,21 @@ class ContactType extends AbstractType
                     ),
                     'translation_domain' => 'validators'
                 ))
+                ->add('subject', TextType::class, array(
+                    'label' => 'email.subject.label',
+                    'label_attr' => array(
+                        'class' => 'col-xs-12 control-label'
+                    ),
+                    'attr' => array(
+                        'class' => 'form-control input-lg',
+                        'placeholder' => 'email.subject.placeholder',
+                        'minlength' => 2,
+                        'maxlength' => 255,
+                        'aria-required' => true,
+                        'autocomplete' => 'off'
+                    ),
+                    'translation_domain' => 'validators'
+                ))
                 ->add('content', TextareaType::class, array(
                     'label' => 'email.content.label',
                     'label_attr' => array(

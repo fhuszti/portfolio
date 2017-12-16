@@ -41,14 +41,12 @@ class MailerNotificator {
 
 	//send an email to the client containing his tickets
 	public function sendEmail(Email $entity) {
-		$subject = $this->translator->trans('core.home.mail.subject');
-
 		$mail = new \Swift_Message();
 
 		$imgUrl = $mail->embed(\Swift_Image::fromPath('http://assets.fhuszti.tech/logo.png'));
 		$body = $this->renderTemplate($entity, $imgUrl);
 		
-		$mail->setSubject($subject)
+		$mail->setSubject( $entity->getSubject() )
 			 ->setFrom('contact@fhuszti.tech')
 			 ->setTo('f.huszti@gmail.com')
 			 ->setBody(

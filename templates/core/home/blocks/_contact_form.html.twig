@@ -1,5 +1,5 @@
-<section class="row">
-    <div class="col-xs-12">
+<section class="row" id="contactRow">
+    
         {{ form_start(emailForm, {'attr': {
         	'id': 'contactForm',
         	'class': 'well',
@@ -60,6 +60,12 @@
                 </div>
 
                 <div class="col-xs-12 form-group">
+                    {{ form_label(emailForm.subject) }}
+
+                    {{ form_widget(emailForm.subject) }}
+                </div>
+
+                <div class="col-xs-12 form-group">
                     {{ form_label(emailForm.content) }}
 
                     {{ form_widget(emailForm.content) }}
@@ -78,5 +84,5 @@
                 </div>
             </fieldset>
         {{ form_end(emailForm) }}
-    </div>
+
 </section>

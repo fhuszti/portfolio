@@ -107,6 +107,10 @@
 * CONTACT PART
 * ------------
 */
+#contactRow {
+    margin: 0;
+}
+
 form.well, legend {
     border-color: rgb(0, 72, 0);
 }
@@ -172,7 +176,7 @@ form button {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .ctaPart {
         height: calc(100vh/2 - 40px);
     }
@@ -185,7 +189,7 @@ form button {
     	border-top: 1px solid black;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .ctaPart {
         height: calc(100vh/3.5);
     }
@@ -199,6 +203,9 @@ form button {
     	border-top: none;
     }
 
+    #skillsRow {
+      padding: 0 10px 20px;
+    }
     #skillsRow img {
     	max-height: 80px;
     	max-width: 80px;
@@ -208,5 +215,15 @@ form button {
         font-size: 30px;
         margin: 29px 0;
         color: rgb(100, 100, 100);
+    }
+
+    #contactRow {
+      padding: 0 5px;
+    }
+    #contactForm {
+      padding: 14px 10px 19px;
+    }
+    #contactForm fieldset>div {
+      padding: 0;
     }
 }
