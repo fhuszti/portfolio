@@ -258,31 +258,23 @@ core:
                     - Review of the experience
     footer:
         projects:
+            school: School work
+            client: Client work
             tours:
                 link_title: "Create a website and put it online"
                 title:      "Create a website and put it online"
             microcms:
                 link_title: "Create a blog for a professional writer"
                 title:      "Create a blog for a professional writer"
-                github:
-                    link_title: Take a look at the code on my GitHub
-                    title:      See on GitHub
             louvre:
                 link_title: "Create a back-end for a client"
                 title:      "Create a back-end for a client"
-                github:
-                    link_title: Take a look at the code on my GitHub
-                    title:      See on GitHub
             nao:
                 link_title: "Team project management"
                 title:      "Team project management"
-                github:
-                    link_title: Take a look at the code on my GitHub
-                    title:      See on GitHub
             udem37:
                 link_title: "Contribute to your ecosystem"
                 title:      "Contribute to your ecosystem"
-                private:    Private source code
         contact:   
             github:
                 link:  https://github.com/fhuszti

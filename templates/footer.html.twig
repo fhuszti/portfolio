@@ -1,57 +1,5 @@
 <footer class="navbar navbar-default" id="footer">
-  	<div class="col-xs-12 col-sm-4">
-  		<h4>{{ 'core.header.projects.title'|trans }}</h4>
-
-  		<ul>
-            <li>
-                <a href="http://nao.fhuszti.tech" title="&ldquo;{{ 'core.footer.projects.nao.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
-                    <em>
-                &ldquo;{{ 'core.footer.projects.nao.title'|trans }}&rdquo;
-              </em>
-                </a>
-                <br />
-                <a href="https://github.com/fhuszti/collaborative-platform-ornithology-revamp" title="{{ 'core.footer.projects.nao.github.link_title'|trans }}" class="navbar-link" target="_blank" rel="noopener noreferrer">
-                    {{ 'core.footer.projects.nao.github.title'|trans }}
-                </a>
-            </li>
-
-            <li>
-                <a href="http://louvre.fhuszti.tech/{{ app.request.locale }}" title="&ldquo;{{ 'core.footer.projects.louvre.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
-                    <em>
-                &ldquo;{{ 'core.footer.projects.louvre.title'|trans }}&rdquo;
-              </em>
-                </a>
-                <br />
-                <a href="https://github.com/fhuszti/ticketing-service-louvre" title="{{ 'core.footer.projects.louvre.github.link_title'|trans }}" class="navbar-link" target="_blank" rel="noopener noreferrer">
-                    {{ 'core.footer.projects.louvre.github.title'|trans }}
-                </a>
-            </li>
-
-  			<li>
-                <a href="http://microcms.fhuszti.tech" title="&ldquo;{{ 'core.footer.projects.microcms.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
-                    <em>
-                &ldquo;{{ 'core.footer.projects.microcms.title'|trans }}&rdquo;
-              </em>
-                </a>
-                <br />
-                <a href="https://github.com/fhuszti/micro-cms" title="{{ 'core.footer.projects.microcms.github.link_title'|trans }}" class="navbar-link" target="_blank" rel="noopener noreferrer">
-                    {{ 'core.footer.projects.microcms.github.title'|trans }}
-                </a>
-            </li>
-
-            <li>
-  				<a href="http://tours.fhuszti.tech" title="&ldquo;{{ 'core.footer.projects.tours.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
-	      			<em>
-                &ldquo;{{ 'core.footer.projects.tours.title'|trans }}&rdquo;
-              </em>
-	      		</a>
-	      		<br />
-	      		WordPress
-  			</li>
-  		</ul>
-  	</div>
-
-  	<div class="col-xs-12 col-sm-4">
+  	<div class="col-xs-12 col-sm-4 col-sm-push-4">
   		<h4>François Huszti</h4>
 
   		<p>
@@ -66,7 +14,7 @@
   		</p>
   	</div>
 
-  	<div class="col-xs-12 col-sm-4">
+  	<div class="col-xs-12 col-sm-4 col-sm-push-4">
   		<h4>{{ 'core.footer.resume.title'|trans|striptags('<i>')|raw }}</h4>
 
   		<ul>
@@ -83,4 +31,60 @@
       		</li>
   		</ul>
   	</div>
+
+    <div class="col-xs-12 col-sm-4 col-sm-pull-8">
+        <h4>{{ 'core.header.projects.title'|trans }}</h4>
+
+        <ul>
+            <li>
+                <a href="http://udem37.fhuszti.tech/web/" title="&ldquo;{{ 'core.footer.projects.udem37.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
+                    <em>
+                        &ldquo;{{ 'core.footer.projects.udem37.title'|trans }}&rdquo;
+                    </em>
+                </a>
+                <br />
+                {{ 'core.footer.projects.school'|trans }} / {{ 'core.footer.projects.client'|trans }}
+            </li>
+
+            <li>
+                <a href="http://nao.fhuszti.tech" title="&ldquo;{{ 'core.footer.projects.nao.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
+                    <em>
+                        &ldquo;{{ 'core.footer.projects.nao.title'|trans }}&rdquo;
+                    </em>
+                </a>
+                <br />
+                {{ 'core.footer.projects.school'|trans }}
+            </li>
+
+            <li>
+                <a href="http://louvre.fhuszti.tech/{{ app.request.locale }}" title="&ldquo;{{ 'core.footer.projects.louvre.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
+                    <em>
+                        &ldquo;{{ 'core.footer.projects.louvre.title'|trans }}&rdquo;
+                    </em>
+                </a>
+                <br />
+                {{ 'core.footer.projects.school'|trans }}
+            </li>
+
+            <li>
+                <a href="http://microcms.fhuszti.tech" title="&ldquo;{{ 'core.footer.projects.microcms.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
+                    <em>
+                        &ldquo;{{ 'core.footer.projects.microcms.title'|trans }}&rdquo;
+                    </em>
+                </a>
+                <br />
+                {{ 'core.footer.projects.school'|trans }}
+            </li>
+
+            <li>
+                <a href="http://tours.fhuszti.tech" title="&ldquo;{{ 'core.footer.projects.tours.link_title'|trans }}&rdquo;" class="navbar-link" target="_blank" rel="noopener noreferrer">
+                    <em>
+                        &ldquo;{{ 'core.footer.projects.tours.title'|trans }}&rdquo;
+                    </em>
+                </a>
+                <br />
+                {{ 'core.footer.projects.school'|trans }}
+            </li>
+        </ul>
+    </div>
 </footer>

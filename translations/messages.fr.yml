@@ -172,7 +172,7 @@ core:
                 - La plupart des jolis sprites utilisés ont été dessinés par <em><i class='name'>Simirk</i></em> (disponibles <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
                 - Les cascades sont l'œuvre de <em><i class='name'>Castor Studios</i></em> (disponibles <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
     projects:
-        intro: Vous trouverez ici l'ensemble des projets que j'ai réalisé dans le cadre de ma formation <a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Premier site d'e-apprentissage en Europe !" target="_blank" rel="noopener noreferrer">Chef de Projet Multimédia - Développement</a>, que je suis en ligne avec <a href="https://openclassrooms.com/" title="Premier site d'e-apprentissage d'Europe !" target="_blank" rel="noopener noreferrer"><i class="brand">OpenClassrooms.com</i></a>.
+        intro: Vous trouverez ici l'ensemble des projets que j'ai réalisé dans le cadre de ma formation <a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Premier site d'e-apprentissage en Europe !" target="_blank" rel="noopener noreferrer">Chef de Projet Multimédia - Développement</a>, suivie en ligne avec <a href="https://openclassrooms.com/" title="Premier site d'e-apprentissage d'Europe !" target="_blank" rel="noopener noreferrer"><i class="brand">OpenClassrooms.com</i></a>.
         tab: Projet
         soon: Bientôt
         faketab: Choisissez un projet pour voir plus de détails à son sujet.
@@ -259,31 +259,23 @@ core:
                     - Bilan de l'expérience
     footer:
         projects:
+            school: Exercice
+            client: Contrat client
             tours:
                 link_title: "Créez et déployez un site en ligne"
                 title:      "Créez et déployez un site en ligne"
             microcms:
                 link_title: "Créez un blog pour un écrivain"
                 title:      "Créez un blog pour un écrivain"
-                github:
-                    link_title: Voir le code sur mon GitHub
-                    title:      Voir sur GitHub
             louvre:
                 link_title: "Développez un back-end pour un client"
                 title:      "Développez un back-end pour un client"
-                github:
-                    link_title: Voir le code sur mon GitHub
-                    title:      Voir sur GitHub
             nao:
                 link_title: "Gestion de projet en équipe"
                 title:      "Gestion de projet en équipe"
-                github:
-                    link_title: Voir le code sur mon GitHub
-                    title:      Voir sur GitHub
             udem37:
                 link_title: "Contribuez à votre écosystème"
                 title:      "Contribuez à votre écosystème"
-                private:    Code privé
         contact:
             github:
                 link:  https://github.com/fhuszti

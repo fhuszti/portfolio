@@ -14,3 +14,15 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+
+@media (max-width: 767px) {
+    #footer {
+        padding-bottom: 10px;
+    }
+
+    #footer ul {
+        margin-bottom: 10px;
+    }
+}
