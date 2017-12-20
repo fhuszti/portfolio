@@ -3,13 +3,47 @@
         <h3>
             {{ 'core.resume.experience.title'|trans }}
         </h3>
-        <hr class="visible-xs-block">
+        <hr class="visible-xs visible-sm">
+
+        <p>
+            <a href="http://udem37.fhuszti.tech/web/" title="&ldquo;{{ 'core.footer.projects.udem37.link_title'|trans }}&rdquo;" target="_blank" rel="noopener noreferrer">
+                &ldquo;{{ 'core.footer.projects.udem37.title'|trans }}&rdquo;
+            </a>
+            <span class="right-pull">
+                {{ 'core.resume.experience.udem37.date'|trans }}
+            </span>
+            <span class="normalWeight">
+                {% for i in 0..1 %}
+                    <span class="label label-success">
+                        {{ ('core.projects.panel.fifth.technicals.' ~ i)|trans }}</span>
+                    &nbsp;
+                {% endfor %}
+            </span>
+        </p>
+        <hr class="visible-xs visible-sm">
+
+        <p>
+            <a href="http://nao.fhuszti.tech/" title="&ldquo;{{ 'core.footer.projects.nao.link_title'|trans }}&rdquo;" target="_blank" rel="noopener noreferrer">
+                &ldquo;{{ 'core.footer.projects.nao.title'|trans }}&rdquo;
+            </a>
+            <span class="right-pull">
+                {{ 'core.resume.experience.nao.date'|trans }}
+            </span>
+            <span class="normalWeight">
+                {% for i in 0..1 %}
+                    <span class="label label-success">
+                        {{ ('core.projects.panel.fourth.technicals.' ~ i)|trans }}</span>
+                    &nbsp;
+                {% endfor %}
+            </span>
+        </p>
+        <hr class="visible-xs visible-sm">
 
         <p>
             <a href="http://louvre.fhuszti.tech/{{ app.request.locale }}/" title="&ldquo;{{ 'core.footer.projects.louvre.link_title'|trans }}&rdquo;" target="_blank" rel="noopener noreferrer">
                 &ldquo;{{ 'core.footer.projects.louvre.title'|trans }}&rdquo;
             </a>
-            <span class="pull-right">
+            <span class="right-pull">
                 {{ 'core.resume.experience.louvre.date'|trans }}
             </span>
             <span class="normalWeight">
@@ -20,13 +54,13 @@
                 {% endfor %}
             </span>
         </p>
-        <hr class="visible-xs-block">
+        <hr class="visible-xs visible-sm">
 
         <p>
             <a href="http://microcms.fhuszti.tech/" title="&ldquo;{{ 'core.footer.projects.microcms.link_title'|trans }}&rdquo;" target="_blank" rel="noopener noreferrer">
                 &ldquo;{{ 'core.footer.projects.microcms.title'|trans }}&rdquo;
             </a>
-            <span class="pull-right">
+            <span class="right-pull">
                 {{ 'core.resume.experience.microcms.date'|trans }}
             </span>
             <span class="normalWeight">
@@ -37,13 +71,13 @@
                 {% endfor %}
             </span>
         </p>
-        <hr class="visible-xs-block">
+        <hr class="visible-xs visible-sm">
 
         <p>
             <a href="{{ path('core_interactive') }}" title="{{ 'core.header.interactive.link_title'|trans }}">
                 {{ 'core.header.interactive.title'|trans }}
             </a>
-            <span class="pull-right">
+            <span class="right-pull">
                 {{ 'core.resume.experience.interactive.date'|trans }}
             </span>
             <span class="normalWeight">
@@ -54,13 +88,13 @@
                 {% endfor %}
             </span>
         </p>
-        <hr class="visible-xs-block">
+        <hr class="visible-xs visible-sm">
 
         <p>
             <a href="http://tours.fhuszti.tech/" title="&ldquo;{{ 'core.footer.projects.tours.link_title'|trans }}&rdquo;" target="_blank" rel="noopener noreferrer">
                 &ldquo;{{ 'core.footer.projects.tours.title'|trans }}&rdquo;
             </a>
-            <span class="pull-right">
+            <span class="right-pull">
                 {{ 'core.resume.experience.tours.date'|trans }}
             </span>
             <span class="normalWeight">

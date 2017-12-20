@@ -15,6 +15,9 @@ GENERAL SETTINGS
     margin-right: 20px;
     padding: 10px 0;
 }
+#mainContent>div[class*="row"] {
+    padding-top: 0;
+}
 #mainContent [class="row"]:not([class="last-row"]) {
     border-bottom: 20px solid #eee;
 }
@@ -83,6 +86,9 @@ MAIN CONTENT SECTION
 #academics p, #experience p {
     font-weight: bold;
 }
+#academics .right-pull, #experience .right-pull {
+    float: right;
+}
 #academics .normalWeight, #experience .normalWeight {
     font-weight: normal;
     display: block;
@@ -112,10 +118,25 @@ QUICK LOOK SECTION
 
 
 @media (max-width: 991px) {
+    #resumeContainer {
+        margin: 0 10px;
+    }
+
     #mainContent [class*="row"] {
         margin-right: 0;
         margin-left: 0;
-        padding: 10px 0;
+    }
+
+    #mainContent {
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
+    #mainContent>div[class*="row"] {
+        padding-top: 0;
+    }
+
+    #quickLook {
+        padding-top: 0;
     }
 }
 /* This is to fix some funky behaviour starting at that particular width */
@@ -129,27 +150,31 @@ QUICK LOOK SECTION
         margin-bottom: 3px;
         margin-left: 0;
     }
-
-    #academics p [class="pull-right"], #experience p [class="pull-right"] {
-        float: none !important;
-        display: block;
-    }
 }
 @media (max-width: 767px) {
+    #wrapper {
+        padding: 0;
+    }
+
     #resumeContainer {
     	margin: 0;
     }
 
-    #mainContent {
-    	padding: 15px 0;
-    }
-    #mainContent [class*="row"] {
-        margin-left: 10px;
-        margin-right: 10px;
+    #title h1 {
+        float: left;
     }
 
-    #title h1 {
-    	float: left;
+    #mainContent {
+    	padding: 0;
+    }
+    #mainContent [class*="row"] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #experience .right-pull, #academics .right-pull {
+        float: none;
+        display: block;
     }
 }
 @media (max-width: 599px) {

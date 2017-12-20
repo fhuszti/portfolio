@@ -63,7 +63,7 @@ core:
             title: Summary
             content: |
                 Energetic and motivated, I am also curious by nature. My ability to learn quickly allows me to go past most of the obstacles I encounter, by having a complete understanding of the issue.
-                I discovered code when I was 15 with HTML, CSS and the C language, which I've since forgotten because of a lack of practice. As time went on, I began looking into PHP, MySQL and JavaScript, and I soon started reading about a broader range of topics going from Project Management to learning the use of Linux's terminal.
+                I discovered code when I was 15 with HTML, CSS and the C language. As time went on, I began looking into PHP, MySQL and JavaScript, and I soon started reading about a broader range of topics going from Project Management to learning the use of the UNIX terminal.
                 All the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!" target="_blank" rel="noopener noreferrer">Multimedia Project Manager - Development</a>), together with my Interactive Resume, are a token of the skills I earned, for the most part, by myself.
                 I am currently seeking either a fixed-term or a permanent contract in a company to which I could bring my technical skills as well as my qualities while continuously earning some valuable experience.
         academics:
@@ -95,6 +95,10 @@ core:
                 date: February 2017
             louvre:
                 date: May 2017
+            nao:
+                date: September 2017
+            udem37:
+                date: December 2017
         quick_look: QUICK LOOK
         knowledge:
             title: KNOWLEDGE
@@ -108,6 +112,7 @@ core:
             right_list:
                 - Symfony
                 - WordPress
+                - React
                 - BootStrap
                 - jQuery
                 - Phaser
@@ -213,13 +218,44 @@ core:
                     - Create and manage all steps of a project
                     - Create a website from its conception to its delivery
                 technicals:
-                    - Symfony 3
+                    - Symfony
                     - Twig
                     - Stripe (online payments)
                 deliverables:
                     - Specifications document for the client, including the project outline (PDF)
                     - Full source code, created with Symfony and versioned with Git
                     - A few (4-5) unit and functional tests that can be executed
+            fourth:
+                skills:
+                    - Build a project completion schedule
+                    - Create a website from its conception to its delivery
+                    - Define a budget and its timetable
+                    - Evaluate work advancements and make sure the project is on the right tracks
+                    - Setup an organizational diagram using the appropriate tools
+                    - Organize and manage meetings, set the agenda, write reports
+                    - Write full specifications for an app
+                    - Calculate an estimate and offer a service contract
+                technicals:
+                    - Team management
+                    - External API
+                deliverables:
+                    - Specifications
+                    - Project completion schedule
+                    - Estimate and service contract
+                    - Full source code
+            fifth:
+                skills:
+                    - Display a specific skill of your specialty
+                    - Identify and carry out a project having a social impact
+                    - Use all previously learned skills to succeed in managing a project from start to finish
+                technicals:
+                    - Find a client
+                    - Real-life project
+                deliverables:
+                    - Statement of intent
+                    - Full documentation for the client
+                    - Source code for the app
+                    - Review of the experience
     footer:
         projects:
             tours:
@@ -237,6 +273,16 @@ core:
                 github:
                     link_title: Take a look at the code on my GitHub
                     title:      See on GitHub
+            nao:
+                link_title: "Team project management"
+                title:      "Team project management"
+                github:
+                    link_title: Take a look at the code on my GitHub
+                    title:      See on GitHub
+            udem37:
+                link_title: "Contribute to your ecosystem"
+                title:      "Contribute to your ecosystem"
+                private:    Private source code
         contact:   
             github:
                 link:  https://github.com/fhuszti
