@@ -45,9 +45,14 @@
 	        		{{ 'core.projects.tab'|trans }} n°3
 	        	</a>
 	        </li>
-	        <li class="disabled">
-	        	<a>
-	        		{{ 'core.projects.soon'|trans }}&hellip;
+	        <li>
+	        	<a href="#project4" data-toggle="tab">
+	        		{{ 'core.projects.tab'|trans }} n°4
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="#project5" data-toggle="tab">
+	        		{{ 'core.projects.tab'|trans }} n°5
 	        	</a>
 	        </li>
 	    </ul>
@@ -65,5 +70,9 @@
 	    {% include 'core/projects/blocks/_project_2_tab.html.twig' %}
 
 	    {% include 'core/projects/blocks/_project_3_tab.html.twig' %}
+
+	    {% include 'core/projects/blocks/_project_4_tab.html.twig' %}
+
+	    {% include 'core/projects/blocks/_project_5_tab.html.twig' %}
 	</section>
 {% endblock %}
