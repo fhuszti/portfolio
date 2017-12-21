@@ -1,0 +1,22 @@
+{% macro meta_tags(title, description, url) %}
+
+<meta name="description" content="{{ description }}" />
+<link rel="image_src" href="http://assets.fhuszti.tech/big-logo-{{ app.request.locale }}.png" />
+
+<!-- Facebook -->
+<meta property="og:title" content="{{ title }} - {{ 'core.site.title'|trans }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:url" content="{{ url }}" />
+<meta property="og:site_name" content="François Huszti - Portfolio" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://assets.fhuszti.tech/big-logo-{{ app.request.locale }}.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }} - {{ 'core.site.title'|trans }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:site" content="François Huszti - Portfolio">
+<meta name="twitter:creator" content="François Huszti">
+<meta name="twitter:image" content="http://assets.fhuszti.tech/big-logo-{{ app.request.locale }}.png">
+
+{% endmacro %}

@@ -1,40 +1,40 @@
 {% extends "layout_mini.html.twig" %}
+{% import "macros/_macro_meta_tags.html.twig" as macroMetaTags %}
+
+{% set meta_title %}{{ 'core.interactive.meta.title'|trans }}{% endset %}
+
+{% set meta_description %}
+{{ 'core.interactive.meta.description'|trans }}
+{% endset %}
+
+{% set meta_url %}
+{{ url('core_interactive') }}
+{% endset %}
 
 {% block title %}
-  	{{ 'core.header.interactive.title'|trans }} - {{ parent() }}
+    {{ meta_title }} - {{ parent() }}
 {% endblock %}
 
 {% block meta %}
-	<meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-	
-	<meta name="description" content="{{ 'core.interactive.meta.description'|trans }}" />
-	
-	<!-- thumbnail picture to share on social medias -->
-    <meta property="og:title" content="{{ 'core.interactive.meta.title'|trans }}" />
-    <meta property="og:description" content="{{ 'core.interactive.meta.description'|trans }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.fhuszti.com/{{ app.request.locale }}/interactive/" />
-    <meta property="og:image" content="http://assets.fhuszti.tech/cv/interactive/thumbnailInteractiveResume.png" />
-    <link rel="image_src" href="http://assets.fhuszti.tech/cv/interactive/thumbnailInteractiveResume.png" />
+    {{ macroMetaTags.meta_tags(meta_title, meta_description, meta_url ) }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/interactive.css') }}" />
 
     <!-- fonts-->
     <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch|Cagliostro' rel='stylesheet' type='text/css'>
 
     <!-- Webfont loader, so we can use it later in the app -->
     <script>
-    	(function(d) {
-      	    var wf = d.createElement('script'),
+        (function(d) {
+            var wf = d.createElement('script'),
                 s = d.scripts[0];
 
-      	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-      	    s.parentNode.insertBefore(wf, s);
-    	})(document);
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+            s.parentNode.insertBefore(wf, s);
+        })(document);
     </script>
-{% endblock %}
-
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('build/css/interactive.css') }}" />
 {% endblock %}
 
 {% block body %}
