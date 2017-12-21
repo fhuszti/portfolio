@@ -29,6 +29,7 @@ Encore
 
     // projects page assets
     .addStyleEntry('css/projects', './assets/css/projects.css')
+    .addEntry('js/projects', './assets/js/projects.js')
     
     // this creates a 'vendor.js' file with jquery and the bootstrap JS module
     .createSharedEntry('vendor', [

@@ -29,7 +29,7 @@
 
     <!-- Tabs display -->
     <div class="row">
-	    <ul class="nav nav-pills nav-justified">
+	    <ul class="nav nav-pills nav-justified" id="tabLinks">
 	        <li>
 	        	<a href="#project1" data-toggle="tab">
 	        		{{ 'core.projects.tab'|trans }} n°1
@@ -75,4 +75,8 @@
 
 	    {% include 'core/projects/blocks/_project_5_tab.html.twig' %}
 	</section>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/js/projects.js') }}"></script>
 {% endblock %}
