@@ -1,4 +1,5 @@
 {
+  "build/css/errors.css": "/fhuszti/portfolio-v4/portfolio/public/build/css/errors.css",
   "build/css/header_mini.css": "/fhuszti/portfolio-v4/portfolio/public/build/css/header_mini.css",
   "build/css/home.css": "/fhuszti/portfolio-v4/portfolio/public/build/css/home.css",
   "build/css/interactive.css": "/fhuszti/portfolio-v4/portfolio/public/build/css/interactive.css",
@@ -20,6 +21,8 @@
   "build/images/glyphicons-halflings-regular.svg": "/fhuszti/portfolio-v4/portfolio/public/build/images/glyphicons-halflings-regular.89889688.svg",
   "build/js/formHandler.js": "/fhuszti/portfolio-v4/portfolio/public/build/js/formHandler.js",
   "build/js/interactive.js": "/fhuszti/portfolio-v4/portfolio/public/build/js/interactive.js",
+  "build/js/projects.js": "/fhuszti/portfolio-v4/portfolio/public/build/js/projects.js",
+  "build/js/travolta.js": "/fhuszti/portfolio-v4/portfolio/public/build/js/travolta.js",
   "build/manifest.js": "/fhuszti/portfolio-v4/portfolio/public/build/manifest.js",
   "build/vendor.css": "/fhuszti/portfolio-v4/portfolio/public/build/vendor.css",
   "build/vendor.js": "/fhuszti/portfolio-v4/portfolio/public/build/vendor.js"

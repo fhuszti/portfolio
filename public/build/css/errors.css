@@ -1,0 +1,42 @@
+#wrapper {
+    padding: 50px;
+    text-align: center;
+    position:relative;
+}
+
+#wrapper header {
+    font-size: 3em;
+}
+#wrapper header .glyphicon {
+    font-size: 3em;
+}
+#wrapper header h1 {
+    font-weight: bold;
+    color: rgb(0, 72, 0);
+}
+
+#wrapper .btn-default {
+    color: rgb(0, 72, 0);
+    margin-top: 30px;
+}
+
+#wrapper img[alt='Travolta'] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+}
+
+
+
+@media (max-width: 767px) {
+    #wrapper {
+        padding: 30px;
+    }
+
+    #wrapper .btn-default {
+        margin-top: 10px;
+    }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9lcnJvcnMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksY0FBYztJQUNkLG1CQUFtQjtJQUNuQixrQkFBa0I7Q0FDckI7O0FBRUQ7SUFDSSxlQUFlO0NBQ2xCO0FBQ0Q7SUFDSSxlQUFlO0NBQ2xCO0FBQ0Q7SUFDSSxrQkFBa0I7SUFDbEIscUJBQXFCO0NBQ3hCOztBQUVEO0lBQ0kscUJBQXFCO0lBQ3JCLGlCQUFpQjtDQUNwQjs7QUFFRDtJQUNJLG1CQUFtQjtJQUNuQixTQUFTO0lBQ1QsVUFBVTtJQUNWLGFBQWE7Q0FDaEI7Ozs7QUFJRDtJQUNJO1FBQ0ksY0FBYztLQUNqQjs7SUFFRDtRQUNJLGlCQUFpQjtLQUNwQjtDQUNKIiwiZmlsZSI6ImNzcy9lcnJvcnMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3dyYXBwZXIge1xuICAgIHBhZGRpbmc6IDUwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHBvc2l0aW9uOnJlbGF0aXZlO1xufVxuXG4jd3JhcHBlciBoZWFkZXIge1xuICAgIGZvbnQtc2l6ZTogM2VtO1xufVxuI3dyYXBwZXIgaGVhZGVyIC5nbHlwaGljb24ge1xuICAgIGZvbnQtc2l6ZTogM2VtO1xufVxuI3dyYXBwZXIgaGVhZGVyIGgxIHtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBjb2xvcjogcmdiKDAsIDcyLCAwKTtcbn1cblxuI3dyYXBwZXIgLmJ0bi1kZWZhdWx0IHtcbiAgICBjb2xvcjogcmdiKDAsIDcyLCAwKTtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4jd3JhcHBlciBpbWdbYWx0PSdUcmF2b2x0YSddIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgcmlnaHQ6IDA7XG4gICAgYm90dG9tOiAwO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cblxuXG5cbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuICAgICN3cmFwcGVyIHtcbiAgICAgICAgcGFkZGluZzogMzBweDtcbiAgICB9XG5cbiAgICAjd3JhcHBlciAuYnRuLWRlZmF1bHQge1xuICAgICAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIH1cbn1cblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyAuL2Vycm9ycy5jc3MiXSwic291cmNlUm9vdCI6IiJ9*/

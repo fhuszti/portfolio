@@ -1,11 +1,7 @@
 core:
     site:
-        title:     François Huszti, développeur web
+        title: François Huszti, développeur web
         job: développeur web
-        meta:
-            title:       Portfolio - François Huszti, développeur web
-            description: Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici.
-        insight_alt: "SensioLabs Insight: Médaille de platine"
     errors:
         e400:
             title: Erreur 400 (Mauvaise requête)
@@ -41,7 +37,9 @@ core:
             link_title:  Vers la liste de mes projets
             title:       Projets
     home:
-        title: Portfolio en ligne
+        meta:
+            title: Portfolio en ligne
+            description: Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici.
         skills:    Compétences
         contact:
             title: Contactez moi
@@ -58,6 +56,9 @@ core:
             body:
                 title: Nouveau message envoyé via le formulaire de contact
     resume:
+        meta:
+            title: C.V.
+            description: Mon C.V. dans son format classique. Utile pour voir rapidement quelles sont mes compétences.
         job_title: DÉVELOPPEUR WEB
         summary:
             title: Synthèse personnelle
@@ -142,7 +143,7 @@ core:
             content: J'apprécie autant l'informatique que les sorties entre amis. La musique en général est aussi importante pour moi, et je joue de la guitare et du piano à titre amateur. Je suis un grand fan de football (YNWA), que j'ai pratiqué plusieurs années durant lorsque j'étais plus jeune, avant de commencer le badminton, que j'ai pratiqué 6 ans.
     interactive:
         meta:
-            title: C.V. interactif - François Huszti, développeur web
+            title: C.V. interactif
             description: Mon C.V. dans son format interactif. Jouez un ninja perdu en terre inconnue !
         intro: |
             Vous êtes un ninja en mission, à la recherche d'informations sur... moi.
@@ -172,6 +173,9 @@ core:
                 - La plupart des jolis sprites utilisés ont été dessinés par <em><i class='name'>Simirk</i></em> (disponibles <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
                 - Les cascades sont l'œuvre de <em><i class='name'>Castor Studios</i></em> (disponibles <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
     projects:
+        meta:
+            title: Projets
+            description: Retrouvez les détails des projets réalisés pour mon diplôme de développeur web !
         intro: Vous trouverez ici l'ensemble des projets que j'ai réalisé dans le cadre de ma formation <a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Premier site d'e-apprentissage en Europe !" target="_blank" rel="noopener noreferrer">Chef de Projet Multimédia - Développement</a>, suivie en ligne avec <a href="https://openclassrooms.com/" title="Premier site d'e-apprentissage d'Europe !" target="_blank" rel="noopener noreferrer"><i class="brand">OpenClassrooms.com</i></a>.
         tab: Projet
         soon: Bientôt

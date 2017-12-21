@@ -1,11 +1,7 @@
 core:
     site:
-        title:     François Huszti, web dev
+        title: François Huszti, web dev
         job: web dev
-        meta:
-            title:       Portfolio - François Huszti, web dev
-            description: Portfolio of François Huszti, web dev. My resume and my projects are all to be found here.
-        insight_alt: "SensioLabs Insight: Platinum medal"
     errors:
         e400:
             title: "400: Bad Request"
@@ -41,7 +37,9 @@ core:
             link_title:  Link to all the projects I've done toward my degree
             title:       Projects
     home:
-        title: Online portfolio
+        meta:
+            title: Online portfolio
+            description: Online portfolio of François Huszti, web dev. My resume, my interactive resume and the details of all my previous projects are all to be found here.
         skills:    Skills
         contact:
             title: Contact
@@ -58,6 +56,9 @@ core:
             body:
                 title: New message sent from the contact form
     resume:
+        meta:
+            title: Resume
+            description: My resume in its classic format. Useful to get a quick look at what I do.
         job_title: WEB DEV
         summary:
             title: Summary
@@ -142,7 +143,7 @@ core:
             content: I like working in front of my computer as much as going out with friends. Music is also important to me, I play the guitar and the piano as an amateur. I'm a big fan of football (YNWA), which I played for a few years when I was a kid before playing badminton for 6 years.
     interactive:
         meta:
-            title: Interactive Resume - François Huszti, web dev
+            title: Interactive Resume
             description: My resume in its interactive version. Play as a ninja, lost in an unknown land!
         intro: |
             You are a ninja on a mission to find informations about... me.
@@ -172,6 +173,9 @@ core:
                 - Most of the beautiful sprites I used are the work of <em><i class='name'>Simirk</i></em> (available <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
                 - The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
     projects:
+        meta:
+            title: Projects
+            description: You will find here the details of all the projects I did toward my web dev degree.
         intro: Here are all the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!" target="_blank" rel="noopener noreferrer">Multimedia Project Manager - Development</a>) with <a href="https://openclassrooms.com/" title="Biggest e-learning platform in Europe !" target="_blank" rel="noopener noreferrer"><i class="brand">OpenClassrooms.com</i></a>.
         tab: Project
         soon: Coming soon

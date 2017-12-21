@@ -1,11 +1,7 @@
 {% extends "layout.html.twig" %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    {% stylesheets filter='cssrewrite, ?scssphp'
-        'css/errors.css' %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css">
-    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/errors.css') }}" />
 {% endblock %}
 
 {% block body %}
