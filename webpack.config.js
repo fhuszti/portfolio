@@ -30,6 +30,10 @@ Encore
     // projects page assets
     .addStyleEntry('css/projects', './assets/css/projects.css')
     .addEntry('js/projects', './assets/js/projects.js')
+
+    // error pages assets
+    .addStyleEntry('css/errors', './assets/css/errors.css')
+    .addEntry('js/travolta', './assets/js/travolta.js')
     
     // this creates a 'vendor.js' file with jquery and the bootstrap JS module
     .createSharedEntry('vendor', [

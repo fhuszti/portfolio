@@ -11,16 +11,9 @@
 {% block content %}
     {{ 'core.errors.e404.content'|trans }}
 
-    {% image 'http://assets.fhuszti.tech/errors/travolta.gif' %}
-		<img id="travolta" src="{{ asset_url }}" alt="Travolta" />
-	{% endimage %}
+    <img id="travolta" src="http://assets.fhuszti.tech/errors/travolta.gif" alt="Travolta" />
 {% endblock %}
 
 {% block javascripts %}
-    {{ parent() }}
-    
-    {% javascripts
-        'js/travolta.js' %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    <script src="{{ asset('build/js/travolta.js') }}"></script>
 {% endblock %}
