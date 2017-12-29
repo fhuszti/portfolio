@@ -17,5 +17,5 @@
 ###< symfony/webpack-encore-pack ###
 
 ###> custom ###
-/assets/interactive/
+/public/interactive/
 ###< custom ###
