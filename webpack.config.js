@@ -53,14 +53,18 @@ Encore
     // use Sass/SCSS files pre-processor
     .enableSassLoader()
 
-    // enable React
-    .enableReactPreset()
-
     // PostCSS loader
     .enablePostCssLoader()
 
     // init $/jQuery as a global variable
     .autoProvidejQuery()
+
+    // add presets to configure babel
+    .configureBabel(function(babelConfig) {
+        if (Encore.isProduction()) {
+            babelConfig.presets.push('minify');
+        }
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();
