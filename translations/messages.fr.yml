@@ -49,7 +49,7 @@ core:
             form_error:    Tous les champs n'ont pas été correctement remplis.
             sending_error: Une erreur a eu lieu lors de l'envoi. Veuillez réessayer plus tard.
             submit: Envoyer
-            loading: Le pigeon voyageur est en route
+            loading: En cours d'envoi
             thanks: Votre message a bien été transmis à ma boîte mail. Merci !
         mail:
             subject: Nouveau message (via fhuszti.com)

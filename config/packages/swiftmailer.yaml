@@ -5,3 +5,4 @@ swiftmailer:
     host: '%env(MAILER_HOST)%'
     port: '%env(MAILER_PORT)%'
     encryption: '%env(MAILER_ENCRYPTION)%'
+    auth_mode: '%env(MAILER_AUTH_MODE)%'

@@ -49,7 +49,7 @@ core:
             form_error:    Not all fields have been correctly filled.
             sending_error: There was an error sending your message. Please try again later.
             submit: Send
-            loading: Now waiting for the carrier pigeon
+            loading: Sending the message
             thanks: Your message was successfully sent to my mailbox. Thank you !
         mail:
             subject: New message (via fhuszti.com)
