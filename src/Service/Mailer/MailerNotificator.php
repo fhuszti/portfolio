@@ -46,7 +46,7 @@ class MailerNotificator {
 		$imgUrl = $mail->embed(\Swift_Image::fromPath('http://assets.fhuszti.tech/logo.png'));
 		$body = $this->renderTemplate($entity, $imgUrl);
 		
-		$mail->setSubject( $entity->getSubject() )
+		$mail->setSubject( '[Portfolio contact form] '.$entity->getSubject() )
 			 ->setFrom('contact@fhuszti.tech')
 			 ->setTo('f.huszti@gmail.com')
 			 ->setBody(
