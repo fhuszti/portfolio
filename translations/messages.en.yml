@@ -171,7 +171,7 @@ core:
             content:
                 - The main purpose of this project was simply to discover and have fun with a framework such as Phaser, while looking at it more from a developer perspective than that of a designer.
                 - Most of the beautiful sprites I used are the work of <em><i class='name'>Simirk</i></em> (available <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
-                - The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
+                - The waterfalls were created by <em><i class='name'>Castor Studios</i></em> (available <a href="http://www.castorstudios.com/assetdetails.php?id=waterfall2" title="Presentation page for the sprites I used in this project" target="_blank" rel="noopener noreferrer">here</a>).
     projects:
         meta:
             title: Projects

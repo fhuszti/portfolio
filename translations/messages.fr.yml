@@ -171,7 +171,7 @@ core:
             content:
                 - Le but de ce projet était simplement de découvrir et m'amuser avec un framework tel que Phaser, du point de vue du développeur plus que de celui du designer.
                 - La plupart des jolis sprites utilisés ont été dessinés par <em><i class='name'>Simirk</i></em> (disponibles <a href="https://graphicriver.net/item/platform-game-tileset-10-hd/8351290" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
-                - Les cascades sont l'œuvre de <em><i class='name'>Castor Studios</i></em> (disponibles <a href="http://www.scolasoft.com/assetdetails.php?id=waterfall2" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
+                - Les cascades sont l'œuvre de <em><i class='name'>Castor Studios</i></em> (disponibles <a href="http://www.castorstudios.com/assetdetails.php?id=waterfall2" title="Page de présentation/vente des sprites utilisés" target="_blank" rel="noopener noreferrer">ici</a>).
     projects:
         meta:
             title: Projets
