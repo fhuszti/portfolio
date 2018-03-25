@@ -72,8 +72,10 @@ core:
             present: present
             oc:
                 link_title: Biggest e-learning platform in Europe!
-                title: <i class='brand'>OpenClassrooms</i>, e-learning
-                description: Multimedia Project Manager - Development
+                title: <i lang='fr' class='brand'>IESA Multimédia</i>, via <i lang='en' class='brand'>OpenClassrooms</i>
+                description: |
+                    Multimedia Project Manager - Development.
+                    Level II diploma, registered with the RNCP (bachelor degree).
             uni:
                 title: <i lang='fr' class='name'>Université François Rabelais</i>, Tours, France
                 description: <i lang='fr' class='expression'>Licence 1</i> in Mathematics

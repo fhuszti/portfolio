@@ -72,8 +72,10 @@ core:
             present: présent
             oc:
                 link_title: Premier site d'e-apprentissage en Europe !
-                title: <i lang='en' class='brand'>OpenClassrooms</i>, formation par internet
-                description: Formation chef de projet multimédia - Développement
+                title: <i lang='fr' class='brand'>IESA Multimédia</i>, via <i lang='en' class='brand'>OpenClassrooms</i>
+                description: |
+                    Formation chef de projet multimédia - Développement.
+                    Diplôme de niveau II enregistré au RNCP (bac +3/+4).
             uni:
                 title: Université <i class='name'>François Rabelais</i>, Tours, France
                 description: Licence 1 de Mathématiques
