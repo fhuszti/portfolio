@@ -64,7 +64,7 @@ core:
             title: Synthèse personnelle
             content: |
                 Énergique et motivé, je suis aussi d'un naturel curieux. Ma faculté à apprendre rapidement me permet de passer outre la plupart des obstacles que je rencontre en comprenant le problème dans sa globalité.
-                J'ai découvert le code vers mes 15 ans avec le HTML et le CSS, ainsi que le C. Au fil des années, je me suis intéressé au PHP et au MySQL, ainsi qu'au JavaScript, et j'ai fini par ouvrir mes horizons à de multiples cours et articles sur des sujets divers, allant de la Gestion de Projet à l'utilisation de la console UNIX.
+                J'ai appris les bases du développement web en autodidacte en commençant par le HTML et CSS, puis le PHP et le JavaScript. Ces compétences ont été validées lors de l'obtention de mon diplôme, études durant lesquelles j'ai appris à utiliser des frameworks et bibliothèques populaires tels que Symfony 3 & 4, BootStrap, jQuery, WordPress ou Doctrine. J'ai depuis appris React et Redux et me suis initié à l'écosystème React. 
                 Les différents projets que j'ai réalisé afin d'obtenir mon diplôme de <a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Premier site d'e-apprentissage en Europe !" target="_blank" rel="noopener noreferrer">Chef de Projet Multimédia - Développement</a>, ainsi que mon C.V. interactif, font foi de mes compétences acquises pour la plupart en autodidacte.
                 Je suis à la recherche d'un CDD ou un CDI dans une entreprise au sein de laquelle je pourrais apporter mes compétences techniques et mes qualités humaines, tout en continuant à gagner en expérience.
         academics:
@@ -88,10 +88,11 @@ core:
             tours:
                 date: Août 2016
             interactive:
+                title: C.V. interactif & portfolio
                 date: Décembre 2016
                 description: 
                     - Phaser
-                    - Création d'un mini-jeu
+                    - Symfony 4 (mis à jour)
             microcms:
                 date: Février 2017
             louvre:
@@ -140,7 +141,7 @@ core:
                 - Niveau avancé en anglais
         hobbies:
             title: LOISIRS ET INTÉRÊTS
-            content: J'apprécie autant l'informatique que les sorties entre amis. La musique en général est aussi importante pour moi, et je joue de la guitare et du piano à titre amateur. Je suis un grand fan de football (YNWA), que j'ai pratiqué plusieurs années durant lorsque j'étais plus jeune, avant de commencer le badminton, que j'ai pratiqué 6 ans.
+            content: J'apprécie autant les jeux-vidéos et l'informatique que les sorties entre amis. La musique en général est aussi importante pour moi, et je joue de la guitare et du piano à titre amateur. Je suis un grand fan de football (YNWA), que j'ai pratiqué plusieurs années durant lorsque j'étais plus jeune, avant de commencer le badminton, que j'ai pratiqué 6 ans.
     interactive:
         meta:
             title: C.V. interactif
@@ -209,7 +210,7 @@ core:
                     - Créer un site Internet, de sa conception à sa livraison
                     - Soutenir et argumenter ses propositions
                 technicals:
-                    - Silex (PHP, MVC)
+                    - Silex
                     - Doctrine
                     - jQuery
                     - BootStrap
@@ -222,7 +223,7 @@ core:
                     - Élaborer les différents éléments d'un projet
                     - Créer un site Internet, de sa conception à sa livraison
                 technicals:
-                    - Symfony
+                    - Symfony 3
                     - Twig
                     - Stripe (paiement en ligne)
                 deliverables:
@@ -242,6 +243,7 @@ core:
                 technicals:
                     - Gestion d'équipe
                     - API externe
+                    - Symfony 3
                 deliverables:
                     - Cahier des charges technique et fonctionnel
                     - Planning de réalisation
@@ -255,6 +257,7 @@ core:
                 technicals:
                     - Démarcher un client
                     - Projet en conditions réelles
+                    - Symfony 3
                 deliverables:
                     - Note d'intention
                     - Documentation complète pour le client
