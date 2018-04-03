@@ -65,7 +65,7 @@ core:
             content: |
                 Energetic and motivated, I am also curious by nature. My ability to learn quickly allows me to go past most of the obstacles I encounter, by having a complete understanding of the issue.
                 I learned web development by myself, starting with HTML and CSS, before going on to learn PHP and JavaScript. While studying for my degree, I learned popular frameworks and libraries such as Symfony 3 & 4, BootStrap, jQuery, WordPress or Doctrine. Since then, I learned React and Redux and started finding my way in the React ecosystem.
-                All the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!" target="_blank" rel="noopener noreferrer">Multimedia Project Manager - Development</a>), together with my Interactive Resume, are a token of the skills I earned, for the most part, by myself.
+                All the projects I did toward my degree (<a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" title="Biggest e-learning platform in Europe!" class="hide-link-on-print" target="_blank" rel="noopener noreferrer">Multimedia Project Manager - Development</a>), together with my Interactive Resume, are a token of the skills I earned, for the most part, by myself.
                 I am currently seeking either a fixed-term or a permanent contract in a company to which I could bring my technical skills as well as my qualities while continuously earning some valuable experience.
         academics:
             title: Academics
