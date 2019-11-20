@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
     //color the given input border differently depending on the validity of its value
     function colorBorders(field, valid) {
         if(valid) {
@@ -11,22 +11,19 @@ $(function() {
 
     function validateName(name) {
         //The special characters list isn't mine but this regex is simple enough.
-        var re = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/;
-
+        const re = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/;
         return re.test(name);
     }
 
     function validateEmail(email) {
         //Yes, I know. I didn't write this regex. But I studied it. And it's beautiful. So I'm keeping it.
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
     }
 
     function validateMessage(message) {
         //Yeah, this one is mine. How did you guess ?
-        var re = /^(.|\s)+$/i;
-
+        const re = /^(.|\s)+$/i;
         return re.test(message);
     }
 
@@ -106,7 +103,7 @@ $(function() {
             if (formReady) {
                 //we fetch the data using FormData and send it as it is
                 var formData = new FormData(e.target);
-                
+
                 //processData needs to be set to false to prevent jQuery from trying to convert it to string
                 //contentType needs to be set to false so jQuery doesn't add a Content-type header (otherwise boundary string will be missing)
                 $.ajax({
@@ -116,15 +113,15 @@ $(function() {
                     processData: false,
                     contentType: false
                 })
-                .done(function() {
-                    $('.form-group').hide();
-                    button.hide();
-                    $('#formThanks').fadeIn();
-                })
-                .fail(function() {
-                    $('#sendingError').fadeIn().delay(4000).fadeOut();
-                    button.button('reset');
-                });
+                    .done(function() {
+                        $('.form-group').hide();
+                        button.hide();
+                        $('#formThanks').fadeIn();
+                    })
+                    .fail(function() {
+                        $('#sendingError').fadeIn().delay(4000).fadeOut();
+                        button.button('reset');
+                    });
             }
             //else we display an error message for a few seconds
             else {
@@ -145,10 +142,10 @@ $(function() {
     function formManagement() {
         //For easy access to each input field
         var inputObjects = {'name': $('#app_email_name'),
-                            'email': $('#app_email_email'),
-                            'subject': $('#app_email_subject'),
-                            'message': $('#app_email_content')
-                            };
+            'email': $('#app_email_email'),
+            'subject': $('#app_email_subject'),
+            'message': $('#app_email_content')
+        };
 
         //We attach events to each inputs livechecking their status
         liveCheckInputs(inputObjects);
