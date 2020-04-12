@@ -1,1 +1,0 @@
-webpackJsonp([8],{"3Yuy":function(t,n,o){(function(t){t(function(){768>t(window).width()&&function(){t("#tabLinks a").on("click",function(){t(this).on("shown.bs.tab",function(){if(""!==t(this).attr("href")){var n=t(this).attr("href"),o=t(n).offset().top-50;t("html, body").animate({scrollTop:o},400)}})})}()})}).call(n,o("7t+N"))}},["3Yuy"]);
