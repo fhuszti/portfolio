@@ -1,8 +1,10 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
-const Button = () => {
+const Button = props => {
+	const { path, value, classNames } = props;
 	return (
-		<div>Button</div>
+		<Link to={path} className={`button ${classNames}`} {...props}>{value}</Link>
 	);
 };
 
