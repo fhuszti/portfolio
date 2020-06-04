@@ -7,11 +7,6 @@
 	}
 }
 
-.main-wrapper {
-	font-family: Roboto, "Open Sans", sans-serif;
-	overflow: hidden;
-}
-
 .hero {
 	height: 100vh;
 	width: 100%;
@@ -19,7 +14,7 @@
 	background: linear-gradient(to right bottom, #004800 0%, rgba(#007864, 0.92) 40%, rgba(#59A3B1, 0.85) 55%, rgba(#B9CDE0, 0.77) 75%, #FFFFFF 100%);
 }
 
-.hero-display {
+.heroDisplay {
 	width: 50%;
 	padding: 20px 0;
 	display: flex;
@@ -29,64 +24,35 @@
 	box-sizing: border-box;
 }
 
-.hero-title {
+.heroTitle {
 	width: 80%;
 	font-size: 3em;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.9);
 	
-	.span-job {
+	.spanJob {
 		color: #333;
 	}
 }
 
-.hero-buttons {
+.heroButtons {
 	width: 80%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	
-	& .button.secondary {
+	a {
 		margin-bottom: 30px;
 	}
 }
 
-.button {
-	padding: 15px 30px;
-	text-decoration: none;
-	color: inherit;
-	border-radius: 100px;
-	transition: all 0.2s linear;
-	
-	&.primary {
-		color: #fff;
-		border: mix(#000000, #004800, 80%);
-		background-color: #004800;
-		font-size: 1.4em;
-		
-		&:hover {
-			background-color: mix(#000000, #004800, 20%);
-		}
-	}
-	
-	&.secondary {
-		color: #fff;
-		border: 1px solid #fff;
-		background-color: rgba(255, 255, 255, 0);
-		font-size: 1.2em;
-		
-		&:hover {
-			background-color: rgba(155, 155, 155, 0.2);
-		}
-	}
-}
-
-.hero-scroll-link {
+.heroScrollLink {
 	width: 80%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
 	font-size: 1.2em;
+	line-height: 1.5em;
 	cursor: pointer;
 	
 	p {
@@ -98,12 +64,12 @@
 	}
 }
 
-.hero-images {
+.heroImages {
 	width: 50%;
 	position: relative;
 }
 
-.code-svg {
+.codeSvg {
 	height: 50%;
 	width: 80%;
 	position: absolute;
@@ -112,7 +78,7 @@
 	transform: translateX(-50%) translateY(-70%);
 	opacity: 0.5;
 }
-.avatar-svg {
+.avatarSvg {
 	height: 50%;
 	width: auto;
 	position: absolute;
@@ -121,29 +87,23 @@
 	transform: translateX(-50%);
 }
 
-.divider-hero-skills {
-	height: 20px;
-	width: 100%;
-	background: radial-gradient(circle, #666 0%, #333 100%);
-}
-
 @media (max-width: 1200px) {
-	.hero-title {
+	.heroTitle {
 		font-size: 2.5em;
 	}
 }
 
 @media (max-width: 992px) {
-	.hero-images {
+	.heroImages {
 		display: none;
 	}
 	
-	.hero-display {
+	.heroDisplay {
 		width: 100%;
 		text-align: center;
 	}
 	
-	.hero-buttons {
+	.heroButtons {
 		align-items: center;
 	}
 }
