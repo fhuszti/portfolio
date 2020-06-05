@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "canvasjs": "^1.8.3",
     "next": "9.4.4",
     "next-react-svg": "1.1.1",
     "react": "16.13.1",

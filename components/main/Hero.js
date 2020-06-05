@@ -17,13 +17,13 @@ const Hero = () => {
 					<Button path="/cv-interactive" value="Accéder à mon CV interactif" type="primary"/>
 				</section>
 				<section className={styles.heroScrollLink}>
-					<p>Vous voulez me contacter ?</p>
+					<p>Résumé des mes compétences et projets</p>
 					<DownSVG width="1em" height="1em"/>
 				</section>
 			</section>
 			<aside className={styles.heroImages}>
 				<CodeSVG className={styles.codeSvg}/>
-				<img className={styles.avatarSvg} src="images/myAvatar.png" alt="Mon avatar" />
+				<img className={styles.avatarSvg} src="images/myAvatar.png" alt="C'est moi !" />
 			</aside>
 		</section>
 	);

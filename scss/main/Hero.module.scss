@@ -8,7 +8,7 @@
 }
 
 .hero {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	background: linear-gradient(to right bottom, #004800 0%, rgba(#007864, 0.92) 40%, rgba(#59A3B1, 0.85) 55%, rgba(#B9CDE0, 0.77) 75%, #FFFFFF 100%);
@@ -51,6 +51,7 @@
 	flex-direction: column;
 	align-items: center;
 	color: rgba(255, 255, 255, 0.8);
+	fill: rgba(255, 255, 255, 1);
 	font-size: 1.2em;
 	line-height: 1.5em;
 	cursor: pointer;
@@ -98,6 +99,10 @@
 		display: none;
 	}
 	
+	.heroTitle {
+		font-size: 2em;
+	}
+	
 	.heroDisplay {
 		width: 100%;
 		text-align: center;
@@ -105,5 +110,13 @@
 	
 	.heroButtons {
 		align-items: center;
+		font-size: 0.8em;
+	}
+	
+	.heroScrollLink {
+		color: #333;
+		fill: #333;
+		font-size: 1em;
+		line-height: 1.2em;
 	}
 }
