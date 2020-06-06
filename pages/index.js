@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head'
 import Hero from "../components/main/Hero";
 import Contact from "../components/main/Contact";
+import Skills from "../components/main/Skills";
+import Projects from "../components/main/Projects";
 
 const Home = () => {
 	return (
@@ -34,6 +36,8 @@ const Home = () => {
 			
 			<main className="main-wrapper">
 				<Hero/>
+				<Skills/>
+				<Projects/>
 				<Contact/>
 			</main>
 		</React.Fragment>

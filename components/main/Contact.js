@@ -3,7 +3,7 @@ import styles from '../../scss/main/Contact.module.scss';
 
 const Contact = () => {
 	return (
-		<section className={styles.contactWrapper}>
+		<footer className={styles.contactWrapper}>
 			<figure className={styles.contactFigure}>
 				<a href="https://github.com/fhuszti" title="Mon profil GitHub" target="_blank">
 					<img src="images/github.png" alt="GitHub"/>
@@ -15,7 +15,7 @@ const Contact = () => {
 					<img src="images/linkedin.png" alt="LinkedIn"/>
 				</a>
 			</figure>
-		</section>
+		</footer>
 	);
 };
 

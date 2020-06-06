@@ -16,9 +16,11 @@ const Hero = () => {
 					<Button path="/cv" value="Voir mon CV" type="secondary"/>
 					<Button path="/cv-interactive" value="Accéder à mon CV interactif" type="primary"/>
 				</section>
-				<section className={styles.heroScrollLink}>
-					<p>Résumé des mes compétences et projets</p>
-					<DownSVG width="1em" height="1em"/>
+				<section className={styles.heroScrollSection}>
+					<a href="#skills" className={styles.heroScrollLink}>
+						<p>Résumé des mes compétences et projets</p>
+						<DownSVG width="1em" height="1em"/>
+					</a>
 				</section>
 			</section>
 			<aside className={styles.heroImages}>

@@ -8,11 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "canvasjs": "^1.8.3",
     "next": "9.4.4",
     "next-react-svg": "1.1.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sass": "^1.26.7"
+    "sass": "^1.26.7",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }
