@@ -1,0 +1,28 @@
+.barchartWrapper {
+	width: 100%;
+	max-width: 800px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.labels {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.label {
+	width: 100%;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.label, .bars>div {
+	margin-bottom: 10px;
+}
+
+.bars {
+	position: relative;
+	width: 100%;
+}

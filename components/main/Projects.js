@@ -6,7 +6,7 @@ const Projects = () => {
 		<section className={styles.projectsWrapper}>
 			Projects
 		</section>
-	)
+	);
 };
 
 export default Projects;

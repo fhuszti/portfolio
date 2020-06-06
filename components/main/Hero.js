@@ -18,7 +18,7 @@ const Hero = () => {
 				</section>
 				<section className={styles.heroScrollSection}>
 					<a href="#skills" className={styles.heroScrollLink}>
-						<p>Résumé des mes compétences et projets</p>
+						<p>Mes compétences et projets</p>
 						<DownSVG width="1em" height="1em"/>
 					</a>
 				</section>
