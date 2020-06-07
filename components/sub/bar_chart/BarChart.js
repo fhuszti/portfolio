@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from '../../../scss/sub/bar_chart/BarChart.module.scss';
+import BronzeIcon from '../../../public/svg/bronze_medal.svg';
+import SilverIcon from '../../../public/svg/silver_medal.svg';
+import GoldIcon from '../../../public/svg/gold_medal.svg';
 import Level from "./Level";
 import Bar from "./Bar";
 
@@ -16,9 +19,9 @@ const BarChart = ({ data }) => {
 				{renderLabels()}
 			</section>
 			<section className={styles.bars}>
-				<Level label="Débutant" css={{ left: '30%' }}/>
-				<Level label="Je connais bien" css={{ left: '60%' }}/>
-				<Level label="Je maîtrise" css={{ left: '90%' }}/>
+				<Level css={{ left: '30%' }}><BronzeIcon/></Level>
+				<Level css={{ left: '60%' }}><SilverIcon/></Level>
+				<Level css={{ left: '90%' }}><GoldIcon/></Level>
 				
 				{renderBars()}
 			</section>

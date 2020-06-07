@@ -5,17 +5,26 @@
 	align-items: center;
 	position: absolute;
 	top: 0;
-	transform: translateX(-50%) translateY(-2em);
+	transform: translateX(-50%) translateY(-2.5em);
 }
 
 .label {
 	color: #fff;
 	white-space: nowrap;
-	transform: translateX(-50%);
+	width: 2em;
+	height: 2em;
+	transform: translateY(-10px);
 }
 
 .line {
 	width: 0;
 	height: 100%;
 	border-left: 1px dotted #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.label {
+		width: 1.5em;
+		height: 1.5em;
+	}
 }

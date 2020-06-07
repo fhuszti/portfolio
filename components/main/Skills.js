@@ -5,7 +5,7 @@ import BarChart from "../sub/bar_chart/BarChart";
 const data = [
 	["HTML5", { width: '90%', backgroundColor: '#ffce54' }],
 	["CSS3", { width: '90%', backgroundColor: '#ac92ec' }],
-	["JavaScript (incl. ES6)", { width: '82%', backgroundColor: '#5d9cec' }],
+	["JavaScript", { width: '82%', backgroundColor: '#5d9cec' }],
 	["PHP (5,7)", { width: '83%', backgroundColor: '#ed5565' }],
 	["MySQL", { width: '45%', backgroundColor: '#a0d468' }],
 	["-----", { width: '0%', backgroundColor: 'rgba(0,0,0,0)' }],
@@ -24,7 +24,7 @@ const data = [
 const Skills = () => {
 	return (
 		<section id="skills" className={styles.skillsWrapper}>
-			<h2 className={styles.title}>Competences:</h2>
+			<h2 className={styles.title} data-aos="slide-right" data-aos-once={true}>Competences:</h2>
 			<BarChart data={data}/>
 		</section>
 	);

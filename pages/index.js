@@ -14,6 +14,7 @@ const Home = () => {
 				<meta name="description"
 					  content="Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici."/>
 				<link rel="icon" href="favicon.ico"/>
+				<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 				
 				<meta property="og:title" content="Portfolio en ligne - François Huszti, développeur web"/>
 				<meta property="og:description"
@@ -40,6 +41,8 @@ const Home = () => {
 				<Projects/>
 				<Contact/>
 			</main>
+
+			<script src="aos/dist/aos.js"></script>
 		</React.Fragment>
 	);
 };
