@@ -10,7 +10,7 @@ const Hero = () => {
 			<section className={styles.heroDisplay}>
 				<div className="just-here-to-align-flex"/>
 				<h1 className={styles.heroTitle}>
-					Je suis François Huszti, <span className={styles.spanJob}>développeur web fullstack,</span> et j'aimerai apporter ma pierre à votre édifice
+					Je suis François Huszti, <span className={styles.spanJob}>développeur web fullstack,</span> et je souhaite apporter ma pierre à votre édifice
 				</h1>
 				<section className={styles.heroButtons}>
 					<Button path="/cv" value="Voir mon CV" type="secondary"/>
