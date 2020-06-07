@@ -15,8 +15,20 @@
 	margin-bottom: 50px;
 }
 
+.buttons {
+	margin-top: 75px;
+}
+
+.firstbutton {
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 768px) {
 	.title {
 		font-size: 1.5em;
+	}
+	
+	.buttons {
+		margin-top: 50px;
 	}
 }

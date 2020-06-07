@@ -9,10 +9,10 @@ const Hero = () => {
 		<section className={styles.hero}>
 			<section className={styles.heroDisplay}>
 				<div className="just-here-to-align-flex"/>
-				<h1 className={styles.heroTitle}>
+				<h1 className={styles.heroTitle} data-aos="fade-up" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 					Je suis François Huszti, <span className={styles.spanJob}>développeur web fullstack,</span> et je souhaite apporter ma pierre à votre édifice
 				</h1>
-				<section className={styles.heroButtons}>
+				<section className={styles.heroButtons} data-aos="slide-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 					<Button path="/cv" value="Voir mon CV" type="secondary"/>
 					<Button path="/cv-interactive" value="Accéder à mon CV interactif" type="primary"/>
 				</section>
@@ -23,7 +23,7 @@ const Hero = () => {
 					</a>
 				</section>
 			</section>
-			<aside className={styles.heroImages}>
+			<aside className={styles.heroImages} data-aos="fade-up" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 				<CodeSVG className={styles.codeSvg}/>
 				<img className={styles.avatarSvg} src="images/myAvatar.png" alt="C'est moi !" />
 			</aside>

@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../scss/index.scss';
 
 const CustomApp = ({ Component, pageProps }) => {

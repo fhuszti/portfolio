@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
+import 'aos/dist/aos.js';
 import Hero from "../components/main/Hero";
 import Contact from "../components/main/Contact";
 import Skills from "../components/main/Skills";
@@ -14,7 +15,6 @@ const Home = () => {
 				<meta name="description"
 					  content="Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici."/>
 				<link rel="icon" href="favicon.ico"/>
-				<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 				
 				<meta property="og:title" content="Portfolio en ligne - François Huszti, développeur web"/>
 				<meta property="og:description"
@@ -41,8 +41,6 @@ const Home = () => {
 				<Projects/>
 				<Contact/>
 			</main>
-
-			<script src="aos/dist/aos.js"></script>
 		</React.Fragment>
 	);
 };

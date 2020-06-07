@@ -1,9 +1,9 @@
 import React from "react";
 import styles from '../../scss/sub/Button.module.scss';
 
-const Button = ({ path, value, type, ...rest }) => {
+const Button = ({ path, value, type, css, classNames, ...rest }) => {
 	return (
-		<a href={path} className={`${styles.button} ${styles[type]}`} {...rest}>{value}</a>
+		<a href={path} className={`${styles.button} ${styles[type]} ${classNames}`} style={css} {...rest}>{value}</a>
 	);
 };
 
