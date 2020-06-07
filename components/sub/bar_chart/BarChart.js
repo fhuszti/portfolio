@@ -16,7 +16,7 @@ const BarChart = ({ data }) => {
 				{renderLabels()}
 			</section>
 			<section className={styles.bars}>
-				<Level label="J'ai les bases" css={{ left: '30%' }}/>
+				<Level label="Débutant" css={{ left: '30%' }}/>
 				<Level label="Je connais bien" css={{ left: '60%' }}/>
 				<Level label="Je maîtrise" css={{ left: '90%' }}/>
 				

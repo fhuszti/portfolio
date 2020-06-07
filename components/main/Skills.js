@@ -24,6 +24,7 @@ const data = [
 const Skills = () => {
 	return (
 		<section id="skills" className={styles.skillsWrapper}>
+			<h2 className={styles.title}>Competences:</h2>
 			<BarChart data={data}/>
 		</section>
 	);
