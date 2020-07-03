@@ -29,7 +29,7 @@ const Skills = () => {
 			<BarChart data={data}/>
 			
 			<section className={styles.buttons} data-aos="fade-in" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
-				<Button path="/cv" value="Mon CV" type="secondary" css={{ fontSize: '0.8em' }} classNames={styles.firstbutton}/>
+				<Button path="/cv" value="Mon CV" type="secondary" css={{ fontSize: '0.8em' }} classNames={styles.firstButton}/>
 				<Button path="/cv-interactive" value="Mon CV interactif" type="secondary" css={{ fontSize: '0.8em' }}/>
 			</section>
 		</section>

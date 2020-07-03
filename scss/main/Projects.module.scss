@@ -1,4 +1,18 @@
 .projectsWrapper {
-	padding: 50px 20px;
-	height: 100vh;
+	padding: 30px 20px 50px;
+}
+
+.title {
+	width: 100%;
+	font-family: "VCR OSD Mono", Roboto, "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
