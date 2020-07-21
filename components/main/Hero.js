@@ -1,8 +1,9 @@
 import React from 'react';
+import Link from "next/link";
 import styles from '../../scss/main/Hero.module.scss';
 import DownSVG from "../../public/svg/down-arrow.svg";
 import CodeSVG from "../../public/svg/code.svg";
-import Button from "../sub/Button";
+import { Button } from "../../styles/global";
 
 const Hero = () => {
 	return (
@@ -13,8 +14,12 @@ const Hero = () => {
 					Je suis François Huszti, <span className={styles.spanJob}>développeur web fullstack,</span> et je souhaite apporter ma pierre à votre édifice
 				</h1>
 				<section className={styles.heroButtons} data-aos="slide-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
-					<Button path="/cv" value="Voir mon CV" type="secondary"/>
-					<Button path="/cv-interactive" value="Accéder à mon CV interactif" type="primary"/>
+					<Link href="/cv" passHref>
+						<Button title="Voir mon CV" secondary bigger margin="0 0 30px">Voir mon CV</Button>
+					</Link>
+					<Link href="/cv-interactive" passHref>
+						<Button title="Accéder à mon CV interactif" primary bigger>Accéder à mon CV interactif</Button>
+					</Link>
 				</section>
 				<section className={styles.heroScrollSection}>
 					<a href="#skills" className={styles.heroScrollLink}>

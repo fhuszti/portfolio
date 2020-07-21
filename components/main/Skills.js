@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../scss/main/Skills.module.scss';
-import BarChart from "../sub/bar_chart/BarChart";
-import Button from "../sub/Button";
+import Link from "next/link";
+import {Button} from "../../styles/global";
 
 const data = [
 	["HTML5", { width: '90%', backgroundColor: '#ffce54' }],
@@ -26,11 +26,16 @@ const Skills = () => {
 	return (
 		<section id="skills" className={styles.skillsWrapper}>
 			<h2 className={styles.title} data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">Competences:</h2>
-			<BarChart data={data}/>
+			
+			
 			
 			<section className={styles.buttons} data-aos="fade-in" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
-				<Button path="/cv" value="Mon CV" type="secondary" css={{ fontSize: '0.8em' }} classNames={styles.firstButton}/>
-				<Button path="/cv-interactive" value="Mon CV interactif" type="secondary" css={{ fontSize: '0.8em' }}/>
+				<Link href="/cv" passHref>
+					<Button title="Voir mon CV" secondary margin="0 30px 0 0">Voir mon CV</Button>
+				</Link>
+				<Link href="/cv-interactive" passHref>
+					<Button title="Accéder à mon CV interactif" secondary>Accéder à mon CV interactif</Button>
+				</Link>
 			</section>
 		</section>
 	);

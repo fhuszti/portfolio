@@ -2,8 +2,10 @@ import styled from "styled-components";
 import breakpoints from "../../helpers/breakpoints";
 
 const Figure = styled.figure`
+	transition: background-color 0.2s linear;
+
 	&:hover {
-		background-color: rgba(200, 200, 200, 0.05);
+		background-color: hsla(120, 3%, 45%, 0.25); //colors.grey
 	}
 	
 	& img {

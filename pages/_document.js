@@ -1,5 +1,5 @@
 import React from "react";
-import Document from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class CustomDocument extends Document {
@@ -28,4 +28,17 @@ export default class CustomDocument extends Document {
             sheet.seal();
         }
     };
+    
+    render() {
+        return (
+            <Html>
+                <Head />
+                <body>
+                    <Main />
+                    <div id="portalRoot"/>
+                    <NextScript />
+                </body>
+            </Html>
+        )
+    }
 };

@@ -1,35 +1,36 @@
 import styled from "styled-components";
 import colors from "../../helpers/colors";
 import breakpoints from "../../helpers/breakpoints";
+import spacing from "../../helpers/spacing";
 
 const Contact = styled.footer`
-    padding: 50px 20px;
-    background: radial-gradient(circle, ${colors.grey6} 0%, ${colors.grey3} 100%);
+    padding: ${spacing.xlarge} ${spacing.medium};
+    background: radial-gradient(circle, ${colors.grey} 0%, ${colors.greyDark} 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-    & p {
-		color: #fff;
+    > section > p {
 		font-weight: 600;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.15rem;
+		cursor: pointer;
 	}
 	
 	@media screen and (max-width: ${breakpoints.medium}) {
-		padding: 50px 20px;
-		min-height: 150px;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		padding: ${spacing.large} ${spacing.medium};
 		
-		:nth-child(1) {
-			order: 2;
-		}
-		:nth-child(2) {
+		.footerChild:nth-child(1) {
 			order: 1;
 		}
-		:nth-child(3) {
+		.footerChild:nth-child(2) {
 			order: 3;
+		}
+		.footerChild:nth-child(3) {
+			order: 2;
+			margin: ${spacing.medium} 0;
 		}
 	}
 `;
