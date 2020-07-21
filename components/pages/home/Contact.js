@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Figure, HiddenInput } from "../../styles/components/Contact";
-import Tooltip from "../Tooltip";
-import { SmallText, Text } from "../../styles/global";
-import colors from "../../styles/helpers/colors";
+import { Container, Figure, HiddenInput } from "../../../styles/components/pages/home/Contact";
+import { SmallText, Text } from "../../../styles/global";
+import colors from "../../../styles/helpers/colors";
+import Tooltip from "../../Tooltip";
 
 const Contact = () => {
 	const [isTooltipVisible, setTooltipVisible] = useState(false);

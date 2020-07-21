@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import breakpoints from "../../helpers/breakpoints";
+import breakpoints from "../../../../helpers/breakpoints";
 
 const Figure = styled.figure`
 	transition: background-color 0.2s linear;

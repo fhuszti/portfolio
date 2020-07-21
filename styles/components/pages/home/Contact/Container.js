@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import colors from "../../helpers/colors";
-import breakpoints from "../../helpers/breakpoints";
-import spacing from "../../helpers/spacing";
+import colors from "../../../../helpers/colors";
+import breakpoints from "../../../../helpers/breakpoints";
+import spacing from "../../../../helpers/spacing";
 
 const Contact = styled.footer`
     padding: ${spacing.xlarge} ${spacing.medium};
