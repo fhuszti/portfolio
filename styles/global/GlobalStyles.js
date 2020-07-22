@@ -3,8 +3,12 @@ import fonts from "../helpers/fonts";
 
 const GlobalStyles = createGlobalStyle`
   	@font-face {
-	  font-family: "VCR OSD Mono";
-	  src: url('../../fonts/vcr_osd_mono/vcr_osd_mono.ttf');
+	  font-family: "Arcade";
+	  src: url('fonts/arcade_ya/ARCADE_I.ttf');
+	}
+  	@font-face {
+	  font-family: "Poppins";
+	  src: url('fonts/Poppins/PoppinsRegular.ttf');
 	}
 	
 	/* http://meyerweb.com/eric/tools/css/reset/

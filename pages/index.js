@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import 'aos/dist/aos.js';
-import Hero from "../components/main/Hero";
+import Hero from "../components/pages/home/Hero";
 import Contact from "../components/pages/home/Contact";
 import Skills from "../components/main/Skills";
 import Projects from "../components/main/Projects";

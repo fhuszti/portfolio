@@ -1,4 +1,4 @@
 export default {
-    main: 'Roboto, "Open Sans", sans-serif',
-    title: '"VCR OSD Mono", Roboto, "Open Sans", sans-serif',
+    main: 'Poppins, Roboto, "Open Sans", sans-serif',
+    title: 'Arcade, Roboto, "Open Sans", sans-serif',
 };

@@ -7,7 +7,7 @@ const Container = styled.section`
 	padding: ${spacing.small};
 	background-color: ${colors.grey};
 	color: ${colors.white};
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+	box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.18);
 	border-radius: 10px;
 	position: absolute;
 	top: ${props => props.top - 10}px;
