@@ -25,13 +25,13 @@ const data = [
 const Skills = () => {
 	return (
 		<section id="skills" className={styles.skillsWrapper}>
-			<h2 className={styles.title} data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">Competences:</h2>
+			<h2 className={styles.title} data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">Competences</h2>
 			
 			
 			
 			<section className={styles.buttons} data-aos="fade-in" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 				<Link href="/cv" passHref>
-					<Button title="Voir mon CV" secondary margin="0 30px 0 0">Voir mon CV</Button>
+					<Button title="Voir mon CV" secondary margin="0 2rem 0 0">Voir mon CV</Button>
 				</Link>
 				<Link href="/cv-interactive" passHref>
 					<Button title="Accéder à mon CV interactif" secondary>Accéder à mon CV interactif</Button>

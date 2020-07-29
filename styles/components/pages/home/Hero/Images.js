@@ -14,22 +14,13 @@ const Images = styled.aside`
 		transform: translateX(-50%) translateY(-70%);
 		opacity: 0.5;
 	}
-	.avatarFigure {
+	.avatarSvg {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		height: 50%;
-		
-		img {
-			height: 100%;
-		}
-	}
-	
-	@media screen and (max-width: ${breakpoints.large}) {
-		.avatarFigure {
-			height: 45%;
-		}
+		max-width: 100%;
+		max-height: 60%;
 	}
 	
 	@media screen and (max-width: ${breakpoints.medium}) {

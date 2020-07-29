@@ -15,10 +15,10 @@ const Hero = () => {
 				</Title>
 				<Buttons data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 					<Link href="/cv" passHref>
-						<Button title="Voir mon CV" secondary bigger>Voir mon CV</Button>
+						<Button title="Voir mon CV" secondary>Voir mon CV</Button>
 					</Link>
 					<Link href="/cv-interactive" passHref>
-						<Button title="Accéder à mon CV interactif" primary bigger>Accéder à mon CV interactif</Button>
+						<Button title="Accéder à mon CV interactif" primary>Accéder à mon CV interactif</Button>
 					</Link>
 				</Buttons>
 				<section data-aos="fade-up" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300" data-aos-anchor-placement="top-bottom">
@@ -30,7 +30,7 @@ const Hero = () => {
 			</Content>
 			<Images data-aos="fade-up" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 				<CodeSVG className="codeSvg"/>
-				<figure className="avatarFigure"><img className="avatarSvg" src="images/myAvatar.png" alt="Un avatar me représentant" /></figure>
+				<img className="avatarSvg" src="images/myAvatar.png" alt="Un avatar me représentant" />
 			</Images>
 		</Container>
 	);

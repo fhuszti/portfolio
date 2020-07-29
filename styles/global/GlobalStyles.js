@@ -4,7 +4,7 @@ import fonts from "../helpers/fonts";
 const GlobalStyles = createGlobalStyle`
   	@font-face {
 	  font-family: "Arcade";
-	  src: url('fonts/arcade_ya/ARCADE_I.ttf');
+	  src: url('fonts/Arcade/Arcade.ttf');
 	}
   	@font-face {
 	  font-family: "Poppins";

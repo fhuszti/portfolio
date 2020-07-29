@@ -20,18 +20,11 @@ const Button = styled.a`
 		primary &&
 		css`
 			background-color: ${colors.main};
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 			
 			&:hover {
 				background-color: ${colors.mainDark};
 			}
-		`
-	};
-	
-	${({ bigger, primary }) =>
-		bigger && primary &&
-		css`
-			font-size: 1.4rem;
 		`
 	};
 	
@@ -47,29 +40,6 @@ const Button = styled.a`
 			}
 		`
 	};
-	
-	${({ bigger, secondary }) =>
-		bigger && secondary &&
-		css`
-			font-size: 1.2rem;
-		`
-	};
-	
-	@media screen and (max-width: ${breakpoints.large}) {
-		${({ bigger, primary }) =>
-			bigger && primary &&
-			css`
-				font-size: 1.2rem;
-			`
-		};
-		
-		${({ bigger, secondary }) =>
-			bigger && secondary &&
-			css`
-				font-size: 1rem;
-			`
-		};
-	}
 `;
 
 Button.defaultProps = {

@@ -9,7 +9,7 @@ const Buttons = styled.section`
 	align-items: flex-start;
 	
 	a:first-child {
-		margin-bottom: ${spacing.large};
+		margin-bottom: ${spacing.medium};
 	}
 	
 	@media screen and (max-width: ${breakpoints.medium}) {
