@@ -4,7 +4,7 @@ import 'aos/dist/aos.js';
 import Hero from "../components/pages/home/Hero";
 import Contact from "../components/pages/home/Contact";
 import Skills from "../components/pages/home/Skills";
-import Projects from "../components/main/Projects";
+import Projects from "../components/pages/home/Projects";
 
 const Home = () => {
 	return (

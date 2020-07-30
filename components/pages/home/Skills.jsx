@@ -8,7 +8,7 @@ import colors from "../../../styles/helpers/colors";
 const Skills = () => {
 	return (
 		<Container id="skills">
-			<Title data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">Competences:</Title>
+			<Title color={colors.white} data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">Competences:</Title>
 			
 			<RowSection margin="1rem 1rem 2rem 1rem">
 				<SkillCard image="images/homepage/html.png">
@@ -26,12 +26,12 @@ const Skills = () => {
 					<Text color={colors.text}>
 						J'ai vite accroché avec <span class="bold">React</span> et tout son écosystème,
 						incluant <span class="bold">React-Redux</span>, <span class="bold">Redux-Saga</span> ou
-						encore <span class="bold">Next.js</span> entre autres, ainsi que la découverte du CSS-in-JS et
-						de <span class="bold">Styled-Components</span>.
+						encore <span class="bold">Next.js</span> entre autres, ainsi que la découverte du CSS-in-JS
+						avec <span class="bold">Styled-Components</span>.
 					</Text>
 				</SkillCard>
 				<SkillCard image="images/homepage/symfony.png">
-					<SmallTitle margin="0 0 0.5rem 0">en passant par Symfony</SmallTitle>
+					<SmallTitle margin="0 0 0.5rem 0">passant par Symfony</SmallTitle>
 					<Text color={colors.text}>
 						Mon premier amour reste <span class="bold">Symfony</span> et ce qui en découle. A sa suite,
 						l'inévitable <span class="bold">Doctrine</span>, ainsi que l'outil bien pratique

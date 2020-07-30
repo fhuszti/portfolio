@@ -4,6 +4,7 @@ import spacing from "../helpers/spacing";
 
 const Button = styled.a`
 	margin: ${props => props.margin};
+	color: ${props => props.color};
 	
 	padding: ${spacing.medium} ${spacing.large};
 	text-decoration: none;
@@ -11,7 +12,6 @@ const Button = styled.a`
 	font-size: 1rem;
 	line-height: 1.25;
 	font-weight: 400;
-	color: ${colors.white};
 	box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.18);
 	transition: background-color 0.2s linear;
 	
@@ -30,7 +30,7 @@ const Button = styled.a`
 	${({ secondary }) =>
 		secondary &&
 		css`
-			border: 1px solid ${colors.white};
+			border: 1px solid ${props => props.secondaryColor};
 			background-color: hsla(0, 0, 100%, 0);
 			font-size: 1rem;
 			
@@ -50,6 +50,8 @@ const Button = styled.a`
 
 Button.defaultProps = {
 	margin: 0,
+	color: colors.white,
+	secondaryColor: colors.white,
 };
 
 export default Button;
