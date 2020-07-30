@@ -78,6 +78,9 @@ const GlobalStyles = createGlobalStyle`
 		.italic {
 			font-style: italic;
 		}
+		.bold {
+			font-weight: 600;
+		}
 	}
 `;
 

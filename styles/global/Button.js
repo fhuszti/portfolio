@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import colors from "../helpers/colors";
 import spacing from "../helpers/spacing";
-import breakpoints from "../helpers/breakpoints";
 
 const Button = styled.a`
 	margin: ${props => props.margin};
@@ -38,6 +37,13 @@ const Button = styled.a`
 			&:hover {
 				background-color: hsla(120, 3%, 45%, 0.25); //colors.grey
 			}
+		`
+	};
+	
+	${({ smaller }) =>
+		smaller &&
+		css`
+			padding: ${spacing.small} ${spacing.medium};
 		`
 	};
 `;

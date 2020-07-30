@@ -5,7 +5,7 @@ import spacing from "../../../../helpers/spacing";
 
 const Contact = styled.footer`
     padding: ${spacing.xlarge} ${spacing.medium};
-    background: radial-gradient(circle, ${colors.grey} 0%, ${colors.greyDark} 100%);
+    background: ${colors.greyGradient};
     display: flex;
     justify-content: space-around;
     align-items: center;

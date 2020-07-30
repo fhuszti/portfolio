@@ -3,7 +3,7 @@ import Head from 'next/head'
 import 'aos/dist/aos.js';
 import Hero from "../components/pages/home/Hero";
 import Contact from "../components/pages/home/Contact";
-import Skills from "../components/main/Skills";
+import Skills from "../components/pages/home/Skills";
 import Projects from "../components/main/Projects";
 
 const Home = () => {

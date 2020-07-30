@@ -43,15 +43,16 @@ const Contact = () => {
 			</a>
 			
 			<section className="footerChild">
-				<Text className="uppercase" color={colors.white} onClick={e => copyEmailToClipboard(e.target)}>contactez-moi</Text>
+				<Text className="uppercase" color={colors.white} onClick={e => copyEmailToClipboard(e.target)}>contactez-moi !</Text>
 				<HiddenInput id="emailHiddenInput" value="f.huszti@gmail.com" readOnly aria-hidden="true" tabIndex='-1'/>
-				{isTooltipVisible &&
-				<Tooltip coords={tooltipLinkCoords}>
-					<SmallText color={colors.white}>
-						Mon adresse email <span className="italic">f.huszti@gmail.com</span> a été copiée avec succès
-					</SmallText>
-					<div className="tooltipArrow"/>
-				</Tooltip>
+				{
+					isTooltipVisible &&
+						<Tooltip coords={tooltipLinkCoords}>
+							<SmallText color={colors.white}>
+								Mon adresse email <span className="italic">f.huszti@gmail.com</span> a été copiée avec succès
+							</SmallText>
+							<div className="tooltipArrow"/>
+						</Tooltip>
 				}
 			</section>
 			
