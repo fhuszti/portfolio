@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import DownSVG from "../../../public/svg/down-arrow.svg";
 import CodeSVG from "../../../public/svg/code.svg";
-import { Button } from "../../../styles/global";
+import { PrimaryButton, SecondaryButton } from "../../../styles/global";
 import { Buttons, Container, Content, Images, ScrollLink, Title } from "../../../styles/components/pages/home/Hero";
 
 const Hero = () => {
@@ -15,10 +15,10 @@ const Hero = () => {
 				</Title>
 				<Buttons data-aos="fade-right" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300">
 					<Link href="/cv" passHref>
-						<Button title="Voir mon CV" secondary>Voir mon CV</Button>
+						<SecondaryButton title="Voir mon CV">Voir mon CV</SecondaryButton>
 					</Link>
 					<Link href="/cv-interactive" passHref>
-						<Button title="Accéder à mon CV interactif" primary>Accéder à mon CV interactif</Button>
+						<PrimaryButton title="Accéder à mon CV interactif">Accéder à mon CV interactif</PrimaryButton>
 					</Link>
 				</Buttons>
 				<section data-aos="fade-up" data-aos-once={true} data-aos-easing="ease-in" data-aos-duration="300" data-aos-anchor-placement="top-bottom">

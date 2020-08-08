@@ -12,33 +12,7 @@ const Button = styled.a`
 	font-size: 1rem;
 	line-height: 1.25;
 	font-weight: 400;
-	box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.18);
 	transition: background-color 0.2s linear;
-	
-	${({ primary }) =>
-		primary &&
-		css`
-			background-color: ${colors.main};
-			font-size: 1.1rem;
-			
-			&:hover {
-				background-color: ${colors.mainDark};
-			}
-		`
-	};
-	
-	${({ secondary }) =>
-		secondary &&
-		css`
-			border: 1px solid ${props => props.secondaryColor};
-			background-color: hsla(0, 0, 100%, 0);
-			font-size: 1rem;
-			
-			&:hover {
-				background-color: hsla(120, 3%, 45%, 0.25); //colors.grey
-			}
-		`
-	};
 	
 	${({ smaller }) =>
 		smaller &&
@@ -51,7 +25,6 @@ const Button = styled.a`
 Button.defaultProps = {
 	margin: 0,
 	color: colors.white,
-	secondaryColor: colors.white,
 };
 
 export default Button;

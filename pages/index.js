@@ -16,23 +16,23 @@ const Home = () => {
 					  content="Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici."/>
 				<link rel="icon" href="favicon.ico"/>
 				
-				<meta property="og:title" content="Portfolio en ligne - François Huszti, développeur web"/>
+				<meta property="og:title" content="Portfolio - François Huszti, développeur web"/>
 				<meta property="og:description"
 					  content="Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici."/>
-				<meta property="og:url" content="%PUBLIC_URL%"/>
+				<meta property="og:url" content={process.env.NEXT_PUBLIC_URL}/>
 				<meta property="og:site_name" content="François Huszti - Portfolio"/>
 				<meta property="og:type" content="website"/>
-				<meta property="og:image" content="%PUBLIC_URL%/big-logo-fr.png"/>
+				<meta property="og:image" content={`${process.env.NEXT_PUBLIC_URL}/big-logo-fr.png`}/>
 				
 				<meta name="twitter:card" content="summary_large_image"/>
-				<meta name="twitter:title" content="Portfolio en ligne - François Huszti, développeur web"/>
+				<meta name="twitter:title" content="Portfolio - François Huszti, développeur web"/>
 				<meta name="twitter:description"
 					  content="Site portfolio de François Huszti, développeur web. Les différentes versions de mon C.V. et mes projets sont tous ici."/>
 				<meta name="twitter:site" content="François Huszti - Portfolio"/>
 				<meta name="twitter:creator" content="François Huszti"/>
-				<meta name="twitter:image" content="%PUBLIC_URL%/big-logo-fr.png"/>
+				<meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_URL}/big-logo-fr.png`}/>
 				
-				<title>Portfolio en ligne - François Huszti, développeur web</title>
+				<title>Portfolio - François Huszti, développeur web</title>
 			</Head>
 			
 			<main className="main-wrapper">
